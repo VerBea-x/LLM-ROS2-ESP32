@@ -1,0 +1,30 @@
+{
+  "ready": true,
+  "states": {
+    "map_server": "active",
+    "controller_server": "active",
+    "planner_server": "active",
+    "bt_navigator": "active"
+  },
+  "elapsed_s": 3.158632412999964,
+  "maps": {
+    "/map": {
+      "width": 200,
+      "height": 200,
+      "resolution": 0.05000000074505806,
+      "origin": [
+        0.0,
+        0.0
+      ]
+    },
+    "/global_costmap/costmap": {
+      "width": 200,
+      "height": 200,
+      "resolution": 0.05000000074505806,
+      "origin": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+{"event": "accepted", "wall_ns": 1792991813311079364, "stamp_ns": 1792991813308931168, "ids": ["SYNTHETIC_two_objects_0", "SYNTHETIC_two_objects_1"], "item_count": 2}
+{"event": "accepted", "wall_ns": 1792991813917588552, "stamp_ns": 1792991813914802479, "ids": ["SYNTHETIC_repeat_with_jitter_0", "SYNTHETIC_repeat_with_jitter_1"], "item_count": 2}
+{"event": "rejected", "wall_ns": 1792991814567488144, "reason": "ambiguous same-class association; frame not committed", "ids": ["SYNTHETIC_ambiguous_single_0"]}

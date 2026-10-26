@@ -1,0 +1,17 @@
+{
+  "source_kind": "frozen_real_model_plan_actual_AMCL_SLAM_sim_execution",
+  "instruction": "去门口，然后停下。请一次给出完整的有序工具调用。",
+  "new_model_requests": 0,
+  "source_sha256": "b8401d04fb57beb96e7e3ee7d5813324172c35e0c4e02b3208b64e25439d08a9",
+  "pass_criteria": {
+    "result": "COMPLETED",
+    "truth_goal_error_m_max": 0.3,
+    "replan_count_max": 2,
+    "stop_verified": true
+  },
+  "limits": [
+    "One local task; no real camera, lidar, battery or vehicle.",
+    "Original received model reply reused; not a new online model sampling.",
+    "Known virtual waypoint TTL is a declared setting, not W6 field observation."
+  ]
+}

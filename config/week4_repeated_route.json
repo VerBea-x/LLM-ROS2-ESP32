@@ -1,0 +1,61 @@
+{
+  "protocol": "week3_4_preregister.json",
+  "same_order_each_round": true,
+  "starting_pose_note": "Second round starts from previous final position; route times not treated as matched baseline.",
+  "goals": [
+    {
+      "id": "route1_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED"
+    },
+    {
+      "id": "route1_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED"
+    },
+    {
+      "id": "route1_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED"
+    },
+    {
+      "id": "route2_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED"
+    },
+    {
+      "id": "route2_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED"
+    },
+    {
+      "id": "route2_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED"
+    }
+  ]
+}

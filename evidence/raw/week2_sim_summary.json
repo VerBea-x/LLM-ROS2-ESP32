@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-25T14:07:21.108766+00:00",
+  "source_kind": "simulator_model_only",
+  "simulator_path": "/home/yahboom/embodied-sim-lite/embodied-sim-lite",
+  "simulator_slip_setting": 0.05,
+  "slip_is_physical_calibration": false,
+  "sequence": [
+    {
+      "stage": "straight_1m",
+      "linear_mps": 0.2,
+      "angular_rps": 0.0,
+      "duration_s": 5.0
+    },
+    {
+      "stage": "pause_1s",
+      "linear_mps": 0.0,
+      "angular_rps": 0.0,
+      "duration_s": 1.0
+    },
+    {
+      "stage": "turn_90deg",
+      "linear_mps": 0.0,
+      "angular_rps": 0.39269908169872414,
+      "duration_s": 4.0
+    },
+    {
+      "stage": "straight_0.5m",
+      "linear_mps": 0.2,
+      "angular_rps": 0.0,
+      "duration_s": 2.5
+    }
+  ],
+  "repeats": [
+    {
+      "repeat": 1,
+      "seed": 101,
+      "status": "simulated_sequence_complete",
+      "start_truth_m_rad": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "expected_final_truth_m_rad": [
+        2.0,
+        1.5,
+        1.5707963267948966
+      ],
+      "actual_final_truth_m_rad": [
+        1.999999993045464,
+        1.5000000074505795,
+        1.5707963705062866
+      ],
+      "final_position_error_to_ideal_m": 1.0191992271960209e-08,
+      "final_yaw_error_to_ideal_deg": 2.5044781672654152e-06,
+      "truth_vs_odom_position_error_m": 0.029774786642841736,
+      "truth_vs_odom_yaw_error_deg": -3.2278356893063664,
+      "collided_or_terminated": false
+    },
+    {
+      "repeat": 2,
+      "seed": 102,
+      "status": "simulated_sequence_complete",
+      "start_truth_m_rad": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "expected_final_truth_m_rad": [
+        2.0,
+        1.5,
+        1.5707963267948966
+      ],
+      "actual_final_truth_m_rad": [
+        1.999999993045464,
+        1.5000000074505795,
+        1.5707963705062866
+      ],
+      "final_position_error_to_ideal_m": 1.0191992271960209e-08,
+      "final_yaw_error_to_ideal_deg": 2.5044781672654152e-06,
+      "truth_vs_odom_position_error_m": 0.034435987633687146,
+      "truth_vs_odom_yaw_error_deg": -3.7034651006305213,
+      "collided_or_terminated": false
+    },
+    {
+      "repeat": 3,
+      "seed": 103,
+      "status": "simulated_sequence_complete",
+      "start_truth_m_rad": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "expected_final_truth_m_rad": [
+        2.0,
+        1.5,
+        1.5707963267948966
+      ],
+      "actual_final_truth_m_rad": [
+        1.999999993045464,
+        1.5000000074505795,
+        1.5707963705062866
+      ],
+      "final_position_error_to_ideal_m": 1.0191992271960209e-08,
+      "final_yaw_error_to_ideal_deg": 2.5044781672654152e-06,
+      "truth_vs_odom_position_error_m": 0.021703571362808153,
+      "truth_vs_odom_yaw_error_deg": -4.487149006112033,
+      "collided_or_terminated": false
+    }
+  ],
+  "trajectory_csv": "evidence/raw/week2_sim_trajectory.csv",
+  "note": "固定起点/路径用于仿真运动学回归；slip来自模型设定，非实车测量。"
+}

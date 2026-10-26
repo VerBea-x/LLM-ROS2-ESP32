@@ -1,0 +1,46 @@
+{
+  "protocol": "public_substitution_v1",
+  "n_images": 20,
+  "ground_truth_objects": {
+    "cup": 19,
+    "bottle": 18,
+    "chair": 12
+  },
+  "total_ground_truth_objects": 49,
+  "threshold_results": [
+    {
+      "threshold": 0.3,
+      "tp": 14,
+      "fp": 3,
+      "fn": 35,
+      "precision": 0.8235294117647058,
+      "recall": 0.2857142857142857,
+      "f1": 0.42424242424242414
+    },
+    {
+      "threshold": 0.5,
+      "tp": 5,
+      "fp": 1,
+      "fn": 44,
+      "precision": 0.8333333333333334,
+      "recall": 0.10204081632653061,
+      "f1": 0.18181818181818182
+    },
+    {
+      "threshold": 0.7,
+      "tp": 4,
+      "fp": 0,
+      "fn": 45,
+      "precision": 1.0,
+      "recall": 0.08163265306122448,
+      "f1": 0.15094339622641506
+    }
+  ],
+  "chosen_offline_threshold": 0.3,
+  "choice_reason": "0.5仅比0.3提高约0.98个百分点precision，却降低18.37个百分点recall；0.7只保留4个TP。0.3在三档中F1最高，仍须人工复核，不能因离线精度推广为实车可靠性。",
+  "limitations": [
+    "全部为公开验证图，不是教师公共10+自采10。",
+    "只评估cup/bottle/chair，样本量小且选择规则并不代表真实环境分布。",
+    "模型输入640，未完成320相机节点部署、相机标定和语义定位。"
+  ]
+}

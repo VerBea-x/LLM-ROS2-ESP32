@@ -1,0 +1,33 @@
+test_detection_counts_duplicates_and_wrong_class (test_new_evidence_tools.EvidenceToolTests) ... ok
+test_malformed_tool_never_executes (test_new_evidence_tools.EvidenceToolTests) ... ok
+test_nonfinite_resource_does_not_pass (test_new_evidence_tools.EvidenceToolTests) ... ok
+test_randomness_excludes_api_ids_and_checks_exact_groups (test_new_evidence_tools.EvidenceToolTests) ... ok
+test_eight_rule_cases (test_plan_auditor.PlanAuditorTests) ... ok
+test_multi_call_plan_can_be_audited_atomically_by_caller (test_plan_auditor.PlanAuditorTests) ... ok
+test_occupancy_grid_rejects_occupied_and_unknown_cells (test_plan_auditor.PlanAuditorTests) ... ok
+test_schema_rejects_extra_fields_without_repair (test_plan_auditor.PlanAuditorTests) ... ok
+test_stop_is_available_even_with_empty_battery (test_plan_auditor.PlanAuditorTests) ... ok
+test_whitelist_precedes_rule_checks (test_plan_auditor.PlanAuditorTests) ... ok
+test_fresh_label_does_not_legalize_invented_coordinates (test_protocol_recovery.ProtocolRecoveryTests) ... ok
+test_resume_preserves_received_response_and_checks_frozen_world (test_protocol_recovery.ProtocolRecoveryTests) ... ok
+test_public_only_requires_explicit_substitution_without_faking_custom_sources (test_public_substitution.PublicSubstitutionTests) ... ok
+test_course_geometry_left_positive_and_resolution_gate (test_semantic_registration.SemanticTests) ... ok
+test_merge_time_expiry_and_no_invented_tau (test_semantic_registration.SemanticTests) ... ok
+test_audit_rejection_is_atomic_and_never_executes (test_state_machine.StateMachineTests) ... ok
+test_replanning_is_bounded_to_two_replans (test_state_machine.StateMachineTests) ... ok
+test_success_produces_four_event_types_and_three_part_report (test_state_machine.StateMachineTests) ... ok
+test_incomplete_plan_never_executes_valid_prefix (test_task_contract.TaskContractTests) ... ok
+test_invalid_contract_and_planner_are_reported (test_task_contract.TaskContractTests) ... ok
+test_stop_does_not_claim_original_task_completed (test_task_contract.TaskContractTests) ... ok
+test_target_order_is_part_of_contract (test_task_contract.TaskContractTests) ... ok
+test_unavailable_camera_rejects_whole_task (test_task_contract.TaskContractTests) ... ok
+test_week3_repeated_amcl_stamp_is_not_an_independent_sample (test_week1_to_7.Week1To7Tests) ... ok
+test_week5_metrics_compute_three_thresholds_from_independent_truth (test_week1_to_7.Week1To7Tests) ... ok
+test_week5_rejects_untraceable_labels (test_week1_to_7.Week1To7Tests) ... ok
+test_week6_semantic_map_age_state_is_computed_at_query_time (test_week1_to_7.Week1To7Tests) ... ok
+test_week7_schema_rejects_three_bad_call_classes_without_repair (test_week1_to_7.Week1To7Tests) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.039s
+
+OK

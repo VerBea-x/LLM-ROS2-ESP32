@@ -1,0 +1,22 @@
+{
+  "source_kind": "initial_calibration_reconstructed_from_first_rosbag_map_odom",
+  "bag_timestamp_ns": 1792983323972428042,
+  "transforms": {
+    "map->odom": {
+      "parent": "map",
+      "child": "odom",
+      "translation": [
+        1.7763568394002505e-15,
+        0.0,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "note": "Original snapshot filename was reused in an aborted restart. This is original pre-motion TF recovered from raw sensor bag, not fitted to final map."
+}

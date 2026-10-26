@@ -1,0 +1,2308 @@
+{
+  "protocol": {
+    "source_kind": "controlled_synthetic_observations",
+    "synthetic_observations": true,
+    "camera": {
+      "width": 640,
+      "height": 480,
+      "fx": 320.0,
+      "cx": 320.0,
+      "origin": "declared virtual intrinsics, not measured camera calibration"
+    },
+    "station_pose": [
+      2.0,
+      3.0,
+      0.0
+    ],
+    "confidence_threshold": 0.5,
+    "threshold_source": "config/week5_working_threshold_v2.json",
+    "geometry_pass": {
+      "front_position_error_max_m": 0.05,
+      "left_cross_product_positive": true,
+      "right_cross_product_negative": true,
+      "repeat_label_n_obs": 2,
+      "repeat_label_count": 1
+    },
+    "mobility": {
+      "seed": 601,
+      "logical_duration_s": 600,
+      "training_end_s": 300,
+      "interval_ranges_s": {
+        "person": [
+          3,
+          5
+        ],
+        "handheld": [
+          8,
+          12
+        ],
+        "furniture": [
+          30,
+          50
+        ]
+      },
+      "tau_policy": "half the minimum observed training relocation interval"
+    },
+    "notes": [
+      "CourseC06 explicitly permits synthetic detection injection for the camera-free simulator.",
+      "Synthetic mobility is not a30-minute field survey.",
+      "COCO photos lack pose and intrinsics; never assign them these virtual map coordinates."
+    ]
+  },
+  "source_kind": "controlled_simulation_logical_time",
+  "events": [
+    {
+      "event_id": "SIM_MOBILITY_person_001",
+      "class": "person",
+      "logical_time_s": 3,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_002",
+      "class": "person",
+      "logical_time_s": 8,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_003",
+      "class": "person",
+      "logical_time_s": 13,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_004",
+      "class": "person",
+      "logical_time_s": 18,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_005",
+      "class": "person",
+      "logical_time_s": 23,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_006",
+      "class": "person",
+      "logical_time_s": 26,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_007",
+      "class": "person",
+      "logical_time_s": 29,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_008",
+      "class": "person",
+      "logical_time_s": 33,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_009",
+      "class": "person",
+      "logical_time_s": 38,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_010",
+      "class": "person",
+      "logical_time_s": 42,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_011",
+      "class": "person",
+      "logical_time_s": 46,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_012",
+      "class": "person",
+      "logical_time_s": 49,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_013",
+      "class": "person",
+      "logical_time_s": 52,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_014",
+      "class": "person",
+      "logical_time_s": 56,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_015",
+      "class": "person",
+      "logical_time_s": 60,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_016",
+      "class": "person",
+      "logical_time_s": 65,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_017",
+      "class": "person",
+      "logical_time_s": 70,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_018",
+      "class": "person",
+      "logical_time_s": 75,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_019",
+      "class": "person",
+      "logical_time_s": 80,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_020",
+      "class": "person",
+      "logical_time_s": 85,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_021",
+      "class": "person",
+      "logical_time_s": 89,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_022",
+      "class": "person",
+      "logical_time_s": 94,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_023",
+      "class": "person",
+      "logical_time_s": 99,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_024",
+      "class": "person",
+      "logical_time_s": 104,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_025",
+      "class": "person",
+      "logical_time_s": 107,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_026",
+      "class": "person",
+      "logical_time_s": 110,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_027",
+      "class": "person",
+      "logical_time_s": 114,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_028",
+      "class": "person",
+      "logical_time_s": 118,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_029",
+      "class": "person",
+      "logical_time_s": 123,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_030",
+      "class": "person",
+      "logical_time_s": 127,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_031",
+      "class": "person",
+      "logical_time_s": 131,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_032",
+      "class": "person",
+      "logical_time_s": 136,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_033",
+      "class": "person",
+      "logical_time_s": 141,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_034",
+      "class": "person",
+      "logical_time_s": 146,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_035",
+      "class": "person",
+      "logical_time_s": 149,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_036",
+      "class": "person",
+      "logical_time_s": 152,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_037",
+      "class": "person",
+      "logical_time_s": 156,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_038",
+      "class": "person",
+      "logical_time_s": 161,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_039",
+      "class": "person",
+      "logical_time_s": 164,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_040",
+      "class": "person",
+      "logical_time_s": 169,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_041",
+      "class": "person",
+      "logical_time_s": 173,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_042",
+      "class": "person",
+      "logical_time_s": 176,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_043",
+      "class": "person",
+      "logical_time_s": 181,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_044",
+      "class": "person",
+      "logical_time_s": 184,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_045",
+      "class": "person",
+      "logical_time_s": 187,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_046",
+      "class": "person",
+      "logical_time_s": 192,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_047",
+      "class": "person",
+      "logical_time_s": 195,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_048",
+      "class": "person",
+      "logical_time_s": 199,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_049",
+      "class": "person",
+      "logical_time_s": 203,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_050",
+      "class": "person",
+      "logical_time_s": 208,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_051",
+      "class": "person",
+      "logical_time_s": 211,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_052",
+      "class": "person",
+      "logical_time_s": 216,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_053",
+      "class": "person",
+      "logical_time_s": 220,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_054",
+      "class": "person",
+      "logical_time_s": 224,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_055",
+      "class": "person",
+      "logical_time_s": 229,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_056",
+      "class": "person",
+      "logical_time_s": 232,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_057",
+      "class": "person",
+      "logical_time_s": 235,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_058",
+      "class": "person",
+      "logical_time_s": 240,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_059",
+      "class": "person",
+      "logical_time_s": 243,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_060",
+      "class": "person",
+      "logical_time_s": 246,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_061",
+      "class": "person",
+      "logical_time_s": 250,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_062",
+      "class": "person",
+      "logical_time_s": 255,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_063",
+      "class": "person",
+      "logical_time_s": 260,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_064",
+      "class": "person",
+      "logical_time_s": 264,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_065",
+      "class": "person",
+      "logical_time_s": 268,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_066",
+      "class": "person",
+      "logical_time_s": 271,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_067",
+      "class": "person",
+      "logical_time_s": 276,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_068",
+      "class": "person",
+      "logical_time_s": 279,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_069",
+      "class": "person",
+      "logical_time_s": 282,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_070",
+      "class": "person",
+      "logical_time_s": 287,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_071",
+      "class": "person",
+      "logical_time_s": 291,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_072",
+      "class": "person",
+      "logical_time_s": 294,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_073",
+      "class": "person",
+      "logical_time_s": 298,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_074",
+      "class": "person",
+      "logical_time_s": 301,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_075",
+      "class": "person",
+      "logical_time_s": 306,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_076",
+      "class": "person",
+      "logical_time_s": 310,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_077",
+      "class": "person",
+      "logical_time_s": 313,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_078",
+      "class": "person",
+      "logical_time_s": 318,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_079",
+      "class": "person",
+      "logical_time_s": 321,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_080",
+      "class": "person",
+      "logical_time_s": 325,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_081",
+      "class": "person",
+      "logical_time_s": 328,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_082",
+      "class": "person",
+      "logical_time_s": 333,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_083",
+      "class": "person",
+      "logical_time_s": 338,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_084",
+      "class": "person",
+      "logical_time_s": 342,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_085",
+      "class": "person",
+      "logical_time_s": 347,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_086",
+      "class": "person",
+      "logical_time_s": 352,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_087",
+      "class": "person",
+      "logical_time_s": 355,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_088",
+      "class": "person",
+      "logical_time_s": 358,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_089",
+      "class": "person",
+      "logical_time_s": 362,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_090",
+      "class": "person",
+      "logical_time_s": 366,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_091",
+      "class": "person",
+      "logical_time_s": 371,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_092",
+      "class": "person",
+      "logical_time_s": 376,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_093",
+      "class": "person",
+      "logical_time_s": 381,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_094",
+      "class": "person",
+      "logical_time_s": 385,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_095",
+      "class": "person",
+      "logical_time_s": 389,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_096",
+      "class": "person",
+      "logical_time_s": 394,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_097",
+      "class": "person",
+      "logical_time_s": 397,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_098",
+      "class": "person",
+      "logical_time_s": 401,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_099",
+      "class": "person",
+      "logical_time_s": 406,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_100",
+      "class": "person",
+      "logical_time_s": 410,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_101",
+      "class": "person",
+      "logical_time_s": 414,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_102",
+      "class": "person",
+      "logical_time_s": 418,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_103",
+      "class": "person",
+      "logical_time_s": 423,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_104",
+      "class": "person",
+      "logical_time_s": 427,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_105",
+      "class": "person",
+      "logical_time_s": 431,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_106",
+      "class": "person",
+      "logical_time_s": 434,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_107",
+      "class": "person",
+      "logical_time_s": 437,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_108",
+      "class": "person",
+      "logical_time_s": 442,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_109",
+      "class": "person",
+      "logical_time_s": 445,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_110",
+      "class": "person",
+      "logical_time_s": 448,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_111",
+      "class": "person",
+      "logical_time_s": 453,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_112",
+      "class": "person",
+      "logical_time_s": 456,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_113",
+      "class": "person",
+      "logical_time_s": 461,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_114",
+      "class": "person",
+      "logical_time_s": 466,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_115",
+      "class": "person",
+      "logical_time_s": 469,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_116",
+      "class": "person",
+      "logical_time_s": 473,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_117",
+      "class": "person",
+      "logical_time_s": 476,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_118",
+      "class": "person",
+      "logical_time_s": 481,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_119",
+      "class": "person",
+      "logical_time_s": 486,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_120",
+      "class": "person",
+      "logical_time_s": 489,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_121",
+      "class": "person",
+      "logical_time_s": 494,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_122",
+      "class": "person",
+      "logical_time_s": 497,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_123",
+      "class": "person",
+      "logical_time_s": 501,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_124",
+      "class": "person",
+      "logical_time_s": 506,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_125",
+      "class": "person",
+      "logical_time_s": 509,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_126",
+      "class": "person",
+      "logical_time_s": 514,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_127",
+      "class": "person",
+      "logical_time_s": 517,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_128",
+      "class": "person",
+      "logical_time_s": 520,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_129",
+      "class": "person",
+      "logical_time_s": 524,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_130",
+      "class": "person",
+      "logical_time_s": 527,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_131",
+      "class": "person",
+      "logical_time_s": 532,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_132",
+      "class": "person",
+      "logical_time_s": 536,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_133",
+      "class": "person",
+      "logical_time_s": 541,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_134",
+      "class": "person",
+      "logical_time_s": 546,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_135",
+      "class": "person",
+      "logical_time_s": 549,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_136",
+      "class": "person",
+      "logical_time_s": 552,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_137",
+      "class": "person",
+      "logical_time_s": 557,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_138",
+      "class": "person",
+      "logical_time_s": 560,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_139",
+      "class": "person",
+      "logical_time_s": 565,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_140",
+      "class": "person",
+      "logical_time_s": 568,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_141",
+      "class": "person",
+      "logical_time_s": 571,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_142",
+      "class": "person",
+      "logical_time_s": 574,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_143",
+      "class": "person",
+      "logical_time_s": 579,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_144",
+      "class": "person",
+      "logical_time_s": 584,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_145",
+      "class": "person",
+      "logical_time_s": 589,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_146",
+      "class": "person",
+      "logical_time_s": 593,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_147",
+      "class": "person",
+      "logical_time_s": 597,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_person_148",
+      "class": "person",
+      "logical_time_s": 600,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_001",
+      "class": "handheld",
+      "logical_time_s": 11,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_002",
+      "class": "handheld",
+      "logical_time_s": 19,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_003",
+      "class": "handheld",
+      "logical_time_s": 31,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_004",
+      "class": "handheld",
+      "logical_time_s": 40,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_005",
+      "class": "handheld",
+      "logical_time_s": 50,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_006",
+      "class": "handheld",
+      "logical_time_s": 58,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_007",
+      "class": "handheld",
+      "logical_time_s": 68,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_008",
+      "class": "handheld",
+      "logical_time_s": 77,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_009",
+      "class": "handheld",
+      "logical_time_s": 88,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_010",
+      "class": "handheld",
+      "logical_time_s": 100,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_011",
+      "class": "handheld",
+      "logical_time_s": 108,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_012",
+      "class": "handheld",
+      "logical_time_s": 117,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_013",
+      "class": "handheld",
+      "logical_time_s": 129,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_014",
+      "class": "handheld",
+      "logical_time_s": 141,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_015",
+      "class": "handheld",
+      "logical_time_s": 153,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_016",
+      "class": "handheld",
+      "logical_time_s": 163,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_017",
+      "class": "handheld",
+      "logical_time_s": 172,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_018",
+      "class": "handheld",
+      "logical_time_s": 181,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_019",
+      "class": "handheld",
+      "logical_time_s": 192,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_020",
+      "class": "handheld",
+      "logical_time_s": 203,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_021",
+      "class": "handheld",
+      "logical_time_s": 214,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_022",
+      "class": "handheld",
+      "logical_time_s": 222,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_023",
+      "class": "handheld",
+      "logical_time_s": 231,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_024",
+      "class": "handheld",
+      "logical_time_s": 240,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_025",
+      "class": "handheld",
+      "logical_time_s": 248,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_026",
+      "class": "handheld",
+      "logical_time_s": 260,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_027",
+      "class": "handheld",
+      "logical_time_s": 270,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_028",
+      "class": "handheld",
+      "logical_time_s": 282,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_029",
+      "class": "handheld",
+      "logical_time_s": 293,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_030",
+      "class": "handheld",
+      "logical_time_s": 302,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_031",
+      "class": "handheld",
+      "logical_time_s": 312,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_032",
+      "class": "handheld",
+      "logical_time_s": 321,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_033",
+      "class": "handheld",
+      "logical_time_s": 330,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_034",
+      "class": "handheld",
+      "logical_time_s": 339,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_035",
+      "class": "handheld",
+      "logical_time_s": 347,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_036",
+      "class": "handheld",
+      "logical_time_s": 357,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_037",
+      "class": "handheld",
+      "logical_time_s": 369,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_038",
+      "class": "handheld",
+      "logical_time_s": 379,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_039",
+      "class": "handheld",
+      "logical_time_s": 390,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_040",
+      "class": "handheld",
+      "logical_time_s": 402,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_041",
+      "class": "handheld",
+      "logical_time_s": 410,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_042",
+      "class": "handheld",
+      "logical_time_s": 421,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_043",
+      "class": "handheld",
+      "logical_time_s": 431,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_044",
+      "class": "handheld",
+      "logical_time_s": 442,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_045",
+      "class": "handheld",
+      "logical_time_s": 452,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_046",
+      "class": "handheld",
+      "logical_time_s": 461,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_047",
+      "class": "handheld",
+      "logical_time_s": 469,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_048",
+      "class": "handheld",
+      "logical_time_s": 479,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_049",
+      "class": "handheld",
+      "logical_time_s": 489,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_050",
+      "class": "handheld",
+      "logical_time_s": 499,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_051",
+      "class": "handheld",
+      "logical_time_s": 508,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_052",
+      "class": "handheld",
+      "logical_time_s": 517,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_053",
+      "class": "handheld",
+      "logical_time_s": 526,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_054",
+      "class": "handheld",
+      "logical_time_s": 536,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_055",
+      "class": "handheld",
+      "logical_time_s": 544,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_056",
+      "class": "handheld",
+      "logical_time_s": 556,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_057",
+      "class": "handheld",
+      "logical_time_s": 568,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_058",
+      "class": "handheld",
+      "logical_time_s": 578,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_059",
+      "class": "handheld",
+      "logical_time_s": 587,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_handheld_060",
+      "class": "handheld",
+      "logical_time_s": 598,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_001",
+      "class": "furniture",
+      "logical_time_s": 37,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_002",
+      "class": "furniture",
+      "logical_time_s": 73,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_003",
+      "class": "furniture",
+      "logical_time_s": 119,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_004",
+      "class": "furniture",
+      "logical_time_s": 149,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_005",
+      "class": "furniture",
+      "logical_time_s": 191,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_006",
+      "class": "furniture",
+      "logical_time_s": 231,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_007",
+      "class": "furniture",
+      "logical_time_s": 272,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_008",
+      "class": "furniture",
+      "logical_time_s": 313,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_009",
+      "class": "furniture",
+      "logical_time_s": 356,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_010",
+      "class": "furniture",
+      "logical_time_s": 398,
+      "position_m": [
+        1.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_011",
+      "class": "furniture",
+      "logical_time_s": 435,
+      "position_m": [
+        2.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_012",
+      "class": "furniture",
+      "logical_time_s": 481,
+      "position_m": [
+        0.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_013",
+      "class": "furniture",
+      "logical_time_s": 513,
+      "position_m": [
+        1.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_014",
+      "class": "furniture",
+      "logical_time_s": 559,
+      "position_m": [
+        2.0,
+        1.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    },
+    {
+      "event_id": "SIM_MOBILITY_furniture_015",
+      "class": "furniture",
+      "logical_time_s": 600,
+      "position_m": [
+        0.0,
+        0.0
+      ],
+      "source_kind": "synthetic_motion_schedule"
+    }
+  ],
+  "derived_class_rules": {
+    "person": {
+      "tau_s": 1.5,
+      "observed_training_min_interval_s": 3,
+      "observation_evidence_id": "SIM_MOBILITY_TRAIN_person",
+      "training_event_count": 73
+    },
+    "handheld": {
+      "tau_s": 4.0,
+      "observed_training_min_interval_s": 8,
+      "observation_evidence_id": "SIM_MOBILITY_TRAIN_handheld",
+      "training_event_count": 29
+    },
+    "furniture": {
+      "tau_s": 15.0,
+      "observed_training_min_interval_s": 30,
+      "observation_evidence_id": "SIM_MOBILITY_TRAIN_furniture",
+      "training_event_count": 7
+    }
+  },
+  "limitations": [
+    "Declared stochastic synthetic schedule; not real object movement measurements."
+  ]
+}

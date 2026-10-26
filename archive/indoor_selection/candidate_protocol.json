@@ -1,0 +1,290 @@
+{
+  "reason": "User rejected generic animal/outdoor negative examples; require complete indoor scenes.",
+  "filter": "indoor context labels, >=3 categories, no outdoor/animal/sport cues; negatives >=2 indoor context types; no prediction-based selection",
+  "candidates": [
+    {
+      "image_id": 2157,
+      "group": "cup",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 2431,
+      "group": "cup",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 2592,
+      "group": "cup",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 3845,
+      "group": "cup",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 3934,
+      "group": "cup",
+      "context": [
+        "couch"
+      ]
+    },
+    {
+      "image_id": 9400,
+      "group": "cup",
+      "context": [
+        "laptop"
+      ]
+    },
+    {
+      "image_id": 9590,
+      "group": "cup",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 10707,
+      "group": "cup",
+      "context": [
+        "couch",
+        "dining table",
+        "laptop"
+      ]
+    },
+    {
+      "image_id": 12576,
+      "group": "cup",
+      "context": [
+        "dining table",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 13659,
+      "group": "cup",
+      "context": [
+        "dining table",
+        "laptop",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 7574,
+      "group": "bottle",
+      "context": [
+        "microwave",
+        "oven",
+        "refrigerator",
+        "sink"
+      ]
+    },
+    {
+      "image_id": 13729,
+      "group": "bottle",
+      "context": [
+        "couch",
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 13923,
+      "group": "bottle",
+      "context": [
+        "couch",
+        "dining table",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 14038,
+      "group": "bottle",
+      "context": [
+        "bed",
+        "couch",
+        "dining table",
+        "microwave",
+        "refrigerator",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 18150,
+      "group": "bottle",
+      "context": [
+        "couch"
+      ]
+    },
+    {
+      "image_id": 18575,
+      "group": "bottle",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 20553,
+      "group": "bottle",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 22705,
+      "group": "bottle",
+      "context": [
+        "refrigerator"
+      ]
+    },
+    {
+      "image_id": 24610,
+      "group": "bottle",
+      "context": [
+        "couch",
+        "laptop"
+      ]
+    },
+    {
+      "image_id": 26564,
+      "group": "bottle",
+      "context": [
+        "laptop",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 139,
+      "group": "chair",
+      "context": [
+        "dining table",
+        "microwave",
+        "refrigerator",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 632,
+      "group": "chair",
+      "context": [
+        "bed"
+      ]
+    },
+    {
+      "image_id": 1993,
+      "group": "chair",
+      "context": [
+        "bed",
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 4134,
+      "group": "chair",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 4495,
+      "group": "chair",
+      "context": [
+        "couch",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 7818,
+      "group": "chair",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 14226,
+      "group": "chair",
+      "context": [
+        "dining table",
+        "laptop"
+      ]
+    },
+    {
+      "image_id": 18380,
+      "group": "chair",
+      "context": [
+        "dining table"
+      ]
+    },
+    {
+      "image_id": 1503,
+      "group": "negative",
+      "context": [
+        "laptop",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 4795,
+      "group": "negative",
+      "context": [
+        "laptop",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 6763,
+      "group": "negative",
+      "context": [
+        "dining table",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 9772,
+      "group": "negative",
+      "context": [
+        "sink",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 17379,
+      "group": "negative",
+      "context": [
+        "sink",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 19786,
+      "group": "negative",
+      "context": [
+        "couch",
+        "laptop"
+      ]
+    },
+    {
+      "image_id": 39477,
+      "group": "negative",
+      "context": [
+        "couch",
+        "tv"
+      ]
+    },
+    {
+      "image_id": 39769,
+      "group": "negative",
+      "context": [
+        "bed",
+        "couch"
+      ]
+    }
+  ]
+}

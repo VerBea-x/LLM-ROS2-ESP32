@@ -1,0 +1,23 @@
+{
+  "estimated_map_pose_xy": [
+    8.318335273684475,
+    6.7900637411316325
+  ],
+  "independent_truth": {
+    "mode": "nav-static",
+    "seed": 42,
+    "slip": 0.05,
+    "tick_hz": 10.0,
+    "tick_n": 4709,
+    "uptime_s": 470.9,
+    "robot_truth": {
+      "x": 8.148,
+      "y": 6.22,
+      "theta_deg": 165.6
+    },
+    "terminated_events": 28,
+    "clients": 1
+  },
+  "position_error_m": 0.5949678767918134,
+  "note": "Robot stationary after frozen route; no timestamp interpolation; not independent AMCL localization."
+}

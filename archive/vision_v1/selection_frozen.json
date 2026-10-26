@@ -1,0 +1,100 @@
+{
+  "dataset": "COCO2017 validation",
+  "selection": "ascending image id within6cup+6bottle+4chair+4negative; no detector feedback",
+  "class_scope": [
+    "bottle",
+    "chair",
+    "cup"
+  ],
+  "selected": [
+    {
+      "image_id": 2157,
+      "selection_group": "cup"
+    },
+    {
+      "image_id": 2431,
+      "selection_group": "cup"
+    },
+    {
+      "image_id": 2592,
+      "selection_group": "cup"
+    },
+    {
+      "image_id": 2685,
+      "selection_group": "cup"
+    },
+    {
+      "image_id": 3661,
+      "selection_group": "cup"
+    },
+    {
+      "image_id": 3845,
+      "selection_group": "cup"
+    },
+    {
+      "image_id": 5193,
+      "selection_group": "bottle"
+    },
+    {
+      "image_id": 6471,
+      "selection_group": "bottle"
+    },
+    {
+      "image_id": 7574,
+      "selection_group": "bottle"
+    },
+    {
+      "image_id": 8021,
+      "selection_group": "bottle"
+    },
+    {
+      "image_id": 9590,
+      "selection_group": "bottle"
+    },
+    {
+      "image_id": 10363,
+      "selection_group": "bottle"
+    },
+    {
+      "image_id": 139,
+      "selection_group": "chair"
+    },
+    {
+      "image_id": 632,
+      "selection_group": "chair"
+    },
+    {
+      "image_id": 1993,
+      "selection_group": "chair"
+    },
+    {
+      "image_id": 4134,
+      "selection_group": "chair"
+    },
+    {
+      "image_id": 285,
+      "selection_group": "negative"
+    },
+    {
+      "image_id": 724,
+      "selection_group": "negative"
+    },
+    {
+      "image_id": 776,
+      "selection_group": "negative"
+    },
+    {
+      "image_id": 785,
+      "selection_group": "negative"
+    }
+  ],
+  "annotations_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "frozen_at": "2026-10-26T02:39:15.495835+00:00",
+  "thresholds": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "nms_iou": 0.45,
+  "match_iou": 0.5
+}

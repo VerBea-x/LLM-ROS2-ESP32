@@ -1,0 +1,29 @@
+[
+  {
+    "allowed": true,
+    "rule_id": "PASS",
+    "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+    "evidence": {
+      "label": "W1_door",
+      "target_m": [
+        7.0,
+        6.0
+      ],
+      "age_s": 0.0,
+      "tau_s": 86400.0,
+      "battery_pct": 60.0,
+      "estimated_task_s": 30.0,
+      "remaining_budget_s": 60.0
+    },
+    "correction": ""
+  },
+  {
+    "allowed": true,
+    "rule_id": "SAFE_STOP",
+    "reason": "stop 属于无条件安全工具，允许调用。",
+    "evidence": {
+      "tool_name": "stop"
+    },
+    "correction": ""
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "source_kind": "actual_ros_map_snapshots_fixed_initial_registration",
+  "truth_snapshot": "evidence/raw/week1_live_sim.json",
+  "estimate_snapshot": "/home/yahboom/下载/第1-8周对齐重做/evidence/raw/week3_slam/20261026T023209Z/final_snapshot.json",
+  "initial_frame_calibration": {
+    "parent": "map",
+    "child": "odom",
+    "translation": [
+      1.7763568394002505e-15,
+      0.0,
+      -0.15
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "registration": "fixed initial map->odom; nearest-neighbor cell lookup, no fitted alignment",
+  "known_coverage": 0.835275,
+  "occupied_tp": 980,
+  "occupied_fp": 3519,
+  "occupied_fn_including_unobserved": 4112,
+  "known_free_tn": 25804,
+  "occupied_precision": 0.21782618359635475,
+  "occupied_recall_full_truth_domain": 0.192458758837392,
+  "occupied_iou_full_truth_domain": 0.11380792010219487,
+  "limitations": [
+    "Missing/unknown estimates count as missed occupied truth cells in full-domain recall.",
+    "Raw occupancy -1 preserved; no inference from ambiguous PGM gray values.",
+    "The start odom/world relation is specific to this simulator; no physical-map alignment claim.",
+    "Metrics do not establish localization or navigation acceptance."
+  ],
+  "boundary_distances_m": {
+    "estimate_to_truth_mean": 0.46503204107284546,
+    "estimate_to_truth_p95": 1.0500000715255737,
+    "truth_to_estimate_mean": 0.3384610712528229,
+    "truth_to_estimate_p95": 0.9839962303638454,
+    "note": "Additional descriptive distances; no new pass threshold or optimized alignment."
+  }
+}

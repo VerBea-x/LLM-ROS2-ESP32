@@ -1,0 +1,7 @@
+{
+  "去门口然后停下": {"required_sequence":["navigate_to","stop"],"navigation_labels":["W1_door"],"evidence_id":"explicit_supported_task_v3"},
+  "去门口，然后停下。请一次给出完整的有序工具调用。": {"required_sequence":["navigate_to","stop"],"navigation_labels":["W1_door"],"evidence_id":"recorded_week8_instruction"},
+  "先去门口，再去充电站，最后停下": {"required_sequence":["navigate_to","navigate_to","stop"],"navigation_labels":["W1_door","W2_charge"],"evidence_id":"week7_frozen_custom_instruction"},
+  "到桌子那，看看上面有什么": {"required_sequence":["navigate_to","capture_and_describe","say"],"navigation_labels":["W3_podium"],"unavailable_tools":["capture_and_describe"],"evidence_id":"week7_common_instruction_and_no_camera_boundary"},
+  "停下": {"required_sequence":["stop"],"evidence_id":"safe_stop"}
+}

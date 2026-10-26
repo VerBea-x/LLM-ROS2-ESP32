@@ -1,0 +1,1028 @@
+{
+  "source_kind": "actual_simulation_frozen_planner_integration",
+  "instruction": "去P2实验点然后停下",
+  "completed": true,
+  "events": [
+    {
+      "wall_ns": 1792938331934940596,
+      "type": "plan",
+      "instruction": "去P2实验点然后停下",
+      "plan": {
+        "tool_calls": [
+          {
+            "name": "navigate_to",
+            "arguments": {
+              "x": 7,
+              "y": 6,
+              "label": "P2_demo"
+            }
+          },
+          {
+            "name": "stop",
+            "arguments": {}
+          }
+        ],
+        "source_kind": "frozen_handwritten_integration_proposal_not_llm"
+      },
+      "replan_count": 0
+    },
+    {
+      "wall_ns": 1792938331935232329,
+      "type": "audit",
+      "index": 0,
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 7,
+          "y": 6,
+          "label": "P2_demo"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `P2_demo` 在边界内且未落入已知占据区；age=36.6s≤τ=300.0s；电量 60.0%，预估耗时 15.0s/预算 60.0s。",
+        "evidence": {
+          "label": "P2_demo",
+          "target_m": [
+            7,
+            6
+          ],
+          "age_s": 36.62098693847656,
+          "tau_s": 300.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 15.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      }
+    },
+    {
+      "wall_ns": 1792938331935336433,
+      "type": "audit",
+      "index": 1,
+      "call": {
+        "name": "stop",
+        "arguments": {}
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "SAFE_STOP",
+        "reason": "stop 属于无条件安全工具，允许调用。",
+        "evidence": {
+          "tool_name": "stop"
+        },
+        "correction": ""
+      }
+    },
+    {
+      "wall_ns": 1792938339209054520,
+      "type": "exec",
+      "index": 0,
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 7,
+          "y": 6,
+          "label": "P2_demo"
+        }
+      },
+      "ok": true,
+      "reason": "Nav2 报告目标到达。",
+      "evidence": {
+        "result": "SUCCEEDED",
+        "elapsed_s": 7.272541180000189,
+        "requested_target_m": [
+          7.0,
+          6.0
+        ],
+        "label": "P2_demo"
+      }
+    },
+    {
+      "wall_ns": 1792938339805618443,
+      "type": "exec",
+      "index": 1,
+      "call": {
+        "name": "stop",
+        "arguments": {}
+      },
+      "ok": true,
+      "reason": "Nav2 目标已取消并由新鲜 /odom 连续确认静止。",
+      "evidence": {
+        "speed_mps_radps": [
+          0.0,
+          0.0
+        ],
+        "cancel_return_code": 0,
+        "verified": true
+      }
+    },
+    {
+      "wall_ns": 1792938339805959212,
+      "type": "report",
+      "result": "COMPLETED",
+      "evidence": [
+        {
+          "index": 0,
+          "call": {
+            "name": "navigate_to",
+            "arguments": {
+              "x": 7,
+              "y": 6,
+              "label": "P2_demo"
+            }
+          },
+          "ok": true,
+          "reason": "Nav2 报告目标到达。",
+          "evidence": {
+            "result": "SUCCEEDED",
+            "elapsed_s": 7.272541180000189,
+            "requested_target_m": [
+              7.0,
+              6.0
+            ],
+            "label": "P2_demo"
+          }
+        },
+        {
+          "index": 1,
+          "call": {
+            "name": "stop",
+            "arguments": {}
+          },
+          "ok": true,
+          "reason": "Nav2 目标已取消并由新鲜 /odom 连续确认静止。",
+          "evidence": {
+            "speed_mps_radps": [
+              0.0,
+              0.0
+            ],
+            "cancel_return_code": 0,
+            "verified": true
+          }
+        }
+      ],
+      "replan_count": 0
+    },
+    {
+      "wall_ns": 1792938339806118878,
+      "type": "report",
+      "final_report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "P2_demo"
+              }
+            },
+            "ok": true,
+            "reason": "Nav2 报告目标到达。",
+            "evidence": {
+              "result": "SUCCEEDED",
+              "elapsed_s": 7.272541180000189,
+              "requested_target_m": [
+                7.0,
+                6.0
+              ],
+              "label": "P2_demo"
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "Nav2 目标已取消并由新鲜 /odom 连续确认静止。",
+            "evidence": {
+              "speed_mps_radps": [
+                0.0,
+                0.0
+              ],
+              "cancel_return_code": 0,
+              "verified": true
+            }
+          }
+        ],
+        "limitations": [
+          "仿真集成验证；固定规划器不证明LLM理解能力。",
+          "语义与资源状态依赖传入证据；仿真占位电量不证明实车电量。"
+        ]
+      },
+      "result": "COMPLETED"
+    }
+  ],
+  "truth_trace": [
+    {
+      "wall_ns": 1792938330082691054,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 797,
+      "uptime_s": 79.7,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938330282568369,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 799,
+      "uptime_s": 79.8,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938330482889202,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 801,
+      "uptime_s": 80.0,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938330682655836,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 803,
+      "uptime_s": 80.2,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938330882540701,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 805,
+      "uptime_s": 80.4,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938331082599432,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 807,
+      "uptime_s": 80.6,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938331282542883,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 809,
+      "uptime_s": 80.8,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938331482606194,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 811,
+      "uptime_s": 81.0,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938331682518335,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 813,
+      "uptime_s": 81.2,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938331882547447,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 815,
+      "uptime_s": 81.4,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938332082600391,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 817,
+      "uptime_s": 81.6,
+      "robot_truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 89.0
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938332282530383,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 819,
+      "uptime_s": 81.8,
+      "robot_truth": {
+        "x": 8.078,
+        "y": 6.25,
+        "theta_deg": 96.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938332482503028,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 821,
+      "uptime_s": 82.0,
+      "robot_truth": {
+        "x": 8.048,
+        "y": 6.345,
+        "theta_deg": 111.0
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938332682529860,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 823,
+      "uptime_s": 82.2,
+      "robot_truth": {
+        "x": 7.954,
+        "y": 6.484,
+        "theta_deg": 128.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938332882532469,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 825,
+      "uptime_s": 82.4,
+      "robot_truth": {
+        "x": 7.827,
+        "y": 6.586,
+        "theta_deg": 145.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938333082611171,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 827,
+      "uptime_s": 82.6,
+      "robot_truth": {
+        "x": 7.692,
+        "y": 6.644,
+        "theta_deg": 160.8
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938333282544498,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 829,
+      "uptime_s": 82.8,
+      "robot_truth": {
+        "x": 7.567,
+        "y": 6.664,
+        "theta_deg": 174.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938333482499901,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 831,
+      "uptime_s": 83.0,
+      "robot_truth": {
+        "x": 7.452,
+        "y": 6.657,
+        "theta_deg": -173.9
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938333682509207,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 833,
+      "uptime_s": 83.2,
+      "robot_truth": {
+        "x": 7.355,
+        "y": 6.632,
+        "theta_deg": -163.0
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938333882517246,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 835,
+      "uptime_s": 83.4,
+      "robot_truth": {
+        "x": 7.273,
+        "y": 6.596,
+        "theta_deg": -153.1
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938334082512961,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 837,
+      "uptime_s": 83.6,
+      "robot_truth": {
+        "x": 7.207,
+        "y": 6.552,
+        "theta_deg": -144.9
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938334282581744,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 839,
+      "uptime_s": 83.8,
+      "robot_truth": {
+        "x": 7.159,
+        "y": 6.512,
+        "theta_deg": -138.6
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938334482540724,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 841,
+      "uptime_s": 84.0,
+      "robot_truth": {
+        "x": 7.115,
+        "y": 6.466,
+        "theta_deg": -132.3
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938334682512084,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 843,
+      "uptime_s": 84.2,
+      "robot_truth": {
+        "x": 7.08,
+        "y": 6.421,
+        "theta_deg": -125.9
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938334882522590,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 845,
+      "uptime_s": 84.4,
+      "robot_truth": {
+        "x": 7.054,
+        "y": 6.381,
+        "theta_deg": -121.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938335082679942,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 847,
+      "uptime_s": 84.6,
+      "robot_truth": {
+        "x": 7.035,
+        "y": 6.343,
+        "theta_deg": -116.9
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938335282565796,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 849,
+      "uptime_s": 84.8,
+      "robot_truth": {
+        "x": 7.02,
+        "y": 6.31,
+        "theta_deg": -113.3
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938335482533752,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 851,
+      "uptime_s": 85.0,
+      "robot_truth": {
+        "x": 7.008,
+        "y": 6.28,
+        "theta_deg": -110.6
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938335682518778,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 853,
+      "uptime_s": 85.2,
+      "robot_truth": {
+        "x": 6.998,
+        "y": 6.25,
+        "theta_deg": -107.8
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938335882566635,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 855,
+      "uptime_s": 85.4,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -104.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938336082569526,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 857,
+      "uptime_s": 85.6,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -94.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938336282554703,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 859,
+      "uptime_s": 85.8,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -83.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938336482502702,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 861,
+      "uptime_s": 86.0,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -73.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938336682508599,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 863,
+      "uptime_s": 86.2,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -65.3
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938336882548235,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 865,
+      "uptime_s": 86.4,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -58.0
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938337082712542,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 867,
+      "uptime_s": 86.6,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -51.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938337282517411,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 869,
+      "uptime_s": 86.8,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -45.4
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938337482507421,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 871,
+      "uptime_s": 87.0,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -40.8
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938337682655921,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 873,
+      "uptime_s": 87.2,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -36.3
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938337882545717,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 875,
+      "uptime_s": 87.4,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -31.8
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938338082514397,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 877,
+      "uptime_s": 87.6,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -28.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938338282518042,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 879,
+      "uptime_s": 87.8,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -25.5
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938338482641501,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 881,
+      "uptime_s": 88.0,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -22.8
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938338682506141,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 883,
+      "uptime_s": 88.2,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -20.0
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938338882498643,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 885,
+      "uptime_s": 88.4,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -17.3
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938339082574651,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 887,
+      "uptime_s": 88.6,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -14.6
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938339282562758,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 889,
+      "uptime_s": 88.8,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -14.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938339482513775,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 891,
+      "uptime_s": 89.0,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -14.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792938339682711023,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.0,
+      "tick_hz": 10.0,
+      "tick_n": 893,
+      "uptime_s": 89.2,
+      "robot_truth": {
+        "x": 6.993,
+        "y": 6.232,
+        "theta_deg": -14.2
+      },
+      "terminated_events": 0,
+      "clients": 1
+    }
+  ],
+  "final_truth": {
+    "mode": "nav-static",
+    "seed": 42,
+    "slip": 0.0,
+    "tick_hz": 10.0,
+    "tick_n": 894,
+    "uptime_s": 89.4,
+    "robot_truth": {
+      "x": 6.993,
+      "y": 6.232,
+      "theta_deg": -14.2
+    },
+    "terminated_events": 0,
+    "clients": 1
+  },
+  "limitations": [
+    "Handwritten frozen proposal; no model request made.",
+    "slip=0 and map->odom identity: intentional truth localization, not AMCL or recovery.",
+    "battery=60 and tau=300 are explicit integration settings, not measured W6 evidence."
+  ]
+}

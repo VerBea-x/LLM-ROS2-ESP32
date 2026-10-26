@@ -1,0 +1,6 @@
+{
+  "status": "aborted_before_instruction_submission",
+  "reason": "Recorder required exactly one subscriber after2seconds; ROS graph discovery did not meet this condition. Partial video contains no agent execution.",
+  "replacement": "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2",
+  "infrastructure_note": "First agent launch also failed to import rclpy because PYTHONPATH replaced ROS paths; corrected before the recorder trial."
+}

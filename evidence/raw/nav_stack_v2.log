@@ -1,0 +1,675 @@
+[INFO] [launch]: All log files can be found below /tmp/course_rebuild_ros_logs/2026-10-25-22-14-09-972264-yahboom-VM-11172
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [map_server-1]: process started with pid [11173]
+[INFO] [amcl-2]: process started with pid [11175]
+[INFO] [lifecycle_manager-3]: process started with pid [11177]
+[INFO] [controller_server-4]: process started with pid [11179]
+[INFO] [smoother_server-5]: process started with pid [11181]
+[INFO] [planner_server-6]: process started with pid [11183]
+[INFO] [behavior_server-7]: process started with pid [11185]
+[INFO] [bt_navigator-8]: process started with pid [11187]
+[INFO] [waypoint_follower-9]: process started with pid [11213]
+[INFO] [velocity_smoother-10]: process started with pid [11217]
+[INFO] [lifecycle_manager-11]: process started with pid [11232]
+[INFO] [navigate_to_server-12]: process started with pid [11234]
+[lifecycle_manager-3] [INFO] [1792937650.227252722] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-3] [INFO] [1792937650.231529232] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[controller_server-4] [INFO] [1792937650.231815206] [controller_server]: 
+[controller_server-4] 	controller_server lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1792937650.235464759] [smoother_server]: 
+[smoother_server-5] 	smoother_server lifecycle node launched. 
+[smoother_server-5] 	Waiting on external lifecycle transitions to activate
+[smoother_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1792937650.239390402] [planner_server]: 
+[planner_server-6] 	planner_server lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-2] [INFO] [1792937650.242369240] [amcl]: 
+[amcl-2] 	amcl lifecycle node launched. 
+[amcl-2] 	Waiting on external lifecycle transitions to activate
+[amcl-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-5] [INFO] [1792937650.243193272] [smoother_server]: Creating smoother server
+[planner_server-6] [INFO] [1792937650.246293855] [planner_server]: Creating
+[amcl-2] [INFO] [1792937650.246520141] [amcl]: Creating
+[controller_server-4] [INFO] [1792937650.257833717] [controller_server]: Creating controller server
+[waypoint_follower-9] [INFO] [1792937650.287723709] [waypoint_follower]: 
+[waypoint_follower-9] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-9] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-9] [INFO] [1792937650.290713984] [waypoint_follower]: Creating
+[controller_server-4] [INFO] [1792937650.300686544] [local_costmap.local_costmap]: 
+[controller_server-4] 	local_costmap lifecycle node launched. 
+[controller_server-4] 	Waiting on external lifecycle transitions to activate
+[controller_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-4] [INFO] [1792937650.301532949] [local_costmap.local_costmap]: Creating Costmap
+[velocity_smoother-10] [INFO] [1792937650.301241327] [velocity_smoother]: 
+[velocity_smoother-10] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-10] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-7] [INFO] [1792937650.317621334] [behavior_server]: 
+[behavior_server-7] 	behavior_server lifecycle node launched. 
+[behavior_server-7] 	Waiting on external lifecycle transitions to activate
+[behavior_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-3] [INFO] [1792937650.332323157] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-3] [INFO] [1792937650.332381504] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[lifecycle_manager-11] [INFO] [1792937650.346650935] [lifecycle_manager_navigation]: Creating
+[map_server-1] [INFO] [1792937650.347494564] [map_server]: 
+[map_server-1] 	map_server lifecycle node launched. 
+[map_server-1] 	Waiting on external lifecycle transitions to activate
+[map_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-1] [INFO] [1792937650.347610562] [map_server]: Creating
+[lifecycle_manager-11] [INFO] [1792937650.358118670] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[planner_server-6] [INFO] [1792937650.362777705] [global_costmap.global_costmap]: 
+[planner_server-6] 	global_costmap lifecycle node launched. 
+[planner_server-6] 	Waiting on external lifecycle transitions to activate
+[planner_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-6] [INFO] [1792937650.363507225] [global_costmap.global_costmap]: Creating Costmap
+[bt_navigator-8] [INFO] [1792937650.381799469] [bt_navigator]: 
+[bt_navigator-8] 	bt_navigator lifecycle node launched. 
+[bt_navigator-8] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-8] [INFO] [1792937650.381926373] [bt_navigator]: Creating
+[lifecycle_manager-11] [INFO] [1792937650.393880037] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-11] [INFO] [1792937650.393925654] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-4] [INFO] [1792937650.394150473] [controller_server]: Configuring controller interface
+[controller_server-4] [INFO] [1792937650.394409039] [controller_server]: getting goal checker plugins..
+[controller_server-4] [INFO] [1792937650.394972221] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-4] [INFO] [1792937650.395009760] [local_costmap.local_costmap]: Configuring
+[controller_server-4] [INFO] [1792937650.404199459] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-4] [INFO] [1792937650.409700933] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-4] [INFO] [1792937650.425227106] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-4] [INFO] [1792937650.425260491] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-4] [INFO] [1792937650.428006236] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[map_server-1] [INFO] [1792937650.433416004] [map_server]: Configuring
+[map_server-1] [INFO] [1792937650.433478420] [map_io]: Loading yaml file: /tmp/course_rebuild_runtime/map/map_gt.yaml
+[map_server-1] [INFO] [1792937650.433778560] [map_io]: resolution: 0.05
+[map_server-1] [INFO] [1792937650.433789027] [map_io]: origin[0]: 0
+[map_server-1] [INFO] [1792937650.433793998] [map_io]: origin[1]: 0
+[map_server-1] [INFO] [1792937650.433798521] [map_io]: origin[2]: 0
+[map_server-1] [INFO] [1792937650.433803492] [map_io]: free_thresh: 0.196
+[map_server-1] [INFO] [1792937650.433808397] [map_io]: occupied_thresh: 0.65
+[map_server-1] [INFO] [1792937650.433813554] [map_io]: mode: trinary
+[map_server-1] [INFO] [1792937650.433819039] [map_io]: negate: 0
+[controller_server-4] [INFO] [1792937650.444579666] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[map_server-1] [INFO] [1792937650.445458043] [map_io]: Loading image_file: /tmp/course_rebuild_runtime/map/map_gt.pgm
+[controller_server-4] [INFO] [1792937650.446693019] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-4] [INFO] [1792937650.446828850] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-4] [INFO] [1792937650.449425558] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[map_server-1] [INFO] [1792937650.451803409] [map_io]: Read map /tmp/course_rebuild_runtime/map/map_gt.pgm: 200 X 200 map @ 0.05 m/cell
+[controller_server-4] [INFO] [1792937650.452170935] [controller_server]: Setting transform_tolerance to 0.200000
+[lifecycle_manager-3] [INFO] [1792937650.461217241] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-2] [INFO] [1792937650.461464996] [amcl]: Configuring
+[amcl-2] [INFO] [1792937650.462299125] [amcl]: initTransforms
+[controller_server-4] [INFO] [1792937650.469495695] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-4] [INFO] [1792937650.469745555] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.469793485] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-4] [INFO] [1792937650.469881444] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.469906998] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-4] [INFO] [1792937650.469935301] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.469960420] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-4] [INFO] [1792937650.470062865] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.470099726] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-4] [INFO] [1792937650.470165274] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.470192496] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-4] [INFO] [1792937650.470318786] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.470353786] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-4] [INFO] [1792937650.470415669] [controller_server]: Critic plugin initialized
+[controller_server-4] [INFO] [1792937650.470427854] [controller_server]: Controller Server has FollowPath  controllers available.
+[amcl-2] [INFO] [1792937650.486917323] [amcl]: initPubSub
+[lifecycle_manager-11] [INFO] [1792937650.487972117] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-5] [INFO] [1792937650.488202707] [smoother_server]: Configuring smoother server
+[amcl-2] [INFO] [1792937650.497554983] [amcl]: Subscribed to map topic.
+[lifecycle_manager-3] [INFO] [1792937650.503373776] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-1] [INFO] [1792937650.503577295] [map_server]: Activating
+[smoother_server-5] [INFO] [1792937650.504029442] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[map_server-1] [INFO] [1792937650.504371916] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-2] [INFO] [1792937650.506045578] [amcl]: Received a 200 X 200 map @ 0.050 m/pix
+[smoother_server-5] [INFO] [1792937650.507318495] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-11] [INFO] [1792937650.522376117] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-6] [INFO] [1792937650.522674687] [planner_server]: Configuring
+[planner_server-6] [INFO] [1792937650.522705170] [global_costmap.global_costmap]: Configuring
+[planner_server-6] [INFO] [1792937650.533302265] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-6] [INFO] [1792937650.537881159] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-6] [INFO] [1792937650.540086283] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-6] [INFO] [1792937650.540120471] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-6] [INFO] [1792937650.540943808] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-6] [INFO] [1792937650.546195217] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-6] [INFO] [1792937650.546243790] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-6] [INFO] [1792937650.548943319] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-6] [INFO] [1792937650.564411553] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 200 X 200 at 0.050000 m/pix
+[planner_server-6] [INFO] [1792937650.564775248] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-6] [INFO] [1792937650.564801631] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1792937650.565100407] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-11] [INFO] [1792937650.574119772] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-7] [INFO] [1792937650.574325936] [behavior_server]: Configuring
+[behavior_server-7] [INFO] [1792937650.585758327] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-7] [INFO] [1792937650.586756017] [behavior_server]: Configuring spin
+[behavior_server-7] [INFO] [1792937650.598390293] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-7] [INFO] [1792937650.599077419] [behavior_server]: Configuring backup
+[behavior_server-7] [INFO] [1792937650.604193864] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-7] [INFO] [1792937650.604871387] [behavior_server]: Configuring drive_on_heading
+[lifecycle_manager-3] [INFO] [1792937650.613582558] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-3] [INFO] [1792937650.613616789] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[behavior_server-7] [INFO] [1792937650.613774650] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[amcl-2] [INFO] [1792937650.614023231] [amcl]: Activating
+[amcl-2] [INFO] [1792937650.614050877] [amcl]: Creating bond (amcl) to lifecycle manager.
+[behavior_server-7] [INFO] [1792937650.616863482] [behavior_server]: Configuring assisted_teleop
+[behavior_server-7] [INFO] [1792937650.630460833] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-7] [INFO] [1792937650.631153583] [behavior_server]: Configuring wait
+[lifecycle_manager-11] [INFO] [1792937650.638000694] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1792937650.638210301] [bt_navigator]: Configuring
+[amcl-2] [INFO] [1792937650.683532678] [amcl]: createLaserObject
+[lifecycle_manager-11] [INFO] [1792937650.698575527] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1792937650.699672536] [waypoint_follower]: Configuring
+[navigate_to_server-12] [INFO] [1792937650.703515490] [course_navigate_to_server]: /navigate_to ready; timeout=60.0s; global costmap precheck enabled; no automatic retries
+[waypoint_follower-9] [INFO] [1792937650.714163925] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-11] [INFO] [1792937650.715180211] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1792937650.715452567] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-11] [INFO] [1792937650.717883479] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-4] [INFO] [1792937650.718049701] [controller_server]: Activating
+[controller_server-4] [INFO] [1792937650.718098961] [local_costmap.local_costmap]: Activating
+[controller_server-4] [INFO] [1792937650.718110386] [local_costmap.local_costmap]: Checking transform
+[controller_server-4] [INFO] [1792937650.718234741] [local_costmap.local_costmap]: start
+[lifecycle_manager-3] [INFO] [1792937650.724102867] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-3] [INFO] [1792937650.724149010] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-3] [INFO] [1792937650.724159000] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[controller_server-4] [INFO] [1792937650.919051057] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1792937651.024386398] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-11] [INFO] [1792937651.024444368] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-5] [INFO] [1792937651.024758595] [smoother_server]: Activating
+[smoother_server-5] [INFO] [1792937651.024793538] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1792937651.128924332] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-11] [INFO] [1792937651.128973584] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-6] [INFO] [1792937651.129240717] [planner_server]: Activating
+[planner_server-6] [INFO] [1792937651.129277603] [global_costmap.global_costmap]: Activating
+[planner_server-6] [INFO] [1792937651.129288380] [global_costmap.global_costmap]: Checking transform
+[planner_server-6] [INFO] [1792937651.129310748] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937651.629974144] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937652.129407418] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937652.482642817] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937652.629466058] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937653.129434410] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937653.629402446] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937654.129396743] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937654.485247705] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937654.629402200] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937655.129755411] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937655.629406769] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937656.129388970] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937656.585086794] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937656.629476600] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937657.129642173] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937657.629529212] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937658.129414397] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937658.629451690] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937658.682254790] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937659.129462265] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937659.629421819] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937660.129398234] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937660.629614961] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937660.683447254] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937661.129376517] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937661.629488039] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937662.129666791] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937662.629409792] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937662.684959316] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937663.129477097] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937663.629443148] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937664.129385523] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937664.629425017] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937664.685652146] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937665.129397988] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937665.629426563] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937666.129559741] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937666.629393802] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937666.784789147] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937667.129526569] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937667.629446294] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937668.129383000] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937668.629408748] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937668.884502204] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937669.129640038] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937669.629404066] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937670.129368666] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937670.629401824] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937670.884910741] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937671.129408812] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937671.629394975] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937672.129394468] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937672.629399121] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937672.983315566] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937673.129408330] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937673.629447585] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937674.129399329] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937674.629392846] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937675.083324821] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937675.129434931] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937675.629372026] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937676.129401643] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937676.629419829] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937677.129390445] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937677.182562616] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937677.629397324] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937678.129390017] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937678.629378501] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937679.129506702] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937679.285218235] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937679.629394833] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937680.129404084] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937680.629415604] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937681.129407990] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937681.383530004] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937681.629438068] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937682.129422963] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937682.629385266] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937683.129393312] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937683.383838470] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937683.629410820] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937684.129407975] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937684.629571149] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937685.129383668] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937685.384533096] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937685.629417563] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937686.129410453] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937686.629405407] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937687.129385380] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937687.384833207] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937687.629452134] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937688.129435956] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937688.629411901] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937689.129409038] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937689.483270321] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937689.629395368] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937690.129417231] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937690.629414201] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937691.129461436] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937691.583328779] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937691.629377353] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937692.129427868] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937692.629405989] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937693.129411227] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937693.585155285] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937693.629412903] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937694.129453743] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937694.629379361] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937695.129448061] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937695.629384263] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937695.683210872] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937696.129426905] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937696.629457332] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937697.129414345] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937697.629419826] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937697.782193960] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937698.129385138] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937698.629564628] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937699.129407100] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937699.629394034] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937699.882578144] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937700.129390857] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937700.629425049] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937701.129387640] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937701.629373184] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937701.983194922] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937702.129389332] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937702.629383495] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937703.129386825] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937703.629509176] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937704.082673470] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937704.129376723] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937704.629448130] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937705.129371827] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937705.629402242] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937706.129395965] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937706.182123361] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937706.629419858] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937707.129380111] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937707.629375042] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937708.129458572] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937708.185580094] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937708.629379159] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937709.129375907] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937709.629464745] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937710.129443156] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937710.282608428] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937710.629404788] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937711.129399452] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937711.629412109] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937712.129388403] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937712.285136929] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937712.629341056] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937713.129447772] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937713.629686951] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937714.129585636] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937714.383552368] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937714.629569968] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937715.129480985] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937715.629403364] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937716.129377601] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937716.481880834] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937716.629426086] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937717.129478873] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937717.629462625] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937718.129425113] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937718.483261372] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937718.629481330] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937719.129372711] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937719.629412406] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937720.129438554] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937720.582221869] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937720.629406357] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937721.129464817] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937721.629385612] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937722.129399164] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937722.629372936] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937722.682151540] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937723.129393846] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937723.629387517] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937724.129412721] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937724.629373650] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937724.682752235] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937725.129410201] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937725.629410221] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937726.129381379] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937726.629378275] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937726.783303663] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937727.129480073] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937727.629383748] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937728.129549173] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937728.629379761] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937728.883196212] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937729.129470351] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937729.629406993] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937730.129376107] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937730.630799005] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937730.982869624] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937731.129385585] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937731.629352332] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937732.129421103] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937732.629389510] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [WARN] [1792937732.983128481] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-6] [INFO] [1792937733.129379807] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937733.629423642] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937734.129390795] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-6] [INFO] [1792937734.629565654] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-2] [INFO] [1792937734.693636868] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937734.693787163] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792937734.693710 but the latest data is at time 1792937734.681888, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937734.693808796] [amcl]: Setting pose (1792937734.693809): 8.080 6.238 1.538
+[planner_server-6] [INFO] [1792937735.129430524] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1792937735.082836 but the earliest data is at time 1792937735.780986, when looking up transform from frame [base_footprint] to frame [map]
+[amcl-2] [INFO] [1792937735.194120978] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937735.194226888] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the past.  Requested time 1792937735.194189 but the earliest data is at time 1792937735.780986, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937735.194242930] [amcl]: Setting pose (1792937735.194243): 8.080 6.238 1.538
+[planner_server-6] [INFO] [1792937735.629430355] [global_costmap.global_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 1792937735.583665 but the earliest data is at time 1792937735.780986, when looking up transform from frame [base_footprint] to frame [map]
+[amcl-2] [INFO] [1792937735.694535136] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937735.694620168] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the past.  Requested time 1792937735.694589 but the earliest data is at time 1792937735.780986, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937735.694631633] [amcl]: Setting pose (1792937735.694632): 8.080 6.238 1.538
+[planner_server-6] [INFO] [1792937736.129463177] [global_costmap.global_costmap]: start
+[amcl-2] [INFO] [1792937736.194868243] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937736.194952371] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792937736.194919 but the latest data is at time 1792937736.181928, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937736.194963921] [amcl]: Setting pose (1792937736.194964): 8.080 6.238 1.538
+[amcl-2] [INFO] [1792937736.695297265] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937736.695393247] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792937736.695358 but the latest data is at time 1792937736.683071, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937736.695407427] [amcl]: Setting pose (1792937736.695407): 8.080 6.238 1.538
+[planner_server-6] [INFO] [1792937737.180436779] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-6] [INFO] [1792937737.183537380] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[amcl-2] [INFO] [1792937737.195719177] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937737.195809582] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792937737.195777 but the latest data is at time 1792937737.183667, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937737.195822706] [amcl]: Setting pose (1792937737.195823): 8.080 6.238 1.538
+[lifecycle_manager-11] [INFO] [1792937737.292368926] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-11] [INFO] [1792937737.292460130] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-7] [INFO] [1792937737.292740393] [behavior_server]: Activating
+[behavior_server-7] [INFO] [1792937737.292801332] [behavior_server]: Activating spin
+[behavior_server-7] [INFO] [1792937737.292820635] [behavior_server]: Activating backup
+[behavior_server-7] [INFO] [1792937737.292835117] [behavior_server]: Activating drive_on_heading
+[behavior_server-7] [INFO] [1792937737.292862240] [behavior_server]: Activating assisted_teleop
+[behavior_server-7] [INFO] [1792937737.292876247] [behavior_server]: Activating wait
+[behavior_server-7] [INFO] [1792937737.292893703] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1792937737.398690024] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-11] [INFO] [1792937737.398791314] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-8] [INFO] [1792937737.399197727] [bt_navigator]: Activating
+[bt_navigator-8] [INFO] [1792937737.446021994] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1792937737.551531617] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-11] [INFO] [1792937737.551598774] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-9] [INFO] [1792937737.552047788] [waypoint_follower]: Activating
+[waypoint_follower-9] [INFO] [1792937737.552099510] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-11] [INFO] [1792937737.657237778] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-11] [INFO] [1792937737.657314872] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-10] [INFO] [1792937737.658189959] [velocity_smoother]: Activating
+[velocity_smoother-10] [INFO] [1792937737.658292927] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[amcl-2] [INFO] [1792937737.696216127] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937737.696310385] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792937737.696273 but the latest data is at time 1792937737.681605, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937737.696325006] [amcl]: Setting pose (1792937737.696325): 8.080 6.238 1.538
+[lifecycle_manager-11] [INFO] [1792937737.763038514] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-11] [INFO] [1792937737.763089361] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-11] [INFO] [1792937737.763100156] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[amcl-2] [INFO] [1792937738.196699257] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792937738.196790579] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792937738.196755 but the latest data is at time 1792937738.182496, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792937738.196802147] [amcl]: Setting pose (1792937738.196802): 8.080 6.238 1.538
+[bt_navigator-8] [INFO] [1792937811.791460103] [bt_navigator]: Begin navigating from current location (8.02, 6.20) to (7.00, 6.00)
+[controller_server-4] [INFO] [1792937811.812669692] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [WARN] [1792937811.812776813] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-4] [INFO] [1792937812.863031711] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937813.913031004] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937814.913033178] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937815.963058009] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937816.963043547] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937818.013041292] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937818.715639661] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1792937818.751806944] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1792937865.288924559] [bt_navigator]: Begin navigating from current location (7.03, 6.20) to (7.00, 6.00)
+[controller_server-4] [INFO] [1792937865.299590817] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1792937865.602460540] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1792937865.639288531] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1792937866.690219383] [bt_navigator]: Begin navigating from current location (7.03, 6.20) to (6.00, 6.00)
+[controller_server-4] [INFO] [1792937866.711103833] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1792937867.761936201] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937868.811455577] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937869.811447468] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937870.861441654] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937871.861438287] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937872.911635247] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937873.911457034] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937874.614152211] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1792937874.650690024] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1792937876.785416938] [bt_navigator]: Begin navigating from current location (6.09, 5.82) to (7.00, 6.00)
+[controller_server-4] [INFO] [1792937876.806031842] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1792937877.856250483] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937878.856222442] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937879.108458424] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1792937879.145814501] [bt_navigator]: Goal succeeded
+[bt_navigator-8] [INFO] [1792937880.187008119] [bt_navigator]: Begin navigating from current location (6.73, 5.96) to (6.00, 6.00)
+[controller_server-4] [INFO] [1792937880.207567802] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-4] [INFO] [1792937881.258033745] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937882.257881072] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937883.308329093] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937884.307808397] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937885.357958142] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937886.407829892] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937887.407805190] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937888.457948313] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937889.457834570] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937890.507810117] [controller_server]: Passing new path to controller.
+[controller_server-4] [INFO] [1792937891.110266825] [controller_server]: Reached the goal!
+[bt_navigator-8] [INFO] [1792937891.147376345] [bt_navigator]: Goal succeeded
+[amcl-2] [INFO] [1792938006.946933437] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938006.947045445] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938006.947006 but the latest data is at time 1792938006.881825, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938006.947058898] [amcl]: Setting pose (1792938006.947059): 8.006 6.240 -0.026
+[amcl-2] [INFO] [1792938007.990420089] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938009.087710979] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938010.091252906] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938010.091352690] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938010.091322 but the latest data is at time 1792938010.081957, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938010.091364464] [amcl]: Setting pose (1792938010.091364): 9.006 6.240 0.323
+[amcl-2] [INFO] [1792938011.188870203] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938012.288501669] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938013.288776846] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938014.288811464] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938015.387763370] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938016.388578148] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938017.389810715] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938018.489064262] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938019.588941312] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938020.687901403] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938021.688334870] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938022.691627344] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938023.789804737] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938024.888199145] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938025.890116164] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938026.898595218] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938027.988272831] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938029.087673463] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938030.087872491] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938031.090486701] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938032.188045119] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938033.188591717] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938034.190023963] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938035.190248094] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938036.290111105] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938037.291966753] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938038.388892983] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938039.389302523] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938050.434505066] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938050.434626244] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938050.434590 but the latest data is at time 1792938050.381750, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938050.434640586] [amcl]: Setting pose (1792938050.434640): 7.076 6.013 -2.971
+[amcl-2] [INFO] [1792938051.491604371] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938052.590099025] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938053.594114458] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938053.594213146] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938053.594176 but the latest data is at time 1792938053.582286, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938053.594225050] [amcl]: Setting pose (1792938053.594225): 8.076 6.013 -2.621
+[amcl-2] [INFO] [1792938054.692434749] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938055.790804521] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938056.889844954] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938057.890271877] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938058.891105633] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938059.894485585] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938060.989678715] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938061.989780394] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938062.989757182] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938063.992192231] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938065.091740239] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938066.187835135] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938067.188243571] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938068.188665697] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938069.188767474] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938070.288019869] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938071.388019110] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938072.388142959] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938073.389240730] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938074.487899305] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938075.489866842] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938076.590045904] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938077.690052326] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938078.789172468] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938079.790675037] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938080.889967396] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938081.889969433] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938082.989814266] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938089.730879991] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938089.730963160] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938089.730929 but the latest data is at time 1792938089.682164, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938089.730974756] [amcl]: Setting pose (1792938089.730975): 6.078 5.999 3.122
+[amcl-2] [INFO] [1792938090.790357191] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938091.888708832] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938092.893864451] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938092.893937713] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938092.893907 but the latest data is at time 1792938092.882384, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938092.893954374] [amcl]: Setting pose (1792938092.893955): 7.078 5.999 -2.812
+[amcl-2] [INFO] [1792938093.989927005] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938095.089295811] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938096.187920558] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938097.189476732] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938098.189546374] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938099.288830809] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938100.290070741] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938101.389291022] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938102.391050591] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938103.490303153] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938104.589324491] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938105.591787375] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938106.691620375] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938107.789080776] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938108.789686997] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938109.888604133] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938110.890242022] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938111.987594916] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938112.989109919] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938114.088228879] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938115.089193793] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938116.090310713] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938117.190099495] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938118.289202363] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938119.387687150] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938120.388770050] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938121.488464653] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938122.588293578] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938129.035171070] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938129.035264423] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938129.035228 but the latest data is at time 1792938128.981403, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938129.035276239] [amcl]: Setting pose (1792938129.035276): 6.001 5.579 -1.600
+[amcl-2] [INFO] [1792938130.088931032] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938131.090490864] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938132.196208280] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938132.196290548] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938132.196260 but the latest data is at time 1792938132.181676, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938132.196301965] [amcl]: Setting pose (1792938132.196302): 7.001 5.579 -1.251
+[amcl-2] [INFO] [1792938133.288635351] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938134.290249737] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938135.290973521] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938136.390385824] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938137.489179974] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938138.491050835] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938139.589472654] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938140.689721692] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938141.690687512] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938142.690810504] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938143.790913969] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938144.890456650] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938145.891501847] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938146.989474028] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938148.089289445] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938149.091396728] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938150.190076687] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938151.289474849] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938152.388955921] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938153.389806858] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938154.489926991] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938155.589065511] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938156.590833437] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938157.592376227] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938158.691283370] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938159.789318159] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938160.888467273] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938161.987824581] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938173.499139224] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938173.499233831] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938173.499202 but the latest data is at time 1792938173.482148, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938173.499248225] [amcl]: Setting pose (1792938173.499248): 7.922 5.501 -0.012
+[amcl-2] [INFO] [1792938174.589718554] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938175.590263630] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938176.591643354] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938176.606039008] [amcl]: initialPoseReceived
+[amcl-2] [WARN] [1792938176.606127333] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1792938176.606093 but the latest data is at time 1792938176.582123, when looking up transform from frame [base_footprint] to frame [odom])
+[amcl-2] [INFO] [1792938176.606138476] [amcl]: Setting pose (1792938176.606138): 8.922 5.501 0.337
+[amcl-2] [INFO] [1792938177.690036753] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938178.788833478] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938179.790208737] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938180.790228635] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938181.887960082] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938182.888796121] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938183.888964792] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938184.988656523] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938185.988917427] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938186.988760322] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938187.990137293] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938188.990355063] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938190.089874915] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938191.190006598] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938192.191964099] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938193.290269616] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938194.290624437] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938195.390116227] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938196.489147576] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938197.489637612] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938198.490990391] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938199.589409141] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938200.591653081] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938201.690392947] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938202.690430834] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938203.789195860] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938204.791168481] [amcl]: Requesting no-motion update
+[amcl-2] [INFO] [1792938205.889307221] [amcl]: Requesting no-motion update

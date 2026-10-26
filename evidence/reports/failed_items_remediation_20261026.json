@@ -1,0 +1,3310 @@
+{
+  "source_kind": "actual_ROS_simulation_failed_item_remediation",
+  "navigation_versions": [
+    {
+      "run": "20261026_slam_amcl_v1",
+      "protocol": {
+        "version": "week34_slam_map_validation_v1",
+        "map": "outputs/slam_improvement/map_slam.yaml",
+        "map_origin_alignment": "Original SLAM map coordinates, no post-hoc registration; initial map-to-truth xy/yaw is identity.",
+        "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+        "domain": 47,
+        "port": 8000,
+        "sim_seed": 42,
+        "sim_slip": 0.05,
+        "sim_rays": 720,
+        "amcl_max_beams": 60,
+        "rounds": 2,
+        "round_start": "restart simulator and AMCL each round; single explicit truth-assisted initial pose, never truth TF",
+        "initial_covariance_xy_m": 0.15,
+        "initial_covariance_yaw_deg": 10,
+        "initial_observation_s": 8,
+        "initial_gate_position_error_m": 0.3,
+        "initial_gate_required_fresh_samples": 3,
+        "sample_max_age_s": 0.3,
+        "truth_http_max_latency_s": 0.1,
+        "service_timeout_s": 60,
+        "truth_goal_tolerance_m": 0.3,
+        "navigation_gate": "All six service results SUCCEEDED and truth endpoint error<=0.30m; endpoint truth availability required. Report stop separately.",
+        "goals": [
+          {
+            "id": "door",
+            "pose": [
+              7.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "middle",
+            "pose": [
+              6.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "return",
+            "pose": [
+              8.0,
+              5.5,
+              0.0
+            ]
+          }
+        ],
+        "limits": [
+          "Local route only, not whole-field localization or kidnapping recovery.",
+          "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+          "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+        ]
+      },
+      "effective_parameters": {
+        "amcl": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "alpha1": 0.2,
+            "alpha2": 0.2,
+            "alpha3": 0.2,
+            "alpha4": 0.2,
+            "alpha5": 0.2,
+            "base_frame_id": "base_footprint",
+            "beam_skip_distance": 0.5,
+            "beam_skip_error_threshold": 0.9,
+            "beam_skip_threshold": 0.3,
+            "do_beamskip": false,
+            "global_frame_id": "map",
+            "lambda_short": 0.1,
+            "laser_likelihood_max_dist": 2.0,
+            "laser_max_range": 5.0,
+            "laser_min_range": -1.0,
+            "laser_model_type": "likelihood_field",
+            "max_beams": 60,
+            "max_particles": 2000,
+            "min_particles": 500,
+            "odom_frame_id": "odom",
+            "pf_err": 0.05,
+            "pf_z": 0.99,
+            "recovery_alpha_fast": 0.0,
+            "recovery_alpha_slow": 0.0,
+            "resample_interval": 1,
+            "robot_model_type": "nav2_amcl::DifferentialMotionModel",
+            "save_pose_rate": 0.5,
+            "sigma_hit": 0.2,
+            "tf_broadcast": true,
+            "transform_tolerance": 1.0,
+            "update_min_a": 0.2,
+            "update_min_d": 0.25,
+            "z_hit": 0.5,
+            "z_max": 0.05,
+            "z_rand": 0.5,
+            "z_short": 0.05,
+            "scan_topic": "/scan"
+          }
+        },
+        "bt_navigator": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "global_frame": "map",
+            "robot_base_frame": "base_link",
+            "odom_topic": "/odom",
+            "bt_loop_duration": 10,
+            "default_server_timeout": 20,
+            "wait_for_service_timeout": 1000,
+            "plugin_lib_names": [
+              "nav2_compute_path_to_pose_action_bt_node",
+              "nav2_compute_path_through_poses_action_bt_node",
+              "nav2_smooth_path_action_bt_node",
+              "nav2_follow_path_action_bt_node",
+              "nav2_spin_action_bt_node",
+              "nav2_wait_action_bt_node",
+              "nav2_assisted_teleop_action_bt_node",
+              "nav2_back_up_action_bt_node",
+              "nav2_drive_on_heading_bt_node",
+              "nav2_clear_costmap_service_bt_node",
+              "nav2_is_stuck_condition_bt_node",
+              "nav2_goal_reached_condition_bt_node",
+              "nav2_goal_updated_condition_bt_node",
+              "nav2_globally_updated_goal_condition_bt_node",
+              "nav2_is_path_valid_condition_bt_node",
+              "nav2_initial_pose_received_condition_bt_node",
+              "nav2_reinitialize_global_localization_service_bt_node",
+              "nav2_rate_controller_bt_node",
+              "nav2_distance_controller_bt_node",
+              "nav2_speed_controller_bt_node",
+              "nav2_truncate_path_action_bt_node",
+              "nav2_truncate_path_local_action_bt_node",
+              "nav2_goal_updater_node_bt_node",
+              "nav2_recovery_node_bt_node",
+              "nav2_pipeline_sequence_bt_node",
+              "nav2_round_robin_node_bt_node",
+              "nav2_transform_available_condition_bt_node",
+              "nav2_time_expired_condition_bt_node",
+              "nav2_path_expiring_timer_condition",
+              "nav2_distance_traveled_condition_bt_node",
+              "nav2_single_trigger_bt_node",
+              "nav2_goal_updated_controller_bt_node",
+              "nav2_is_battery_low_condition_bt_node",
+              "nav2_navigate_through_poses_action_bt_node",
+              "nav2_navigate_to_pose_action_bt_node",
+              "nav2_remove_passed_goals_action_bt_node",
+              "nav2_planner_selector_bt_node",
+              "nav2_controller_selector_bt_node",
+              "nav2_goal_checker_selector_bt_node",
+              "nav2_controller_cancel_bt_node",
+              "nav2_path_longer_on_approach_bt_node",
+              "nav2_wait_cancel_bt_node",
+              "nav2_spin_cancel_bt_node",
+              "nav2_back_up_cancel_bt_node",
+              "nav2_assisted_teleop_cancel_bt_node",
+              "nav2_drive_on_heading_cancel_bt_node",
+              "nav2_is_battery_charging_condition_bt_node"
+            ]
+          }
+        },
+        "bt_navigator_navigate_through_poses_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "bt_navigator_navigate_to_pose_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "controller_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "controller_frequency": 20.0,
+            "min_x_velocity_threshold": 0.001,
+            "min_y_velocity_threshold": 0.5,
+            "min_theta_velocity_threshold": 0.001,
+            "failure_tolerance": 0.3,
+            "progress_checker_plugin": "progress_checker",
+            "goal_checker_plugins": [
+              "general_goal_checker"
+            ],
+            "controller_plugins": [
+              "FollowPath"
+            ],
+            "progress_checker": {
+              "plugin": "nav2_controller::SimpleProgressChecker",
+              "required_movement_radius": 0.5,
+              "movement_time_allowance": 10.0
+            },
+            "general_goal_checker": {
+              "stateful": true,
+              "plugin": "nav2_controller::SimpleGoalChecker",
+              "xy_goal_tolerance": 0.25,
+              "yaw_goal_tolerance": 0.25
+            },
+            "FollowPath": {
+              "plugin": "dwb_core::DWBLocalPlanner",
+              "debug_trajectory_details": true,
+              "min_vel_x": 0.0,
+              "min_vel_y": 0.0,
+              "max_vel_x": 1.0,
+              "max_vel_y": 0.0,
+              "max_vel_theta": 1.5,
+              "min_speed_xy": 0.0,
+              "max_speed_xy": 1.0,
+              "min_speed_theta": 0.0,
+              "acc_lim_x": 2.5,
+              "acc_lim_y": 0.0,
+              "acc_lim_theta": 3.2,
+              "decel_lim_x": -2.5,
+              "decel_lim_y": 0.0,
+              "decel_lim_theta": -3.2,
+              "vx_samples": 20,
+              "vy_samples": 5,
+              "vtheta_samples": 20,
+              "sim_time": 1.7,
+              "linear_granularity": 0.05,
+              "angular_granularity": 0.025,
+              "transform_tolerance": 0.2,
+              "xy_goal_tolerance": 0.25,
+              "trans_stopped_velocity": 0.25,
+              "short_circuit_trajectory_evaluation": true,
+              "stateful": true,
+              "critics": [
+                "RotateToGoal",
+                "Oscillation",
+                "BaseObstacle",
+                "GoalAlign",
+                "PathAlign",
+                "PathDist",
+                "GoalDist"
+              ],
+              "BaseObstacle.scale": 0.02,
+              "PathAlign.scale": 32.0,
+              "PathAlign.forward_point_distance": 0.1,
+              "GoalAlign.scale": 24.0,
+              "GoalAlign.forward_point_distance": 0.1,
+              "PathDist.scale": 32.0,
+              "GoalDist.scale": 24.0,
+              "RotateToGoal.scale": 32.0,
+              "RotateToGoal.slowing_factor": 5.0,
+              "RotateToGoal.lookahead_time": -1.0
+            }
+          }
+        },
+        "local_costmap": {
+          "local_costmap": {
+            "ros__parameters": {
+              "update_frequency": 5.0,
+              "publish_frequency": 2.0,
+              "global_frame": "odom",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "rolling_window": true,
+              "width": 3,
+              "height": 3,
+              "resolution": 0.05,
+              "robot_radius": 0.2,
+              "plugins": [
+                "voxel_layer",
+                "inflation_layer"
+              ],
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "voxel_layer": {
+                "plugin": "nav2_costmap_2d::VoxelLayer",
+                "enabled": true,
+                "publish_voxel_map": true,
+                "origin_z": 0.0,
+                "z_resolution": 0.05,
+                "z_voxels": 16,
+                "max_obstacle_height": 2.0,
+                "mark_threshold": 0,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "global_costmap": {
+          "global_costmap": {
+            "ros__parameters": {
+              "update_frequency": 1.0,
+              "publish_frequency": 1.0,
+              "global_frame": "map",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "robot_radius": 0.2,
+              "resolution": 0.05,
+              "track_unknown_space": true,
+              "plugins": [
+                "static_layer",
+                "obstacle_layer",
+                "inflation_layer"
+              ],
+              "obstacle_layer": {
+                "plugin": "nav2_costmap_2d::ObstacleLayer",
+                "enabled": true,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "map_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "yaml_filename": ""
+          }
+        },
+        "map_saver": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "save_map_timeout": 5.0,
+            "free_thresh_default": 0.25,
+            "occupied_thresh_default": 0.65,
+            "map_subscribe_transient_local": true
+          }
+        },
+        "planner_server": {
+          "ros__parameters": {
+            "expected_planner_frequency": 20.0,
+            "use_sim_time": false,
+            "planner_plugins": [
+              "GridBased"
+            ],
+            "GridBased": {
+              "plugin": "nav2_navfn_planner/NavfnPlanner",
+              "tolerance": 0.5,
+              "use_astar": false,
+              "allow_unknown": true
+            }
+          }
+        },
+        "smoother_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoother_plugins": [
+              "simple_smoother"
+            ],
+            "simple_smoother": {
+              "plugin": "nav2_smoother::SimpleSmoother",
+              "tolerance": 1e-10,
+              "max_its": 1000,
+              "do_refinement": true
+            }
+          }
+        },
+        "behavior_server": {
+          "ros__parameters": {
+            "costmap_topic": "local_costmap/costmap_raw",
+            "footprint_topic": "local_costmap/published_footprint",
+            "cycle_frequency": 10.0,
+            "behavior_plugins": [
+              "spin",
+              "backup",
+              "drive_on_heading",
+              "assisted_teleop",
+              "wait"
+            ],
+            "spin": {
+              "plugin": "nav2_behaviors/Spin"
+            },
+            "backup": {
+              "plugin": "nav2_behaviors/BackUp"
+            },
+            "drive_on_heading": {
+              "plugin": "nav2_behaviors/DriveOnHeading"
+            },
+            "wait": {
+              "plugin": "nav2_behaviors/Wait"
+            },
+            "assisted_teleop": {
+              "plugin": "nav2_behaviors/AssistedTeleop"
+            },
+            "global_frame": "odom",
+            "robot_base_frame": "base_link",
+            "transform_tolerance": 0.1,
+            "use_sim_time": false,
+            "simulate_ahead_time": 2.0,
+            "max_rotational_vel": 1.0,
+            "min_rotational_vel": 0.4,
+            "rotational_acc_lim": 3.2
+          }
+        },
+        "robot_state_publisher": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "waypoint_follower": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "loop_rate": 20,
+            "stop_on_failure": false,
+            "waypoint_task_executor_plugin": "wait_at_waypoint",
+            "wait_at_waypoint": {
+              "plugin": "nav2_waypoint_follower::WaitAtWaypoint",
+              "enabled": true,
+              "waypoint_pause_duration": 200
+            }
+          }
+        },
+        "velocity_smoother": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoothing_frequency": 20.0,
+            "scale_velocities": false,
+            "feedback": "OPEN_LOOP",
+            "max_velocity": [
+              1.0,
+              0.0,
+              1.5
+            ],
+            "min_velocity": [
+              0.0,
+              0.0,
+              -1.5
+            ],
+            "max_accel": [
+              2.5,
+              0.0,
+              3.2
+            ],
+            "max_decel": [
+              -2.5,
+              0.0,
+              -3.2
+            ],
+            "odom_topic": "odom",
+            "odom_duration": 0.1,
+            "deadband_velocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "velocity_timeout": 1.0
+          }
+        }
+      },
+      "rows": [
+        {
+          "round": 1,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 7.819202186000439,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 183,
+            "uptime_s": 18.3,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 261,
+            "uptime_s": 26.1,
+            "robot_truth": {
+              "x": 6.933,
+              "y": 6.215,
+              "theta_deg": -22.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.001418969,
+          "truth_goal_error_m": 0.22519769092954742,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792986855617497297,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 16.17604775200016,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 269,
+            "uptime_s": 26.8,
+            "robot_truth": {
+              "x": 6.933,
+              "y": 6.215,
+              "theta_deg": -22.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 430,
+            "uptime_s": 43.0,
+            "robot_truth": {
+              "x": 6.026,
+              "y": 6.12,
+              "theta_deg": 12.3
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.001967427,
+          "truth_goal_error_m": 0.12278436382536669,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792986872618652516,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "return",
+          "pose": [
+            8.0,
+            5.5,
+            0.0
+          ],
+          "result": "FAILED",
+          "reason": "目标不是已知空闲栅格（cost=99，阈值<50）；未派发导航。",
+          "elapsed_s": 2.72980005320278e-05,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 438,
+            "uptime_s": 43.7,
+            "robot_truth": {
+              "x": 6.026,
+              "y": 6.12,
+              "theta_deg": 11.8
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 438,
+            "uptime_s": 43.7,
+            "robot_truth": {
+              "x": 6.026,
+              "y": 6.12,
+              "theta_deg": 11.8
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.000933434,
+          "truth_goal_error_m": 2.0690761223309306,
+          "passed": false,
+          "post_response_odom": {
+            "wall_ns": 1792986873315511897,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 7.313160480000079,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 151,
+            "uptime_s": 15.1,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 224,
+            "uptime_s": 22.4,
+            "robot_truth": {
+              "x": 6.909,
+              "y": 6.224,
+              "theta_deg": -22.8
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.00194162,
+          "truth_goal_error_m": 0.24177882454838787,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792986901487122468,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 10.762617868000234,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 232,
+            "uptime_s": 23.1,
+            "robot_truth": {
+              "x": 6.909,
+              "y": 6.224,
+              "theta_deg": -22.8
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 339,
+            "uptime_s": 33.9,
+            "robot_truth": {
+              "x": 5.966,
+              "y": 5.887,
+              "theta_deg": 9.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.001762075,
+          "truth_goal_error_m": 0.11800423721205983,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792986912987041357,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "return",
+          "pose": [
+            8.0,
+            5.5,
+            0.0
+          ],
+          "result": "FAILED",
+          "reason": "目标不是已知空闲栅格（cost=99，阈值<50）；未派发导航。",
+          "elapsed_s": 2.5719999939610716e-05,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 347,
+            "uptime_s": 34.6,
+            "robot_truth": {
+              "x": 5.966,
+              "y": 5.887,
+              "theta_deg": 9.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 347,
+            "uptime_s": 34.6,
+            "robot_truth": {
+              "x": 5.966,
+              "y": 5.887,
+              "theta_deg": 9.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.000954166,
+          "truth_goal_error_m": 2.070489072658921,
+          "passed": false,
+          "post_response_odom": {
+            "wall_ns": 1792986913688102328,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        }
+      ],
+      "service_successes": 4,
+      "truth_gate_passes": 4,
+      "full_gate_passed": false,
+      "max_error_on_success_m": 0.24177882454838787,
+      "sources_sha256": {
+        "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/protocol.json": "f1913d68c8939652b854651b3f2aab32e49dd7057689787c99e3eb513f1f4cc2",
+        "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/params_snapshot.yaml": "0b513c7ab6f374f9f5020173f03d5f38b354cc4030d021b41621337cf917a3d8",
+        "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/round1/trials.json": "34d15c4c3f04759ecf1e007a9b75d2d88a03ba71f5f8d16d819d820d33b75fd0",
+        "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/round2/trials.json": "ce57758bef6c5cb82977bb1549f922e345e0da262b154a16daf6fc9e4f5273bf"
+      }
+    },
+    {
+      "run": "20261026_safe_return_v2",
+      "protocol": {
+        "version": "week34_safe_return_v2",
+        "map": "outputs/slam_improvement/map_slam.yaml",
+        "map_origin_alignment": "Original SLAM map coordinates, no post-hoc registration; initial map-to-truth xy/yaw is identity.",
+        "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+        "domain": 47,
+        "port": 8000,
+        "sim_seed": 42,
+        "sim_slip": 0.05,
+        "sim_rays": 720,
+        "amcl_max_beams": 60,
+        "rounds": 2,
+        "round_start": "restart simulator and AMCL each round; single explicit truth-assisted initial pose, never truth TF",
+        "initial_covariance_xy_m": 0.15,
+        "initial_covariance_yaw_deg": 10,
+        "initial_observation_s": 8,
+        "initial_gate_position_error_m": 0.3,
+        "initial_gate_required_fresh_samples": 3,
+        "sample_max_age_s": 0.3,
+        "truth_http_max_latency_s": 0.1,
+        "service_timeout_s": 60,
+        "truth_goal_tolerance_m": 0.3,
+        "navigation_gate": "All six service results SUCCEEDED and truth endpoint error<=0.30m; endpoint truth availability required. Report stop separately.",
+        "goals": [
+          {
+            "id": "door",
+            "pose": [
+              7.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "middle",
+            "pose": [
+              6.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "return_home",
+            "pose": [
+              8.08,
+              6.238,
+              0.0
+            ]
+          }
+        ],
+        "limits": [
+          "Local route only, not whole-field localization or kidnapping recovery.",
+          "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+          "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+        ],
+        "change_from_v1": {
+          "old_return": [
+            8.0,
+            5.5,
+            0.0
+          ],
+          "new_return_source": "config/week7_world_frozen_v2.json W8_home, existing virtual start/home landmark",
+          "reason": "Original target lacks footprint clearance on SLAM map; retain as negative boundary case, never lower obstacle rejection threshold.",
+          "interpretation": "New route validation only. Does not convert original failed route into success."
+        }
+      },
+      "effective_parameters": {
+        "amcl": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "alpha1": 0.2,
+            "alpha2": 0.2,
+            "alpha3": 0.2,
+            "alpha4": 0.2,
+            "alpha5": 0.2,
+            "base_frame_id": "base_footprint",
+            "beam_skip_distance": 0.5,
+            "beam_skip_error_threshold": 0.9,
+            "beam_skip_threshold": 0.3,
+            "do_beamskip": false,
+            "global_frame_id": "map",
+            "lambda_short": 0.1,
+            "laser_likelihood_max_dist": 2.0,
+            "laser_max_range": 5.0,
+            "laser_min_range": -1.0,
+            "laser_model_type": "likelihood_field",
+            "max_beams": 60,
+            "max_particles": 2000,
+            "min_particles": 500,
+            "odom_frame_id": "odom",
+            "pf_err": 0.05,
+            "pf_z": 0.99,
+            "recovery_alpha_fast": 0.0,
+            "recovery_alpha_slow": 0.0,
+            "resample_interval": 1,
+            "robot_model_type": "nav2_amcl::DifferentialMotionModel",
+            "save_pose_rate": 0.5,
+            "sigma_hit": 0.2,
+            "tf_broadcast": true,
+            "transform_tolerance": 1.0,
+            "update_min_a": 0.2,
+            "update_min_d": 0.25,
+            "z_hit": 0.5,
+            "z_max": 0.05,
+            "z_rand": 0.5,
+            "z_short": 0.05,
+            "scan_topic": "/scan"
+          }
+        },
+        "bt_navigator": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "global_frame": "map",
+            "robot_base_frame": "base_link",
+            "odom_topic": "/odom",
+            "bt_loop_duration": 10,
+            "default_server_timeout": 20,
+            "wait_for_service_timeout": 1000,
+            "plugin_lib_names": [
+              "nav2_compute_path_to_pose_action_bt_node",
+              "nav2_compute_path_through_poses_action_bt_node",
+              "nav2_smooth_path_action_bt_node",
+              "nav2_follow_path_action_bt_node",
+              "nav2_spin_action_bt_node",
+              "nav2_wait_action_bt_node",
+              "nav2_assisted_teleop_action_bt_node",
+              "nav2_back_up_action_bt_node",
+              "nav2_drive_on_heading_bt_node",
+              "nav2_clear_costmap_service_bt_node",
+              "nav2_is_stuck_condition_bt_node",
+              "nav2_goal_reached_condition_bt_node",
+              "nav2_goal_updated_condition_bt_node",
+              "nav2_globally_updated_goal_condition_bt_node",
+              "nav2_is_path_valid_condition_bt_node",
+              "nav2_initial_pose_received_condition_bt_node",
+              "nav2_reinitialize_global_localization_service_bt_node",
+              "nav2_rate_controller_bt_node",
+              "nav2_distance_controller_bt_node",
+              "nav2_speed_controller_bt_node",
+              "nav2_truncate_path_action_bt_node",
+              "nav2_truncate_path_local_action_bt_node",
+              "nav2_goal_updater_node_bt_node",
+              "nav2_recovery_node_bt_node",
+              "nav2_pipeline_sequence_bt_node",
+              "nav2_round_robin_node_bt_node",
+              "nav2_transform_available_condition_bt_node",
+              "nav2_time_expired_condition_bt_node",
+              "nav2_path_expiring_timer_condition",
+              "nav2_distance_traveled_condition_bt_node",
+              "nav2_single_trigger_bt_node",
+              "nav2_goal_updated_controller_bt_node",
+              "nav2_is_battery_low_condition_bt_node",
+              "nav2_navigate_through_poses_action_bt_node",
+              "nav2_navigate_to_pose_action_bt_node",
+              "nav2_remove_passed_goals_action_bt_node",
+              "nav2_planner_selector_bt_node",
+              "nav2_controller_selector_bt_node",
+              "nav2_goal_checker_selector_bt_node",
+              "nav2_controller_cancel_bt_node",
+              "nav2_path_longer_on_approach_bt_node",
+              "nav2_wait_cancel_bt_node",
+              "nav2_spin_cancel_bt_node",
+              "nav2_back_up_cancel_bt_node",
+              "nav2_assisted_teleop_cancel_bt_node",
+              "nav2_drive_on_heading_cancel_bt_node",
+              "nav2_is_battery_charging_condition_bt_node"
+            ]
+          }
+        },
+        "bt_navigator_navigate_through_poses_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "bt_navigator_navigate_to_pose_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "controller_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "controller_frequency": 20.0,
+            "min_x_velocity_threshold": 0.001,
+            "min_y_velocity_threshold": 0.5,
+            "min_theta_velocity_threshold": 0.001,
+            "failure_tolerance": 0.3,
+            "progress_checker_plugin": "progress_checker",
+            "goal_checker_plugins": [
+              "general_goal_checker"
+            ],
+            "controller_plugins": [
+              "FollowPath"
+            ],
+            "progress_checker": {
+              "plugin": "nav2_controller::SimpleProgressChecker",
+              "required_movement_radius": 0.5,
+              "movement_time_allowance": 10.0
+            },
+            "general_goal_checker": {
+              "stateful": true,
+              "plugin": "nav2_controller::SimpleGoalChecker",
+              "xy_goal_tolerance": 0.25,
+              "yaw_goal_tolerance": 0.25
+            },
+            "FollowPath": {
+              "plugin": "dwb_core::DWBLocalPlanner",
+              "debug_trajectory_details": true,
+              "min_vel_x": 0.0,
+              "min_vel_y": 0.0,
+              "max_vel_x": 1.0,
+              "max_vel_y": 0.0,
+              "max_vel_theta": 1.5,
+              "min_speed_xy": 0.0,
+              "max_speed_xy": 1.0,
+              "min_speed_theta": 0.0,
+              "acc_lim_x": 2.5,
+              "acc_lim_y": 0.0,
+              "acc_lim_theta": 3.2,
+              "decel_lim_x": -2.5,
+              "decel_lim_y": 0.0,
+              "decel_lim_theta": -3.2,
+              "vx_samples": 20,
+              "vy_samples": 5,
+              "vtheta_samples": 20,
+              "sim_time": 1.7,
+              "linear_granularity": 0.05,
+              "angular_granularity": 0.025,
+              "transform_tolerance": 0.2,
+              "xy_goal_tolerance": 0.25,
+              "trans_stopped_velocity": 0.25,
+              "short_circuit_trajectory_evaluation": true,
+              "stateful": true,
+              "critics": [
+                "RotateToGoal",
+                "Oscillation",
+                "BaseObstacle",
+                "GoalAlign",
+                "PathAlign",
+                "PathDist",
+                "GoalDist"
+              ],
+              "BaseObstacle.scale": 0.02,
+              "PathAlign.scale": 32.0,
+              "PathAlign.forward_point_distance": 0.1,
+              "GoalAlign.scale": 24.0,
+              "GoalAlign.forward_point_distance": 0.1,
+              "PathDist.scale": 32.0,
+              "GoalDist.scale": 24.0,
+              "RotateToGoal.scale": 32.0,
+              "RotateToGoal.slowing_factor": 5.0,
+              "RotateToGoal.lookahead_time": -1.0
+            }
+          }
+        },
+        "local_costmap": {
+          "local_costmap": {
+            "ros__parameters": {
+              "update_frequency": 5.0,
+              "publish_frequency": 2.0,
+              "global_frame": "odom",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "rolling_window": true,
+              "width": 3,
+              "height": 3,
+              "resolution": 0.05,
+              "robot_radius": 0.2,
+              "plugins": [
+                "voxel_layer",
+                "inflation_layer"
+              ],
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "voxel_layer": {
+                "plugin": "nav2_costmap_2d::VoxelLayer",
+                "enabled": true,
+                "publish_voxel_map": true,
+                "origin_z": 0.0,
+                "z_resolution": 0.05,
+                "z_voxels": 16,
+                "max_obstacle_height": 2.0,
+                "mark_threshold": 0,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "global_costmap": {
+          "global_costmap": {
+            "ros__parameters": {
+              "update_frequency": 1.0,
+              "publish_frequency": 1.0,
+              "global_frame": "map",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "robot_radius": 0.2,
+              "resolution": 0.05,
+              "track_unknown_space": true,
+              "plugins": [
+                "static_layer",
+                "obstacle_layer",
+                "inflation_layer"
+              ],
+              "obstacle_layer": {
+                "plugin": "nav2_costmap_2d::ObstacleLayer",
+                "enabled": true,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "map_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "yaml_filename": ""
+          }
+        },
+        "map_saver": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "save_map_timeout": 5.0,
+            "free_thresh_default": 0.25,
+            "occupied_thresh_default": 0.65,
+            "map_subscribe_transient_local": true
+          }
+        },
+        "planner_server": {
+          "ros__parameters": {
+            "expected_planner_frequency": 20.0,
+            "use_sim_time": false,
+            "planner_plugins": [
+              "GridBased"
+            ],
+            "GridBased": {
+              "plugin": "nav2_navfn_planner/NavfnPlanner",
+              "tolerance": 0.5,
+              "use_astar": false,
+              "allow_unknown": true
+            }
+          }
+        },
+        "smoother_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoother_plugins": [
+              "simple_smoother"
+            ],
+            "simple_smoother": {
+              "plugin": "nav2_smoother::SimpleSmoother",
+              "tolerance": 1e-10,
+              "max_its": 1000,
+              "do_refinement": true
+            }
+          }
+        },
+        "behavior_server": {
+          "ros__parameters": {
+            "costmap_topic": "local_costmap/costmap_raw",
+            "footprint_topic": "local_costmap/published_footprint",
+            "cycle_frequency": 10.0,
+            "behavior_plugins": [
+              "spin",
+              "backup",
+              "drive_on_heading",
+              "assisted_teleop",
+              "wait"
+            ],
+            "spin": {
+              "plugin": "nav2_behaviors/Spin"
+            },
+            "backup": {
+              "plugin": "nav2_behaviors/BackUp"
+            },
+            "drive_on_heading": {
+              "plugin": "nav2_behaviors/DriveOnHeading"
+            },
+            "wait": {
+              "plugin": "nav2_behaviors/Wait"
+            },
+            "assisted_teleop": {
+              "plugin": "nav2_behaviors/AssistedTeleop"
+            },
+            "global_frame": "odom",
+            "robot_base_frame": "base_link",
+            "transform_tolerance": 0.1,
+            "use_sim_time": false,
+            "simulate_ahead_time": 2.0,
+            "max_rotational_vel": 1.0,
+            "min_rotational_vel": 0.4,
+            "rotational_acc_lim": 3.2
+          }
+        },
+        "robot_state_publisher": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "waypoint_follower": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "loop_rate": 20,
+            "stop_on_failure": false,
+            "waypoint_task_executor_plugin": "wait_at_waypoint",
+            "wait_at_waypoint": {
+              "plugin": "nav2_waypoint_follower::WaitAtWaypoint",
+              "enabled": true,
+              "waypoint_pause_duration": 200
+            }
+          }
+        },
+        "velocity_smoother": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoothing_frequency": 20.0,
+            "scale_velocities": false,
+            "feedback": "OPEN_LOOP",
+            "max_velocity": [
+              1.0,
+              0.0,
+              1.5
+            ],
+            "min_velocity": [
+              0.0,
+              0.0,
+              -1.5
+            ],
+            "max_accel": [
+              2.5,
+              0.0,
+              3.2
+            ],
+            "max_decel": [
+              -2.5,
+              0.0,
+              -3.2
+            ],
+            "odom_topic": "odom",
+            "odom_duration": 0.1,
+            "deadband_velocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "velocity_timeout": 1.0
+          }
+        }
+      },
+      "rows": [
+        {
+          "round": 1,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 7.657662067000047,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 206,
+            "uptime_s": 20.6,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 282,
+            "uptime_s": 28.3,
+            "robot_truth": {
+              "x": 6.921,
+              "y": 6.182,
+              "theta_deg": -21.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.007467694,
+          "truth_goal_error_m": 0.1984061490982578,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991745589038809,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 7.940874389000101,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 290,
+            "uptime_s": 29.0,
+            "robot_truth": {
+              "x": 6.921,
+              "y": 6.182,
+              "theta_deg": -21.2
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 369,
+            "uptime_s": 37.0,
+            "robot_truth": {
+              "x": 5.893,
+              "y": 5.821,
+              "theta_deg": 12.7
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.007540765,
+          "truth_goal_error_m": 0.20854256160314166,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991754191159734,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "return_home",
+          "pose": [
+            8.08,
+            6.238,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 3.942889407999928,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 377,
+            "uptime_s": 37.7,
+            "robot_truth": {
+              "x": 5.893,
+              "y": 5.821,
+              "theta_deg": 12.3
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 416,
+            "uptime_s": 41.7,
+            "robot_truth": {
+              "x": 7.599,
+              "y": 6.1,
+              "theta_deg": 5.5
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.00887283,
+          "truth_goal_error_m": 0.500404836107726,
+          "passed": false,
+          "post_response_odom": {
+            "wall_ns": 1792991758875967580,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 11.012581667999939,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 177,
+            "uptime_s": 17.8,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 287,
+            "uptime_s": 28.8,
+            "robot_truth": {
+              "x": 7.007,
+              "y": 6.14,
+              "theta_deg": -20.5
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.001328015,
+          "truth_goal_error_m": 0.14017489076150516,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991793973968228,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 8.462578957999995,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 295,
+            "uptime_s": 29.5,
+            "robot_truth": {
+              "x": 7.007,
+              "y": 6.14,
+              "theta_deg": -20.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 379,
+            "uptime_s": 38.0,
+            "robot_truth": {
+              "x": 5.916,
+              "y": 5.812,
+              "theta_deg": 11.6
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.001560447,
+          "truth_goal_error_m": 0.2059126028197396,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991803173320116,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "return_home",
+          "pose": [
+            8.08,
+            6.238,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 3.7626428240000678,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 387,
+            "uptime_s": 38.7,
+            "robot_truth": {
+              "x": 5.916,
+              "y": 5.812,
+              "theta_deg": 11.6
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 424,
+            "uptime_s": 42.5,
+            "robot_truth": {
+              "x": 7.59,
+              "y": 6.082,
+              "theta_deg": 4.8
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.001737618,
+          "truth_goal_error_m": 0.5142334100386714,
+          "passed": false,
+          "post_response_odom": {
+            "wall_ns": 1792991807673409191,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        }
+      ],
+      "service_successes": 6,
+      "truth_gate_passes": 4,
+      "full_gate_passed": false,
+      "max_error_on_success_m": 0.5142334100386714,
+      "sources_sha256": {
+        "evidence/raw/week34_slam_map/20261026_safe_return_v2/protocol.json": "20958ead697a8f48309a72d50350a5b867a76ed7d5ddd0f7da9f18ec6c30f116",
+        "evidence/raw/week34_slam_map/20261026_safe_return_v2/params_snapshot.yaml": "0b513c7ab6f374f9f5020173f03d5f38b354cc4030d021b41621337cf917a3d8",
+        "evidence/raw/week34_slam_map/20261026_safe_return_v2/round1/trials.json": "ba809c8a137f33973fc7a8283e50460721db3442a60d44f8af14ea8e4ca71cde",
+        "evidence/raw/week34_slam_map/20261026_safe_return_v2/round2/trials.json": "ce3ab8e9fc0aa4ed6a701967fe75c6cb180cb8a924c3e94fb58287aa6dcb2362"
+      }
+    },
+    {
+      "run": "20261026_safe_return_precise_v3",
+      "protocol": {
+        "version": "week34_safe_return_precise_v3",
+        "map": "outputs/slam_improvement/map_slam.yaml",
+        "map_origin_alignment": "Original SLAM map coordinates, no post-hoc registration; initial map-to-truth xy/yaw is identity.",
+        "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+        "domain": 47,
+        "port": 8000,
+        "sim_seed": 42,
+        "sim_slip": 0.05,
+        "sim_rays": 720,
+        "amcl_max_beams": 60,
+        "rounds": 2,
+        "round_start": "restart simulator and AMCL each round; single explicit truth-assisted initial pose, never truth TF",
+        "initial_covariance_xy_m": 0.15,
+        "initial_covariance_yaw_deg": 10,
+        "initial_observation_s": 8,
+        "initial_gate_position_error_m": 0.3,
+        "initial_gate_required_fresh_samples": 3,
+        "sample_max_age_s": 0.3,
+        "truth_http_max_latency_s": 0.1,
+        "service_timeout_s": 60,
+        "truth_goal_tolerance_m": 0.3,
+        "navigation_gate": "All six service results SUCCEEDED and truth endpoint error<=0.30m; endpoint truth availability required. Report stop separately.",
+        "goals": [
+          {
+            "id": "door",
+            "pose": [
+              7.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "middle",
+            "pose": [
+              6.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "return_home",
+            "pose": [
+              8.08,
+              6.238,
+              0.0
+            ]
+          }
+        ],
+        "limits": [
+          "Local route only, not whole-field localization or kidnapping recovery.",
+          "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+          "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+        ],
+        "change_from_v1": {
+          "old_return": [
+            8.0,
+            5.5,
+            0.0
+          ],
+          "new_return_source": "config/week7_world_frozen_v2.json W8_home, existing virtual start/home landmark",
+          "reason": "Original target lacks footprint clearance on SLAM map; retain as negative boundary case, never lower obstacle rejection threshold.",
+          "interpretation": "New route validation only. Does not convert original failed route into success."
+        },
+        "parameter_overrides": {
+          "amcl": {
+            "max_beams": 90,
+            "update_min_d": 0.05,
+            "update_min_a": 0.05
+          },
+          "goal_checker": {
+            "xy_goal_tolerance": 0.08,
+            "yaw_goal_tolerance": 0.12
+          },
+          "FollowPath": {
+            "xy_goal_tolerance": 0.08,
+            "max_vel_x": 0.35,
+            "max_speed_xy": 0.35,
+            "max_vel_theta": 0.7,
+            "trans_stopped_velocity": 0.05
+          },
+          "velocity_smoother": {
+            "max_velocity": [
+              0.35,
+              0.0,
+              0.7
+            ],
+            "min_velocity": [
+              0.0,
+              0.0,
+              -0.7
+            ]
+          }
+        },
+        "change_from_v2": "Same safe route and30cm truth gate; lower speed, tighter estimated goal tolerance and more frequent AMCL updates. V2 service-success-but-large-truth-error results preserved. Configuration bundle, no single-factor causal claim."
+      },
+      "effective_parameters": {
+        "amcl": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "alpha1": 0.2,
+            "alpha2": 0.2,
+            "alpha3": 0.2,
+            "alpha4": 0.2,
+            "alpha5": 0.2,
+            "base_frame_id": "base_footprint",
+            "beam_skip_distance": 0.5,
+            "beam_skip_error_threshold": 0.9,
+            "beam_skip_threshold": 0.3,
+            "do_beamskip": false,
+            "global_frame_id": "map",
+            "lambda_short": 0.1,
+            "laser_likelihood_max_dist": 2.0,
+            "laser_max_range": 5.0,
+            "laser_min_range": -1.0,
+            "laser_model_type": "likelihood_field",
+            "max_beams": 90,
+            "max_particles": 2000,
+            "min_particles": 500,
+            "odom_frame_id": "odom",
+            "pf_err": 0.05,
+            "pf_z": 0.99,
+            "recovery_alpha_fast": 0.0,
+            "recovery_alpha_slow": 0.0,
+            "resample_interval": 1,
+            "robot_model_type": "nav2_amcl::DifferentialMotionModel",
+            "save_pose_rate": 0.5,
+            "sigma_hit": 0.2,
+            "tf_broadcast": true,
+            "transform_tolerance": 1.0,
+            "update_min_a": 0.05,
+            "update_min_d": 0.05,
+            "z_hit": 0.5,
+            "z_max": 0.05,
+            "z_rand": 0.5,
+            "z_short": 0.05,
+            "scan_topic": "/scan"
+          }
+        },
+        "bt_navigator": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "global_frame": "map",
+            "robot_base_frame": "base_link",
+            "odom_topic": "/odom",
+            "bt_loop_duration": 10,
+            "default_server_timeout": 20,
+            "wait_for_service_timeout": 1000,
+            "plugin_lib_names": [
+              "nav2_compute_path_to_pose_action_bt_node",
+              "nav2_compute_path_through_poses_action_bt_node",
+              "nav2_smooth_path_action_bt_node",
+              "nav2_follow_path_action_bt_node",
+              "nav2_spin_action_bt_node",
+              "nav2_wait_action_bt_node",
+              "nav2_assisted_teleop_action_bt_node",
+              "nav2_back_up_action_bt_node",
+              "nav2_drive_on_heading_bt_node",
+              "nav2_clear_costmap_service_bt_node",
+              "nav2_is_stuck_condition_bt_node",
+              "nav2_goal_reached_condition_bt_node",
+              "nav2_goal_updated_condition_bt_node",
+              "nav2_globally_updated_goal_condition_bt_node",
+              "nav2_is_path_valid_condition_bt_node",
+              "nav2_initial_pose_received_condition_bt_node",
+              "nav2_reinitialize_global_localization_service_bt_node",
+              "nav2_rate_controller_bt_node",
+              "nav2_distance_controller_bt_node",
+              "nav2_speed_controller_bt_node",
+              "nav2_truncate_path_action_bt_node",
+              "nav2_truncate_path_local_action_bt_node",
+              "nav2_goal_updater_node_bt_node",
+              "nav2_recovery_node_bt_node",
+              "nav2_pipeline_sequence_bt_node",
+              "nav2_round_robin_node_bt_node",
+              "nav2_transform_available_condition_bt_node",
+              "nav2_time_expired_condition_bt_node",
+              "nav2_path_expiring_timer_condition",
+              "nav2_distance_traveled_condition_bt_node",
+              "nav2_single_trigger_bt_node",
+              "nav2_goal_updated_controller_bt_node",
+              "nav2_is_battery_low_condition_bt_node",
+              "nav2_navigate_through_poses_action_bt_node",
+              "nav2_navigate_to_pose_action_bt_node",
+              "nav2_remove_passed_goals_action_bt_node",
+              "nav2_planner_selector_bt_node",
+              "nav2_controller_selector_bt_node",
+              "nav2_goal_checker_selector_bt_node",
+              "nav2_controller_cancel_bt_node",
+              "nav2_path_longer_on_approach_bt_node",
+              "nav2_wait_cancel_bt_node",
+              "nav2_spin_cancel_bt_node",
+              "nav2_back_up_cancel_bt_node",
+              "nav2_assisted_teleop_cancel_bt_node",
+              "nav2_drive_on_heading_cancel_bt_node",
+              "nav2_is_battery_charging_condition_bt_node"
+            ]
+          }
+        },
+        "bt_navigator_navigate_through_poses_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "bt_navigator_navigate_to_pose_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "controller_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "controller_frequency": 20.0,
+            "min_x_velocity_threshold": 0.001,
+            "min_y_velocity_threshold": 0.5,
+            "min_theta_velocity_threshold": 0.001,
+            "failure_tolerance": 0.3,
+            "progress_checker_plugin": "progress_checker",
+            "goal_checker_plugins": [
+              "general_goal_checker"
+            ],
+            "controller_plugins": [
+              "FollowPath"
+            ],
+            "progress_checker": {
+              "plugin": "nav2_controller::SimpleProgressChecker",
+              "required_movement_radius": 0.5,
+              "movement_time_allowance": 10.0
+            },
+            "general_goal_checker": {
+              "stateful": true,
+              "plugin": "nav2_controller::SimpleGoalChecker",
+              "xy_goal_tolerance": 0.08,
+              "yaw_goal_tolerance": 0.12
+            },
+            "FollowPath": {
+              "plugin": "dwb_core::DWBLocalPlanner",
+              "debug_trajectory_details": true,
+              "min_vel_x": 0.0,
+              "min_vel_y": 0.0,
+              "max_vel_x": 0.35,
+              "max_vel_y": 0.0,
+              "max_vel_theta": 0.7,
+              "min_speed_xy": 0.0,
+              "max_speed_xy": 0.35,
+              "min_speed_theta": 0.0,
+              "acc_lim_x": 2.5,
+              "acc_lim_y": 0.0,
+              "acc_lim_theta": 3.2,
+              "decel_lim_x": -2.5,
+              "decel_lim_y": 0.0,
+              "decel_lim_theta": -3.2,
+              "vx_samples": 20,
+              "vy_samples": 5,
+              "vtheta_samples": 20,
+              "sim_time": 1.7,
+              "linear_granularity": 0.05,
+              "angular_granularity": 0.025,
+              "transform_tolerance": 0.2,
+              "xy_goal_tolerance": 0.08,
+              "trans_stopped_velocity": 0.05,
+              "short_circuit_trajectory_evaluation": true,
+              "stateful": true,
+              "critics": [
+                "RotateToGoal",
+                "Oscillation",
+                "BaseObstacle",
+                "GoalAlign",
+                "PathAlign",
+                "PathDist",
+                "GoalDist"
+              ],
+              "BaseObstacle.scale": 0.02,
+              "PathAlign.scale": 32.0,
+              "PathAlign.forward_point_distance": 0.1,
+              "GoalAlign.scale": 24.0,
+              "GoalAlign.forward_point_distance": 0.1,
+              "PathDist.scale": 32.0,
+              "GoalDist.scale": 24.0,
+              "RotateToGoal.scale": 32.0,
+              "RotateToGoal.slowing_factor": 5.0,
+              "RotateToGoal.lookahead_time": -1.0
+            }
+          }
+        },
+        "local_costmap": {
+          "local_costmap": {
+            "ros__parameters": {
+              "update_frequency": 5.0,
+              "publish_frequency": 2.0,
+              "global_frame": "odom",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "rolling_window": true,
+              "width": 3,
+              "height": 3,
+              "resolution": 0.05,
+              "robot_radius": 0.2,
+              "plugins": [
+                "voxel_layer",
+                "inflation_layer"
+              ],
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "voxel_layer": {
+                "plugin": "nav2_costmap_2d::VoxelLayer",
+                "enabled": true,
+                "publish_voxel_map": true,
+                "origin_z": 0.0,
+                "z_resolution": 0.05,
+                "z_voxels": 16,
+                "max_obstacle_height": 2.0,
+                "mark_threshold": 0,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "global_costmap": {
+          "global_costmap": {
+            "ros__parameters": {
+              "update_frequency": 1.0,
+              "publish_frequency": 1.0,
+              "global_frame": "map",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "robot_radius": 0.2,
+              "resolution": 0.05,
+              "track_unknown_space": true,
+              "plugins": [
+                "static_layer",
+                "obstacle_layer",
+                "inflation_layer"
+              ],
+              "obstacle_layer": {
+                "plugin": "nav2_costmap_2d::ObstacleLayer",
+                "enabled": true,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "map_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "yaml_filename": ""
+          }
+        },
+        "map_saver": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "save_map_timeout": 5.0,
+            "free_thresh_default": 0.25,
+            "occupied_thresh_default": 0.65,
+            "map_subscribe_transient_local": true
+          }
+        },
+        "planner_server": {
+          "ros__parameters": {
+            "expected_planner_frequency": 20.0,
+            "use_sim_time": false,
+            "planner_plugins": [
+              "GridBased"
+            ],
+            "GridBased": {
+              "plugin": "nav2_navfn_planner/NavfnPlanner",
+              "tolerance": 0.5,
+              "use_astar": false,
+              "allow_unknown": true
+            }
+          }
+        },
+        "smoother_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoother_plugins": [
+              "simple_smoother"
+            ],
+            "simple_smoother": {
+              "plugin": "nav2_smoother::SimpleSmoother",
+              "tolerance": 1e-10,
+              "max_its": 1000,
+              "do_refinement": true
+            }
+          }
+        },
+        "behavior_server": {
+          "ros__parameters": {
+            "costmap_topic": "local_costmap/costmap_raw",
+            "footprint_topic": "local_costmap/published_footprint",
+            "cycle_frequency": 10.0,
+            "behavior_plugins": [
+              "spin",
+              "backup",
+              "drive_on_heading",
+              "assisted_teleop",
+              "wait"
+            ],
+            "spin": {
+              "plugin": "nav2_behaviors/Spin"
+            },
+            "backup": {
+              "plugin": "nav2_behaviors/BackUp"
+            },
+            "drive_on_heading": {
+              "plugin": "nav2_behaviors/DriveOnHeading"
+            },
+            "wait": {
+              "plugin": "nav2_behaviors/Wait"
+            },
+            "assisted_teleop": {
+              "plugin": "nav2_behaviors/AssistedTeleop"
+            },
+            "global_frame": "odom",
+            "robot_base_frame": "base_link",
+            "transform_tolerance": 0.1,
+            "use_sim_time": false,
+            "simulate_ahead_time": 2.0,
+            "max_rotational_vel": 1.0,
+            "min_rotational_vel": 0.4,
+            "rotational_acc_lim": 3.2
+          }
+        },
+        "robot_state_publisher": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "waypoint_follower": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "loop_rate": 20,
+            "stop_on_failure": false,
+            "waypoint_task_executor_plugin": "wait_at_waypoint",
+            "wait_at_waypoint": {
+              "plugin": "nav2_waypoint_follower::WaitAtWaypoint",
+              "enabled": true,
+              "waypoint_pause_duration": 200
+            }
+          }
+        },
+        "velocity_smoother": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoothing_frequency": 20.0,
+            "scale_velocities": false,
+            "feedback": "OPEN_LOOP",
+            "max_velocity": [
+              0.35,
+              0.0,
+              0.7
+            ],
+            "min_velocity": [
+              0.0,
+              0.0,
+              -0.7
+            ],
+            "max_accel": [
+              2.5,
+              0.0,
+              3.2
+            ],
+            "max_decel": [
+              -2.5,
+              0.0,
+              -3.2
+            ],
+            "odom_topic": "odom",
+            "odom_duration": 0.1,
+            "deadband_velocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "velocity_timeout": 1.0
+          }
+        }
+      },
+      "rows": [
+        {
+          "round": 1,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 18.426984505000064,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 199,
+            "uptime_s": 20.0,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 384,
+            "uptime_s": 38.4,
+            "robot_truth": {
+              "x": 6.867,
+              "y": 6.018,
+              "theta_deg": -14.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.005615117,
+          "truth_goal_error_m": 0.13421251804507653,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991917497707156,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 16.535125967999875,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 391,
+            "uptime_s": 39.2,
+            "robot_truth": {
+              "x": 6.867,
+              "y": 6.018,
+              "theta_deg": -14.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 557,
+            "uptime_s": 55.7,
+            "robot_truth": {
+              "x": 5.876,
+              "y": 6.001,
+              "theta_deg": 3.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.00130097,
+          "truth_goal_error_m": 0.12400403219250541,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991934774118668,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "return_home",
+          "pose": [
+            8.08,
+            6.238,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 9.225362365000137,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 564,
+            "uptime_s": 56.5,
+            "robot_truth": {
+              "x": 5.876,
+              "y": 6.001,
+              "theta_deg": 3.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 656,
+            "uptime_s": 65.7,
+            "robot_truth": {
+              "x": 7.824,
+              "y": 6.088,
+              "theta_deg": 2.3
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.007831237,
+          "truth_goal_error_m": 0.2967086112670143,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991944784862885,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 16.532273894000127,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 196,
+            "uptime_s": 19.7,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 361,
+            "uptime_s": 36.2,
+            "robot_truth": {
+              "x": 6.869,
+              "y": 5.994,
+              "theta_deg": -13.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.004432478,
+          "truth_goal_error_m": 0.13113733259449828,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792991992553877365,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 20.950748802999897,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 369,
+            "uptime_s": 37.0,
+            "robot_truth": {
+              "x": 6.869,
+              "y": 5.994,
+              "theta_deg": -13.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 579,
+            "uptime_s": 57.9,
+            "robot_truth": {
+              "x": 5.873,
+              "y": 6.032,
+              "theta_deg": 2.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.004127445,
+          "truth_goal_error_m": 0.13096946208945026,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992014364278751,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "return_home",
+          "pose": [
+            8.08,
+            6.238,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 9.639585112999839,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 586,
+            "uptime_s": 58.7,
+            "robot_truth": {
+              "x": 5.873,
+              "y": 6.032,
+              "theta_deg": 2.0
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 683,
+            "uptime_s": 68.3,
+            "robot_truth": {
+              "x": 7.805,
+              "y": 6.082,
+              "theta_deg": 1.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.007114117,
+          "truth_goal_error_m": 0.31616609558901215,
+          "passed": false,
+          "post_response_odom": {
+            "wall_ns": 1792992024754229289,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        }
+      ],
+      "service_successes": 6,
+      "truth_gate_passes": 5,
+      "full_gate_passed": false,
+      "max_error_on_success_m": 0.31616609558901215,
+      "sources_sha256": {
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v3/protocol.json": "cc0e422f83a46d0d93dd34612882157c7843d41d94f5bfee3b57ff0f8782f3c3",
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v3/params_snapshot.yaml": "7ccaaa60db28e830d232d7aa9633439fd56e8d2db29d44dba5c51b71817d7ef7",
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v3/round1/trials.json": "a0648352c11db0fd37a88f3dcbf3a26696360b45c464aa63b4b12e81f24ed1b6",
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v3/round2/trials.json": "1481d70edcd0518d935f93e66ff46feeb5534047b370c18d0eb6ca8ae4c20468"
+      }
+    },
+    {
+      "run": "20261026_safe_return_precise_v4",
+      "protocol": {
+        "version": "week34_safe_return_precise_v4",
+        "map": "outputs/slam_improvement/map_slam.yaml",
+        "map_origin_alignment": "Original SLAM map coordinates, no post-hoc registration; initial map-to-truth xy/yaw is identity.",
+        "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+        "domain": 47,
+        "port": 8000,
+        "sim_seed": 42,
+        "sim_slip": 0.05,
+        "sim_rays": 720,
+        "amcl_max_beams": 60,
+        "rounds": 2,
+        "round_start": "restart simulator and AMCL each round; single explicit truth-assisted initial pose, never truth TF",
+        "initial_covariance_xy_m": 0.15,
+        "initial_covariance_yaw_deg": 10,
+        "initial_observation_s": 8,
+        "initial_gate_position_error_m": 0.3,
+        "initial_gate_required_fresh_samples": 3,
+        "sample_max_age_s": 0.3,
+        "truth_http_max_latency_s": 0.1,
+        "service_timeout_s": 60,
+        "truth_goal_tolerance_m": 0.3,
+        "navigation_gate": "All six service results SUCCEEDED and truth endpoint error<=0.30m; endpoint truth availability required. Report stop separately.",
+        "goals": [
+          {
+            "id": "door",
+            "pose": [
+              7.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "middle",
+            "pose": [
+              6.0,
+              6.0,
+              0.0
+            ]
+          },
+          {
+            "id": "return_home",
+            "pose": [
+              8.08,
+              6.238,
+              0.0
+            ]
+          }
+        ],
+        "limits": [
+          "Local route only, not whole-field localization or kidnapping recovery.",
+          "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+          "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+        ],
+        "change_from_v1": {
+          "old_return": [
+            8.0,
+            5.5,
+            0.0
+          ],
+          "new_return_source": "config/week7_world_frozen_v2.json W8_home, existing virtual start/home landmark",
+          "reason": "Original target lacks footprint clearance on SLAM map; retain as negative boundary case, never lower obstacle rejection threshold.",
+          "interpretation": "New route validation only. Does not convert original failed route into success."
+        },
+        "parameter_overrides": {
+          "amcl": {
+            "max_beams": 90,
+            "update_min_d": 0.05,
+            "update_min_a": 0.05
+          },
+          "goal_checker": {
+            "xy_goal_tolerance": 0.02,
+            "yaw_goal_tolerance": 0.12
+          },
+          "FollowPath": {
+            "xy_goal_tolerance": 0.02,
+            "max_vel_x": 0.35,
+            "max_speed_xy": 0.35,
+            "max_vel_theta": 0.7,
+            "trans_stopped_velocity": 0.05
+          },
+          "velocity_smoother": {
+            "max_velocity": [
+              0.35,
+              0.0,
+              0.7
+            ],
+            "min_velocity": [
+              0.0,
+              0.0,
+              -0.7
+            ]
+          }
+        },
+        "change_from_v2": "Same safe route and30cm truth gate; lower speed, tighter estimated goal tolerance and more frequent AMCL updates. V2 service-success-but-large-truth-error results preserved. Configuration bundle, no single-factor causal claim.",
+        "change_from_v3": "Only estimated xy goal tolerance0.08->0.02m in goal checker and DWB; other configuration and30cm independent truth criterion unchanged. V3 passed5/6, one return error31.62cm retained."
+      },
+      "effective_parameters": {
+        "amcl": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "alpha1": 0.2,
+            "alpha2": 0.2,
+            "alpha3": 0.2,
+            "alpha4": 0.2,
+            "alpha5": 0.2,
+            "base_frame_id": "base_footprint",
+            "beam_skip_distance": 0.5,
+            "beam_skip_error_threshold": 0.9,
+            "beam_skip_threshold": 0.3,
+            "do_beamskip": false,
+            "global_frame_id": "map",
+            "lambda_short": 0.1,
+            "laser_likelihood_max_dist": 2.0,
+            "laser_max_range": 5.0,
+            "laser_min_range": -1.0,
+            "laser_model_type": "likelihood_field",
+            "max_beams": 90,
+            "max_particles": 2000,
+            "min_particles": 500,
+            "odom_frame_id": "odom",
+            "pf_err": 0.05,
+            "pf_z": 0.99,
+            "recovery_alpha_fast": 0.0,
+            "recovery_alpha_slow": 0.0,
+            "resample_interval": 1,
+            "robot_model_type": "nav2_amcl::DifferentialMotionModel",
+            "save_pose_rate": 0.5,
+            "sigma_hit": 0.2,
+            "tf_broadcast": true,
+            "transform_tolerance": 1.0,
+            "update_min_a": 0.05,
+            "update_min_d": 0.05,
+            "z_hit": 0.5,
+            "z_max": 0.05,
+            "z_rand": 0.5,
+            "z_short": 0.05,
+            "scan_topic": "/scan"
+          }
+        },
+        "bt_navigator": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "global_frame": "map",
+            "robot_base_frame": "base_link",
+            "odom_topic": "/odom",
+            "bt_loop_duration": 10,
+            "default_server_timeout": 20,
+            "wait_for_service_timeout": 1000,
+            "plugin_lib_names": [
+              "nav2_compute_path_to_pose_action_bt_node",
+              "nav2_compute_path_through_poses_action_bt_node",
+              "nav2_smooth_path_action_bt_node",
+              "nav2_follow_path_action_bt_node",
+              "nav2_spin_action_bt_node",
+              "nav2_wait_action_bt_node",
+              "nav2_assisted_teleop_action_bt_node",
+              "nav2_back_up_action_bt_node",
+              "nav2_drive_on_heading_bt_node",
+              "nav2_clear_costmap_service_bt_node",
+              "nav2_is_stuck_condition_bt_node",
+              "nav2_goal_reached_condition_bt_node",
+              "nav2_goal_updated_condition_bt_node",
+              "nav2_globally_updated_goal_condition_bt_node",
+              "nav2_is_path_valid_condition_bt_node",
+              "nav2_initial_pose_received_condition_bt_node",
+              "nav2_reinitialize_global_localization_service_bt_node",
+              "nav2_rate_controller_bt_node",
+              "nav2_distance_controller_bt_node",
+              "nav2_speed_controller_bt_node",
+              "nav2_truncate_path_action_bt_node",
+              "nav2_truncate_path_local_action_bt_node",
+              "nav2_goal_updater_node_bt_node",
+              "nav2_recovery_node_bt_node",
+              "nav2_pipeline_sequence_bt_node",
+              "nav2_round_robin_node_bt_node",
+              "nav2_transform_available_condition_bt_node",
+              "nav2_time_expired_condition_bt_node",
+              "nav2_path_expiring_timer_condition",
+              "nav2_distance_traveled_condition_bt_node",
+              "nav2_single_trigger_bt_node",
+              "nav2_goal_updated_controller_bt_node",
+              "nav2_is_battery_low_condition_bt_node",
+              "nav2_navigate_through_poses_action_bt_node",
+              "nav2_navigate_to_pose_action_bt_node",
+              "nav2_remove_passed_goals_action_bt_node",
+              "nav2_planner_selector_bt_node",
+              "nav2_controller_selector_bt_node",
+              "nav2_goal_checker_selector_bt_node",
+              "nav2_controller_cancel_bt_node",
+              "nav2_path_longer_on_approach_bt_node",
+              "nav2_wait_cancel_bt_node",
+              "nav2_spin_cancel_bt_node",
+              "nav2_back_up_cancel_bt_node",
+              "nav2_assisted_teleop_cancel_bt_node",
+              "nav2_drive_on_heading_cancel_bt_node",
+              "nav2_is_battery_charging_condition_bt_node"
+            ]
+          }
+        },
+        "bt_navigator_navigate_through_poses_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "bt_navigator_navigate_to_pose_rclcpp_node": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "controller_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "controller_frequency": 20.0,
+            "min_x_velocity_threshold": 0.001,
+            "min_y_velocity_threshold": 0.5,
+            "min_theta_velocity_threshold": 0.001,
+            "failure_tolerance": 0.3,
+            "progress_checker_plugin": "progress_checker",
+            "goal_checker_plugins": [
+              "general_goal_checker"
+            ],
+            "controller_plugins": [
+              "FollowPath"
+            ],
+            "progress_checker": {
+              "plugin": "nav2_controller::SimpleProgressChecker",
+              "required_movement_radius": 0.5,
+              "movement_time_allowance": 10.0
+            },
+            "general_goal_checker": {
+              "stateful": true,
+              "plugin": "nav2_controller::SimpleGoalChecker",
+              "xy_goal_tolerance": 0.02,
+              "yaw_goal_tolerance": 0.12
+            },
+            "FollowPath": {
+              "plugin": "dwb_core::DWBLocalPlanner",
+              "debug_trajectory_details": true,
+              "min_vel_x": 0.0,
+              "min_vel_y": 0.0,
+              "max_vel_x": 0.35,
+              "max_vel_y": 0.0,
+              "max_vel_theta": 0.7,
+              "min_speed_xy": 0.0,
+              "max_speed_xy": 0.35,
+              "min_speed_theta": 0.0,
+              "acc_lim_x": 2.5,
+              "acc_lim_y": 0.0,
+              "acc_lim_theta": 3.2,
+              "decel_lim_x": -2.5,
+              "decel_lim_y": 0.0,
+              "decel_lim_theta": -3.2,
+              "vx_samples": 20,
+              "vy_samples": 5,
+              "vtheta_samples": 20,
+              "sim_time": 1.7,
+              "linear_granularity": 0.05,
+              "angular_granularity": 0.025,
+              "transform_tolerance": 0.2,
+              "xy_goal_tolerance": 0.02,
+              "trans_stopped_velocity": 0.05,
+              "short_circuit_trajectory_evaluation": true,
+              "stateful": true,
+              "critics": [
+                "RotateToGoal",
+                "Oscillation",
+                "BaseObstacle",
+                "GoalAlign",
+                "PathAlign",
+                "PathDist",
+                "GoalDist"
+              ],
+              "BaseObstacle.scale": 0.02,
+              "PathAlign.scale": 32.0,
+              "PathAlign.forward_point_distance": 0.1,
+              "GoalAlign.scale": 24.0,
+              "GoalAlign.forward_point_distance": 0.1,
+              "PathDist.scale": 32.0,
+              "GoalDist.scale": 24.0,
+              "RotateToGoal.scale": 32.0,
+              "RotateToGoal.slowing_factor": 5.0,
+              "RotateToGoal.lookahead_time": -1.0
+            }
+          }
+        },
+        "local_costmap": {
+          "local_costmap": {
+            "ros__parameters": {
+              "update_frequency": 5.0,
+              "publish_frequency": 2.0,
+              "global_frame": "odom",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "rolling_window": true,
+              "width": 3,
+              "height": 3,
+              "resolution": 0.05,
+              "robot_radius": 0.2,
+              "plugins": [
+                "voxel_layer",
+                "inflation_layer"
+              ],
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "voxel_layer": {
+                "plugin": "nav2_costmap_2d::VoxelLayer",
+                "enabled": true,
+                "publish_voxel_map": true,
+                "origin_z": 0.0,
+                "z_resolution": 0.05,
+                "z_voxels": 16,
+                "max_obstacle_height": 2.0,
+                "mark_threshold": 0,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "global_costmap": {
+          "global_costmap": {
+            "ros__parameters": {
+              "update_frequency": 1.0,
+              "publish_frequency": 1.0,
+              "global_frame": "map",
+              "robot_base_frame": "base_footprint",
+              "use_sim_time": false,
+              "robot_radius": 0.2,
+              "resolution": 0.05,
+              "track_unknown_space": true,
+              "plugins": [
+                "static_layer",
+                "obstacle_layer",
+                "inflation_layer"
+              ],
+              "obstacle_layer": {
+                "plugin": "nav2_costmap_2d::ObstacleLayer",
+                "enabled": true,
+                "observation_sources": "scan",
+                "scan": {
+                  "topic": "/scan",
+                  "max_obstacle_height": 2.0,
+                  "clearing": true,
+                  "marking": true,
+                  "data_type": "LaserScan",
+                  "raytrace_max_range": 5.0,
+                  "raytrace_min_range": 0.0,
+                  "obstacle_max_range": 5.0,
+                  "obstacle_min_range": 0.0
+                }
+              },
+              "static_layer": {
+                "plugin": "nav2_costmap_2d::StaticLayer",
+                "map_subscribe_transient_local": true
+              },
+              "inflation_layer": {
+                "plugin": "nav2_costmap_2d::InflationLayer",
+                "cost_scaling_factor": 3.0,
+                "inflation_radius": 0.55
+              },
+              "always_send_full_costmap": true
+            }
+          }
+        },
+        "map_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "yaml_filename": ""
+          }
+        },
+        "map_saver": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "save_map_timeout": 5.0,
+            "free_thresh_default": 0.25,
+            "occupied_thresh_default": 0.65,
+            "map_subscribe_transient_local": true
+          }
+        },
+        "planner_server": {
+          "ros__parameters": {
+            "expected_planner_frequency": 20.0,
+            "use_sim_time": false,
+            "planner_plugins": [
+              "GridBased"
+            ],
+            "GridBased": {
+              "plugin": "nav2_navfn_planner/NavfnPlanner",
+              "tolerance": 0.5,
+              "use_astar": false,
+              "allow_unknown": true
+            }
+          }
+        },
+        "smoother_server": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoother_plugins": [
+              "simple_smoother"
+            ],
+            "simple_smoother": {
+              "plugin": "nav2_smoother::SimpleSmoother",
+              "tolerance": 1e-10,
+              "max_its": 1000,
+              "do_refinement": true
+            }
+          }
+        },
+        "behavior_server": {
+          "ros__parameters": {
+            "costmap_topic": "local_costmap/costmap_raw",
+            "footprint_topic": "local_costmap/published_footprint",
+            "cycle_frequency": 10.0,
+            "behavior_plugins": [
+              "spin",
+              "backup",
+              "drive_on_heading",
+              "assisted_teleop",
+              "wait"
+            ],
+            "spin": {
+              "plugin": "nav2_behaviors/Spin"
+            },
+            "backup": {
+              "plugin": "nav2_behaviors/BackUp"
+            },
+            "drive_on_heading": {
+              "plugin": "nav2_behaviors/DriveOnHeading"
+            },
+            "wait": {
+              "plugin": "nav2_behaviors/Wait"
+            },
+            "assisted_teleop": {
+              "plugin": "nav2_behaviors/AssistedTeleop"
+            },
+            "global_frame": "odom",
+            "robot_base_frame": "base_link",
+            "transform_tolerance": 0.1,
+            "use_sim_time": false,
+            "simulate_ahead_time": 2.0,
+            "max_rotational_vel": 1.0,
+            "min_rotational_vel": 0.4,
+            "rotational_acc_lim": 3.2
+          }
+        },
+        "robot_state_publisher": {
+          "ros__parameters": {
+            "use_sim_time": false
+          }
+        },
+        "waypoint_follower": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "loop_rate": 20,
+            "stop_on_failure": false,
+            "waypoint_task_executor_plugin": "wait_at_waypoint",
+            "wait_at_waypoint": {
+              "plugin": "nav2_waypoint_follower::WaitAtWaypoint",
+              "enabled": true,
+              "waypoint_pause_duration": 200
+            }
+          }
+        },
+        "velocity_smoother": {
+          "ros__parameters": {
+            "use_sim_time": false,
+            "smoothing_frequency": 20.0,
+            "scale_velocities": false,
+            "feedback": "OPEN_LOOP",
+            "max_velocity": [
+              0.35,
+              0.0,
+              0.7
+            ],
+            "min_velocity": [
+              0.0,
+              0.0,
+              -0.7
+            ],
+            "max_accel": [
+              2.5,
+              0.0,
+              3.2
+            ],
+            "max_decel": [
+              -2.5,
+              0.0,
+              -3.2
+            ],
+            "odom_topic": "odom",
+            "odom_duration": 0.1,
+            "deadband_velocity": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "velocity_timeout": 1.0
+          }
+        }
+      },
+      "rows": [
+        {
+          "round": 1,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 29.665224494000086,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 200,
+            "uptime_s": 20.0,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 496,
+            "uptime_s": 49.7,
+            "robot_truth": {
+              "x": 6.786,
+              "y": 5.955,
+              "theta_deg": -12.9
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.006371595,
+          "truth_goal_error_m": 0.21868013169924735,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992179256244137,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 39.81633001199998,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 504,
+            "uptime_s": 50.4,
+            "robot_truth": {
+              "x": 6.786,
+              "y": 5.955,
+              "theta_deg": -12.9
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 902,
+            "uptime_s": 90.3,
+            "robot_truth": {
+              "x": 5.792,
+              "y": 5.993,
+              "theta_deg": 5.6
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.006747288,
+          "truth_goal_error_m": 0.20811775512915776,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992219755022165,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 1,
+          "id": "return_home",
+          "pose": [
+            8.08,
+            6.238,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 20.66591699200012,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 910,
+            "uptime_s": 91.0,
+            "robot_truth": {
+              "x": 5.792,
+              "y": 5.993,
+              "theta_deg": 1.2
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 1117,
+            "uptime_s": 111.7,
+            "robot_truth": {
+              "x": 7.839,
+              "y": 6.072,
+              "theta_deg": 1.2
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.004194738,
+          "truth_goal_error_m": 0.2926380016334173,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992241241535406,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "door",
+          "pose": [
+            7.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 28.43296903999999,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 197,
+            "uptime_s": 19.8,
+            "robot_truth": {
+              "x": 8.08,
+              "y": 6.238,
+              "theta_deg": 88.1
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 482,
+            "uptime_s": 48.2,
+            "robot_truth": {
+              "x": 6.796,
+              "y": 5.96,
+              "theta_deg": 3.2
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.004971067,
+          "truth_goal_error_m": 0.20788458336298027,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992295953165390,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "middle",
+          "pose": [
+            6.0,
+            6.0,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 30.667026363999867,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 489,
+            "uptime_s": 49.0,
+            "robot_truth": {
+              "x": 6.796,
+              "y": 5.96,
+              "theta_deg": 3.2
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 796,
+            "uptime_s": 79.7,
+            "robot_truth": {
+              "x": 5.808,
+              "y": 6.016,
+              "theta_deg": -1.9
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.005438141,
+          "truth_goal_error_m": 0.1926655132606769,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992327347320720,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        },
+        {
+          "round": 2,
+          "id": "return_home",
+          "pose": [
+            8.08,
+            6.238,
+            0.0
+          ],
+          "result": "SUCCEEDED",
+          "reason": "Nav2 报告目标到达。",
+          "elapsed_s": 18.682596116000013,
+          "start_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 804,
+            "uptime_s": 80.4,
+            "robot_truth": {
+              "x": 5.808,
+              "y": 6.016,
+              "theta_deg": -4.5
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "end_truth": {
+            "mode": "nav-static",
+            "seed": 42,
+            "slip": 0.05,
+            "tick_hz": 10.0,
+            "tick_n": 991,
+            "uptime_s": 99.1,
+            "robot_truth": {
+              "x": 7.867,
+              "y": 6.049,
+              "theta_deg": 0.8
+            },
+            "terminated_events": 0,
+            "clients": 1
+          },
+          "truth_endpoint_request_s": 0.006208661,
+          "truth_goal_error_m": 0.28476305940202296,
+          "passed": true,
+          "post_response_odom": {
+            "wall_ns": 1792992346837629397,
+            "linear": 0.0,
+            "angular": 0.0
+          },
+          "post_response_stationary": true
+        }
+      ],
+      "service_successes": 6,
+      "truth_gate_passes": 6,
+      "full_gate_passed": true,
+      "max_error_on_success_m": 0.2926380016334173,
+      "sources_sha256": {
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v4/protocol.json": "ff03cbfb98426f5b917981cf89910f4ff32ec19d93e84ff2e726380b3026b2cd",
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v4/params_snapshot.yaml": "a54ceee27df0e901151bce3d340e3690bfb7715f7de2ef897d9e445aa19d6be8",
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v4/round1/trials.json": "f842bf391cf987caff1ab456dc392fd7c2aba687a2b7fcf4985dc0dbc4a6bc88",
+        "evidence/raw/week34_slam_map/20261026_safe_return_precise_v4/round2/trials.json": "cbf667f3223c473cc5ac9a4e9eb04987d7c2f13fd56fd96e1aeb95fe56c62033"
+      }
+    }
+  ],
+  "dense_registration_source": "evidence/raw/week6_dense_frame_v2/lab_result.json",
+  "dense_registration_checks": {
+    "two_close_cups_separate": true,
+    "unique_target_names": true,
+    "repeat_keeps_names": true,
+    "repeat_increments_each_once": true,
+    "ambiguous_frame_rejected": true,
+    "ambiguous_frame_does_not_mutate_targets": true,
+    "auditor_conversion_retains_both": true,
+    "two_markers": true,
+    "both_expire": true
+  },
+  "new_navigation_local_gate_passed": true,
+  "simultaneous_dense_pair_gate_passed": true,
+  "limitations": [
+    "Old target rejected on currentSLAMcostmap retained as negative case; new route returns to preexisting W8_home.",
+    "Same SLAM map, new navigation speed/goal/update configuration; no single-factor causal claim.",
+    "Dense fix applies to jointly observed same-frame objects. Staggered arrivals, occlusion, crossing and real-camera identity tracking remain unverified.",
+    "No new model requests, no physical vehicle execution, no full-field or kidnapping recovery claim."
+  ]
+}

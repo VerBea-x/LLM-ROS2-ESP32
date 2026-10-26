@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "frame_id": "map",
+  "generated_at": "2026-10-26T03:42:54.612448+00:00",
+  "items": [],
+  "limitations": [
+    "range=1m is an explicit teaching approximation; not measured object depth."
+  ],
+  "source_kind": "controlled_synthetic_detection_ros_lab",
+  "camera_calibration": "declared virtual intrinsics, not hardware calibration"
+}

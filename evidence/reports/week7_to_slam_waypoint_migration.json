@@ -1,0 +1,125 @@
+{
+  "source_kind": "offline_map_migration_check_of_declared_virtual_landmarks",
+  "rows": [
+    {
+      "label": "W1_door",
+      "name": "门口",
+      "position": [
+        7.0,
+        6.0
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W2_charge",
+      "name": "充电站",
+      "position": [
+        6.0,
+        6.0
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W3_podium",
+      "name": "讲台/桌子",
+      "position": [
+        6.0,
+        5.5
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W4_shelf",
+      "name": "充电站旁边的书架/架子",
+      "position": [
+        6.0,
+        6.6
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W5_window",
+      "name": "窗边",
+      "position": [
+        1.0,
+        5.0
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W6_bench",
+      "name": "长椅",
+      "position": [
+        4.0,
+        3.0
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W7_trash",
+      "name": "垃圾桶",
+      "position": [
+        8.8,
+        3.3
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 36,
+      "spatial_candidate": true
+    },
+    {
+      "label": "W8_home",
+      "name": "起点",
+      "position": [
+        8.08,
+        6.238
+      ],
+      "original_declared_cost": 0,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 0,
+      "spatial_candidate": true
+    },
+    {
+      "label": "cup_old",
+      "name": "过期测试杯子",
+      "position": [
+        1.0,
+        1.0
+      ],
+      "original_declared_cost": null,
+      "SLAM_occupancy": 0,
+      "Nav2_cost": 63,
+      "spatial_candidate": false
+    }
+  ],
+  "candidate_count": 8,
+  "total": 9,
+  "sources_sha256": {
+    "config/week7_world_frozen_v2.json": "b1a352640e39820b816267ca673e0e1296bbd3b37e7e175017425e83855de873",
+    "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/initialization/map_snapshot.json": "05f3e858d375becc783dd84f8a64f3e3390450d5e487294bcfee467c94de6ba9",
+    "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/initialization/costmap_snapshot.json": "40c3d12a9079e2f59e65547c000bb24cd715df793ecc5ed99f2d486cbb9d0e23"
+  },
+  "limits": [
+    "Static snapshot spatial admissibility, not path reachability, localization confidence, freshness or successful navigation.",
+    "Original frozen model world unchanged; no automatic landmark relocation or relabeling.",
+    "Known virtual landmarks are not camera observations. Execution still requires live costmap recheck."
+  ]
+}

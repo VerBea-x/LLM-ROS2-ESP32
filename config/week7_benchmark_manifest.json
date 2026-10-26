@@ -1,0 +1,65 @@
+{
+  "source_csv": "/home/yahboom/下载/ppt/benchmark_v1_frozen.csv",
+  "source_sha256": "101477654d98d4d88ba50dc4b73873ca635bb7baff13bb7ae6c69bf4c0ac2d8e",
+  "total_source_rows": 120,
+  "selected": [
+    {
+      "id": "001",
+      "stratum": "S1",
+      "expected_action": "navigate",
+      "expected_targets": "W1_door",
+      "ctx": "cur=W8_home",
+      "instruction_ref": "benchmark_v1_frozen.csv#001",
+      "instruction": "去门口"
+    },
+    {
+      "id": "025",
+      "stratum": "S2",
+      "expected_action": "navigate",
+      "expected_targets": "W4_shelf",
+      "ctx": "cur=W8_home",
+      "instruction_ref": "benchmark_v1_frozen.csv#025",
+      "instruction": "去充电站旁边的架子"
+    },
+    {
+      "id": "049",
+      "stratum": "S3",
+      "expected_action": "navigate",
+      "expected_targets": "W2_charge",
+      "ctx": "cur=W8_home",
+      "instruction_ref": "benchmark_v1_frozen.csv#049",
+      "instruction": "别去门口，去充电站"
+    },
+    {
+      "id": "073",
+      "stratum": "S4",
+      "expected_action": "navigate_sequence",
+      "expected_targets": "W1_door|W2_charge",
+      "ctx": "cur=W8_home",
+      "instruction_ref": "benchmark_v1_frozen.csv#073",
+      "instruction": "先去门口再去充电站"
+    },
+    {
+      "id": "097",
+      "stratum": "S5",
+      "expected_action": "clarify",
+      "expected_targets": "",
+      "ctx": "cur=W8_home",
+      "instruction_ref": "benchmark_v1_frozen.csv#097"
+    },
+    {
+      "id": "CUSTOM-01",
+      "stratum": "custom",
+      "instruction": "请把杯子抓起来送给我",
+      "expected_action": "reject",
+      "expected_targets": "",
+      "ctx": "no manipulation hardware",
+      "selection_note": "implementation default; requires explicit capability refusal"
+    }
+  ],
+  "status": "protocol prepared; no model call or course acceptance claimed",
+  "limitations": [
+    "S5 text resolved only from original CSV at request time; documents use ID only.",
+    "Classroom semantic points require actual map registration; fixture coordinates cannot prove real location."
+  ]
+}

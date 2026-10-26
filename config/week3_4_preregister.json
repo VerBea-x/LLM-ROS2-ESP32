@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "source_kind": "simulation_protocol",
+  "world_seed": 42,
+  "slip": 0.05,
+  "slip_source": "chosen simulation stress setting, not measured vehicle slip",
+  "initialization": {"A_offset_m": 0.0, "B_offset_x_m": 1.0, "B_offset_yaw_deg": 20, "sigma_xy_m": 0.25, "sigma_yaw_deg": 10},
+  "localization": {"untrusted_error_m": 0.15, "reason": "course teaching threshold; robot diameter 0.4m, simulation alternative only", "max_truth_age_s": 0.3, "max_truth_request_s": 0.1, "minimum_stationary_s": 1.0, "convergence_observation_s": 30},
+  "points": [{"id":"P1","x":8.08,"y":6.238},{"id":"P2","x":7.0,"y":6.0},{"id":"P3","x":6.0,"y":6.0},{"id":"P4","x":6.0,"y":5.5},{"id":"P5","x":8.0,"y":5.5}],
+  "points_limit": "Initial reachable subset near start; does not satisfy whole-field sampling until expanded. P3 near sparse returns is provisional untrusted hypothesis.",
+  "navigation": {"timeout_s":60,"success":"Nav2 SUCCEEDED plus independent final truth error recorded", "goal_truth_tolerance_m":0.3,"repetitions":2,"route":[[7.0,6.0,0.0],[6.0,6.0,0.0],[8.0,5.5,0.0]],"invalid_goal":[-1.0,-1.0,0.0]},
+  "freeze_note": "Frozen before navigation trials. Amendments append separate files; failed trials retained. Initial transport debugging is not localization acceptance."
+}

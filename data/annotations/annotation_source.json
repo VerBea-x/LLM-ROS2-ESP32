@@ -1,0 +1,7 @@
+{
+  "official_archive": "https://s3.amazonaws.com/images.cocodataset.org/annotations/annotations_trainval2017.zip",
+  "archive_member": "annotations/instances_val2017.json",
+  "member_crc32": "0x2e9b8b45",
+  "compressed_bytes": 6529031,
+  "uncompressed_bytes": 19987840
+}

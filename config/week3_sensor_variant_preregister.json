@@ -1,0 +1,12 @@
+{
+ "version":1,
+ "source_kind":"explicit_simulation_sensor_variant",
+ "reason":"Original24-ray SLAM produces radial artifacts; test whether denser simulated observations improve mapping.",
+ "upstream_sensor_rays":24,"variant_sensor_rays":360,
+ "seed":42,"slip":0.05,"port":8001,"domain":48,
+ "changed_factor":"N_RAYS before simulator construction; same analytic ray casting, environment seed and route; no interpolation of24 rays",
+ "unchanged":"SLAM settings in existing mapper_sim.yaml and truth-assisted experimental positioning route",
+ "evidence_requirements":["save initial map->odom transform before route","verify actual scan length360","save raw route and final SLAM map","compare only after explicit coordinate-frame calibration"],
+ "success_criteria":"Map qualitatively recovers arena walls and circular obstacles without severe radial collapse; report occupancy precision/recall/coverage after fixed initial-frame calibration. No arbitrary numeric pass threshold introduced after observing map.",
+ "limits":"New simulated sensor capability; does not repair or replace original24-ray result; no real lidar or vehicle claim; one trial cannot establish causal improvement robustly."
+}

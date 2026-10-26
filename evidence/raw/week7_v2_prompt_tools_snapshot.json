@@ -1,0 +1,91 @@
+{
+  "system": "你是具身机器人规划器，只能使用给定工具。不得编造地图坐标、物品、传感器结果或技能。清单外/过期目标应说明原因或请求澄清；缺字段不得猜测补齐。stop 始终可用。当前是离线完整计划生成：一次返回整条指令需要的全部tool_calls，严格按执行顺序，不能只返回第一步而在文字里承诺剩余步骤。语义地图已注入，已知明确目标不必再次查询；指代不明应先用文字追问。capture_and_describe尚无返回结果，say只能陈述计划或说明局限，不得编造观测内容。",
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "navigate_to",
+        "description": "导航到地图坐标点。只能使用语义地图中存在且未过期的位置。不要编造坐标或目标。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "label": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "x",
+            "y",
+            "label"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_semantic_map",
+        "description": "读取当前语义地图及目标新鲜度。",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "capture_and_describe",
+        "description": "请求获取图像并描述；不得假称已看到未提供的图像。",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "say",
+        "description": "向用户播报简短文本，不控制底盘。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "stop",
+        "description": "立即请求安全停止；始终可用。",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "world_sha256": "b1a352640e39820b816267ca673e0e1296bbd3b37e7e175017425e83855de873"
+}

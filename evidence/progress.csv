@@ -1,0 +1,23 @@
+week,acceptance_item,status,evidence_path,source_kind,notes
+1,VM环境、接口与TF,部分完成,evidence/raw/week1_environment.json;evidence/raw/week1_live_sim_v3.json,实际VM和仿真,odom/scan约10Hz，imu未发布；不能当硬件50Hz通过
+2,固定动作序列3次,仿真通过,evidence/raw/week2_sim_summary.json;evidence/raw/week2_sim_trajectory.csv,仿真,slip0.05为工程设置，非实车参数
+2,装配与实车Sim-to-Real,硬件条件未满足,,实车,没有Pi5和雷达装配证据
+3,SLAM建图和真值对照,地图质量改善，仍未全部验收,evidence/reports/SLAM质量改进记录.md;outputs/slam_improvement/;evidence/raw/week3_slam/20261026T030832Z/,实际仿真SLAM,720束+局部匹配，同旧路线44.6→18.6cm；安全路线18.4cm，0碰撞，最小净空25.7cm；终点误差36.8cm
+3,5点2初值条件采样,局部矩阵完成,evidence/raw/week3_localization_selected.csv;evidence/raw/week3_localization_matrix.json,实际AMCL与独立真值,10格齐；A误差1.5–13cm，B48.5–114cm且30秒不收敛；非全场
+4,两轮Nav2导航,已测，稳定性未达标,evidence/raw/week4_repeated_route.json,实际仿真,6次中4服务成功2拒绝；仅2次同时满足30cm真值标准
+4,60秒TIMEOUT及取消停车,仿真通过,evidence/raw/week4_timeout/20261026T015322Z/trials.json,仿真失效注入,60.51s返回TIMEOUT；新鲜odom确认静止；不证明实车制动
+5,20张室内公开场景三阈值离线检测,公开替代实验完成,data/coco_indoor20_v2/dataset.json;evidence/reports/week5_indoor20_v2_metrics.json;outputs/week5_indoor20_v2/,公开验证集+真实ONNX推理,20张室内场景先复核后冻结；不含棕熊/户外凑数图；640输入；相机硬件未验证
+6,语义几何、合并与过期,受控ROS合成实验通过，现场观测待补,evidence/raw/week6_ros_lab_v3/lab_result.json;evidence/raw/week6_controlled_mobility.json;evidence/reports/week6_controlled_error_components.json;evidence/reports/week6_to_week8_auditor_bridge.json,实际ROS+受控合成检测/移动,10/10消息检查；合成τ三类可复算；R2桥接6/6；无实景站位或真实τ证据；新增12例多站位、乱序时间保护/同名转换拒绝；密集同类仍误合并
+7,六指令真实模型干跑,新版6条通过,evidence/raw/week7_six_instructions_v2_20261026.jsonl;evidence/reports/week7_six_instructions_v2_review.json,真实DeepSeek+虚拟世界,旧版5条及网络中断保留，版本不混算
+7,40次采样和复算,40条齐全，存在不完整计划,evidence/raw/week7_randomness_v2_20261026.jsonl;evidence/reports/week7_randomness_summary_20261026.json,真实API,4组10次；4次网络错误和2次恢复留档；没有重采已有回答
+8,四规则八发及六条回归,代码与已知仿真地图验证通过,evidence/reports/week8_actual_map_eight_cases.json;evidence/reports/week8_six_instruction_dry_regression.json,实际地图快照+人工虚拟点,8/8；绑定label与坐标；当前32项测试通过；真实场地τ仍缺
+8,六陷阱开关12格,数据完成，对照录屏待补,evidence/raw/week8_trap_paired_12cells_20261026.csv;evidence/reports/week8_trap_pair_summary.json,真实模型冻结输出,两边原始输出相同；全部干跑；未复现危险导航，不能宣称6次拦截
+8,真实模型审计导航停车闭环,仿真组件通过,evidence/raw/week8_integration/20261026T021310Z/,真实API+真值定位仿真,7.15s导航、24.8cm误差、停车确认、实时可视化录像；电量占位
+8,ESP32边界实测,待现场条件,docs/ESP32实车验证.md,实车,没有向实车发送运动指令；无雷达不验收实车激光SLAM
+8,V3整案完整性和能力门,冻结模型回答干跑回归通过,evidence/reports/week8_task_contract_replay_v3.json;config/task_contracts_v3.json,真实模型冻结回答离线回归,25拒绝无执行，15完整计划干跑通过；另有SLAM图AMCL V3单任务真执行通过，V2保留
+3/4,实际SLAM地图AMCL与两轮导航,4/6达标，整体未通过,evidence/raw/week34_slam_map/20261026_slam_amcl_v1/;evidence/reports/week34_slam_map_validation_v1.json,实际SLAM图+AMCL+Nav2仿真,同起点重启两轮，720束/60beams；成功误差12–24cm；两次cost99未派发；非旧配置配对比较
+8,V3实际SLAM图AMCL执行与录像,局部单任务仿真通过,evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/agent/execution_trace.json;evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/agent/media_validation.json;outputs/week8/v3_slam_live_sim.mp4,冻结真实模型输出+实际AMCL Nav2仿真,6项检查通过；6.65cm；0重规划；停车连续核验；无新API；非全场/实车
+3,定位表偏角统计与证据编号不可信点图,原24束数据复算完成，非新增定位,evidence/reports/week3_evidence_linked_points.json;evidence/reports/第3周_定位不可信点与统计.md,旧10格实测派生,A均值8.15cm B74.42cm；5个B超15cm；缺cov_xy和目视等级，不推全场风险区
+6,多站位与登记防错扩展,受控检查通过，密集同类限制保留,evidence/raw/week6_stress_v1.json;evidence/raw/week6_ros_after_clock_guard_v1/lab_result.json;evidence/reports/week6_to_week8_strict_bridge_v2.json,离线合成压力数据+实际ROS合成回归,12例几何；拒绝时间倒退及同名覆盖；ROS10/10桥接6/6；0.6m双杯仍误合并
+4,安全返回路线精细版两轮导航,新路线局部仿真6/6通过,evidence/raw/week34_slam_map/20261026_safe_return_precise_v4/;evidence/reports/failed_items_remediation_20261026.json;config/week34_safe_return_precise_v4.json,实际SLAM图+AMCL+Nav2仿真,原目标负例保留，返回改为既有W8_home；0.35m/s和2cm估计容差；真值19.3–29.3cm，非原路线/全场/实车
+6,同帧近距离同类目标整帧登记,受控ROS9/9通过,evidence/raw/week6_dense_frame_v2/lab_result.json;evidence/raw/week6_frame_v2_regression/lab_result.json;evidence/reports/week6_dense_frame_v2_auditor_bridge.json;evidence/reports/week6_frame_v2_regression_bridge.json,实际ROS合成双杯+原接口回归,约0.6m双杯分开、唯一名称、重复稳定、歧义拒绝；原ROS10/10；桥接4/4及6/6；分时/遮挡/交叉未验证

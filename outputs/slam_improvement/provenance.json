@@ -1,0 +1,49 @@
+{
+  "source_run": "/home/yahboom/下载/第1-8周对齐重做/evidence/raw/week3_slam/20261026T030832Z",
+  "source_metrics": {
+    "source_kind": "actual_ros_map_snapshots_fixed_initial_registration",
+    "truth_snapshot": "evidence/raw/week1_live_sim.json",
+    "estimate_snapshot": "/home/yahboom/下载/第1-8周对齐重做/evidence/raw/week3_slam/20261026T030832Z/final_snapshot.json",
+    "initial_calibration_snapshot": "/home/yahboom/下载/第1-8周对齐重做/evidence/raw/week3_slam/20261026T030832Z/initial_snapshot.json",
+    "initial_frame_calibration": {
+      "parent": "map",
+      "child": "odom",
+      "translation": [
+        1.7763568394002505e-15,
+        0.0,
+        -0.15
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "registration": "fixed initial map->odom; nearest-neighbor cell lookup, no fitted alignment",
+    "known_coverage": 0.903675,
+    "occupied_tp": 951,
+    "occupied_fp": 1627,
+    "occupied_fn_including_unobserved": 4141,
+    "known_free_tn": 31886,
+    "occupied_precision": 0.36889061287820013,
+    "occupied_recall_full_truth_domain": 0.18676355066771405,
+    "occupied_iou_full_truth_domain": 0.1415389194820658,
+    "limitations": [
+      "Missing/unknown estimates count as missed occupied truth cells in full-domain recall.",
+      "Raw occupancy -1 preserved; no inference from ambiguous PGM gray values.",
+      "The start odom/world relation is specific to this simulator; no physical-map alignment claim.",
+      "Metrics do not establish localization or navigation acceptance."
+    ],
+    "boundary_distances_m": {
+      "estimate_to_truth_mean": 0.1836441159248352,
+      "estimate_to_truth_p95": 0.5,
+      "truth_to_estimate_mean": 0.306466668844223,
+      "truth_to_estimate_p95": 1.3946325778961182,
+      "note": "Additional descriptive distances; no new pass threshold or optimized alignment."
+    }
+  },
+  "image_change": "none; exact PGM copy",
+  "yaml_change": "relative image name; free_thresh0.196 preserves raw205-gray unknown pixels on reload",
+  "not_navigation_certified": true
+}

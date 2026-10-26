@@ -1,0 +1,62 @@
+{
+  "cases": [
+    {
+      "source_row": {
+        "instruction_id": "custom",
+        "temperature": 0.8,
+        "repetition": 3
+      },
+      "actual_calls": [
+        {
+          "name": "navigate_to",
+          "arguments": {
+            "x": 7,
+            "y": 6,
+            "label": "W1_door"
+          }
+        }
+      ],
+      "assistant_original_text": "我会按顺序导航到门口、充电站，然后停止。",
+      "issue": "文字承诺完整多步骤，但结构化计划仅包含第一步；属于不完整计划/过度承诺，不声称编造了不存在物品。"
+    },
+    {
+      "source_row": {
+        "instruction_id": "custom",
+        "temperature": 0.8,
+        "repetition": 4
+      },
+      "actual_calls": [
+        {
+          "name": "navigate_to",
+          "arguments": {
+            "x": 7.0,
+            "y": 6.0,
+            "label": "W1_door"
+          }
+        }
+      ],
+      "assistant_original_text": "我会按顺序执行：先导航到门口，再导航到充电站，最后请求停止。",
+      "issue": "文字承诺完整多步骤，但结构化计划仅包含第一步；属于不完整计划/过度承诺，不声称编造了不存在物品。"
+    },
+    {
+      "source_row": {
+        "instruction_id": "custom",
+        "temperature": 0.8,
+        "repetition": 9
+      },
+      "actual_calls": [
+        {
+          "name": "navigate_to",
+          "arguments": {
+            "x": 7,
+            "y": 6,
+            "label": "W1_door"
+          }
+        }
+      ],
+      "assistant_original_text": "我会按顺序执行：先到门口（W1_door），再到充电站（W2_charge），最后安全停止。",
+      "issue": "文字承诺完整多步骤，但结构化计划仅包含第一步；属于不完整计划/过度承诺，不声称编造了不存在物品。"
+    }
+  ],
+  "source_kind": "real_model_raw_outputs"
+}

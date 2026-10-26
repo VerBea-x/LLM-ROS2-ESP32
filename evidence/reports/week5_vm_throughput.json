@@ -1,0 +1,18 @@
+{
+  "source_kind": "vm_offline_30s_throughput",
+  "frames": 308,
+  "duration_s": 30.060443594999924,
+  "fps": 10.246023117610642,
+  "mean_read_preprocess_inference_s": 0.09759262725322355,
+  "input_resolution": [
+    640,
+    640
+  ],
+  "temperature": "not measured; VM cannot establish robot thermal state",
+  "performance_mode": "VM CPU2 OpenCV threads",
+  "limitations": [
+    "Timing-only replay uses direct resize, not the letterbox evaluation path; it never changes saved predictions.",
+    "Repeated images are timing frames, not independent accuracy samples.",
+    "Not a camera stream or physical Pi5 FPS."
+  ]
+}

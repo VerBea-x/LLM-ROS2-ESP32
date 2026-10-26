@@ -1,0 +1,11 @@
+{
+ "version":1,
+ "purpose":"60-second service timeout branch only; separate from AMCL navigation-quality experiment",
+ "domain":49,"port":8002,"seed":42,"slip":0,
+ "injection":"Bridge command subscriptions remapped away from Nav2 outputs; scan/odom remain active. Simulator remains stationary.",
+ "changed_parameter":"progress_checker movement_time_allowance=90s, to prevent progress-checker abort before service budget",
+ "unchanged_service_budget_s":60,
+ "expected":"TIMEOUT; cancellation acknowledgment; fresh odom confirms stationary for0.5s",
+ "limitation":"Verifies software timeout/cancel branch. Since commands are dropped, does not prove braking of a moving vehicle.",
+ "goals":[{"id":"drop_cmd_timeout60","pose":[7,6,0],"expected":"TIMEOUT"}]
+}

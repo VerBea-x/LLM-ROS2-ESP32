@@ -1,0 +1,169 @@
+{
+  "source_kind": "offline_same_target_check_on_actual_ROS_map_and_costmap_snapshots",
+  "rows": [
+    {
+      "map_kind": "raw_SLAM_map",
+      "label": "door",
+      "position": [
+        7.0,
+        6.0
+      ],
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "door",
+          "target_m": [
+            7.0,
+            6.0
+          ],
+          "age_s": 0.0,
+          "tau_s": 86400.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "expected_allow": true
+    },
+    {
+      "map_kind": "raw_SLAM_map",
+      "label": "middle",
+      "position": [
+        6.0,
+        6.0
+      ],
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `middle` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "middle",
+          "target_m": [
+            6.0,
+            6.0
+          ],
+          "age_s": 0.0,
+          "tau_s": 86400.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "expected_allow": true
+    },
+    {
+      "map_kind": "raw_SLAM_map",
+      "label": "blocked_return",
+      "position": [
+        8.0,
+        5.5
+      ],
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `blocked_return` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "blocked_return",
+          "target_m": [
+            8.0,
+            5.5
+          ],
+          "age_s": 0.0,
+          "tau_s": 86400.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "expected_allow": true
+    },
+    {
+      "map_kind": "inflated_Nav2_costmap",
+      "label": "door",
+      "position": [
+        7.0,
+        6.0
+      ],
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "door",
+          "target_m": [
+            7.0,
+            6.0
+          ],
+          "age_s": 0.0,
+          "tau_s": 86400.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "expected_allow": true
+    },
+    {
+      "map_kind": "inflated_Nav2_costmap",
+      "label": "middle",
+      "position": [
+        6.0,
+        6.0
+      ],
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `middle` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "middle",
+          "target_m": [
+            6.0,
+            6.0
+          ],
+          "age_s": 0.0,
+          "tau_s": 86400.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "expected_allow": true
+    },
+    {
+      "map_kind": "inflated_Nav2_costmap",
+      "label": "blocked_return",
+      "position": [
+        8.0,
+        5.5
+      ],
+      "decision": {
+        "allowed": false,
+        "rule_id": "R1",
+        "reason": "目标栅格不是已确认空闲区；目标 (8.000, 5.500) 的占据值为 99（放行阈值 < 50）；请改选已知空闲区。",
+        "evidence": {
+          "target_m": [
+            8.0,
+            5.5
+          ],
+          "occupancy_value": 99,
+          "occupied_threshold": 50,
+          "map_source": "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/initialization/costmap_snapshot.json"
+        },
+        "correction": "选择地图中明确标记为空闲的可行点。"
+      },
+      "expected_allow": false
+    }
+  ],
+  "all_checks_passed": true,
+  "limits": [
+    "Snapshot checks, no new navigation calls. Raw SLAM free cell does not imply robot-footprint reachability.",
+    "Future execution must refresh current costmap and preserve the service-side live costmap check."
+  ]
+}

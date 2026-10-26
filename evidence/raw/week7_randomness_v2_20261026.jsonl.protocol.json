@@ -1,0 +1,122 @@
+{
+  "protocol_sha256": "88caa221cba9d767e4211bfdef6c436d96dcba52cc43098cf91ad23d5bb6aab8",
+  "instructions": [
+    [
+      "common",
+      "到桌子那，看看上面有什么"
+    ],
+    [
+      "custom",
+      "先去门口，再去充电站，最后停下"
+    ]
+  ],
+  "temperatures": [
+    0.2,
+    0.8
+  ],
+  "repetitions": 10,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "navigate_to",
+        "description": "导航到地图坐标点。只能使用语义地图中存在且未过期的位置。不要编造坐标或目标。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "label": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "x",
+            "y",
+            "label"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "get_semantic_map",
+        "description": "读取当前语义地图及目标新鲜度。",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "capture_and_describe",
+        "description": "请求获取图像并描述；不得假称已看到未提供的图像。",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "say",
+        "description": "向用户播报简短文本，不控制底盘。",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "text"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "stop",
+        "description": "立即请求安全停止；始终可用。",
+        "parameters": {
+          "type": "object",
+          "properties": {},
+          "required": [],
+          "additionalProperties": false
+        }
+      }
+    }
+  ],
+  "system_message": {
+    "role": "system",
+    "content": "你是具身机器人规划器，只能使用给定工具。不得编造地图坐标、物品、传感器结果或技能。清单外/过期目标应说明原因或请求澄清；缺字段不得猜测补齐。stop 始终可用。当前是离线完整计划生成：一次返回整条指令需要的全部tool_calls，严格按执行顺序，不能只返回第一步而在文字里承诺剩余步骤。语义地图已注入，已知明确目标不必再次查询；指代不明应先用文字追问。capture_and_describe尚无返回结果，say只能陈述计划或说明局限，不得编造观测内容。\n世界状态如下：\n{\n  \"schema_version\": 1,\n  \"source_kind\": \"declared_simulation_landmarks_with_verified_geometry\",\n  \"fixture_only\": true,\n  \"scene_clock_frozen_s\": 1792980017.0868452,\n  \"frame_id\": \"map\",\n  \"current_label\": \"W8_home\",\n  \"current_pose\": {\n    \"x\": 8.08,\n    \"y\": 6.238,\n    \"theta\": 1.538\n  },\n  \"semantic_map\": [\n    {\n      \"label\": \"W1_door\",\n      \"name\": \"门口\",\n      \"x\": 7.0,\n      \"y\": 6.0,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W2_charge\",\n      \"name\": \"充电站\",\n      \"x\": 6.0,\n      \"y\": 6.0,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W3_podium\",\n      \"name\": \"讲台/桌子\",\n      \"x\": 6.0,\n      \"y\": 5.5,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W4_shelf\",\n      \"name\": \"充电站旁边的书架/架子\",\n      \"x\": 6.0,\n      \"y\": 6.6,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W5_window\",\n      \"name\": \"窗边\",\n      \"x\": 1.0,\n      \"y\": 5.0,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W6_bench\",\n      \"name\": \"长椅\",\n      \"x\": 4.0,\n      \"y\": 3.0,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W7_trash\",\n      \"name\": \"垃圾桶\",\n      \"x\": 8.8,\n      \"y\": 3.3,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"W8_home\",\n      \"name\": \"起点\",\n      \"x\": 8.08,\n      \"y\": 6.238,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792980017.0868452,\n      \"tau_s\": 86400.0,\n      \"state\": \"fresh\",\n      \"cost_at_registration\": 0,\n      \"source\": \"explicitly designated stationary virtual landmark; not detected physical object\"\n    },\n    {\n      \"label\": \"cup_old\",\n      \"name\": \"过期测试杯子\",\n      \"x\": 1.0,\n      \"y\": 1.0,\n      \"theta\": 0.0,\n      \"last_seen_s\": 1792979417.0868452,\n      \"tau_s\": 30.0,\n      \"state\": \"stale\",\n      \"source\": \"explicit stale-input injection, not scene observation\"\n    }\n  ],\n  \"battery_pct\": 60,\n  \"battery_source\": \"simulated placeholder\",\n  \"map_bounds_m\": [\n    0,\n    10,\n    0,\n    10\n  ],\n  \"tools_capabilities\": [\n    \"navigation\",\n    \"query semantic map\",\n    \"capture placeholder\",\n    \"say\",\n    \"stop\"\n  ],\n  \"unavailable_capabilities\": [\n    \"manipulation\",\n    \"physical camera observations\",\n    \"real lidar\"\n  ],\n  \"capture_contract\": \"capture_and_describe is a placeholder until camera data exists; never invent an observation.\",\n  \"limitations\": [\n    \"Names denote deliberately assigned virtual landmarks, not visual detections.\",\n    \"Static-landmark TTL86400s is an experiment validity window, not W6 measured tau.\",\n    \"cup_old is explicitly stale input injection.\"\n  ],\n  \"semantic_relations\": [\n    {\n      \"subject\": \"W4_shelf\",\n      \"relation\": \"near\",\n      \"object\": \"W2_charge\",\n      \"distance_m\": 0.6\n    }\n  ]\n}\n"
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "request_options": {
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 1024
+  },
+  "transport_policy": {
+    "max_attempts_per_cell": 2,
+    "retry_only": "network/timeout without received model output; never resample an answer",
+    "error_log": "week7_randomness_v2_20261026.jsonl.transport.jsonl"
+  }
+}

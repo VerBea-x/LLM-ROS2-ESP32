@@ -1,0 +1,149 @@
+{
+  "source_kind": "actual_simulation_service_execution",
+  "trial_count": 6,
+  "service_successes": 4,
+  "truth_tolerance_m": 0.3,
+  "service_success_and_truth_within_tolerance": 2,
+  "trials": [
+    {
+      "id": "route1_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 0.3530201569997189,
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -20.0
+      },
+      "end_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      },
+      "truth_goal_error_m": 0.4373831272465822
+    },
+    {
+      "id": "route1_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 7.963276520000363,
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      },
+      "end_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 15.3
+      },
+      "truth_goal_error_m": 0.1888094277307146
+    },
+    {
+      "id": "route1_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=70，阈值<50）；未派发导航。",
+      "elapsed_s": 2.8883999675599625e-05,
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "end_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "truth_goal_error_m": 1.9033257734817761
+    },
+    {
+      "id": "route2_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 2.362542451000081,
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "end_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      },
+      "truth_goal_error_m": 0.23345235059857508
+    },
+    {
+      "id": "route2_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 10.962366010000096,
+      "start_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      },
+      "end_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -20.2
+      },
+      "truth_goal_error_m": 0.47801255213644767
+    },
+    {
+      "id": "route2_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=70，阈值<50）；未派发导航。",
+      "elapsed_s": 3.0949000120017445e-05,
+      "start_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      },
+      "end_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      },
+      "truth_goal_error_m": 1.858627450566681
+    }
+  ],
+  "course_gate_passed": false,
+  "reason": "two goals rejected by costmap; two service successes exceed truth tolerance; starting poses not matched, no route-duration causal comparison"
+}

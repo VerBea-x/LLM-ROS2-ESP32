@@ -1,0 +1,4 @@
+{"round": 2, "initial_gate": {"passed": true, "valid_sample_count": 9, "selected_stamps": [1792991777172684504, 1792991778173016270, 1792991779172435215], "errors_m": [0.0969125670916667, 0.09128442849109196, 0.09829429359461901], "limits": "Distinct stationary updates are correlated, not independent experimental replicates."}}
+{"round": 2, "id": "door", "result": "SUCCEEDED", "elapsed_s": 11.012581667999939, "truth_goal_error_m": 0.14017489076150516, "passed": true}
+{"round": 2, "id": "middle", "result": "SUCCEEDED", "elapsed_s": 8.462578957999995, "truth_goal_error_m": 0.2059126028197396, "passed": true}
+{"round": 2, "id": "return_home", "result": "SUCCEEDED", "elapsed_s": 3.7626428240000678, "truth_goal_error_m": 0.5142334100386714, "passed": false}

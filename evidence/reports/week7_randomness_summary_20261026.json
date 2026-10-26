@@ -1,0 +1,770 @@
+{
+  "complete_40_call_protocol": true,
+  "row_count": 40,
+  "groups": [
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "n": 10,
+      "complete": true,
+      "most_common_tool_sequence": [
+        "navigate_to"
+      ],
+      "consistency": 1.0,
+      "sequence_variants": 1,
+      "parameter_or_text_variants": 2,
+      "first_three_classification": "B",
+      "malformed": [],
+      "correctness": "requires expected-action and semantic-source review; consistency is not correctness",
+      "expected_sequence_complete_count": 0,
+      "expected_sequence_complete_rate": 0.0
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "n": 10,
+      "complete": true,
+      "most_common_tool_sequence": [
+        "navigate_to"
+      ],
+      "consistency": 0.7,
+      "sequence_variants": 2,
+      "parameter_or_text_variants": 4,
+      "first_three_classification": "C",
+      "malformed": [],
+      "correctness": "requires expected-action and semantic-source review; consistency is not correctness",
+      "expected_sequence_complete_count": 0,
+      "expected_sequence_complete_rate": 0.0
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "n": 10,
+      "complete": true,
+      "most_common_tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "consistency": 1.0,
+      "sequence_variants": 1,
+      "parameter_or_text_variants": 2,
+      "first_three_classification": "B",
+      "malformed": [],
+      "correctness": "requires expected-action and semantic-source review; consistency is not correctness",
+      "expected_sequence_complete_count": 10,
+      "expected_sequence_complete_rate": 1.0
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "n": 10,
+      "complete": true,
+      "most_common_tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "consistency": 0.5,
+      "sequence_variants": 2,
+      "parameter_or_text_variants": 4,
+      "first_three_classification": "C",
+      "malformed": [],
+      "correctness": "requires expected-action and semantic-source review; consistency is not correctness",
+      "expected_sequence_complete_count": 5,
+      "expected_sequence_complete_rate": 0.5
+    }
+  ],
+  "transport_errors": [
+    {
+      "timestamp_utc": "2026-10-26T02:02:06.365628+00:00",
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 2,
+      "attempt": 1,
+      "network_failure": true,
+      "error": "模型 API 网络错误: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)"
+    },
+    {
+      "timestamp_utc": "2026-10-26T02:02:12.458782+00:00",
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 2,
+      "attempt": 2,
+      "network_failure": true,
+      "error": "模型 API 网络错误: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)"
+    },
+    {
+      "timestamp_utc": "2026-10-26T02:07:58.849366+00:00",
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 9,
+      "attempt": 1,
+      "network_failure": true,
+      "error": "模型 API 网络错误: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)"
+    },
+    {
+      "timestamp_utc": "2026-10-26T02:08:04.868419+00:00",
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 9,
+      "attempt": 2,
+      "network_failure": true,
+      "error": "模型 API 网络错误: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)"
+    }
+  ],
+  "transport_policy_amendments": [
+    {
+      "timestamp_utc": "2026-10-26T02:07:28.959068+00:00",
+      "reason": "resume missing cells after logged network interruption",
+      "sampling_protocol_sha256": "88caa221cba9d767e4211bfdef6c436d96dcba52cc43098cf91ad23d5bb6aab8",
+      "received_rows_preserved": 21,
+      "transport_policy_amendment": "At most 2 extra transport attempts per remaining cell in this invocation",
+      "no_received_model_answer_resampled": true
+    },
+    {
+      "timestamp_utc": "2026-10-26T02:11:16.896550+00:00",
+      "reason": "resume missing cells after logged network interruption",
+      "sampling_protocol_sha256": "88caa221cba9d767e4211bfdef6c436d96dcba52cc43098cf91ad23d5bb6aab8",
+      "received_rows_preserved": 38,
+      "transport_policy_amendment": "At most 2 extra transport attempts per remaining cell in this invocation",
+      "no_received_model_answer_resampled": true
+    }
+  ],
+  "sampling_note": "40个采样格及其原始模型回答齐全；网络传输有明确记录的恢复，提示词/工具/世界状态/温度/判据未改变；未重采任何已收到回答。",
+  "rows_reviewed": [
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 1,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 2,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 3,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 4,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 5,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 6,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 7,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 8,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 9,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 10,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 1,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 2,
+      "tool_sequence": [
+        "navigate_to",
+        "capture_and_describe"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 3,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 4,
+      "tool_sequence": [
+        "navigate_to",
+        "capture_and_describe"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 5,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 6,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 7,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 8,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 9,
+      "tool_sequence": [
+        "navigate_to",
+        "capture_and_describe"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 10,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "capture_and_describe",
+        "say"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 1,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 2,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 3,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 4,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 5,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 6,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 7,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 8,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 9,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 10,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 1,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 2,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 3,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 4,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 5,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 6,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 7,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 8,
+      "tool_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": true
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 9,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": false
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 10,
+      "tool_sequence": [
+        "navigate_to"
+      ],
+      "schema_valid": true,
+      "expected_sequence": [
+        "navigate_to",
+        "navigate_to",
+        "stop"
+      ],
+      "complete_expected_sequence": false
+    }
+  ]
+}

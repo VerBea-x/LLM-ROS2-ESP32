@@ -1,0 +1,82 @@
+[
+  {
+    "case": "near",
+    "source_kind": "known_virtual_geometry",
+    "station": [
+      2,
+      3
+    ],
+    "truth": [
+      2.8,
+      3.0
+    ],
+    "estimate": [
+      3.0,
+      3.0
+    ],
+    "error_m": 0.20000000000000018,
+    "radial_m": 0.20000000000000018,
+    "tangential_m": 0.0,
+    "dominant": "radial"
+  },
+  {
+    "case": "far",
+    "source_kind": "known_virtual_geometry",
+    "station": [
+      2,
+      3
+    ],
+    "truth": [
+      4.5,
+      3.0
+    ],
+    "estimate": [
+      3.0,
+      3.0
+    ],
+    "error_m": 1.5,
+    "radial_m": -1.5,
+    "tangential_m": 0.0,
+    "dominant": "radial"
+  },
+  {
+    "case": "left",
+    "source_kind": "known_virtual_geometry",
+    "station": [
+      2,
+      3
+    ],
+    "truth": [
+      2.95447997803503,
+      3.298274993135947
+    ],
+    "estimate": [
+      2.95447997803503,
+      3.298274993135947
+    ],
+    "error_m": 0.0,
+    "radial_m": 0.0,
+    "tangential_m": 0.0,
+    "dominant": "radial"
+  },
+  {
+    "case": "pixel_bias",
+    "source_kind": "known_virtual_geometry",
+    "station": [
+      2,
+      3
+    ],
+    "truth": [
+      3.0,
+      3.0
+    ],
+    "estimate": [
+      2.999877952034695,
+      2.984376906999458
+    ],
+    "error_m": 0.015623569714038547,
+    "radial_m": -0.00012204796530479456,
+    "tangential_m": 0.015623093000542099,
+    "dominant": "tangential"
+  }
+]

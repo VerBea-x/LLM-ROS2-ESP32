@@ -1,0 +1,85 @@
+{
+  "scope": "course isolated simulation domains only",
+  "targets": [
+    {
+      "pid": 7693,
+      "domain": "ROS_DOMAIN_ID=48"
+    },
+    {
+      "pid": 7717,
+      "domain": "ROS_DOMAIN_ID=48"
+    },
+    {
+      "pid": 7718,
+      "domain": "ROS_DOMAIN_ID=48"
+    },
+    {
+      "pid": 7734,
+      "domain": "ROS_DOMAIN_ID=48"
+    },
+    {
+      "pid": 8926,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8947,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8948,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8981,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8983,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8985,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8987,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 8989,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9019,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9022,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9029,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9032,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9037,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9047,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9051,
+      "domain": "ROS_DOMAIN_ID=49"
+    },
+    {
+      "pid": 9247,
+      "domain": "ROS_DOMAIN_ID=49"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+[INFO] [1792980210.864515463] [embodied_sim_bridge]: 📋 桥接契约声明（先声明后发布）：
+    发布 /odom     nav_msgs/Odometry      QoS RELIABLE/VOLATILE depth=10  frame odom→base_footprint（漂移里程计，位姿＋有限差分 twist）
+    发布 /scan     sensor_msgs/LaserScan  QoS BEST_EFFORT/VOLATILE depth=10  frame laser_frame（24 线 360°，量程取契约 lidar_range）
+    广播 tf        odom→base_footprint→base_link 及 base_footprint→laser_frame
+    订阅 /cmd_vel  geometry_msgs/Twist · /cmd_vel_nav geometry_msgs/TwistStamped → 推理网关 2s 人工覆盖
+    断线行为：自动重连（3 秒间隔，无限次）；连接/断开/重连均有带时间戳日志
+[INFO] [1792980210.880336825] [embodied_sim_bridge]: 🔗 ROS 2 桥接器启动中，正在连接推理网关 ws://127.0.0.1:8001/ws ...
+[INFO] [1792980210.917660071] [embodied_sim_bridge]: ✅ 已成功连接到推理网关！（生命周期：CONNECTED，此前重连尝试 0 次）
+[INFO] [1792980286.983514064] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.08 rad/s
+[INFO] [1792980287.518884675] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.03 rad/s
+[INFO] [1792980288.065255662] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980288.626988395] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980289.192679162] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980289.713004312] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980290.245109242] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980290.788910776] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980291.322343636] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980291.862915499] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980292.411642784] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980292.960240582] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980293.491989417] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980294.047302597] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.25 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980294.576479496] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.16 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980295.119531117] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.11 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980295.667522464] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980296.761329338] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980297.290210702] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980297.836789544] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980298.359619047] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980298.874867407] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.36 rad/s
+[INFO] [1792980299.387660233] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.14 rad/s
+[INFO] [1792980299.897022128] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.06 rad/s
+[INFO] [1792980300.406210614] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.02 rad/s
+[INFO] [1792980300.916247351] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980301.431061342] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980301.940754150] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980302.452830509] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980302.962672929] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980303.473747307] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980303.984624491] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980304.494614284] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980305.005057864] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980305.514158571] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980306.024205802] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.23 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980306.534636007] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.16 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980307.046313366] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.11 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980307.556970601] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980308.576415623] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980309.089097926] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980309.603392823] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980310.113126976] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980310.627023422] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980311.139471431] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.28 rad/s
+[INFO] [1792980311.650476268] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.11 rad/s
+[INFO] [1792980312.162223216] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.04 rad/s
+[INFO] [1792980312.674205397] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980313.190053010] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980313.703759421] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980314.214324083] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980314.728785452] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980315.241267934] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980315.750597743] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980316.278515895] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980316.792218316] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980317.302549311] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980317.811732902] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980318.321664463] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980318.832310681] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980319.343464642] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980319.852886768] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980320.363578988] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.23 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980320.875836013] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.15 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980321.385834561] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.10 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980321.898976296] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.07 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980322.921965450] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980323.432849401] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980323.943746097] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980324.454237649] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980324.966862939] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.42 rad/s
+[INFO] [1792980325.477534731] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.12 rad/s
+[INFO] [1792980325.991557182] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.05 rad/s
+[INFO] [1792980326.502405489] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.02 rad/s
+[INFO] [1792980327.011484472] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980327.525144560] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980328.038487595] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980328.548784570] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980329.058010480] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980329.568879306] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980330.080611579] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980330.592384838] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980331.104810470] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980331.616364164] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980332.127274845] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980332.637029953] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980333.148231002] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980333.657424863] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980334.168285469] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980334.678529273] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980335.189424140] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980335.703918226] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980336.212386735] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.25 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980336.721790691] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.18 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980337.233868328] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.12 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980337.747502383] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.09 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980338.259825549] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.06 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980339.283561133] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980339.794751383] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980340.304863584] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980340.815381694] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.27 rad/s
+[INFO] [1792980341.326203173] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.10 rad/s
+[INFO] [1792980341.840158506] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.04 rad/s
+[INFO] [1792980342.350270588] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.02 rad/s
+[INFO] [1792980342.869104284] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980343.378389821] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980343.888537490] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980344.399381939] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980344.910634481] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980345.420654276] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980345.931756016] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980346.444445397] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980346.957919957] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980347.469238752] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980347.978050087] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980348.487637275] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980348.998325153] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980349.509120840] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980350.023211049] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.23 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980350.533882840] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.16 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980351.046795840] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.11 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980351.560533161] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980352.589275147] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980353.103127422] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980353.612902746] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980354.123048827] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980354.634947021] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980355.145690937] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.57 rad/s
+[INFO] [1792980355.657573205] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.22 rad/s
+[INFO] [1792980356.166996136] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.06 rad/s
+[INFO] [1792980356.677231614] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.03 rad/s
+[INFO] [1792980357.191640707] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980357.705545399] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980358.214849852] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980358.727790304] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980359.242993078] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980359.754719903] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980360.267734855] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980360.777325790] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980361.291779700] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980361.801915841] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980362.312012112] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980362.823016566] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980363.335639266] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980363.845665833] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.26 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980364.355381978] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.18 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980364.867595219] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.12 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980365.379965085] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980365.892040163] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.06 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980366.919840278] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980367.435232269] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980367.945679491] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980368.456844229] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: -0.60 rad/s
+[INFO] [1792980368.966733660] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.21 rad/s
+[INFO] [1792980369.476782455] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.09 rad/s
+[INFO] [1792980369.986211939] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.03 rad/s
+[INFO] [1792980370.497862614] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980371.007715957] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980371.517482345] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980372.027584198] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980372.539992325] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980373.050042673] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980373.562216430] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980374.077997149] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.23 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980374.617081368] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.16 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980375.158096128] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.11 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980375.709591528] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.07 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980376.884977086] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980377.418939056] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980377.958910701] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980378.492145384] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980379.034610598] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.42 rad/s
+[INFO] [1792980379.586494060] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.12 rad/s
+[INFO] [1792980380.115234031] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.05 rad/s
+[INFO] [1792980380.640855547] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.02 rad/s
+[INFO] [1792980381.196278082] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980381.736211882] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980382.291535654] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980382.832327112] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980383.374619525] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980383.898784357] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980384.445751985] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980384.995172662] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980385.554034672] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980386.099820318] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980386.646922910] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980387.193325968] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980387.731770244] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980388.263784793] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980388.804527282] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980389.361518083] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980389.915242019] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980390.452213050] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980391.005764895] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980391.555982857] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980392.094998984] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980392.642995212] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980393.185532569] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.27 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980393.723514802] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.19 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980394.289569672] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.13 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980394.828136102] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980396.033797767] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980396.607440092] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980397.178945830] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980397.745499852] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980398.284489262] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.22 rad/s
+[INFO] [1792980398.812713360] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.09 rad/s
+[INFO] [1792980399.352140145] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.04 rad/s
+[INFO] [1792980399.902492079] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980400.452932925] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980401.009643318] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980401.544194179] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980402.102638295] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980402.633931927] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980403.190641850] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980403.730321517] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980404.289315700] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.27 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980404.819978893] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.19 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980405.357825158] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.13 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980405.897909554] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980406.433757172] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.06 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980407.642748486] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.12 rad/s
+[INFO] [1792980408.186249522] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.04 rad/s
+[INFO] [1792980408.746159369] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980409.292914435] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980409.829794772] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980410.377172263] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980410.933279714] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980411.456129130] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980411.996450894] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980412.550178986] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980413.105446721] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980413.656069141] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980414.215327221] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980414.768312049] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980415.323292114] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.25 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980415.871858197] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.17 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980416.421524216] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.11 m/s, 角速度: -0.01 rad/s
+[INFO] [1792980416.972426844] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.08 m/s, 角速度: -0.00 rad/s
+[INFO] [1792980418.188817942] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980418.737405602] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980419.285750942] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.00 m/s, 角速度: 0.60 rad/s
+[INFO] [1792980419.829400724] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.44 rad/s
+[INFO] [1792980420.388672876] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.15 rad/s
+[INFO] [1792980420.926396925] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.30 m/s, 角速度: 0.07 rad/s
+[INFO] [1792980421.483029821] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.28 m/s, 角速度: 0.03 rad/s
+[INFO] [1792980422.034550552] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.20 m/s, 角速度: 0.01 rad/s
+[INFO] [1792980422.586903787] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.13 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980423.144486627] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.09 m/s, 角速度: 0.00 rad/s
+[INFO] [1792980423.694279201] [embodied_sim_bridge]: 🕹️ [人工覆盖下发] 线速度: 0.06 m/s, 角速度: 0.00 rad/s
+[WARN] [1792981427.390068022] [embodied_sim_bridge]: ⚠️ WebSocket 连接已断开！（生命周期：DISCONNECTED，code=None）；将自动重连，无需手动重启
+[ERROR] [1792981427.429700947] [embodied_sim_bridge]: ❌ 与推理网关连接中断/失败，3 秒后发起第 1 次自动重连 → ws://127.0.0.1:8001/ws
+Traceback (most recent call last):
+  File "/home/yahboom/embodied-sim-lite/embodied-sim-lite/ros_bridge.py", line 244, in main
+    rclpy.spin(bridge)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yahboom/embodied-sim-lite/embodied-sim-lite/ros_bridge.py", line 253, in <module>
+    main()
+  File "/home/yahboom/embodied-sim-lite/embodied-sim-lite/ros_bridge.py", line 249, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

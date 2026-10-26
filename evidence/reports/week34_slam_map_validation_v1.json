@@ -1,0 +1,339 @@
+{
+  "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+  "rounds": 2,
+  "trials": [
+    {
+      "round": 1,
+      "id": "door",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 7.819202186000439,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 183,
+        "uptime_s": 18.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 261,
+        "uptime_s": 26.1,
+        "robot_truth": {
+          "x": 6.933,
+          "y": 6.215,
+          "theta_deg": -22.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.001418969,
+      "truth_goal_error_m": 0.22519769092954742,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792986855617497297,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "round": 1,
+      "id": "middle",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 16.17604775200016,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 269,
+        "uptime_s": 26.8,
+        "robot_truth": {
+          "x": 6.933,
+          "y": 6.215,
+          "theta_deg": -22.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 430,
+        "uptime_s": 43.0,
+        "robot_truth": {
+          "x": 6.026,
+          "y": 6.12,
+          "theta_deg": 12.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.001967427,
+      "truth_goal_error_m": 0.12278436382536669,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792986872618652516,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "round": 1,
+      "id": "return",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=99，阈值<50）；未派发导航。",
+      "elapsed_s": 2.72980005320278e-05,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 438,
+        "uptime_s": 43.7,
+        "robot_truth": {
+          "x": 6.026,
+          "y": 6.12,
+          "theta_deg": 11.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 438,
+        "uptime_s": 43.7,
+        "robot_truth": {
+          "x": 6.026,
+          "y": 6.12,
+          "theta_deg": 11.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.000933434,
+      "truth_goal_error_m": 2.0690761223309306,
+      "passed": false,
+      "post_response_odom": {
+        "wall_ns": 1792986873315511897,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "round": 2,
+      "id": "door",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 7.313160480000079,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 151,
+        "uptime_s": 15.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 224,
+        "uptime_s": 22.4,
+        "robot_truth": {
+          "x": 6.909,
+          "y": 6.224,
+          "theta_deg": -22.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.00194162,
+      "truth_goal_error_m": 0.24177882454838787,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792986901487122468,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "round": 2,
+      "id": "middle",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 10.762617868000234,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 232,
+        "uptime_s": 23.1,
+        "robot_truth": {
+          "x": 6.909,
+          "y": 6.224,
+          "theta_deg": -22.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 339,
+        "uptime_s": 33.9,
+        "robot_truth": {
+          "x": 5.966,
+          "y": 5.887,
+          "theta_deg": 9.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.001762075,
+      "truth_goal_error_m": 0.11800423721205983,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792986912987041357,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "round": 2,
+      "id": "return",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=99，阈值<50）；未派发导航。",
+      "elapsed_s": 2.5719999939610716e-05,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 347,
+        "uptime_s": 34.6,
+        "robot_truth": {
+          "x": 5.966,
+          "y": 5.887,
+          "theta_deg": 9.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 347,
+        "uptime_s": 34.6,
+        "robot_truth": {
+          "x": 5.966,
+          "y": 5.887,
+          "theta_deg": 9.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.000954166,
+      "truth_goal_error_m": 2.070489072658921,
+      "passed": false,
+      "post_response_odom": {
+        "wall_ns": 1792986913688102328,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    }
+  ],
+  "service_successes": 4,
+  "truth_tolerance_passes": 4,
+  "total": 6,
+  "initial_gates_passed": true,
+  "success_endpoint_errors_m": [
+    0.22519769092954742,
+    0.12278436382536669,
+    0.24177882454838787,
+    0.11800423721205983
+  ],
+  "success_mean_error_m": 0.17694127912884045,
+  "course_full_gate_passed": false,
+  "sources_sha256": {
+    "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/protocol.json": "f1913d68c8939652b854651b3f2aab32e49dd7057689787c99e3eb513f1f4cc2",
+    "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/params_snapshot.yaml": "0b513c7ab6f374f9f5020173f03d5f38b354cc4030d021b41621337cf917a3d8",
+    "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/round1/trials.json": "34d15c4c3f04759ecf1e007a9b75d2d88a03ba71f5f8d16d819d820d33b75fd0",
+    "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/round2/trials.json": "ce57758bef6c5cb82977bb1549f922e345e0da262b154a16daf6fc9e4f5273bf",
+    "outputs/slam_improvement/map_slam.pgm": "503b28309e0e64dbac7f87647b645e48b053066d22ffa85c2fa50f80cc5f22ee",
+    "outputs/slam_improvement/map_slam.yaml": "38f5bec751d1aad66647be56c022ff2405a89cfe668bd6f44009b8fb2aca3b9b"
+  },
+  "limitations": [
+    "Local route, truth-assisted initial pose only; no truth TF supplied to AMCL.",
+    "Round starts reset; seed/configuration identical, not independent scenes or randomized AMCL trials.",
+    "720 simulated rays +60 AMCL beams; previous24-ray known-map experiment is not a matched causal baseline.",
+    "Rejected goals never dispatched; distance from stopped robot to rejected target is not a navigation accuracy measurement.",
+    "Post-response stationary flag is a single fresh odom sample; not continuous braking validation."
+  ]
+}

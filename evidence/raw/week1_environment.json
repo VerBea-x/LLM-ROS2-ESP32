@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-10-25T14:07:23.669668+00:00",
+  "source_kind": "vm_host_snapshot",
+  "platform": {
+    "os": {
+      "PRETTY_NAME": "Ubuntu 22.04.5 LTS",
+      "NAME": "Ubuntu",
+      "VERSION_ID": "22.04",
+      "VERSION": "22.04.5 LTS (Jammy Jellyfish)"
+    },
+    "kernel": "6.8.0-138-generic",
+    "architecture": "x86_64",
+    "python": "3.10.12",
+    "cpu_count": 6,
+    "memory": {
+      "MemTotal": "6019540 kB",
+      "MemAvailable": "2406616 kB"
+    },
+    "root_disk_bytes": {
+      "total": 78412533760,
+      "used": 50840109056,
+      "free": 23932321792
+    },
+    "ros_distro_env": "humble"
+  },
+  "ros_graph": {
+    "collected": true,
+    "topic_command": {
+      "command": [
+        "ros2",
+        "topic",
+        "list",
+        "-t",
+        "--no-daemon"
+      ],
+      "returncode": 0,
+      "stdout": "/parameter_events [rcl_interfaces/msg/ParameterEvent]\n/rosout [rcl_interfaces/msg/Log]",
+      "stderr": ""
+    },
+    "node_command": {
+      "command": [
+        "ros2",
+        "node",
+        "list",
+        "--no-daemon"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "topics": {
+      "/parameter_events": "rcl_interfaces/msg/ParameterEvent",
+      "/rosout": "rcl_interfaces/msg/Log"
+    },
+    "course_topics": {
+      "/cmd_vel": {
+        "expected": {
+          "type": "geometry_msgs/msg/Twist",
+          "frequency": "<=20 Hz"
+        },
+        "observed_type": null,
+        "present": false,
+        "rate_hz": null,
+        "rate_status": "no_publisher_seen"
+      },
+      "/odom": {
+        "expected": {
+          "type": "nav_msgs/msg/Odometry",
+          "frequency": "50 Hz (course target)"
+        },
+        "observed_type": null,
+        "present": false,
+        "rate_hz": null,
+        "rate_status": "no_publisher_seen"
+      },
+      "/imu": {
+        "expected": {
+          "type": "sensor_msgs/msg/Imu",
+          "frequency": "50 Hz (course target)"
+        },
+        "observed_type": null,
+        "present": false,
+        "rate_hz": null,
+        "rate_status": "no_publisher_seen"
+      },
+      "/scan": {
+        "expected": {
+          "type": "sensor_msgs/msg/LaserScan",
+          "frequency": "10 Hz (course target)"
+        },
+        "observed_type": null,
+        "present": false,
+        "rate_hz": null,
+        "rate_status": "no_publisher_seen"
+      }
+    },
+    "packages": {
+      "nav2_bringup": {
+        "command": [
+          "ros2",
+          "pkg",
+          "prefix",
+          "nav2_bringup"
+        ],
+        "returncode": 0,
+        "stdout": "/opt/ros/humble",
+        "stderr": ""
+      },
+      "slam_toolbox": {
+        "command": [
+          "ros2",
+          "pkg",
+          "prefix",
+          "slam_toolbox"
+        ],
+        "returncode": 0,
+        "stdout": "/opt/ros/humble",
+        "stderr": ""
+      },
+      "nav_g03": {
+        "command": [
+          "ros2",
+          "pkg",
+          "prefix",
+          "nav_g03"
+        ],
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Package not found"
+      }
+    }
+  },
+  "expected_course_contract": {
+    "/cmd_vel": {
+      "type": "geometry_msgs/msg/Twist",
+      "frequency": "<=20 Hz"
+    },
+    "/odom": {
+      "type": "nav_msgs/msg/Odometry",
+      "frequency": "50 Hz (course target)"
+    },
+    "/imu": {
+      "type": "sensor_msgs/msg/Imu",
+      "frequency": "50 Hz (course target)"
+    },
+    "/scan": {
+      "type": "sensor_msgs/msg/LaserScan",
+      "frequency": "10 Hz (course target)"
+    }
+  },
+  "disclaimer": "系统信息是真实采集；若未启用ROS采集或话题无发布者，不推断课程接口已通过。"
+}

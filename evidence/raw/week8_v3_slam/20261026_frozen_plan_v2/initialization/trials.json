@@ -1,0 +1,258 @@
+{
+  "protocol": {
+    "version": "week34_slam_map_validation_v1",
+    "map": "outputs/slam_improvement/map_slam.yaml",
+    "map_origin_alignment": "Original SLAM map coordinates, no post-hoc registration; initial map-to-truth xy/yaw is identity.",
+    "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+    "domain": 47,
+    "port": 8000,
+    "sim_seed": 42,
+    "sim_slip": 0.05,
+    "sim_rays": 720,
+    "amcl_max_beams": 60,
+    "rounds": 2,
+    "round_start": "restart simulator and AMCL each round; single explicit truth-assisted initial pose, never truth TF",
+    "initial_covariance_xy_m": 0.15,
+    "initial_covariance_yaw_deg": 10,
+    "initial_observation_s": 8,
+    "initial_gate_position_error_m": 0.3,
+    "initial_gate_required_fresh_samples": 3,
+    "sample_max_age_s": 0.3,
+    "truth_http_max_latency_s": 0.1,
+    "service_timeout_s": 60,
+    "truth_goal_tolerance_m": 0.3,
+    "navigation_gate": "All six service results SUCCEEDED and truth endpoint error<=0.30m; endpoint truth availability required. Report stop separately.",
+    "goals": [
+      {
+        "id": "door",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ]
+      },
+      {
+        "id": "middle",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ]
+      },
+      {
+        "id": "return",
+        "pose": [
+          8.0,
+          5.5,
+          0.0
+        ]
+      }
+    ],
+    "limits": [
+      "Local route only, not whole-field localization or kidnapping recovery.",
+      "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+      "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+    ]
+  },
+  "round": 1,
+  "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+  "initial_gate": {
+    "passed": true,
+    "valid_sample_count": 9,
+    "selected_stamps": [
+      1792990603679538394,
+      1792990604664516587,
+      1792990605669261876
+    ],
+    "errors_m": [
+      0.0969125670916667,
+      0.09128442849109196,
+      0.09829429359461901
+    ],
+    "limits": "Distinct stationary updates are correlated, not independent experimental replicates."
+  },
+  "trials": [],
+  "amcl_samples": [
+    {
+      "stamp_ns": 1792990598471800428,
+      "estimate": [
+        8.102176785704787,
+        6.243405472168668,
+        1.5465095602734478
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.034307295,
+      "truth_request_s": 0.006549272,
+      "valid_timing": true,
+      "position_error_m": 0.02282605865151192,
+      "yaw_error_deg": 0.5084707803013699
+    },
+    {
+      "stamp_ns": 1792990598571868025,
+      "estimate": [
+        8.113992693425388,
+        6.244206168705767,
+        1.5572612553130172
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.020407219,
+      "truth_request_s": 0.006007369,
+      "valid_timing": true,
+      "position_error_m": 0.03455459066921264,
+      "yaw_error_deg": 1.1244975286804397
+    },
+    {
+      "stamp_ns": 1792990599576875627,
+      "estimate": [
+        8.128480195774506,
+        6.243938598898121,
+        1.5600769010714015
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.019284275,
+      "truth_request_s": 0.006630884,
+      "valid_timing": true,
+      "position_error_m": 0.048842566877746615,
+      "yaw_error_deg": 1.2858221472397737
+    },
+    {
+      "stamp_ns": 1792990600559984666,
+      "estimate": [
+        8.13245920333444,
+        6.254745428732947,
+        1.5651932497832208
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.009620625,
+      "truth_request_s": 0.008283581,
+      "valid_timing": true,
+      "position_error_m": 0.055067026412675295,
+      "yaw_error_deg": 1.5789673349442164
+    },
+    {
+      "stamp_ns": 1792990601568006407,
+      "estimate": [
+        8.149366798974311,
+        6.26054367684091,
+        1.570232695708419
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.023636478,
+      "truth_request_s": 0.007465098,
+      "valid_timing": true,
+      "position_error_m": 0.07293812559594502,
+      "yaw_error_deg": 1.8677063175424689
+    },
+    {
+      "stamp_ns": 1792990602584470716,
+      "estimate": [
+        8.162786769236526,
+        6.262748807694244,
+        1.5758430874803018
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.019994725,
+      "truth_request_s": 0.007569788,
+      "valid_timing": true,
+      "position_error_m": 0.0864069015930348,
+      "yaw_error_deg": 2.1891580874862786
+    },
+    {
+      "stamp_ns": 1792990603679538394,
+      "estimate": [
+        8.172536304473201,
+        6.266793714847859,
+        1.580402674882499
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.019312903,
+      "truth_request_s": 0.010587199,
+      "valid_timing": true,
+      "position_error_m": 0.0969125670916667,
+      "yaw_error_deg": 2.450403201953203
+    },
+    {
+      "stamp_ns": 1792990604664516587,
+      "estimate": [
+        8.166701392729246,
+        6.266560731498936,
+        1.5832922295109946
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.010680167,
+      "truth_request_s": 0.005668552,
+      "valid_timing": true,
+      "position_error_m": 0.09128442849109196,
+      "yaw_error_deg": 2.6159624868384874
+    },
+    {
+      "stamp_ns": 1792990605669261876,
+      "estimate": [
+        8.17378414949436,
+        6.267432999454436,
+        1.5802675187160788
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.012553226,
+      "truth_request_s": 0.004866846,
+      "valid_timing": true,
+      "position_error_m": 0.09829429359461901,
+      "yaw_error_deg": 2.442659324042156
+    }
+  ],
+  "events": [
+    {
+      "event": "explicit_initial_pose",
+      "wall_ns": 1792990598454698034,
+      "elapsed_s": 8.567386808000009,
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "truth_tf_published": false
+    }
+  ],
+  "limitations": [
+    "Local route only, not whole-field localization or kidnapping recovery.",
+    "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+    "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+  ],
+  "result": "INITIALIZED_ONLY"
+}

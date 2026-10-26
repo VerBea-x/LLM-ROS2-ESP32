@@ -1,0 +1,26 @@
+{
+  "normal": {
+    "name": "navigate_to",
+    "arguments": {
+      "x": 7,
+      "y": 6,
+      "label": "W1_door"
+    }
+  },
+  "occupied": {
+    "name": "navigate_to",
+    "arguments": {
+      "x": 7.5,
+      "y": 4.5,
+      "label": "W1_door"
+    }
+  },
+  "stale": {
+    "name": "navigate_to",
+    "arguments": {
+      "x": 1,
+      "y": 1,
+      "label": "cup_old"
+    }
+  }
+}

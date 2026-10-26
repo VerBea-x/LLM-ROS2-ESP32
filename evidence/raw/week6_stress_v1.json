@@ -1,0 +1,452 @@
+{
+  "source_kind": "offline_controlled_synthetic_geometry_and_registration",
+  "protocol_sha256": "3f448a633da8222a71fd9875a9a7e8c986533f586efb0f0874bcd816fe45e581",
+  "geometry_cases": [
+    {
+      "id": "S1_u220",
+      "station": [
+        2,
+        2,
+        0
+      ],
+      "pixel_u": 220,
+      "truth": [
+        2.95447997803503,
+        2.298274993135947
+      ],
+      "estimate": {
+        "x": 2.95447997803503,
+        "y": 2.298274993135947,
+        "bearing_rad": 0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S1_u320",
+      "station": [
+        2,
+        2,
+        0
+      ],
+      "pixel_u": 320,
+      "truth": [
+        3.0,
+        2.0
+      ],
+      "estimate": {
+        "x": 3.0,
+        "y": 2.0,
+        "bearing_rad": 0.0,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S1_u420",
+      "station": [
+        2,
+        2,
+        0
+      ],
+      "pixel_u": 420,
+      "truth": [
+        2.95447997803503,
+        1.7017250068640533
+      ],
+      "estimate": {
+        "x": 2.95447997803503,
+        "y": 1.7017250068640533,
+        "bearing_rad": -0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S2_u220",
+      "station": [
+        6,
+        2,
+        90
+      ],
+      "pixel_u": 220,
+      "truth": [
+        5.701725006864053,
+        2.95447997803503
+      ],
+      "estimate": {
+        "x": 5.701725006864053,
+        "y": 2.95447997803503,
+        "bearing_rad": 0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S2_u320",
+      "station": [
+        6,
+        2,
+        90
+      ],
+      "pixel_u": 320,
+      "truth": [
+        6.0,
+        3.0
+      ],
+      "estimate": {
+        "x": 6.0,
+        "y": 3.0,
+        "bearing_rad": 0.0,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S2_u420",
+      "station": [
+        6,
+        2,
+        90
+      ],
+      "pixel_u": 420,
+      "truth": [
+        6.298274993135947,
+        2.95447997803503
+      ],
+      "estimate": {
+        "x": 6.298274993135947,
+        "y": 2.95447997803503,
+        "bearing_rad": -0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S3_u220",
+      "station": [
+        6,
+        6,
+        180
+      ],
+      "pixel_u": 220,
+      "truth": [
+        5.04552002196497,
+        5.701725006864053
+      ],
+      "estimate": {
+        "x": 5.04552002196497,
+        "y": 5.701725006864053,
+        "bearing_rad": 0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S3_u320",
+      "station": [
+        6,
+        6,
+        180
+      ],
+      "pixel_u": 320,
+      "truth": [
+        5.0,
+        6.0
+      ],
+      "estimate": {
+        "x": 5.0,
+        "y": 6.0,
+        "bearing_rad": 0.0,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S3_u420",
+      "station": [
+        6,
+        6,
+        180
+      ],
+      "pixel_u": 420,
+      "truth": [
+        5.04552002196497,
+        6.298274993135947
+      ],
+      "estimate": {
+        "x": 5.04552002196497,
+        "y": 6.298274993135947,
+        "bearing_rad": -0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S4_u220",
+      "station": [
+        2,
+        6,
+        270
+      ],
+      "pixel_u": 220,
+      "truth": [
+        2.2982749931359465,
+        5.04552002196497
+      ],
+      "estimate": {
+        "x": 2.298274993135947,
+        "y": 5.04552002196497,
+        "bearing_rad": 0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 4.440892098500626e-16,
+      "passed": true
+    },
+    {
+      "id": "S4_u320",
+      "station": [
+        2,
+        6,
+        270
+      ],
+      "pixel_u": 320,
+      "truth": [
+        1.9999999999999998,
+        5.0
+      ],
+      "estimate": {
+        "x": 1.9999999999999998,
+        "y": 5.0,
+        "bearing_rad": 0.0,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 0.0,
+      "passed": true
+    },
+    {
+      "id": "S4_u420",
+      "station": [
+        2,
+        6,
+        270
+      ],
+      "pixel_u": 420,
+      "truth": [
+        1.701725006864053,
+        5.04552002196497
+      ],
+      "estimate": {
+        "x": 1.7017250068640528,
+        "y": 5.04552002196497,
+        "bearing_rad": -0.3028848683749714,
+        "range_assumption_m": 1.0
+      },
+      "error_m": 2.220446049250313e-16,
+      "passed": true
+    }
+  ],
+  "yaw_bias_cases": [
+    {
+      "station_id": 1,
+      "yaw_bias_deg": 5,
+      "error_m": 0.08723877473067197,
+      "radial_m": -0.003805301908254677,
+      "tangential_m": 0.08715574274765814,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 1,
+      "yaw_bias_deg": 20,
+      "error_m": 0.34729635533386083,
+      "radial_m": -0.06030737921409157,
+      "tangential_m": 0.3420201433256689,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 2,
+      "yaw_bias_deg": 5,
+      "error_m": 0.08723877473067197,
+      "radial_m": -0.003805301908254677,
+      "tangential_m": 0.08715574274765814,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 2,
+      "yaw_bias_deg": 20,
+      "error_m": 0.3472963553338604,
+      "radial_m": -0.06030737921409157,
+      "tangential_m": 0.34202014332566844,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 3,
+      "yaw_bias_deg": 5,
+      "error_m": 0.08723877473067197,
+      "radial_m": -0.003805301908254677,
+      "tangential_m": 0.08715574274765814,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 3,
+      "yaw_bias_deg": 20,
+      "error_m": 0.34729635533386033,
+      "radial_m": -0.06030737921409113,
+      "tangential_m": 0.34202014332566844,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 4,
+      "yaw_bias_deg": 5,
+      "error_m": 0.08723877473067175,
+      "radial_m": -0.0038053019082546964,
+      "tangential_m": 0.08715574274765792,
+      "dominant": "tangential"
+    },
+    {
+      "station_id": 4,
+      "yaw_bias_deg": 20,
+      "error_m": 0.3472963553338601,
+      "radial_m": -0.060307379214091204,
+      "tangential_m": 0.3420201433256682,
+      "dominant": "tangential"
+    }
+  ],
+  "same_class_cases": [
+    {
+      "physical_object_count_in_fixture": 2,
+      "spacing_m": 0.6,
+      "registered_item_count": 1,
+      "ambiguous_map_rejected": false,
+      "conversion_error": null,
+      "map": {
+        "schema_version": 1,
+        "frame_id": "map",
+        "generated_at": "2026-10-26T00:00:02Z",
+        "items": [
+          {
+            "label": "cup",
+            "x": 1.3,
+            "y": 0.0,
+            "conf": 0.8,
+            "last_seen": "2026-10-26T00:00:01Z",
+            "n_obs": 2,
+            "evidence_ids": [
+              "SYNTHETIC_initial",
+              "SYNTHETIC_other_object"
+            ],
+            "age_s": 1.0,
+            "tau_s": 4,
+            "state": "fresh",
+            "tau_evidence_id": "SYNTHETIC_rule"
+          }
+        ],
+        "limitations": [
+          "range=1m is an explicit teaching approximation; not measured object depth."
+        ]
+      }
+    },
+    {
+      "physical_object_count_in_fixture": 2,
+      "spacing_m": 1.2,
+      "registered_item_count": 2,
+      "ambiguous_map_rejected": true,
+      "conversion_error": "ambiguous semantic label cup: multiple targets require explicit unique names",
+      "map": {
+        "schema_version": 1,
+        "frame_id": "map",
+        "generated_at": "2026-10-26T00:00:02Z",
+        "items": [
+          {
+            "label": "cup",
+            "x": 1.0,
+            "y": 0.0,
+            "conf": 0.8,
+            "last_seen": "2026-10-26T00:00:00Z",
+            "n_obs": 1,
+            "evidence_ids": [
+              "SYNTHETIC_initial"
+            ],
+            "age_s": 2.0,
+            "tau_s": 4,
+            "state": "fresh",
+            "tau_evidence_id": "SYNTHETIC_rule"
+          },
+          {
+            "label": "cup",
+            "x": 2.2,
+            "y": 0.0,
+            "conf": 0.8,
+            "last_seen": "2026-10-26T00:00:01Z",
+            "n_obs": 1,
+            "evidence_ids": [
+              "SYNTHETIC_other_object"
+            ],
+            "age_s": 1.0,
+            "tau_s": 4,
+            "state": "fresh",
+            "tau_evidence_id": "SYNTHETIC_rule"
+          }
+        ],
+        "limitations": [
+          "range=1m is an explicit teaching approximation; not measured object depth."
+        ]
+      }
+    }
+  ],
+  "existing_ROS_record_conversion": [
+    {
+      "snapshot": "fresh_snapshot",
+      "target_count": 3,
+      "ages_s": {
+        "cup": 0.5464208126068115,
+        "bottle": 1.7980999946594238,
+        "backpack": 1.1965668201446533
+      },
+      "tau_s": {
+        "cup": 4.0,
+        "bottle": 4.0,
+        "backpack": 4.0
+      }
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "target_count": 3,
+      "ages_s": {
+        "cup": 8.146569967269897,
+        "bottle": 9.39824914932251,
+        "backpack": 8.79671597480774
+      },
+      "tau_s": {
+        "cup": 4.0,
+        "bottle": 4.0,
+        "backpack": 4.0
+      }
+    }
+  ],
+  "checks": {
+    "all12_known_pose_geometry_cases": true,
+    "out_of_order_rejected_without_mutation": true,
+    "separate_same_class_items_not_silently_overwritten": true,
+    "existing_ROS_observations_convert_without_loss": true
+  },
+  "all_checks_passed": true,
+  "known_limitations": {
+    "near_same_class_objects_still_merge": true,
+    "note": "Fail-closed conversion only detects separate duplicate-label items. It cannot recover objects already merged by the1m teaching approximation."
+  },
+  "limitations": [
+    "Synthetic offline experiment, not new camera or ROS data.",
+    "Dense same-class objects within merge radius remain unresolved without identity tracking.",
+    "Geometry success under known virtual poses does not prove real calibration or whole-map localization."
+  ]
+}

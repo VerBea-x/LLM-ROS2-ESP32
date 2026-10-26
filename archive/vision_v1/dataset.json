@@ -1,0 +1,1336 @@
+{
+  "dataset_protocol": "public_substitution_v1",
+  "substitution_note": "User authorized20 public images instead of teacher10+self10; no vehicle camera or own-scene claim.",
+  "scenes": [
+    {
+      "sample_id": "coco_val2017_000000002157",
+      "image": "images/000000002157.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "image_sha256": "1a038609e5ceb0719105b1438d257c3d588e45384cb7ffe77b137e4d7e3ed477",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000002157.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 427,
+      "license_id": 3,
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            3.84,
+            118.98,
+            63.33,
+            214.94
+          ],
+          "annotation_id": 1506200
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            490.91,
+            166.81,
+            556.47,
+            233.31
+          ],
+          "annotation_id": 1508109
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000002431",
+      "image": "images/000000002431.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "image_sha256": "fa0ce7b066c2fe7bd0892aa2c6361943148db9766de60241e69d8026a18e05ad",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000002431.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 457,
+      "height": 640,
+      "license_id": 6,
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            106.67,
+            391.35,
+            234.95,
+            567.21
+          ],
+          "annotation_id": 681708
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            357.56,
+            415.55,
+            457.0,
+            632.94
+          ],
+          "annotation_id": 682073
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000002592",
+      "image": "images/000000002592.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "image_sha256": "ffa3d472d44184b1f48878f7b097189723e57a24f36c44c29e4bc561110fbf41",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000002592.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 366,
+      "license_id": 5,
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            222.89,
+            34.54,
+            432.62,
+            247.56
+          ],
+          "annotation_id": 678926
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000002685",
+      "image": "images/000000002685.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "image_sha256": "2430b9bffb5ff52dfbaf7b922ac8018547e233a5996a6b017bd1a206a46c5bdb",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000002685.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 555,
+      "license_id": 1,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            105.79,
+            277.75,
+            150.95,
+            352.87
+          ],
+          "annotation_id": 82783
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            121.75,
+            272.49,
+            180.43,
+            336.64
+          ],
+          "annotation_id": 90393
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            137.54,
+            263.43,
+            176.26999999999998,
+            311.77
+          ],
+          "annotation_id": 91651
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            160.27,
+            248.36,
+            179.27,
+            285.61
+          ],
+          "annotation_id": 92393
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            168.06,
+            237.87,
+            185.47,
+            265.73
+          ],
+          "annotation_id": 93129
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            140.95,
+            256.0,
+            177.63,
+            290.6
+          ],
+          "annotation_id": 94557
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            175.05,
+            235.76,
+            185.67000000000002,
+            252.20999999999998
+          ],
+          "annotation_id": 96193
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            154.53,
+            247.11,
+            178.31,
+            288.44
+          ],
+          "annotation_id": 1488062
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            367.04,
+            200.07,
+            386.97,
+            218.81
+          ],
+          "annotation_id": 1504615
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            140.87,
+            315.74,
+            174.67000000000002,
+            352.65
+          ],
+          "annotation_id": 1878140
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000003661",
+      "image": "images/000000003661.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "image_sha256": "8746b068c166782f4b4fb7e6be9d16e5311e9c15bc867e21409b7f5d2eddefb4",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000003661.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 384,
+      "license_id": 1,
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            567.52,
+            19.95,
+            640.0,
+            240.36999999999998
+          ],
+          "annotation_id": 1881632
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000003845",
+      "image": "images/000000003845.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "image_sha256": "d5c4394c712e5c24586f2531e2adf25d14e398993cc12af561ca760f20881df0",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000003845.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 500,
+      "height": 375,
+      "license_id": 2,
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            105.92,
+            0.04,
+            183.03,
+            55.12
+          ],
+          "annotation_id": 669817
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000005193",
+      "image": "images/000000005193.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "image_sha256": "2f0360e89d71b146cbfaee05e934303864fa61d9bf1a1f5cc0c2e508b8191b8d",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000005193.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 425,
+      "license_id": 3,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            369.48,
+            97.93,
+            389.24,
+            172.52
+          ],
+          "annotation_id": 1483113
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000006471",
+      "image": "images/000000006471.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "image_sha256": "67fe4f0a7b71ecee846273d654bb8387c180229dc6c4a3060152aed0a776762f",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000006471.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 500,
+      "height": 333,
+      "license_id": 1,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            147.25,
+            103.0,
+            152.57,
+            118.71000000000001
+          ],
+          "annotation_id": 1485643
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            86.46,
+            107.35,
+            91.13,
+            123.83
+          ],
+          "annotation_id": 2096622
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000007574",
+      "image": "images/000000007574.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "image_sha256": "4f26c847c2f49574978e96733efaec720dd1d1ba95a8220d0de012b7317eed47",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000007574.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 480,
+      "license_id": 4,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            501.24,
+            306.49,
+            533.2,
+            389.13
+          ],
+          "annotation_id": 88785
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            483.34,
+            299.06,
+            510.64,
+            381.47
+          ],
+          "annotation_id": 90913
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000008021",
+      "image": "images/000000008021.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "image_sha256": "235537407867a7b894e78b3aecb55b33b14b64cbb23ca376a00d34c62a1a63a6",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000008021.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 480,
+      "license_id": 4,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            443.84,
+            367.93,
+            451.79999999999995,
+            386.05
+          ],
+          "annotation_id": 1865999
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            436.56,
+            368.91,
+            444.51,
+            385.75
+          ],
+          "annotation_id": 1868366
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            431.83,
+            369.24,
+            437.38,
+            386.13
+          ],
+          "annotation_id": 1871014
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000009590",
+      "image": "images/000000009590.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "image_sha256": "93cdd55e59cf7d32c481ca5b00b1b9c64f8b8f44020f64a97752a767fd7571ee",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000009590.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 427,
+      "license_id": 3,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            427.09,
+            227.73,
+            450.59,
+            276.53
+          ],
+          "annotation_id": 84206
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            347.22,
+            270.92,
+            385.8,
+            310.33000000000004
+          ],
+          "annotation_id": 673539
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            522.83,
+            237.5,
+            582.25,
+            291.96
+          ],
+          "annotation_id": 680609
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            541.22,
+            214.58,
+            567.71,
+            236.54000000000002
+          ],
+          "annotation_id": 1502083
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            466.61,
+            262.74,
+            491.82,
+            300.08000000000004
+          ],
+          "annotation_id": 1508776
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            184.6,
+            280.03,
+            207.75,
+            306.47999999999996
+          ],
+          "annotation_id": 1510171
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            130.64,
+            235.68,
+            143.66,
+            268.55
+          ],
+          "annotation_id": 1585678
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            423.4,
+            275.03,
+            471.65999999999997,
+            305.88
+          ],
+          "annotation_id": 1885626
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            325.2,
+            251.15,
+            346.2,
+            265.96
+          ],
+          "annotation_id": 1886849
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            478.52,
+            258.83,
+            522.6,
+            278.81
+          ],
+          "annotation_id": 1887624
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            251.46,
+            250.11,
+            276.05,
+            270.15000000000003
+          ],
+          "annotation_id": 2099459
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            301.72,
+            234.31,
+            327.83000000000004,
+            264.01
+          ],
+          "annotation_id": 2215973
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000010363",
+      "image": "images/000000010363.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "image_sha256": "2fd23c4c491520182a703d0df9c604f6b7ee8a592ad8743897870cf0260f47b2",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000010363.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 361,
+      "license_id": 1,
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            147.18,
+            28.8,
+            159.84,
+            66.41
+          ],
+          "annotation_id": 80785
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000000139",
+      "image": "images/000000000139.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "image_sha256": "ffe0f0cec3b2e27aab1967229cdf0a0d7751dcdd5800322f0b8ac0dffb3b8a8d",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000139.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 426,
+      "license_id": 2,
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            358.98,
+            218.05,
+            414.98,
+            320.88
+          ],
+          "annotation_id": 103487
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            290.69,
+            218.0,
+            352.52,
+            316.48
+          ],
+          "annotation_id": 104368
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            413.2,
+            223.01,
+            443.37,
+            304.37
+          ],
+          "annotation_id": 105328
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            317.4,
+            219.24,
+            338.97999999999996,
+            230.83
+          ],
+          "annotation_id": 110334
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            412.25,
+            219.02,
+            421.88,
+            231.54000000000002
+          ],
+          "annotation_id": 1941808
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000000632",
+      "image": "images/000000000632.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "image_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000632.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 483,
+      "license_id": 3,
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            244.82,
+            230.45,
+            349.53999999999996,
+            318.14
+          ],
+          "annotation_id": 1947237
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000001993",
+      "image": "images/000000001993.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "image_sha256": "039f3bfb862023bde7f835a36c32d8f59a3e66488863c2a47b7b746e78c44186",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000001993.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 419,
+      "license_id": 4,
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            109.22,
+            250.46,
+            227.86,
+            408.64
+          ],
+          "annotation_id": 376624
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            0.0,
+            298.68,
+            35.15,
+            408.0
+          ],
+          "annotation_id": 1579220
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000004134",
+      "image": "images/000000004134.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "image_sha256": "2c922f6ec30f9c4eca2b373c8808f63979c26f4d89242754b3576bf78db1108b",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000004134.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 425,
+      "license_id": 6,
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            255.5,
+            231.79,
+            295.68,
+            270.25
+          ],
+          "annotation_id": 1582548
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            277.95,
+            182.82,
+            298.0,
+            214.38
+          ],
+          "annotation_id": 1585903
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            289.56,
+            171.11,
+            300.5,
+            195.14000000000001
+          ],
+          "annotation_id": 1939737
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000000285",
+      "image": "images/000000000285.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "image_sha256": "f3a2974ce3686332609124c70e3e6a2e3aca43fccf1cd1bd7c5c03820977f57d",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000285.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 586,
+      "height": 640,
+      "license_id": 4,
+      "objects": []
+    },
+    {
+      "sample_id": "coco_val2017_000000000724",
+      "image": "images/000000000724.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "image_sha256": "5c0e559c75d3969c8e3e297b61f61063f78045c9d4802b526ba616361f3823fd",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000724.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 375,
+      "height": 500,
+      "license_id": 1,
+      "objects": []
+    },
+    {
+      "sample_id": "coco_val2017_000000000776",
+      "image": "images/000000000776.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "image_sha256": "1dd31e9059c491992be2f562624eb4093e17aee08b4f7baf5ff9ea24543b0a33",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000776.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 428,
+      "height": 640,
+      "license_id": 1,
+      "objects": []
+    },
+    {
+      "sample_id": "coco_val2017_000000000785",
+      "image": "images/000000000785.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "image_sha256": "83981537a7baeafbeb9c8cb67b3484dc26433f574b3685d021fa537e277e4726",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000785.jpg",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:39:15.495835+00:00",
+      "width": 640,
+      "height": 425,
+      "license_id": 4,
+      "objects": []
+    }
+  ],
+  "licenses": [
+    {
+      "url": "http://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "id": 1,
+      "name": "Attribution-NonCommercial-ShareAlike License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-nc/2.0/",
+      "id": 2,
+      "name": "Attribution-NonCommercial License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+      "id": 3,
+      "name": "Attribution-NonCommercial-NoDerivs License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by/2.0/",
+      "id": 4,
+      "name": "Attribution License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-sa/2.0/",
+      "id": 5,
+      "name": "Attribution-ShareAlike License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-nd/2.0/",
+      "id": 6,
+      "name": "Attribution-NoDerivs License"
+    },
+    {
+      "url": "http://flickr.com/commons/usage/",
+      "id": 7,
+      "name": "No known copyright restrictions"
+    },
+    {
+      "url": "http://www.usa.gov/copyright.shtml",
+      "id": 8,
+      "name": "United States Government Work"
+    }
+  ],
+  "categories": [
+    {
+      "supercategory": "person",
+      "id": 1,
+      "name": "person"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 2,
+      "name": "bicycle"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 3,
+      "name": "car"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 4,
+      "name": "motorcycle"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 5,
+      "name": "airplane"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 6,
+      "name": "bus"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 7,
+      "name": "train"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 8,
+      "name": "truck"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 9,
+      "name": "boat"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 10,
+      "name": "traffic light"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 11,
+      "name": "fire hydrant"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 13,
+      "name": "stop sign"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 14,
+      "name": "parking meter"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 15,
+      "name": "bench"
+    },
+    {
+      "supercategory": "animal",
+      "id": 16,
+      "name": "bird"
+    },
+    {
+      "supercategory": "animal",
+      "id": 17,
+      "name": "cat"
+    },
+    {
+      "supercategory": "animal",
+      "id": 18,
+      "name": "dog"
+    },
+    {
+      "supercategory": "animal",
+      "id": 19,
+      "name": "horse"
+    },
+    {
+      "supercategory": "animal",
+      "id": 20,
+      "name": "sheep"
+    },
+    {
+      "supercategory": "animal",
+      "id": 21,
+      "name": "cow"
+    },
+    {
+      "supercategory": "animal",
+      "id": 22,
+      "name": "elephant"
+    },
+    {
+      "supercategory": "animal",
+      "id": 23,
+      "name": "bear"
+    },
+    {
+      "supercategory": "animal",
+      "id": 24,
+      "name": "zebra"
+    },
+    {
+      "supercategory": "animal",
+      "id": 25,
+      "name": "giraffe"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 27,
+      "name": "backpack"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 28,
+      "name": "umbrella"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 31,
+      "name": "handbag"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 32,
+      "name": "tie"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 33,
+      "name": "suitcase"
+    },
+    {
+      "supercategory": "sports",
+      "id": 34,
+      "name": "frisbee"
+    },
+    {
+      "supercategory": "sports",
+      "id": 35,
+      "name": "skis"
+    },
+    {
+      "supercategory": "sports",
+      "id": 36,
+      "name": "snowboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 37,
+      "name": "sports ball"
+    },
+    {
+      "supercategory": "sports",
+      "id": 38,
+      "name": "kite"
+    },
+    {
+      "supercategory": "sports",
+      "id": 39,
+      "name": "baseball bat"
+    },
+    {
+      "supercategory": "sports",
+      "id": 40,
+      "name": "baseball glove"
+    },
+    {
+      "supercategory": "sports",
+      "id": 41,
+      "name": "skateboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 42,
+      "name": "surfboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 43,
+      "name": "tennis racket"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 44,
+      "name": "bottle"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 46,
+      "name": "wine glass"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 47,
+      "name": "cup"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 48,
+      "name": "fork"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 49,
+      "name": "knife"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 50,
+      "name": "spoon"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 51,
+      "name": "bowl"
+    },
+    {
+      "supercategory": "food",
+      "id": 52,
+      "name": "banana"
+    },
+    {
+      "supercategory": "food",
+      "id": 53,
+      "name": "apple"
+    },
+    {
+      "supercategory": "food",
+      "id": 54,
+      "name": "sandwich"
+    },
+    {
+      "supercategory": "food",
+      "id": 55,
+      "name": "orange"
+    },
+    {
+      "supercategory": "food",
+      "id": 56,
+      "name": "broccoli"
+    },
+    {
+      "supercategory": "food",
+      "id": 57,
+      "name": "carrot"
+    },
+    {
+      "supercategory": "food",
+      "id": 58,
+      "name": "hot dog"
+    },
+    {
+      "supercategory": "food",
+      "id": 59,
+      "name": "pizza"
+    },
+    {
+      "supercategory": "food",
+      "id": 60,
+      "name": "donut"
+    },
+    {
+      "supercategory": "food",
+      "id": 61,
+      "name": "cake"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 62,
+      "name": "chair"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 63,
+      "name": "couch"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 64,
+      "name": "potted plant"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 65,
+      "name": "bed"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 67,
+      "name": "dining table"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 70,
+      "name": "toilet"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 72,
+      "name": "tv"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 73,
+      "name": "laptop"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 74,
+      "name": "mouse"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 75,
+      "name": "remote"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 76,
+      "name": "keyboard"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 77,
+      "name": "cell phone"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 78,
+      "name": "microwave"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 79,
+      "name": "oven"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 80,
+      "name": "toaster"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 81,
+      "name": "sink"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 82,
+      "name": "refrigerator"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 84,
+      "name": "book"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 85,
+      "name": "clock"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 86,
+      "name": "vase"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 87,
+      "name": "scissors"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 88,
+      "name": "teddy bear"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 89,
+      "name": "hair drier"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 90,
+      "name": "toothbrush"
+    }
+  ],
+  "selection_protocol": {
+    "dataset": "COCO2017 validation",
+    "selection": "ascending image id within6cup+6bottle+4chair+4negative; no detector feedback",
+    "class_scope": [
+      "bottle",
+      "chair",
+      "cup"
+    ],
+    "selected": [
+      {
+        "image_id": 2157,
+        "selection_group": "cup"
+      },
+      {
+        "image_id": 2431,
+        "selection_group": "cup"
+      },
+      {
+        "image_id": 2592,
+        "selection_group": "cup"
+      },
+      {
+        "image_id": 2685,
+        "selection_group": "cup"
+      },
+      {
+        "image_id": 3661,
+        "selection_group": "cup"
+      },
+      {
+        "image_id": 3845,
+        "selection_group": "cup"
+      },
+      {
+        "image_id": 5193,
+        "selection_group": "bottle"
+      },
+      {
+        "image_id": 6471,
+        "selection_group": "bottle"
+      },
+      {
+        "image_id": 7574,
+        "selection_group": "bottle"
+      },
+      {
+        "image_id": 8021,
+        "selection_group": "bottle"
+      },
+      {
+        "image_id": 9590,
+        "selection_group": "bottle"
+      },
+      {
+        "image_id": 10363,
+        "selection_group": "bottle"
+      },
+      {
+        "image_id": 139,
+        "selection_group": "chair"
+      },
+      {
+        "image_id": 632,
+        "selection_group": "chair"
+      },
+      {
+        "image_id": 1993,
+        "selection_group": "chair"
+      },
+      {
+        "image_id": 4134,
+        "selection_group": "chair"
+      },
+      {
+        "image_id": 285,
+        "selection_group": "negative"
+      },
+      {
+        "image_id": 724,
+        "selection_group": "negative"
+      },
+      {
+        "image_id": 776,
+        "selection_group": "negative"
+      },
+      {
+        "image_id": 785,
+        "selection_group": "negative"
+      }
+    ],
+    "annotations_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+    "frozen_at": "2026-10-26T02:39:15.495835+00:00",
+    "thresholds": [
+      0.3,
+      0.5,
+      0.7
+    ],
+    "nms_iou": 0.45,
+    "match_iou": 0.5
+  }
+}

@@ -1,0 +1,39 @@
+[INFO] [1792979606.073043625] [embodied_sim_bridge]: 📋 桥接契约声明（先声明后发布）：
+    发布 /odom     nav_msgs/Odometry      QoS RELIABLE/VOLATILE depth=10  frame odom→base_footprint（漂移里程计，位姿＋有限差分 twist）
+    发布 /scan     sensor_msgs/LaserScan  QoS BEST_EFFORT/VOLATILE depth=10  frame laser_frame（24 线 360°，量程取契约 lidar_range）
+    广播 tf        odom→base_footprint→base_link 及 base_footprint→laser_frame
+    订阅 /cmd_vel  geometry_msgs/Twist · /cmd_vel_nav geometry_msgs/TwistStamped → 推理网关 2s 人工覆盖
+    断线行为：自动重连（3 秒间隔，无限次）；连接/断开/重连均有带时间戳日志
+[INFO] [1792979606.074051305] [embodied_sim_bridge]: 🔗 ROS 2 桥接器启动中，正在连接推理网关 ws://127.0.0.1:8002/ws ...
+[INFO] [1792979606.082498030] [embodied_sim_bridge]: ✅ 已成功连接到推理网关！（生命周期：CONNECTED，此前重连尝试 0 次）
+[WARN] [1792980778.350057107] [embodied_sim_bridge]: ⚠️ WebSocket 连接已断开！（生命周期：DISCONNECTED，code=None）；将自动重连，无需手动重启
+[ERROR] [1792980778.350423430] [embodied_sim_bridge]: ❌ 与推理网关连接中断/失败，3 秒后发起第 1 次自动重连 → ws://127.0.0.1:8002/ws
+Traceback (most recent call last):
+  File "/home/yahboom/embodied-sim-lite/embodied-sim-lite/ros_bridge.py", line 244, in main
+    rclpy.spin(bridge)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 229, in spin
+    executor.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 812, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 801, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 784, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yahboom/embodied-sim-lite/embodied-sim-lite/ros_bridge.py", line 253, in <module>
+    main()
+  File "/home/yahboom/embodied-sim-lite/embodied-sim-lite/ros_bridge.py", line 249, in main
+    rclpy.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/__init__.py", line 130, in shutdown
+    _shutdown(context=context)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/utilities.py", line 58, in shutdown
+    return context.shutdown()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/context.py", line 102, in shutdown
+    self.__context.shutdown()
+rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241

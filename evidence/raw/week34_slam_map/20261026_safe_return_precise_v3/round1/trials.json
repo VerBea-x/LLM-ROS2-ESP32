@@ -1,0 +1,4812 @@
+{
+  "protocol": {
+    "version": "week34_safe_return_precise_v3",
+    "map": "outputs/slam_improvement/map_slam.yaml",
+    "map_origin_alignment": "Original SLAM map coordinates, no post-hoc registration; initial map-to-truth xy/yaw is identity.",
+    "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+    "domain": 47,
+    "port": 8000,
+    "sim_seed": 42,
+    "sim_slip": 0.05,
+    "sim_rays": 720,
+    "amcl_max_beams": 60,
+    "rounds": 2,
+    "round_start": "restart simulator and AMCL each round; single explicit truth-assisted initial pose, never truth TF",
+    "initial_covariance_xy_m": 0.15,
+    "initial_covariance_yaw_deg": 10,
+    "initial_observation_s": 8,
+    "initial_gate_position_error_m": 0.3,
+    "initial_gate_required_fresh_samples": 3,
+    "sample_max_age_s": 0.3,
+    "truth_http_max_latency_s": 0.1,
+    "service_timeout_s": 60,
+    "truth_goal_tolerance_m": 0.3,
+    "navigation_gate": "All six service results SUCCEEDED and truth endpoint error<=0.30m; endpoint truth availability required. Report stop separately.",
+    "goals": [
+      {
+        "id": "door",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ]
+      },
+      {
+        "id": "middle",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ]
+      },
+      {
+        "id": "return_home",
+        "pose": [
+          8.08,
+          6.238,
+          0.0
+        ]
+      }
+    ],
+    "limits": [
+      "Local route only, not whole-field localization or kidnapping recovery.",
+      "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+      "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+    ],
+    "change_from_v1": {
+      "old_return": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "new_return_source": "config/week7_world_frozen_v2.json W8_home, existing virtual start/home landmark",
+      "reason": "Original target lacks footprint clearance on SLAM map; retain as negative boundary case, never lower obstacle rejection threshold.",
+      "interpretation": "New route validation only. Does not convert original failed route into success."
+    },
+    "parameter_overrides": {
+      "amcl": {
+        "max_beams": 90,
+        "update_min_d": 0.05,
+        "update_min_a": 0.05
+      },
+      "goal_checker": {
+        "xy_goal_tolerance": 0.08,
+        "yaw_goal_tolerance": 0.12
+      },
+      "FollowPath": {
+        "xy_goal_tolerance": 0.08,
+        "max_vel_x": 0.35,
+        "max_speed_xy": 0.35,
+        "max_vel_theta": 0.7,
+        "trans_stopped_velocity": 0.05
+      },
+      "velocity_smoother": {
+        "max_velocity": [
+          0.35,
+          0.0,
+          0.7
+        ],
+        "min_velocity": [
+          0.0,
+          0.0,
+          -0.7
+        ]
+      }
+    },
+    "change_from_v2": "Same safe route and30cm truth gate; lower speed, tighter estimated goal tolerance and more frequent AMCL updates. V2 service-success-but-large-truth-error results preserved. Configuration bundle, no single-factor causal claim."
+  },
+  "round": 1,
+  "source_kind": "actual_AMCL_Nav2_on_frozen_SLAM_map",
+  "initial_gate": {
+    "passed": true,
+    "valid_sample_count": 9,
+    "selected_stamps": [
+      1792991893280448769,
+      1792991894296405585,
+      1792991895293245778
+    ],
+    "errors_m": [
+      0.048736992901101304,
+      0.05753626831355065,
+      0.0637769104981334
+    ],
+    "limits": "Distinct stationary updates are correlated, not independent experimental replicates."
+  },
+  "trials": [
+    {
+      "id": "door",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 18.426984505000064,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 199,
+        "uptime_s": 20.0,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 384,
+        "uptime_s": 38.4,
+        "robot_truth": {
+          "x": 6.867,
+          "y": 6.018,
+          "theta_deg": -14.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.005615117,
+      "truth_goal_error_m": 0.13421251804507653,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792991917497707156,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "id": "middle",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 16.535125967999875,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 391,
+        "uptime_s": 39.2,
+        "robot_truth": {
+          "x": 6.867,
+          "y": 6.018,
+          "theta_deg": -14.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 557,
+        "uptime_s": 55.7,
+        "robot_truth": {
+          "x": 5.876,
+          "y": 6.001,
+          "theta_deg": 3.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.00130097,
+      "truth_goal_error_m": 0.12400403219250541,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792991934774118668,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "id": "return_home",
+      "pose": [
+        8.08,
+        6.238,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 9.225362365000137,
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 564,
+        "uptime_s": 56.5,
+        "robot_truth": {
+          "x": 5.876,
+          "y": 6.001,
+          "theta_deg": 3.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 656,
+        "uptime_s": 65.7,
+        "robot_truth": {
+          "x": 7.824,
+          "y": 6.088,
+          "theta_deg": 2.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.007831237,
+      "truth_goal_error_m": 0.2967086112670143,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792991944784862885,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    }
+  ],
+  "amcl_samples": [
+    {
+      "stamp_ns": 1792991888181935742,
+      "estimate": [
+        8.093892083531843,
+        6.246835467397295,
+        1.549221671270543
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.018176802,
+      "truth_request_s": 0.003111749,
+      "valid_timing": true,
+      "position_error_m": 0.016463762297371738,
+      "yaw_error_deg": 0.6638632940059503
+    },
+    {
+      "stamp_ns": 1792991888279760311,
+      "estimate": [
+        8.103318399472013,
+        6.252908546012171,
+        1.570093619772328
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.008900776,
+      "truth_request_s": 0.003091388,
+      "valid_timing": true,
+      "position_error_m": 0.027676930793232222,
+      "yaw_error_deg": 1.859737853372631
+    },
+    {
+      "stamp_ns": 1792991889193275261,
+      "estimate": [
+        8.10800615068986,
+        6.254986685099577,
+        1.5730058065182941
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.017438663,
+      "truth_request_s": 0.009480925,
+      "valid_timing": true,
+      "position_error_m": 0.032755029341084735,
+      "yaw_error_deg": 2.0265938630704228
+    },
+    {
+      "stamp_ns": 1792991890183861067,
+      "estimate": [
+        8.109016683224011,
+        6.252045736014471,
+        1.5693162760909378
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.020952568,
+      "truth_request_s": 0.006869641,
+      "valid_timing": true,
+      "position_error_m": 0.032237410031061564,
+      "yaw_error_deg": 1.8151993411978071
+    },
+    {
+      "stamp_ns": 1792991891197465575,
+      "estimate": [
+        8.115492304374355,
+        6.261637362354525,
+        1.575331325131175
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.023122904,
+      "truth_request_s": 0.008809055,
+      "valid_timing": true,
+      "position_error_m": 0.042643036581380446,
+      "yaw_error_deg": 2.1598362647676086
+    },
+    {
+      "stamp_ns": 1792991892290784185,
+      "estimate": [
+        8.11381116109002,
+        6.268991395807261,
+        1.5841750449591476
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.021143092,
+      "truth_request_s": 0.007062954,
+      "valid_timing": true,
+      "position_error_m": 0.045865686829454175,
+      "yaw_error_deg": 2.6665440861066076
+    },
+    {
+      "stamp_ns": 1792991893280448769,
+      "estimate": [
+        8.117383747799948,
+        6.26926899226825,
+        1.586364788508144
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.007631766,
+      "truth_request_s": 0.004308634,
+      "valid_timing": true,
+      "position_error_m": 0.048736992901101304,
+      "yaw_error_deg": 2.792007149680098
+    },
+    {
+      "stamp_ns": 1792991894296405585,
+      "estimate": [
+        8.123825326970469,
+        6.275279523701094,
+        1.5870414393431749
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.015994927,
+      "truth_request_s": 0.005512459,
+      "valid_timing": true,
+      "position_error_m": 0.05753626831355065,
+      "yaw_error_deg": 2.83077638673137
+    },
+    {
+      "stamp_ns": 1792991895293245778,
+      "estimate": [
+        8.130035000192366,
+        6.277547352230419,
+        1.5838562302478438
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "age_s": 0.023038517,
+      "truth_request_s": 0.008294316,
+      "valid_timing": true,
+      "position_error_m": 0.0637769104981334,
+      "yaw_error_deg": 2.648277348702218
+    },
+    {
+      "stamp_ns": 1792991898589001104,
+      "estimate": [
+        8.135622666425549,
+        6.281343238105505,
+        1.6517022975281992
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 91.8
+      },
+      "age_s": 0.019918284,
+      "truth_request_s": 0.007302019,
+      "valid_timing": true,
+      "position_error_m": 0.07051607837761784,
+      "yaw_error_deg": 2.835570660427197
+    },
+    {
+      "stamp_ns": 1792991898694553616,
+      "estimate": [
+        8.147457538327219,
+        6.287293691578502,
+        1.7078098812474771
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 94.9
+      },
+      "age_s": 0.020647723,
+      "truth_request_s": 0.009209691,
+      "valid_timing": true,
+      "position_error_m": 0.08354871337492031,
+      "yaw_error_deg": 2.950298406218742
+    },
+    {
+      "stamp_ns": 1792991898804475548,
+      "estimate": [
+        8.156726815712814,
+        6.286463152403819,
+        1.7741194438123897
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 98.1
+      },
+      "age_s": 0.019648965,
+      "truth_request_s": 0.011207016,
+      "valid_timing": true,
+      "position_error_m": 0.09075065504085238,
+      "yaw_error_deg": 3.5495564825469326
+    },
+    {
+      "stamp_ns": 1792991898993288638,
+      "estimate": [
+        8.1594730545836,
+        6.285085270321803,
+        1.868727653469583
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 103.6
+      },
+      "age_s": 0.018563891,
+      "truth_request_s": 0.008429738,
+      "valid_timing": true,
+      "position_error_m": 0.09237417975887559,
+      "yaw_error_deg": 3.4702076031929385
+    },
+    {
+      "stamp_ns": 1792991899192845190,
+      "estimate": [
+        8.163268545251125,
+        6.2818244380084085,
+        1.969782158646676
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 109.2
+      },
+      "age_s": 0.017925562,
+      "truth_request_s": 0.007402713,
+      "valid_timing": true,
+      "position_error_m": 0.09409692872241573,
+      "yaw_error_deg": 3.660204250623288
+    },
+    {
+      "stamp_ns": 1792991899290480854,
+      "estimate": [
+        8.162628172842116,
+        6.28678175246338,
+        2.049569154082794
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 113.2
+      },
+      "age_s": 0.017429976,
+      "truth_request_s": 0.004829623,
+      "valid_timing": true,
+      "position_error_m": 0.09595350082526923,
+      "yaw_error_deg": 4.231662349142411
+    },
+    {
+      "stamp_ns": 1792991899395767676,
+      "estimate": [
+        8.166567577989746,
+        6.290113996202435,
+        2.1146973750214784
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 116.8
+      },
+      "age_s": 0.017687275,
+      "truth_request_s": 0.009806509,
+      "valid_timing": true,
+      "position_error_m": 0.10104362502997422,
+      "yaw_error_deg": 4.363234536124574
+    },
+    {
+      "stamp_ns": 1792991899490892573,
+      "estimate": [
+        8.173320200053395,
+        6.295347790610768,
+        2.17842030664886
+      ],
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 120.4
+      },
+      "age_s": 0.01577487,
+      "truth_request_s": 0.002456774,
+      "valid_timing": true,
+      "position_error_m": 0.10953277512207055,
+      "yaw_error_deg": 4.414289576574253
+    },
+    {
+      "stamp_ns": 1792991899596638869,
+      "estimate": [
+        8.171031495787874,
+        6.3043494848447095,
+        2.2466853608329975
+      ],
+      "truth": {
+        "x": 8.075,
+        "y": 6.245,
+        "theta_deg": 124.4
+      },
+      "age_s": 0.015216632,
+      "truth_request_s": 0.011385472,
+      "valid_timing": true,
+      "position_error_m": 0.11289114019527391,
+      "yaw_error_deg": 4.325589069557228
+    },
+    {
+      "stamp_ns": 1792991899695654291,
+      "estimate": [
+        8.162281805360221,
+        6.316354727618815,
+        2.3212615742782243
+      ],
+      "truth": {
+        "x": 8.069,
+        "y": 6.252,
+        "theta_deg": 128.4
+      },
+      "age_s": 0.018295482,
+      "truth_request_s": 0.009032364,
+      "valid_timing": true,
+      "position_error_m": 0.11332707610343565,
+      "yaw_error_deg": 4.598491352035503
+    },
+    {
+      "stamp_ns": 1792991899799206523,
+      "estimate": [
+        8.15501368160183,
+        6.327677870927816,
+        2.3957902893960057
+      ],
+      "truth": {
+        "x": 8.054,
+        "y": 6.269,
+        "theta_deg": 132.4
+      },
+      "age_s": 0.020561637,
+      "truth_request_s": 0.009182884,
+      "valid_timing": true,
+      "position_error_m": 0.11681976034634341,
+      "yaw_error_deg": 4.8686721808172235
+    },
+    {
+      "stamp_ns": 1792991899893924682,
+      "estimate": [
+        8.129767722562937,
+        6.341621281153408,
+        2.466331536837734
+      ],
+      "truth": {
+        "x": 8.03,
+        "y": 6.291,
+        "theta_deg": 136.4
+      },
+      "age_s": 0.017304406,
+      "truth_request_s": 0.006255663,
+      "valid_timing": true,
+      "position_error_m": 0.11187543327740725,
+      "yaw_error_deg": 4.910387940816271
+    },
+    {
+      "stamp_ns": 1792991899990172155,
+      "estimate": [
+        8.104711770394335,
+        6.363879577183903,
+        2.5373823048414836
+      ],
+      "truth": {
+        "x": 8.005,
+        "y": 6.313,
+        "theta_deg": 140.4
+      },
+      "age_s": 0.015981747,
+      "truth_request_s": 0.00566636,
+      "valid_timing": true,
+      "position_error_m": 0.11194270199340917,
+      "yaw_error_deg": 4.981297078594264
+    },
+    {
+      "stamp_ns": 1792991900098975548,
+      "estimate": [
+        8.076753662461485,
+        6.382752843589436,
+        2.6026937723782932
+      ],
+      "truth": {
+        "x": 7.976,
+        "y": 6.333,
+        "theta_deg": 144.4
+      },
+      "age_s": 0.024255094,
+      "truth_request_s": 0.008237094,
+      "valid_timing": true,
+      "position_error_m": 0.1123683493900202,
+      "yaw_error_deg": 4.72336852225916
+    },
+    {
+      "stamp_ns": 1792991900182658160,
+      "estimate": [
+        8.041857120406005,
+        6.405507502908959,
+        2.6716361346254285
+      ],
+      "truth": {
+        "x": 7.946,
+        "y": 6.351,
+        "theta_deg": 148.4
+      },
+      "age_s": 0.017657875,
+      "truth_request_s": 0.008947781,
+      "valid_timing": true,
+      "position_error_m": 0.11027082753793792,
+      "yaw_error_deg": 4.673474908682066
+    },
+    {
+      "stamp_ns": 1792991900295196256,
+      "estimate": [
+        8.003145628997066,
+        6.421588900784746,
+        2.7414064795356867
+      ],
+      "truth": {
+        "x": 7.915,
+        "y": 6.367,
+        "theta_deg": 152.4
+      },
+      "age_s": 0.020974426,
+      "truth_request_s": 0.006712806,
+      "valid_timing": true,
+      "position_error_m": 0.10368027777825083,
+      "yaw_error_deg": 4.671021207211923
+    },
+    {
+      "stamp_ns": 1792991900387859094,
+      "estimate": [
+        7.9731640456452135,
+        6.4308396137402255,
+        2.8063619443907526
+      ],
+      "truth": {
+        "x": 7.883,
+        "y": 6.381,
+        "theta_deg": 156.4
+      },
+      "age_s": 0.020626683,
+      "truth_request_s": 0.007481465,
+      "valid_timing": true,
+      "position_error_m": 0.10302204727575064,
+      "yaw_error_deg": 4.392695199717538
+    },
+    {
+      "stamp_ns": 1792991900490565854,
+      "estimate": [
+        7.93686433640641,
+        6.448776729580163,
+        2.8793676732281486
+      ],
+      "truth": {
+        "x": 7.85,
+        "y": 6.393,
+        "theta_deg": 160.5
+      },
+      "age_s": 0.019811275,
+      "truth_request_s": 0.006603433,
+      "valid_timing": true,
+      "position_error_m": 0.10323011431740603,
+      "yaw_error_deg": 4.47561534237688
+    },
+    {
+      "stamp_ns": 1792991900601229340,
+      "estimate": [
+        7.899898593559204,
+        6.451398924683951,
+        2.948724003399728
+      ],
+      "truth": {
+        "x": 7.817,
+        "y": 6.402,
+        "theta_deg": 164.5
+      },
+      "age_s": 0.014743928,
+      "truth_request_s": 0.008490276,
+      "valid_timing": true,
+      "position_error_m": 0.09650093561217266,
+      "yaw_error_deg": 4.449440343724226
+    },
+    {
+      "stamp_ns": 1792991900694640145,
+      "estimate": [
+        7.872006555334934,
+        6.453839837613398,
+        3.0238508173360756
+      ],
+      "truth": {
+        "x": 7.782,
+        "y": 6.409,
+        "theta_deg": 168.5
+      },
+      "age_s": 0.01592508,
+      "truth_request_s": 0.008574274,
+      "valid_timing": true,
+      "position_error_m": 0.10055740171890121,
+      "yaw_error_deg": 4.753889710541557
+    },
+    {
+      "stamp_ns": 1792991900790957945,
+      "estimate": [
+        7.844795758755212,
+        6.45493710233145,
+        3.0871503510512346
+      ],
+      "truth": {
+        "x": 7.748,
+        "y": 6.414,
+        "theta_deg": 172.1
+      },
+      "age_s": 0.016064789,
+      "truth_request_s": 0.005462803,
+      "valid_timing": true,
+      "position_error_m": 0.10509645693501182,
+      "yaw_error_deg": 4.780685837566221
+    },
+    {
+      "stamp_ns": 1792991900892969419,
+      "estimate": [
+        7.8090269812566975,
+        6.452677271852995,
+        -3.1351073640518483
+      ],
+      "truth": {
+        "x": 7.713,
+        "y": 6.417,
+        "theta_deg": 175.7
+      },
+      "age_s": 0.022540397,
+      "truth_request_s": 0.006427241,
+      "valid_timing": true,
+      "position_error_m": 0.1024404649352326,
+      "yaw_error_deg": 4.671579719444612
+    },
+    {
+      "stamp_ns": 1792991900998889417,
+      "estimate": [
+        7.777694861850848,
+        6.449242057245403,
+        -3.067191398405839
+      ],
+      "truth": {
+        "x": 7.678,
+        "y": 6.417,
+        "theta_deg": 179.2
+      },
+      "age_s": 0.020982229,
+      "truth_request_s": 0.007482313,
+      "valid_timing": true,
+      "position_error_m": 0.10477888973870414,
+      "yaw_error_deg": 5.062877912516412
+    },
+    {
+      "stamp_ns": 1792991901090225444,
+      "estimate": [
+        7.739458431184626,
+        6.436329231670043,
+        -3.007551690057327
+      ],
+      "truth": {
+        "x": 7.643,
+        "y": 6.416,
+        "theta_deg": -177.6
+      },
+      "age_s": 0.021965585,
+      "truth_request_s": 0.011657842,
+      "valid_timing": true,
+      "position_error_m": 0.09857741428386868,
+      "yaw_error_deg": 5.279981492277275
+    },
+    {
+      "stamp_ns": 1792991901295218753,
+      "estimate": [
+        7.6800041217214625,
+        6.426123691392663,
+        -2.929355130674013
+      ],
+      "truth": {
+        "x": 7.573,
+        "y": 6.409,
+        "theta_deg": -172.9
+      },
+      "age_s": 0.017426009,
+      "truth_request_s": 0.007356423,
+      "valid_timing": true,
+      "position_error_m": 0.10836559819561113,
+      "yaw_error_deg": 5.060314317385298
+    },
+    {
+      "stamp_ns": 1792991901490881137,
+      "estimate": [
+        7.607617373379341,
+        6.407289614492627,
+        -2.8612034476458774
+      ],
+      "truth": {
+        "x": 7.504,
+        "y": 6.397,
+        "theta_deg": -169.1
+      },
+      "age_s": 0.019779442,
+      "truth_request_s": 0.008170464,
+      "valid_timing": true,
+      "position_error_m": 0.10412701970401701,
+      "yaw_error_deg": 5.165118121610817
+    },
+    {
+      "stamp_ns": 1792991901692918848,
+      "estimate": [
+        7.534935438756028,
+        6.382769946089951,
+        -2.800131090264177
+      ],
+      "truth": {
+        "x": 7.436,
+        "y": 6.38,
+        "theta_deg": -165.3
+      },
+      "age_s": 0.017825927,
+      "truth_request_s": 0.008009838,
+      "valid_timing": true,
+      "position_error_m": 0.09897420695913149,
+      "yaw_error_deg": 4.864306444496924
+    },
+    {
+      "stamp_ns": 1792991901889974978,
+      "estimate": [
+        7.478996318083551,
+        6.3658294647670015,
+        -2.7411437897112885
+      ],
+      "truth": {
+        "x": 7.371,
+        "y": 6.36,
+        "theta_deg": -161.5
+      },
+      "age_s": 0.020284225,
+      "truth_request_s": 0.007494053,
+      "valid_timing": true,
+      "position_error_m": 0.10815353613762772,
+      "yaw_error_deg": 4.444029811047124
+    },
+    {
+      "stamp_ns": 1792991902082269486,
+      "estimate": [
+        7.41853530374659,
+        6.33014491463575,
+        -2.682956961892397
+      ],
+      "truth": {
+        "x": 7.307,
+        "y": 6.336,
+        "theta_deg": -158.6
+      },
+      "age_s": 0.008280064,
+      "truth_request_s": 0.003976221,
+      "valid_timing": true,
+      "position_error_m": 0.1116888804065412,
+      "yaw_error_deg": 4.877889468324006
+    },
+    {
+      "stamp_ns": 1792991902292976557,
+      "estimate": [
+        7.370792049491122,
+        6.306482035664904,
+        -2.6332740975618933
+      ],
+      "truth": {
+        "x": 7.25,
+        "y": 6.311,
+        "theta_deg": -155.6
+      },
+      "age_s": 0.019461087,
+      "truth_request_s": 0.006729974,
+      "valid_timing": true,
+      "position_error_m": 0.12087651228422704,
+      "yaw_error_deg": 4.72450790858292
+    },
+    {
+      "stamp_ns": 1792991902591197701,
+      "estimate": [
+        7.297886467201068,
+        6.257809178407428,
+        -2.5795442498569514
+      ],
+      "truth": {
+        "x": 7.179,
+        "y": 6.275,
+        "theta_deg": -152.5
+      },
+      "age_s": 0.018972448,
+      "truth_request_s": 0.007338695,
+      "valid_timing": true,
+      "position_error_m": 0.12012292216966014,
+      "yaw_error_deg": 4.70300141595678
+    },
+    {
+      "stamp_ns": 1792991902896849719,
+      "estimate": [
+        7.248575311201425,
+        6.22417981533886,
+        -2.5378103091770705
+      ],
+      "truth": {
+        "x": 7.121,
+        "y": 6.243,
+        "theta_deg": -150.6
+      },
+      "age_s": 0.019222625,
+      "truth_request_s": 0.008817299,
+      "valid_timing": true,
+      "position_error_m": 0.12895603661255964,
+      "yaw_error_deg": 5.194180079363283
+    },
+    {
+      "stamp_ns": 1792991903294661843,
+      "estimate": [
+        7.198599379060343,
+        6.179729803614598,
+        -2.4880815597359955
+      ],
+      "truth": {
+        "x": 7.061,
+        "y": 6.208,
+        "theta_deg": -148.5
+      },
+      "age_s": 0.018449882,
+      "truth_request_s": 0.009840362,
+      "valid_timing": true,
+      "position_error_m": 0.14047346055914314,
+      "yaw_error_deg": 5.943427542800435
+    },
+    {
+      "stamp_ns": 1792991903795867266,
+      "estimate": [
+        7.1485687951256285,
+        6.148044651185242,
+        -2.4848506738276037
+      ],
+      "truth": {
+        "x": 7.009,
+        "y": 6.175,
+        "theta_deg": -147.8
+      },
+      "age_s": 0.023242991,
+      "truth_request_s": 0.008729242,
+      "valid_timing": true,
+      "position_error_m": 0.1421479489916925,
+      "yaw_error_deg": 5.428543669439595
+    },
+    {
+      "stamp_ns": 1792991904394978389,
+      "estimate": [
+        7.1107828162821685,
+        6.111222125745275,
+        -2.4266172539283395
+      ],
+      "truth": {
+        "x": 6.96,
+        "y": 6.143,
+        "theta_deg": -144.8
+      },
+      "age_s": 0.018033989,
+      "truth_request_s": 0.010256519,
+      "valid_timing": true,
+      "position_error_m": 0.15409507123244165,
+      "yaw_error_deg": 5.765072856280588
+    },
+    {
+      "stamp_ns": 1792991905700832157,
+      "estimate": [
+        7.067738926804994,
+        6.074541913114185,
+        -2.4382822330783442
+      ],
+      "truth": {
+        "x": 6.906,
+        "y": 6.107,
+        "theta_deg": -145.1
+      },
+      "age_s": 0.018333826,
+      "truth_request_s": 0.007729341,
+      "valid_timing": true,
+      "position_error_m": 0.1649636561437652,
+      "yaw_error_deg": 5.396718782877194
+    },
+    {
+      "stamp_ns": 1792991906193111920,
+      "estimate": [
+        7.04829658751607,
+        6.065481168137196,
+        -2.4929173349883778
+      ],
+      "truth": {
+        "x": 6.89,
+        "y": 6.096,
+        "theta_deg": -148.0
+      },
+      "age_s": 0.019706958,
+      "truth_request_s": 0.010477868,
+      "valid_timing": true,
+      "position_error_m": 0.16121168914660955,
+      "yaw_error_deg": 5.166358030165129
+    },
+    {
+      "stamp_ns": 1792991906796741578,
+      "estimate": [
+        7.0645686294090915,
+        6.076417552819343,
+        -2.414630074925361
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -143.8
+      },
+      "age_s": 0.016950416,
+      "truth_request_s": 0.006245696,
+      "valid_timing": true,
+      "position_error_m": 0.17754376427976004,
+      "yaw_error_deg": 5.451887621419087
+    },
+    {
+      "stamp_ns": 1792991906893170480,
+      "estimate": [
+        7.0701811849911635,
+        6.076303475650177,
+        -2.34317555044933
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -139.8
+      },
+      "age_s": 0.017350433,
+      "truth_request_s": 0.006318938,
+      "valid_timing": true,
+      "position_error_m": 0.1831380468049938,
+      "yaw_error_deg": 5.545930301009882
+    },
+    {
+      "stamp_ns": 1792991906993182509,
+      "estimate": [
+        7.069937548872332,
+        6.074988521432959,
+        -2.2713048346536993
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -135.8
+      },
+      "age_s": 0.016777468,
+      "truth_request_s": 0.008202978,
+      "valid_timing": true,
+      "position_error_m": 0.1830347807497562,
+      "yaw_error_deg": 5.663818986683771
+    },
+    {
+      "stamp_ns": 1792991907091720177,
+      "estimate": [
+        7.069957620865291,
+        6.0775164710990115,
+        -2.200391394155507
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -131.8
+      },
+      "age_s": 0.019318441,
+      "truth_request_s": 0.00850231,
+      "valid_timing": true,
+      "position_error_m": 0.18279564976713422,
+      "yaw_error_deg": 5.726859837982266
+    },
+    {
+      "stamp_ns": 1792991907193152433,
+      "estimate": [
+        7.0653051540480245,
+        6.083486224549868,
+        -2.127327279479265
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -127.8
+      },
+      "age_s": 0.020173866,
+      "truth_request_s": 0.007422551,
+      "valid_timing": true,
+      "position_error_m": 0.17767859937851208,
+      "yaw_error_deg": 5.913125242790775
+    },
+    {
+      "stamp_ns": 1792991907297944817,
+      "estimate": [
+        7.065166942547337,
+        6.087485271780239,
+        -2.0633440869559245
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -123.7
+      },
+      "age_s": 0.018637895,
+      "truth_request_s": 0.007273752,
+      "valid_timing": true,
+      "position_error_m": 0.17732624360705382,
+      "yaw_error_deg": 5.4790921341512036
+    },
+    {
+      "stamp_ns": 1792991907395983463,
+      "estimate": [
+        7.063896432343284,
+        6.099430334741668,
+        -1.9957729723918078
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -119.7
+      },
+      "age_s": 0.01569503,
+      "truth_request_s": 0.005649567,
+      "valid_timing": true,
+      "position_error_m": 0.1759522173120265,
+      "yaw_error_deg": 5.350631815670053
+    },
+    {
+      "stamp_ns": 1792991907492611482,
+      "estimate": [
+        7.062077676705518,
+        6.101485057704531,
+        -1.9265492147791898
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -115.7
+      },
+      "age_s": 0.017796278,
+      "truth_request_s": 0.011109404,
+      "valid_timing": true,
+      "position_error_m": 0.17419843139541155,
+      "yaw_error_deg": 5.316860968909663
+    },
+    {
+      "stamp_ns": 1792991907590990088,
+      "estimate": [
+        7.064868378351775,
+        6.103142501306597,
+        -1.8597238729753118
+      ],
+      "truth": {
+        "x": 6.888,
+        "y": 6.095,
+        "theta_deg": -111.7
+      },
+      "age_s": 0.017983089,
+      "truth_request_s": 0.006744604,
+      "valid_timing": true,
+      "position_error_m": 0.17705570758468858,
+      "yaw_error_deg": 5.1456710187910275
+    },
+    {
+      "stamp_ns": 1792991907686007927,
+      "estimate": [
+        7.069464404281106,
+        6.097291157309834,
+        -1.80596990847438
+      ],
+      "truth": {
+        "x": 6.886,
+        "y": 6.088,
+        "theta_deg": -108.6
+      },
+      "age_s": 0.016496301,
+      "truth_request_s": 0.005654985,
+      "valid_timing": true,
+      "position_error_m": 0.18369951889533426,
+      "yaw_error_deg": 5.125546316790455
+    },
+    {
+      "stamp_ns": 1792991908079875003,
+      "estimate": [
+        7.063235838890039,
+        6.083412532746617,
+        -1.8943599124339383
+      ],
+      "truth": {
+        "x": 6.879,
+        "y": 6.069,
+        "theta_deg": -113.5
+      },
+      "age_s": 0.009644222,
+      "truth_request_s": 0.006803049,
+      "valid_timing": true,
+      "position_error_m": 0.1847987159903684,
+      "yaw_error_deg": 4.961172138763136
+    },
+    {
+      "stamp_ns": 1792991908293321591,
+      "estimate": [
+        7.059953381854009,
+        6.076267981874485,
+        -1.978091451577351
+      ],
+      "truth": {
+        "x": 6.872,
+        "y": 6.056,
+        "theta_deg": -117.7
+      },
+      "age_s": 0.017101985,
+      "truth_request_s": 0.00699935,
+      "valid_timing": true,
+      "position_error_m": 0.18904302377930646,
+      "yaw_error_deg": 4.363708333711152
+    },
+    {
+      "stamp_ns": 1792991908491891940,
+      "estimate": [
+        7.052644721488124,
+        6.063354117670865,
+        -2.0484493598232985
+      ],
+      "truth": {
+        "x": 6.866,
+        "y": 6.046,
+        "theta_deg": -122.0
+      },
+      "age_s": 0.021187417,
+      "truth_request_s": 0.006387862,
+      "valid_timing": true,
+      "position_error_m": 0.18744977316474362,
+      "yaw_error_deg": 4.6324971358496505
+    },
+    {
+      "stamp_ns": 1792991908990542617,
+      "estimate": [
+        7.054220257522747,
+        6.060338965375613,
+        -1.9355634916686906
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -115.6
+      },
+      "age_s": 0.016287819,
+      "truth_request_s": 0.005508889,
+      "valid_timing": true,
+      "position_error_m": 0.19439500857907438,
+      "yaw_error_deg": 4.700380947778936
+    },
+    {
+      "stamp_ns": 1792991909086609894,
+      "estimate": [
+        7.051079225261683,
+        6.057207337593974,
+        -1.8641328923236957
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -111.6
+      },
+      "age_s": 0.01717101,
+      "truth_request_s": 0.004150734,
+      "valid_timing": true,
+      "position_error_m": 0.19094925770566004,
+      "yaw_error_deg": 4.793052818337091
+    },
+    {
+      "stamp_ns": 1792991909181314548,
+      "estimate": [
+        7.044245516054176,
+        6.060227679754645,
+        -1.786859673299961
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -107.6
+      },
+      "age_s": 0.009043521,
+      "truth_request_s": 0.004198005,
+      "valid_timing": true,
+      "position_error_m": 0.18447095582157985,
+      "yaw_error_deg": 5.220482137787116
+    },
+    {
+      "stamp_ns": 1792991909292923090,
+      "estimate": [
+        7.045884701813636,
+        6.059185840629788,
+        -1.7178675338814544
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -103.6
+      },
+      "age_s": 0.020029107,
+      "truth_request_s": 0.006851012,
+      "valid_timing": true,
+      "position_error_m": 0.18598338938369816,
+      "yaw_error_deg": 5.173440546045705
+    },
+    {
+      "stamp_ns": 1792991909394233365,
+      "estimate": [
+        7.048229943028073,
+        6.059138383262932,
+        -1.6411456424632596
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -99.6
+      },
+      "age_s": 0.016580557,
+      "truth_request_s": 0.006144216,
+      "valid_timing": true,
+      "position_error_m": 0.18830986709872685,
+      "yaw_error_deg": 5.569281120569247
+    },
+    {
+      "stamp_ns": 1792991909489862537,
+      "estimate": [
+        7.055683878066183,
+        6.065287041655089,
+        -1.568993901884078
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -95.5
+      },
+      "age_s": 0.02045382,
+      "truth_request_s": 0.00709022,
+      "valid_timing": true,
+      "position_error_m": 0.19645055596221847,
+      "yaw_error_deg": 5.603271340279152
+    },
+    {
+      "stamp_ns": 1792991909595517822,
+      "estimate": [
+        7.0548734385850995,
+        6.060315709525206,
+        -1.4994573514032634
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -91.5
+      },
+      "age_s": 0.01849928,
+      "truth_request_s": 0.006134948,
+      "valid_timing": true,
+      "position_error_m": 0.1950417126190534,
+      "yaw_error_deg": 5.587422204728214
+    },
+    {
+      "stamp_ns": 1792991909698711714,
+      "estimate": [
+        7.05580118997004,
+        6.0565687721199515,
+        -1.429309711626507
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -87.5
+      },
+      "age_s": 0.017006417,
+      "truth_request_s": 0.007500042,
+      "valid_timing": true,
+      "position_error_m": 0.19559183359114624,
+      "yaw_error_deg": 5.6065859067403805
+    },
+    {
+      "stamp_ns": 1792991909792335149,
+      "estimate": [
+        7.056666710385164,
+        6.054399022044064,
+        -1.362234789330012
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -83.5
+      },
+      "age_s": 0.015700396,
+      "truth_request_s": 0.008176865,
+      "valid_timing": true,
+      "position_error_m": 0.19627172856238184,
+      "yaw_error_deg": 5.449695865497484
+    },
+    {
+      "stamp_ns": 1792991909891126838,
+      "estimate": [
+        7.0536195894494735,
+        6.054149870508811,
+        -1.29508553670462
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -79.5
+      },
+      "age_s": 0.01853552,
+      "truth_request_s": 0.00532492,
+      "valid_timing": true,
+      "position_error_m": 0.19321445291726383,
+      "yaw_error_deg": 5.297064638390219
+    },
+    {
+      "stamp_ns": 1792991909993469566,
+      "estimate": [
+        7.057429061713947,
+        6.0590213801737995,
+        -1.2305635916754836
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -75.5
+      },
+      "age_s": 0.018270974,
+      "truth_request_s": 0.007117311,
+      "valid_timing": true,
+      "position_error_m": 0.19744678257668682,
+      "yaw_error_deg": 4.993899774534826
+    },
+    {
+      "stamp_ns": 1792991910090500991,
+      "estimate": [
+        7.058696648485581,
+        6.061528997951923,
+        -1.1643504199987877
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -71.5
+      },
+      "age_s": 0.019024543,
+      "truth_request_s": 0.005440809,
+      "valid_timing": true,
+      "position_error_m": 0.19897618091407138,
+      "yaw_error_deg": 4.787635059784664
+    },
+    {
+      "stamp_ns": 1792991910195690911,
+      "estimate": [
+        7.056569160505808,
+        6.06650112264569,
+        -1.0975941937263416
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -67.5
+      },
+      "age_s": 0.017912245,
+      "truth_request_s": 0.006604351,
+      "valid_timing": true,
+      "position_error_m": 0.1974933120075715,
+      "yaw_error_deg": 4.612485081416167
+    },
+    {
+      "stamp_ns": 1792991910297369379,
+      "estimate": [
+        7.061635056659294,
+        6.069619015544006,
+        -1.03341603151554
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -63.5
+      },
+      "age_s": 0.020098471,
+      "truth_request_s": 0.008559359,
+      "valid_timing": true,
+      "position_error_m": 0.2029580007626266,
+      "yaw_error_deg": 4.28962291300109
+    },
+    {
+      "stamp_ns": 1792991910390783285,
+      "estimate": [
+        7.0560034025404965,
+        6.071034693914028,
+        -0.9666865582474531
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -59.9
+      },
+      "age_s": 0.019428667,
+      "truth_request_s": 0.007819515,
+      "valid_timing": true,
+      "position_error_m": 0.1976171769268463,
+      "yaw_error_deg": 4.512940100393518
+    },
+    {
+      "stamp_ns": 1792991910494503167,
+      "estimate": [
+        7.054645414712395,
+        6.066675595834863,
+        -0.8966075686760644
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -56.3
+      },
+      "age_s": 0.017017216,
+      "truth_request_s": 0.005960384,
+      "valid_timing": true,
+      "position_error_m": 0.19561310090060488,
+      "yaw_error_deg": 4.928170435375395
+    },
+    {
+      "stamp_ns": 1792991910591018707,
+      "estimate": [
+        7.055016099573018,
+        6.0627829438885055,
+        -0.8307168964682176
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -53.1
+      },
+      "age_s": 0.018555844,
+      "truth_request_s": 0.002718826,
+      "valid_timing": true,
+      "position_error_m": 0.1954683486233282,
+      "yaw_error_deg": 5.503427862164977
+    },
+    {
+      "stamp_ns": 1792991910693475776,
+      "estimate": [
+        7.060522161396388,
+        6.0627475465472935,
+        -0.7784631699475301
+      ],
+      "truth": {
+        "x": 6.861,
+        "y": 6.039,
+        "theta_deg": -50.4
+      },
+      "age_s": 0.019472696,
+      "truth_request_s": 0.006262074,
+      "valid_timing": true,
+      "position_error_m": 0.20093043287491932,
+      "yaw_error_deg": 5.797345855631186
+    },
+    {
+      "stamp_ns": 1792991911096205983,
+      "estimate": [
+        7.064480974312445,
+        6.062436625111954,
+        -0.8844916323587854
+      ],
+      "truth": {
+        "x": 6.864,
+        "y": 6.036,
+        "theta_deg": -56.3
+      },
+      "age_s": 0.015024389,
+      "truth_request_s": 0.007575419,
+      "valid_timing": true,
+      "position_error_m": 0.20221650824939377,
+      "yaw_error_deg": 5.6223624512047605
+    },
+    {
+      "stamp_ns": 1792991911293962308,
+      "estimate": [
+        7.059714603383258,
+        6.069014003293272,
+        -0.9999574662770283
+      ],
+      "truth": {
+        "x": 6.864,
+        "y": 6.036,
+        "theta_deg": -62.7
+      },
+      "age_s": 0.018213052,
+      "truth_request_s": 0.008606444,
+      "valid_timing": true,
+      "position_error_m": 0.19847954653040212,
+      "yaw_error_deg": 5.406657489730939
+    },
+    {
+      "stamp_ns": 1792991911396038055,
+      "estimate": [
+        7.057540895425604,
+        6.065189326307837,
+        -1.071391109696831
+      ],
+      "truth": {
+        "x": 6.864,
+        "y": 6.034,
+        "theta_deg": -66.7
+      },
+      "age_s": 0.016969226,
+      "truth_request_s": 0.006657503,
+      "valid_timing": true,
+      "position_error_m": 0.1960378848021001,
+      "yaw_error_deg": 5.313811206533777
+    },
+    {
+      "stamp_ns": 1792991911490476465,
+      "estimate": [
+        7.061963469764378,
+        6.06051780895853,
+        -1.1361181932641613
+      ],
+      "truth": {
+        "x": 6.866,
+        "y": 6.029,
+        "theta_deg": -70.7
+      },
+      "age_s": 0.019912737,
+      "truth_request_s": 0.006299201,
+      "valid_timing": true,
+      "position_error_m": 0.19848187263234107,
+      "yaw_error_deg": 5.605222497935168
+    },
+    {
+      "stamp_ns": 1792991911587797667,
+      "estimate": [
+        7.062437780609133,
+        6.052531668305648,
+        -1.2092349581805242
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.027,
+        "theta_deg": -74.7
+      },
+      "age_s": 0.019981827,
+      "truth_request_s": 0.004644224,
+      "valid_timing": true,
+      "position_error_m": 0.19709843270785596,
+      "yaw_error_deg": 5.415940456577373
+    },
+    {
+      "stamp_ns": 1792991911693819944,
+      "estimate": [
+        7.0645996538339615,
+        6.051022607526226,
+        -1.2966980460118847
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.025,
+        "theta_deg": -78.8
+      },
+      "age_s": 0.01392984,
+      "truth_request_s": 0.004918858,
+      "valid_timing": true,
+      "position_error_m": 0.1993057934375351,
+      "yaw_error_deg": 4.5046746606583765
+    },
+    {
+      "stamp_ns": 1792991911790229153,
+      "estimate": [
+        7.064265502403765,
+        6.0546126386240955,
+        -1.3746112062370432
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.023,
+        "theta_deg": -82.8
+      },
+      "age_s": 0.022713493,
+      "truth_request_s": 0.009592778,
+      "valid_timing": true,
+      "position_error_m": 0.19978247510576932,
+      "yaw_error_deg": 4.04057941123024
+    },
+    {
+      "stamp_ns": 1792991911892852077,
+      "estimate": [
+        7.063005748224664,
+        6.0508713830968786,
+        -1.441929994543825
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.022,
+        "theta_deg": -86.8
+      },
+      "age_s": 0.022851011,
+      "truth_request_s": 0.006100858,
+      "valid_timing": true,
+      "position_error_m": 0.19812069578677813,
+      "yaw_error_deg": 4.183496959316996
+    },
+    {
+      "stamp_ns": 1792991911990936900,
+      "estimate": [
+        7.062608677649289,
+        6.049071681528025,
+        -1.5162769153543583
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -90.8
+      },
+      "age_s": 0.025742003,
+      "truth_request_s": 0.006301196,
+      "valid_timing": true,
+      "position_error_m": 0.19806111219692354,
+      "yaw_error_deg": 3.923732177080101
+    },
+    {
+      "stamp_ns": 1792991912092498682,
+      "estimate": [
+        7.057250962374278,
+        6.051834431475172,
+        -1.572636738072863
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -93.9
+      },
+      "age_s": 0.016631506,
+      "truth_request_s": 0.006195476,
+      "valid_timing": true,
+      "position_error_m": 0.19323611835675814,
+      "yaw_error_deg": 3.794552201204258
+    },
+    {
+      "stamp_ns": 1792991912487351844,
+      "estimate": [
+        7.055929323586407,
+        6.046917989401412,
+        -1.465922898639434
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -88.2
+      },
+      "age_s": 0.016652122,
+      "truth_request_s": 0.006521407,
+      "valid_timing": true,
+      "position_error_m": 0.19112964035396918,
+      "yaw_error_deg": 4.208804816376477
+    },
+    {
+      "stamp_ns": 1792991912591698449,
+      "estimate": [
+        7.052922056217463,
+        6.041431384594232,
+        -1.3921828249719923
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -84.1
+      },
+      "age_s": 0.016390832,
+      "truth_request_s": 0.005048742,
+      "valid_timing": true,
+      "position_error_m": 0.18739274471583048,
+      "yaw_error_deg": 4.333799818504648
+    },
+    {
+      "stamp_ns": 1792991912690138442,
+      "estimate": [
+        7.053240750599283,
+        6.044661649291051,
+        -1.3253355533728024
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -80.1
+      },
+      "age_s": 0.020310534,
+      "truth_request_s": 0.007815628,
+      "valid_timing": true,
+      "position_error_m": 0.1881394714744976,
+      "yaw_error_deg": 4.163866353102957
+    },
+    {
+      "stamp_ns": 1792991912791484867,
+      "estimate": [
+        7.051445730217434,
+        6.047188808574596,
+        -1.2567097035463708
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -76.1
+      },
+      "age_s": 0.019437914,
+      "truth_request_s": 0.009875349,
+      "valid_timing": true,
+      "position_error_m": 0.18674103443391055,
+      "yaw_error_deg": 4.095837913656088
+    },
+    {
+      "stamp_ns": 1792991912893912907,
+      "estimate": [
+        7.049350702471219,
+        6.040206271159025,
+        -1.1723367719420137
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -72.1
+      },
+      "age_s": 0.017588648,
+      "truth_request_s": 0.007533666,
+      "valid_timing": true,
+      "position_error_m": 0.1836978420410413,
+      "yaw_error_deg": 4.930050799731702
+    },
+    {
+      "stamp_ns": 1792991913194575890,
+      "estimate": [
+        7.050108555788928,
+        6.0458148375519185,
+        -1.118241259466725
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -68.7
+      },
+      "age_s": 0.016374639,
+      "truth_request_s": 0.007403298,
+      "valid_timing": true,
+      "position_error_m": 0.18520909370532118,
+      "yaw_error_deg": 4.629495355163043
+    },
+    {
+      "stamp_ns": 1792991913389459590,
+      "estimate": [
+        7.048208846776099,
+        6.049092614515264,
+        -0.9955364891668448
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -62.3
+      },
+      "age_s": 0.027733379,
+      "truth_request_s": 0.008346678,
+      "valid_timing": true,
+      "position_error_m": 0.183857001028839,
+      "yaw_error_deg": 5.259960819468386
+    },
+    {
+      "stamp_ns": 1792991913493189370,
+      "estimate": [
+        7.045672589380694,
+        6.049861675614902,
+        -0.9332017956270152
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -59.2
+      },
+      "age_s": 0.016820073,
+      "truth_request_s": 0.005969443,
+      "valid_timing": true,
+      "position_error_m": 0.18149121347600106,
+      "yaw_error_deg": 5.731475676542032
+    },
+    {
+      "stamp_ns": 1792991913593512778,
+      "estimate": [
+        7.047459695069482,
+        6.045203879293401,
+        -0.8730938251516075
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -56.0
+      },
+      "age_s": 0.019518116,
+      "truth_request_s": 0.008393176,
+      "valid_timing": true,
+      "position_error_m": 0.1824986372365019,
+      "yaw_error_deg": 5.97540869987985
+    },
+    {
+      "stamp_ns": 1792991913693994432,
+      "estimate": [
+        7.04643531430251,
+        6.051368645521014,
+        -0.8204485421610389
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -53.3
+      },
+      "age_s": 0.016180283,
+      "truth_request_s": 0.007289246,
+      "valid_timing": true,
+      "position_error_m": 0.1825116394171825,
+      "yaw_error_deg": 6.291761226511287
+    },
+    {
+      "stamp_ns": 1792991913896405401,
+      "estimate": [
+        7.042694715160462,
+        6.054479786427554,
+        -0.721077123672147
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -47.8
+      },
+      "age_s": 0.019611059,
+      "truth_request_s": 0.011280099,
+      "valid_timing": true,
+      "position_error_m": 0.17944193421025081,
+      "yaw_error_deg": 6.4853241101530665
+    },
+    {
+      "stamp_ns": 1792991914091481963,
+      "estimate": [
+        7.047464014786922,
+        6.044431394834148,
+        -0.6431439844905793
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -43.1
+      },
+      "age_s": 0.019948129,
+      "truth_request_s": 0.007135401,
+      "valid_timing": true,
+      "position_error_m": 0.1823893617124993,
+      "yaw_error_deg": 6.250564069462534
+    },
+    {
+      "stamp_ns": 1792991914294694308,
+      "estimate": [
+        7.051969572040999,
+        6.042620607568627,
+        -0.5706388234719464
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -38.9
+      },
+      "age_s": 0.021138243,
+      "truth_request_s": 0.006274207,
+      "valid_timing": true,
+      "position_error_m": 0.18660095631608836,
+      "yaw_error_deg": 6.204803788746651
+    },
+    {
+      "stamp_ns": 1792991914495938689,
+      "estimate": [
+        7.054598035714093,
+        6.037460298864189,
+        -0.5013026739502033
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -35.1
+      },
+      "age_s": 0.014637935,
+      "truth_request_s": 0.008134573,
+      "valid_timing": true,
+      "position_error_m": 0.18860468243304515,
+      "yaw_error_deg": 6.377472524030557
+    },
+    {
+      "stamp_ns": 1792991914695674857,
+      "estimate": [
+        7.05568587201146,
+        6.033575168100324,
+        -0.43844313502522786
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -31.7
+      },
+      "age_s": 0.016058405,
+      "truth_request_s": 0.012376416,
+      "valid_timing": true,
+      "position_error_m": 0.189327610659614,
+      "yaw_error_deg": 6.579058806569964
+    },
+    {
+      "stamp_ns": 1792991914892374739,
+      "estimate": [
+        7.048578185775115,
+        6.031612040421442,
+        -0.3815861191166324
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -28.8
+      },
+      "age_s": 0.017606181,
+      "truth_request_s": 0.006816438,
+      "valid_timing": true,
+      "position_error_m": 0.1820876854535124,
+      "yaw_error_deg": 6.936725853840664
+    },
+    {
+      "stamp_ns": 1792991915199971546,
+      "estimate": [
+        7.0458096160563635,
+        6.034179396503397,
+        -0.32089765850377205
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -25.2
+      },
+      "age_s": 0.018219017,
+      "truth_request_s": 0.009152792,
+      "valid_timing": true,
+      "position_error_m": 0.17954011157799324,
+      "yaw_error_deg": 6.81391851210349
+    },
+    {
+      "stamp_ns": 1792991915490863544,
+      "estimate": [
+        7.037523673966054,
+        6.042213203585161,
+        -0.26630637209993746
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -22.0
+      },
+      "age_s": 0.022591972,
+      "truth_request_s": 0.010650794,
+      "valid_timing": true,
+      "position_error_m": 0.17223415053565153,
+      "yaw_error_deg": 6.741768821233125
+    },
+    {
+      "stamp_ns": 1792991915880228368,
+      "estimate": [
+        7.03966048109752,
+        6.0454877369689175,
+        -0.21902765748730424
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -19.1
+      },
+      "age_s": 0.008062261,
+      "truth_request_s": 0.004215385,
+      "valid_timing": true,
+      "position_error_m": 0.17483482895721705,
+      "yaw_error_deg": 6.550639629340504
+    },
+    {
+      "stamp_ns": 1792991916390737263,
+      "estimate": [
+        7.044140949100094,
+        6.045455250514226,
+        -0.16131456638144517
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -15.9
+      },
+      "age_s": 0.020430905,
+      "truth_request_s": 0.007209991,
+      "valid_timing": true,
+      "position_error_m": 0.17925598073392435,
+      "yaw_error_deg": 6.6573561723602355
+    },
+    {
+      "stamp_ns": 1792991917795601280,
+      "estimate": [
+        7.045593051884009,
+        6.047143202593451,
+        -0.23066423134651554
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -19.5
+      },
+      "age_s": 0.0185951,
+      "truth_request_s": 0.009259555,
+      "valid_timing": true,
+      "position_error_m": 0.18095525534962328,
+      "yaw_error_deg": 6.283913059215432
+    },
+    {
+      "stamp_ns": 1792991917891531402,
+      "estimate": [
+        7.048578250485755,
+        6.045471028994375,
+        -0.305512271698245
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -23.5
+      },
+      "age_s": 0.032507276,
+      "truth_request_s": 0.009345172,
+      "valid_timing": true,
+      "position_error_m": 0.18364454384347312,
+      "yaw_error_deg": 5.995436242236455
+    },
+    {
+      "stamp_ns": 1792991917994688151,
+      "estimate": [
+        7.048109250242236,
+        6.041266498854673,
+        -0.38432409394597644
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -27.5
+      },
+      "age_s": 0.018256473,
+      "truth_request_s": 0.007807518,
+      "valid_timing": true,
+      "position_error_m": 0.18259761907609692,
+      "yaw_error_deg": 5.479851451706198
+    },
+    {
+      "stamp_ns": 1792991918081542923,
+      "estimate": [
+        7.045708782570396,
+        6.04616140894502,
+        -0.46287503319446116
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -31.5
+      },
+      "age_s": 0.01074057,
+      "truth_request_s": 0.006905241,
+      "valid_timing": true,
+      "position_error_m": 0.180914051199905,
+      "yaw_error_deg": 4.979214155979492
+    },
+    {
+      "stamp_ns": 1792991918193083263,
+      "estimate": [
+        7.041961506026063,
+        6.050036147537749,
+        -0.5343478401903465
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -35.5
+      },
+      "age_s": 0.020277833,
+      "truth_request_s": 0.00644524,
+      "valid_timing": true,
+      "position_error_m": 0.17787029920694641,
+      "yaw_error_deg": 4.884123965162155
+    },
+    {
+      "stamp_ns": 1792991918294961774,
+      "estimate": [
+        7.041864678601904,
+        6.05081638822141,
+        -0.6002087642119173
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -39.5
+      },
+      "age_s": 0.016991607,
+      "truth_request_s": 0.00763761,
+      "valid_timing": true,
+      "position_error_m": 0.17791731551045123,
+      "yaw_error_deg": 5.1105709838943705
+    },
+    {
+      "stamp_ns": 1792991918391507990,
+      "estimate": [
+        7.038434461888659,
+        6.055921138570422,
+        -0.6695915463607508
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -43.6
+      },
+      "age_s": 0.020493533,
+      "truth_request_s": 0.00676623,
+      "valid_timing": true,
+      "position_error_m": 0.17557843681252946,
+      "yaw_error_deg": 5.235230395890586
+    },
+    {
+      "stamp_ns": 1792991918490461785,
+      "estimate": [
+        7.040365952213901,
+        6.050923355557057,
+        -0.7508532244347634
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -47.6
+      },
+      "age_s": 0.020974041,
+      "truth_request_s": 0.007059631,
+      "valid_timing": true,
+      "position_error_m": 0.17646444607390185,
+      "yaw_error_deg": 4.579279206098882
+    },
+    {
+      "stamp_ns": 1792991918597567585,
+      "estimate": [
+        7.046547077909991,
+        6.053862355241198,
+        -0.8202719047935116
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -51.6
+      },
+      "age_s": 0.017246208,
+      "truth_request_s": 0.006119601,
+      "valid_timing": true,
+      "position_error_m": 0.18309358729748618,
+      "yaw_error_deg": 4.601881802174905
+    },
+    {
+      "stamp_ns": 1792991918681332834,
+      "estimate": [
+        7.040543780287387,
+        6.054982597539028,
+        -0.8951801454140517
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -55.6
+      },
+      "age_s": 0.007826614,
+      "truth_request_s": 0.00375015,
+      "valid_timing": true,
+      "position_error_m": 0.17744057088831358,
+      "yaw_error_deg": 4.309955763867526
+    },
+    {
+      "stamp_ns": 1792991918792667896,
+      "estimate": [
+        7.041537826842867,
+        6.0539764287713025,
+        -0.9660347549659437
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -59.6
+      },
+      "age_s": 0.015822387,
+      "truth_request_s": 0.006294425,
+      "valid_timing": true,
+      "position_error_m": 0.17820706053960725,
+      "yaw_error_deg": 4.250285677496788
+    },
+    {
+      "stamp_ns": 1792991918881800735,
+      "estimate": [
+        7.030307985166644,
+        6.057288800422781,
+        -1.0356335223735744
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -63.6
+      },
+      "age_s": 0.017915333,
+      "truth_request_s": 0.004887216,
+      "valid_timing": true,
+      "position_error_m": 0.16796757978208157,
+      "yaw_error_deg": 4.262570045726871
+    },
+    {
+      "stamp_ns": 1792991918991020826,
+      "estimate": [
+        7.029620202932549,
+        6.054853527390498,
+        -1.1018830536929904
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -67.6
+      },
+      "age_s": 0.015776348,
+      "truth_request_s": 0.005129123,
+      "valid_timing": true,
+      "position_error_m": 0.1667438541084671,
+      "yaw_error_deg": 4.466751506404562
+    },
+    {
+      "stamp_ns": 1792991919092763741,
+      "estimate": [
+        7.032909503348895,
+        6.055534938850713,
+        -1.1745748512894034
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -71.6
+      },
+      "age_s": 0.021272167,
+      "truth_request_s": 0.006428746,
+      "valid_timing": true,
+      "position_error_m": 0.17010242483869487,
+      "yaw_error_deg": 4.301818298910883
+    },
+    {
+      "stamp_ns": 1792991919195514143,
+      "estimate": [
+        7.039617423351819,
+        6.0506681076081685,
+        -1.236287577966152
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -75.6
+      },
+      "age_s": 0.018638485,
+      "truth_request_s": 0.009855602,
+      "valid_timing": true,
+      "position_error_m": 0.17568147340946358,
+      "yaw_error_deg": 4.765939518088778
+    },
+    {
+      "stamp_ns": 1792991919289124849,
+      "estimate": [
+        7.03342442923062,
+        6.056493482731289,
+        -1.3140505524949702
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -79.7
+      },
+      "age_s": 0.016043782,
+      "truth_request_s": 0.00457938,
+      "valid_timing": true,
+      "position_error_m": 0.17081814557453123,
+      "yaw_error_deg": 4.410449275204185
+    },
+    {
+      "stamp_ns": 1792991919392962363,
+      "estimate": [
+        7.039621406867955,
+        6.051889015490302,
+        -1.3869842085818338
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -83.7
+      },
+      "age_s": 0.022824552,
+      "truth_request_s": 0.007539569,
+      "valid_timing": true,
+      "position_error_m": 0.1759165014430821,
+      "yaw_error_deg": 4.231658596968278
+    },
+    {
+      "stamp_ns": 1792991919489651318,
+      "estimate": [
+        7.04037866915985,
+        6.053633054587553,
+        -1.451815951032729
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.018,
+        "theta_deg": -87.7
+      },
+      "age_s": 0.01890847,
+      "truth_request_s": 0.006572905,
+      "valid_timing": true,
+      "position_error_m": 0.17700247879303888,
+      "yaw_error_deg": 4.517073376052834
+    },
+    {
+      "stamp_ns": 1792991919592469086,
+      "estimate": [
+        7.0370631013637155,
+        6.055934131070315,
+        -1.52038790306213
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.014,
+        "theta_deg": -91.7
+      },
+      "age_s": 0.020673617,
+      "truth_request_s": 0.007653738,
+      "valid_timing": true,
+      "position_error_m": 0.17515687195787588,
+      "yaw_error_deg": 4.588189931794633
+    },
+    {
+      "stamp_ns": 1792991919680514763,
+      "estimate": [
+        7.044397276381678,
+        6.041915072943387,
+        -1.5906826509855874
+      ],
+      "truth": {
+        "x": 6.867,
+        "y": 6.007,
+        "theta_deg": -95.7
+      },
+      "age_s": 0.01102249,
+      "truth_request_s": 0.008189931,
+      "valid_timing": true,
+      "position_error_m": 0.1808005973062018,
+      "yaw_error_deg": 4.560597553844506
+    },
+    {
+      "stamp_ns": 1792991919789251458,
+      "estimate": [
+        7.051635228684701,
+        6.026875962056397,
+        -1.6642411326267699
+      ],
+      "truth": {
+        "x": 6.865,
+        "y": 6.0,
+        "theta_deg": -99.7
+      },
+      "age_s": 0.020158903,
+      "truth_request_s": 0.008379508,
+      "valid_timing": true,
+      "position_error_m": 0.188560403909854,
+      "yaw_error_deg": 4.346007008414205
+    },
+    {
+      "stamp_ns": 1792991919891385460,
+      "estimate": [
+        7.045314997850543,
+        6.018582127470317,
+        -1.7402274471726764
+      ],
+      "truth": {
+        "x": 6.864,
+        "y": 5.992,
+        "theta_deg": -103.7
+      },
+      "age_s": 0.015855332,
+      "truth_request_s": 0.006287263,
+      "valid_timing": true,
+      "position_error_m": 0.18325320719264543,
+      "yaw_error_deg": 3.9923118841802165
+    },
+    {
+      "stamp_ns": 1792991919990605434,
+      "estimate": [
+        7.046987125603486,
+        6.014771344734109,
+        -1.811942615914557
+      ],
+      "truth": {
+        "x": 6.862,
+        "y": 5.987,
+        "theta_deg": -107.7
+      },
+      "age_s": 0.01758609,
+      "truth_request_s": 0.007051081,
+      "valid_timing": true,
+      "position_error_m": 0.1870601085944856,
+      "yaw_error_deg": 3.883335388201934
+    },
+    {
+      "stamp_ns": 1792991920093450423,
+      "estimate": [
+        7.049154240628757,
+        6.019437563510889,
+        -1.8857768847393155
+      ],
+      "truth": {
+        "x": 6.858,
+        "y": 5.979,
+        "theta_deg": -111.7
+      },
+      "age_s": 0.021312729,
+      "truth_request_s": 0.008592974,
+      "valid_timing": true,
+      "position_error_m": 0.19538459574146047,
+      "yaw_error_deg": 3.652943401108934
+    },
+    {
+      "stamp_ns": 1792991920181611408,
+      "estimate": [
+        7.043083061766236,
+        6.005594407039641,
+        -1.9605335246832554
+      ],
+      "truth": {
+        "x": 6.854,
+        "y": 5.97,
+        "theta_deg": -115.8
+      },
+      "age_s": 0.008049324,
+      "truth_request_s": 0.002998741,
+      "valid_timing": true,
+      "position_error_m": 0.19240417370576407,
+      "yaw_error_deg": 3.4697034417420585
+    },
+    {
+      "stamp_ns": 1792991920292875431,
+      "estimate": [
+        7.041391384793323,
+        5.994334695025022,
+        -2.031612612052722
+      ],
+      "truth": {
+        "x": 6.85,
+        "y": 5.962,
+        "theta_deg": -119.8
+      },
+      "age_s": 0.019448868,
+      "truth_request_s": 0.006316158,
+      "valid_timing": true,
+      "position_error_m": 0.19410356687981625,
+      "yaw_error_deg": 3.39717172383
+    },
+    {
+      "stamp_ns": 1792991920380789331,
+      "estimate": [
+        7.044130149319216,
+        5.989689038297667,
+        -2.1001828892524195
+      ],
+      "truth": {
+        "x": 6.846,
+        "y": 5.956,
+        "theta_deg": -123.8
+      },
+      "age_s": 0.019097505,
+      "truth_request_s": 0.006742524,
+      "valid_timing": true,
+      "position_error_m": 0.20097389723711953,
+      "yaw_error_deg": 3.4683842402451925
+    },
+    {
+      "stamp_ns": 1792991920493841318,
+      "estimate": [
+        7.041446043724017,
+        5.984005641375185,
+        -2.1668552227518036
+      ],
+      "truth": {
+        "x": 6.841,
+        "y": 5.95,
+        "theta_deg": -127.8
+      },
+      "age_s": 0.019268917,
+      "truth_request_s": 0.006658367,
+      "valid_timing": true,
+      "position_error_m": 0.20331010818438935,
+      "yaw_error_deg": 3.6483409204417647
+    },
+    {
+      "stamp_ns": 1792991920592707550,
+      "estimate": [
+        7.027757914998215,
+        5.965169527306995,
+        -2.2402786663392855
+      ],
+      "truth": {
+        "x": 6.828,
+        "y": 5.936,
+        "theta_deg": -131.8
+      },
+      "age_s": 0.018510508,
+      "truth_request_s": 0.010463288,
+      "valid_timing": true,
+      "position_error_m": 0.20187641250960348,
+      "yaw_error_deg": 3.441487485562196
+    },
+    {
+      "stamp_ns": 1792991920692474099,
+      "estimate": [
+        7.012885558817764,
+        5.94816086575576,
+        -2.30535758442309
+      ],
+      "truth": {
+        "x": 6.803,
+        "y": 5.911,
+        "theta_deg": -135.8
+      },
+      "age_s": 0.018946492,
+      "truth_request_s": 0.00890095,
+      "valid_timing": true,
+      "position_error_m": 0.2131498950127888,
+      "yaw_error_deg": 3.712740144082606
+    },
+    {
+      "stamp_ns": 1792991920790769089,
+      "estimate": [
+        6.989914954737519,
+        5.916804671023724,
+        -2.37247618102671
+      ],
+      "truth": {
+        "x": 6.778,
+        "y": 5.89,
+        "theta_deg": -139.8
+      },
+      "age_s": 0.023917029,
+      "truth_request_s": 0.009174968,
+      "valid_timing": true,
+      "position_error_m": 0.21360346071656933,
+      "yaw_error_deg": 3.867127831854054
+    },
+    {
+      "stamp_ns": 1792991920890756939,
+      "estimate": [
+        6.963829745949212,
+        5.8967515966340605,
+        -2.441298675073893
+      ],
+      "truth": {
+        "x": 6.752,
+        "y": 5.871,
+        "theta_deg": -143.8
+      },
+      "age_s": 0.019764506,
+      "truth_request_s": 0.007226315,
+      "valid_timing": true,
+      "position_error_m": 0.21338928276300856,
+      "yaw_error_deg": 3.9238893873862364
+    },
+    {
+      "stamp_ns": 1792991920992180109,
+      "estimate": [
+        6.937380704898876,
+        5.877692471953873,
+        -2.516902821435868
+      ],
+      "truth": {
+        "x": 6.723,
+        "y": 5.853,
+        "theta_deg": -147.8
+      },
+      "age_s": 0.020469779,
+      "truth_request_s": 0.007192851,
+      "valid_timing": true,
+      "position_error_m": 0.21579806487578138,
+      "yaw_error_deg": 3.592090887155705
+    },
+    {
+      "stamp_ns": 1792991921095985692,
+      "estimate": [
+        6.913031259478499,
+        5.860939677664533,
+        -2.5887342245308593
+      ],
+      "truth": {
+        "x": 6.692,
+        "y": 5.836,
+        "theta_deg": -151.8
+      },
+      "age_s": 0.030446442,
+      "truth_request_s": 0.005310228,
+      "valid_timing": true,
+      "position_error_m": 0.2224338220430121,
+      "yaw_error_deg": 3.476454653309759
+    },
+    {
+      "stamp_ns": 1792991921195493597,
+      "estimate": [
+        6.88114979312793,
+        5.8448390355886435,
+        -2.654418017561603
+      ],
+      "truth": {
+        "x": 6.66,
+        "y": 5.822,
+        "theta_deg": -155.9
+      },
+      "age_s": 0.01652209,
+      "truth_request_s": 0.006358973,
+      "valid_timing": true,
+      "position_error_m": 0.22232600510769218,
+      "yaw_error_deg": 3.81305053023731
+    },
+    {
+      "stamp_ns": 1792991921296608777,
+      "estimate": [
+        6.856594620019781,
+        5.837488546899509,
+        -2.7166430509342168
+      ],
+      "truth": {
+        "x": 6.627,
+        "y": 5.81,
+        "theta_deg": -159.4
+      },
+      "age_s": 0.015068366,
+      "truth_request_s": 0.008126074,
+      "valid_timing": true,
+      "position_error_m": 0.23123431785242027,
+      "yaw_error_deg": 3.7478187379258543
+    },
+    {
+      "stamp_ns": 1792991921392503619,
+      "estimate": [
+        6.827847544913373,
+        5.828122649300519,
+        -2.787302929803623
+      ],
+      "truth": {
+        "x": 6.594,
+        "y": 5.8,
+        "theta_deg": -163.5
+      },
+      "age_s": 0.021513418,
+      "truth_request_s": 0.011245932,
+      "valid_timing": true,
+      "position_error_m": 0.23553249810947954,
+      "yaw_error_deg": 3.799305897803253
+    },
+    {
+      "stamp_ns": 1792991921488975353,
+      "estimate": [
+        6.795112562558137,
+        5.821991859981127,
+        -2.852230656888049
+      ],
+      "truth": {
+        "x": 6.559,
+        "y": 5.792,
+        "theta_deg": -167.5
+      },
+      "age_s": 0.016457916,
+      "truth_request_s": 0.007871783,
+      "valid_timing": true,
+      "position_error_m": 0.23800977682208227,
+      "yaw_error_deg": 4.079221162488406
+    },
+    {
+      "stamp_ns": 1792991921597564886,
+      "estimate": [
+        6.756889546215706,
+        5.807790800034919,
+        -2.9087512388598906
+      ],
+      "truth": {
+        "x": 6.525,
+        "y": 5.786,
+        "theta_deg": -170.6
+      },
+      "age_s": 0.016875486,
+      "truth_request_s": 0.008844244,
+      "valid_timing": true,
+      "position_error_m": 0.23291114316470043,
+      "yaw_error_deg": 3.9408303598786514
+    },
+    {
+      "stamp_ns": 1792991921692587343,
+      "estimate": [
+        6.713087251723956,
+        5.798726053467508,
+        -2.9766628733132166
+      ],
+      "truth": {
+        "x": 6.49,
+        "y": 5.783,
+        "theta_deg": -174.2
+      },
+      "age_s": 0.017726406,
+      "truth_request_s": 0.007258113,
+      "valid_timing": true,
+      "position_error_m": 0.22364085190190675,
+      "yaw_error_deg": 3.649780325867849
+    },
+    {
+      "stamp_ns": 1792991921880194786,
+      "estimate": [
+        6.649700306157619,
+        5.786823681371011,
+        -3.0743086514032596
+      ],
+      "truth": {
+        "x": 6.42,
+        "y": 5.78,
+        "theta_deg": -179.3
+      },
+      "age_s": 0.012226646,
+      "truth_request_s": 0.0089399,
+      "valid_timing": true,
+      "position_error_m": 0.2298016389766557,
+      "yaw_error_deg": 3.1550893540373917
+    },
+    {
+      "stamp_ns": 1792991922090857200,
+      "estimate": [
+        6.571715558090396,
+        5.789997672237086,
+        3.1232686436645944
+      ],
+      "truth": {
+        "x": 6.35,
+        "y": 5.784,
+        "theta_deg": 176.1
+      },
+      "age_s": 0.017143879,
+      "truth_request_s": 0.005500965,
+      "valid_timing": true,
+      "position_error_m": 0.22179666537529272,
+      "yaw_error_deg": 2.8501115675302966
+    },
+    {
+      "stamp_ns": 1792991922294663188,
+      "estimate": [
+        6.512865515171731,
+        5.7919746094267035,
+        3.0556129879614726
+      ],
+      "truth": {
+        "x": 6.288,
+        "y": 5.791,
+        "theta_deg": 171.8
+      },
+      "age_s": 0.015299476,
+      "truth_request_s": 0.007279687,
+      "valid_timing": true,
+      "position_error_m": 0.22486762723207263,
+      "yaw_error_deg": 3.2737280355511804
+    },
+    {
+      "stamp_ns": 1792991922492163694,
+      "estimate": [
+        6.435636782983495,
+        5.795135450890127,
+        2.9872719005193646
+      ],
+      "truth": {
+        "x": 6.229,
+        "y": 5.803,
+        "theta_deg": 167.6
+      },
+      "age_s": 0.014310583,
+      "truth_request_s": 0.006291583,
+      "valid_timing": true,
+      "position_error_m": 0.2067863903028181,
+      "yaw_error_deg": 3.5580721577839007
+    },
+    {
+      "stamp_ns": 1792991922690416584,
+      "estimate": [
+        6.382069612813714,
+        5.805129343268511,
+        2.9322774917517553
+      ],
+      "truth": {
+        "x": 6.177,
+        "y": 5.817,
+        "theta_deg": 163.8
+      },
+      "age_s": 0.020103085,
+      "truth_request_s": 0.006234469,
+      "valid_timing": true,
+      "position_error_m": 0.20541289781998492,
+      "yaw_error_deg": 4.20712463858263
+    },
+    {
+      "stamp_ns": 1792991922890559632,
+      "estimate": [
+        6.339750467498118,
+        5.818195165963824,
+        2.8768601416455932
+      ],
+      "truth": {
+        "x": 6.13,
+        "y": 5.833,
+        "theta_deg": 160.9
+      },
+      "age_s": 0.03031797,
+      "truth_request_s": 0.007394342,
+      "valid_timing": true,
+      "position_error_m": 0.21027230375519695,
+      "yaw_error_deg": 3.931944365700672
+    },
+    {
+      "stamp_ns": 1792991923087409659,
+      "estimate": [
+        6.297530233960005,
+        5.832942364242702,
+        2.822898359079877
+      ],
+      "truth": {
+        "x": 6.09,
+        "y": 5.848,
+        "theta_deg": 157.9
+      },
+      "age_s": 0.01945148,
+      "truth_request_s": 0.007432553,
+      "valid_timing": true,
+      "position_error_m": 0.20807578043129868,
+      "yaw_error_deg": 3.840161969682515
+    },
+    {
+      "stamp_ns": 1792991923392109700,
+      "estimate": [
+        6.2340509575395595,
+        5.853277016917156,
+        2.7422539268656343
+      ],
+      "truth": {
+        "x": 6.04,
+        "y": 5.871,
+        "theta_deg": 153.9
+      },
+      "age_s": 0.01820599,
+      "truth_request_s": 0.006322446,
+      "valid_timing": true,
+      "position_error_m": 0.19485861092436924,
+      "yaw_error_deg": 3.21957636257754
+    },
+    {
+      "stamp_ns": 1792991923796369200,
+      "estimate": [
+        6.183500435929229,
+        5.880407674988955,
+        2.6780841887500855
+      ],
+      "truth": {
+        "x": 5.99,
+        "y": 5.899,
+        "theta_deg": 150.1
+      },
+      "age_s": 0.021524331,
+      "truth_request_s": 0.007566931,
+      "valid_timing": true,
+      "position_error_m": 0.19439159769423664,
+      "yaw_error_deg": 3.342921196096838
+    },
+    {
+      "stamp_ns": 1792991924191711516,
+      "estimate": [
+        6.137760389442419,
+        5.904863829367406,
+        2.6261469269534685
+      ],
+      "truth": {
+        "x": 5.954,
+        "y": 5.921,
+        "theta_deg": 147.1
+      },
+      "age_s": 0.017226386,
+      "truth_request_s": 0.008464382,
+      "valid_timing": true,
+      "position_error_m": 0.1844674950518756,
+      "yaw_error_deg": 3.367135295684656
+    },
+    {
+      "stamp_ns": 1792991924693612844,
+      "estimate": [
+        6.105878352600194,
+        5.926475572233014,
+        2.579961572112779
+      ],
+      "truth": {
+        "x": 5.921,
+        "y": 5.944,
+        "theta_deg": 144.0
+      },
+      "age_s": 0.020269239,
+      "truth_request_s": 0.005832564,
+      "valid_timing": true,
+      "position_error_m": 0.18570705648607405,
+      "yaw_error_deg": 3.8209093879990186
+    },
+    {
+      "stamp_ns": 1792991925190637242,
+      "estimate": [
+        6.0817192224724845,
+        5.9441831561375755,
+        2.530943029007422
+      ],
+      "truth": {
+        "x": 5.897,
+        "y": 5.962,
+        "theta_deg": 141.2
+      },
+      "age_s": 0.020532547,
+      "truth_request_s": 0.008780326,
+      "valid_timing": true,
+      "position_error_m": 0.18557648309001104,
+      "yaw_error_deg": 3.812353750181971
+    },
+    {
+      "stamp_ns": 1792991925790252273,
+      "estimate": [
+        6.062597466034455,
+        5.961682238644801,
+        2.4513420728235213
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 136.9
+      },
+      "age_s": 0.022220926,
+      "truth_request_s": 0.009915742,
+      "valid_timing": true,
+      "position_error_m": 0.18315794520693973,
+      "yaw_error_deg": 3.551554915638661
+    },
+    {
+      "stamp_ns": 1792991925887034015,
+      "estimate": [
+        6.062831633925027,
+        5.958146953972813,
+        2.379520702529683
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 132.9
+      },
+      "age_s": 0.018799973,
+      "truth_request_s": 0.004695786,
+      "valid_timing": true,
+      "position_error_m": 0.18370121833059264,
+      "yaw_error_deg": 3.4364935189554746
+    },
+    {
+      "stamp_ns": 1792991925979886873,
+      "estimate": [
+        6.062207083165989,
+        5.958255678777119,
+        2.3078299633583885
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 128.9
+      },
+      "age_s": 0.014199689,
+      "truth_request_s": 0.009285,
+      "valid_timing": true,
+      "position_error_m": 0.1830690637205487,
+      "yaw_error_deg": 3.328916734267088
+    },
+    {
+      "stamp_ns": 1792991926092326239,
+      "estimate": [
+        6.065346085905595,
+        5.957543569401839,
+        2.2409406434306844
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 124.9
+      },
+      "age_s": 0.015564111,
+      "truth_request_s": 0.007241596,
+      "valid_timing": true,
+      "position_error_m": 0.18626274826424402,
+      "yaw_error_deg": 3.4964410079093113
+    },
+    {
+      "stamp_ns": 1792991926192886341,
+      "estimate": [
+        6.0633754403638624,
+        5.954627207179171,
+        2.1662011795334215
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 120.9
+      },
+      "age_s": 0.016029914,
+      "truth_request_s": 0.007531459,
+      "valid_timing": true,
+      "position_error_m": 0.18461676089023604,
+      "yaw_error_deg": 3.2141851635257632
+    },
+    {
+      "stamp_ns": 1792991926281901082,
+      "estimate": [
+        6.063792901959478,
+        5.957896713630704,
+        2.0947709040603195
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 116.9
+      },
+      "age_s": 0.016098262,
+      "truth_request_s": 0.005723347,
+      "valid_timing": true,
+      "position_error_m": 0.18468232126561304,
+      "yaw_error_deg": 3.1215318494601854
+    },
+    {
+      "stamp_ns": 1792991926391912578,
+      "estimate": [
+        6.061104037297258,
+        5.951908788616959,
+        2.0312006516200816
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 112.9
+      },
+      "age_s": 0.020993453,
+      "truth_request_s": 0.007249084,
+      "valid_timing": true,
+      "position_error_m": 0.18269936724375654,
+      "yaw_error_deg": 3.4792246820533212
+    },
+    {
+      "stamp_ns": 1792991926490978438,
+      "estimate": [
+        6.064692712607606,
+        5.944413258310108,
+        1.9665023267718635
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 108.9
+      },
+      "age_s": 0.018703074,
+      "truth_request_s": 0.007202008,
+      "valid_timing": true,
+      "position_error_m": 0.18737427876029208,
+      "yaw_error_deg": 3.7722837266840514
+    },
+    {
+      "stamp_ns": 1792991926590632665,
+      "estimate": [
+        6.059728801333619,
+        5.949933179581779,
+        1.899925763070098
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 104.9
+      },
+      "age_s": 0.022013116,
+      "truth_request_s": 0.008349118,
+      "valid_timing": true,
+      "position_error_m": 0.1816092540470755,
+      "yaw_error_deg": 3.9577276120890237
+    },
+    {
+      "stamp_ns": 1792991926695408227,
+      "estimate": [
+        6.067317617023106,
+        5.9532779672299325,
+        1.8253711657671952
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 100.8
+      },
+      "age_s": 0.015308158,
+      "truth_request_s": 0.007233201,
+      "valid_timing": true,
+      "position_error_m": 0.18869070040788685,
+      "yaw_error_deg": 3.786063843335255
+    },
+    {
+      "stamp_ns": 1792991926781959239,
+      "estimate": [
+        6.067741629814854,
+        5.949422287551727,
+        1.7575811987759367
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.976,
+        "theta_deg": 96.8
+      },
+      "age_s": 0.008477628,
+      "truth_request_s": 0.003441702,
+      "valid_timing": true,
+      "position_error_m": 0.18961353950739104,
+      "yaw_error_deg": 3.901984841404985
+    },
+    {
+      "stamp_ns": 1792991926891533638,
+      "estimate": [
+        6.073624438891075,
+        5.94929438783971,
+        1.7055535713277385
+      ],
+      "truth": {
+        "x": 5.88,
+        "y": 5.978,
+        "theta_deg": 93.7
+      },
+      "age_s": 0.019493595,
+      "truth_request_s": 0.008674486,
+      "valid_timing": true,
+      "position_error_m": 0.19574073542668816,
+      "yaw_error_deg": 4.021021370544235
+    },
+    {
+      "stamp_ns": 1792991927290866282,
+      "estimate": [
+        6.076236312073235,
+        5.963993196501099,
+        1.810650071193057
+      ],
+      "truth": {
+        "x": 5.878,
+        "y": 5.992,
+        "theta_deg": 99.5
+      },
+      "age_s": 0.021678757,
+      "truth_request_s": 0.007986715,
+      "valid_timing": true,
+      "position_error_m": 0.20020493616947319,
+      "yaw_error_deg": 4.242607254424204
+    },
+    {
+      "stamp_ns": 1792991927387973102,
+      "estimate": [
+        6.072171450787796,
+        5.974031077745312,
+        1.887381259917196
+      ],
+      "truth": {
+        "x": 5.877,
+        "y": 5.996,
+        "theta_deg": 103.5
+      },
+      "age_s": 0.016718632,
+      "truth_request_s": 0.006660545,
+      "valid_timing": true,
+      "position_error_m": 0.19640399371613063,
+      "yaw_error_deg": 4.638980525339179
+    },
+    {
+      "stamp_ns": 1792991927492959858,
+      "estimate": [
+        6.076628241127185,
+        5.975666994803568,
+        1.9400596374794905
+      ],
+      "truth": {
+        "x": 5.877,
+        "y": 5.996,
+        "theta_deg": 106.6
+      },
+      "age_s": 0.015225439,
+      "truth_request_s": 0.005703834,
+      "valid_timing": true,
+      "position_error_m": 0.20066107184965362,
+      "yaw_error_deg": 4.557229231255313
+    },
+    {
+      "stamp_ns": 1792991927897828498,
+      "estimate": [
+        6.0796685976269025,
+        5.978335944712499,
+        1.8361232809249473
+      ],
+      "truth": {
+        "x": 5.877,
+        "y": 5.996,
+        "theta_deg": 100.8
+      },
+      "age_s": 0.020007404,
+      "truth_request_s": 0.007065045,
+      "valid_timing": true,
+      "position_error_m": 0.2034369172821278,
+      "yaw_error_deg": 4.40211466271309
+    },
+    {
+      "stamp_ns": 1792991928390680690,
+      "estimate": [
+        6.0776009451903334,
+        5.996311095130925,
+        1.92883019310444
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 106.2
+      },
+      "age_s": 0.0183112,
+      "truth_request_s": 0.005927964,
+      "valid_timing": true,
+      "position_error_m": 0.2016554659078373,
+      "yaw_error_deg": 4.313829462287987
+    },
+    {
+      "stamp_ns": 1792991928789011006,
+      "estimate": [
+        6.077022980834724,
+        5.996178048957032,
+        1.8255684813506217
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 100.5
+      },
+      "age_s": 0.013668245,
+      "truth_request_s": 0.006633752,
+      "valid_timing": true,
+      "position_error_m": 0.2010808047416224,
+      "yaw_error_deg": 4.097369193497749
+    },
+    {
+      "stamp_ns": 1792991928896760478,
+      "estimate": [
+        6.077632296323639,
+        5.996592087396429,
+        1.750533415720081
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 96.5
+      },
+      "age_s": 0.013013755,
+      "truth_request_s": 0.00584599,
+      "valid_timing": true,
+      "position_error_m": 0.2016804715738842,
+      "yaw_error_deg": 3.7981766173806313
+    },
+    {
+      "stamp_ns": 1792991928989739690,
+      "estimate": [
+        6.0835288646642685,
+        5.994276967977213,
+        1.6877219993913188
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 92.5
+      },
+      "age_s": 0.015546579,
+      "truth_request_s": 0.005137035,
+      "valid_timing": true,
+      "position_error_m": 0.20763773459662754,
+      "yaw_error_deg": 4.199347556503466
+    },
+    {
+      "stamp_ns": 1792991929088302063,
+      "estimate": [
+        6.084840092400616,
+        5.99218212552488,
+        1.6144780978661517
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 88.5
+      },
+      "age_s": 0.013484454,
+      "truth_request_s": 0.006470439,
+      "valid_timing": true,
+      "position_error_m": 0.20902616846738736,
+      "yaw_error_deg": 4.0027811240395685
+    },
+    {
+      "stamp_ns": 1792991929190695069,
+      "estimate": [
+        6.081521738530176,
+        5.999112110101924,
+        1.5377957196570584
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 84.5
+      },
+      "age_s": 0.021949262,
+      "truth_request_s": 0.010507299,
+      "valid_timing": true,
+      "position_error_m": 0.2055304092749615,
+      "yaw_error_deg": 3.6092044896325763
+    },
+    {
+      "stamp_ns": 1792991929295376578,
+      "estimate": [
+        6.087243906075588,
+        5.99476619158885,
+        1.462900286960198
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 80.4
+      },
+      "age_s": 0.021219428,
+      "truth_request_s": 0.005608643,
+      "valid_timing": true,
+      "position_error_m": 0.21133586591342837,
+      "yaw_error_deg": 3.4180122912963475
+    },
+    {
+      "stamp_ns": 1792991929395327450,
+      "estimate": [
+        6.084619504821876,
+        5.992045645329966,
+        1.3802124946832546
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 76.4
+      },
+      "age_s": 0.018694783,
+      "truth_request_s": 0.00989668,
+      "valid_timing": true,
+      "position_error_m": 0.20881158554946444,
+      "yaw_error_deg": 2.6803507765730563
+    },
+    {
+      "stamp_ns": 1792991929488587435,
+      "estimate": [
+        6.085927864932148,
+        5.990612600643473,
+        1.3103000914076817
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 72.4
+      },
+      "age_s": 0.01651553,
+      "truth_request_s": 0.005706949,
+      "valid_timing": true,
+      "position_error_m": 0.21018469625632122,
+      "yaw_error_deg": 2.6746651332661293
+    },
+    {
+      "stamp_ns": 1792991929588618109,
+      "estimate": [
+        6.0866754925331685,
+        5.993296391353918,
+        1.2360740109784498
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 68.4
+      },
+      "age_s": 0.015904067,
+      "truth_request_s": 0.00517727,
+      "valid_timing": true,
+      "position_error_m": 0.21081629144889397,
+      "yaw_error_deg": 2.421823994872552
+    },
+    {
+      "stamp_ns": 1792991929690923591,
+      "estimate": [
+        6.088232096194104,
+        5.9971906437224884,
+        1.1683778743197908
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 64.4
+      },
+      "age_s": 0.01645571,
+      "truth_request_s": 0.004434409,
+      "valid_timing": true,
+      "position_error_m": 0.21226628053035707,
+      "yaw_error_deg": 2.54312107499054
+    },
+    {
+      "stamp_ns": 1792991929789996571,
+      "estimate": [
+        6.088277599064133,
+        6.004340772358706,
+        1.0975339304194267
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 60.4
+      },
+      "age_s": 0.016032089,
+      "truth_request_s": 0.005288435,
+      "valid_timing": true,
+      "position_error_m": 0.2123038855612054,
+      "yaw_error_deg": 2.4840620854381124
+    },
+    {
+      "stamp_ns": 1792991929900555377,
+      "estimate": [
+        6.09226451599819,
+        6.000091958888498,
+        1.0365302663245883
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 56.8
+      },
+      "age_s": 0.029539549,
+      "truth_request_s": 0.006679283,
+      "valid_timing": true,
+      "position_error_m": 0.2162664223095935,
+      "yaw_error_deg": 2.5888095979701147
+    },
+    {
+      "stamp_ns": 1792991929994336249,
+      "estimate": [
+        6.093034254925899,
+        6.003383789237829,
+        0.9834026162680035
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 53.6
+      },
+      "age_s": 0.025525881,
+      "truth_request_s": 0.013021999,
+      "valid_timing": true,
+      "position_error_m": 0.2170473456699494,
+      "yaw_error_deg": 2.7448194742798337
+    },
+    {
+      "stamp_ns": 1792991930089609237,
+      "estimate": [
+        6.094006946972402,
+        6.006431347752082,
+        0.9383915630002261
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 50.9
+      },
+      "age_s": 0.017710135,
+      "truth_request_s": 0.009285246,
+      "valid_timing": true,
+      "position_error_m": 0.21807459381283192,
+      "yaw_error_deg": 2.8658760905976517
+    },
+    {
+      "stamp_ns": 1792991930195469253,
+      "estimate": [
+        6.09289895234693,
+        6.0062304725002,
+        0.89355306481012
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 48.1
+      },
+      "age_s": 0.022486831,
+      "truth_request_s": 0.00629384,
+      "valid_timing": true,
+      "position_error_m": 0.21696200905174867,
+      "yaw_error_deg": 3.096819384599589
+    },
+    {
+      "stamp_ns": 1792991930396554276,
+      "estimate": [
+        6.094742915521392,
+        6.01442188433009,
+        0.8047252696917263
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 43.1
+      },
+      "age_s": 0.024342147,
+      "truth_request_s": 0.011364728,
+      "valid_timing": true,
+      "position_error_m": 0.21915430652800105,
+      "yaw_error_deg": 3.0073616208628557
+    },
+    {
+      "stamp_ns": 1792991930499406899,
+      "estimate": [
+        6.095895422991447,
+        6.016186690040095,
+        0.7477423463593595
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 39.8
+      },
+      "age_s": 0.016055122,
+      "truth_request_s": 0.012461534,
+      "valid_timing": true,
+      "position_error_m": 0.22041922013962637,
+      "yaw_error_deg": 3.0424806096007
+    },
+    {
+      "stamp_ns": 1792991930598802156,
+      "estimate": [
+        6.096775361009142,
+        6.017119946315104,
+        0.679218992512383
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 35.8
+      },
+      "age_s": 0.014925794,
+      "truth_request_s": 0.011737083,
+      "valid_timing": true,
+      "position_error_m": 0.2213630788951006,
+      "yaw_error_deg": 3.1163816360874126
+    },
+    {
+      "stamp_ns": 1792991930690410562,
+      "estimate": [
+        6.095429455049014,
+        6.017755453515511,
+        0.6206175554065373
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 32.2
+      },
+      "age_s": 0.018103088,
+      "truth_request_s": 0.00713159,
+      "valid_timing": true,
+      "position_error_m": 0.22006824161068186,
+      "yaw_error_deg": 3.358766616521112
+    },
+    {
+      "stamp_ns": 1792991930783974593,
+      "estimate": [
+        6.092924867824916,
+        6.016359824338413,
+        0.5530870816086717
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 28.7
+      },
+      "age_s": 0.013377882,
+      "truth_request_s": 0.00488243,
+      "valid_timing": true,
+      "position_error_m": 0.2174679803662231,
+      "yaw_error_deg": 2.989555479384621
+    },
+    {
+      "stamp_ns": 1792991930885457615,
+      "estimate": [
+        6.086901650819057,
+        6.00987446048518,
+        0.4974858900788628
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 25.5
+      },
+      "age_s": 0.015628964,
+      "truth_request_s": 0.004770723,
+      "valid_timing": true,
+      "position_error_m": 0.21108828098003568,
+      "yaw_error_deg": 3.0038418688280304
+    },
+    {
+      "stamp_ns": 1792991931081229516,
+      "estimate": [
+        6.087779521674731,
+        6.012911571699593,
+        0.440937425369561
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 22.2
+      },
+      "age_s": 0.012656396,
+      "truth_request_s": 0.004734587,
+      "valid_timing": true,
+      "position_error_m": 0.21211424125016304,
+      "yaw_error_deg": 3.063853503040558
+    },
+    {
+      "stamp_ns": 1792991931390970877,
+      "estimate": [
+        6.084036445730533,
+        6.008253495296494,
+        0.3854381790393825
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 19.0
+      },
+      "age_s": 0.019891657,
+      "truth_request_s": 0.006552948,
+      "valid_timing": true,
+      "position_error_m": 0.20816285919012786,
+      "yaw_error_deg": 3.083980922164406
+    },
+    {
+      "stamp_ns": 1792991931874360618,
+      "estimate": [
+        6.083353696981949,
+        6.009086418158965,
+        0.3310690480826875
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 15.8
+      },
+      "age_s": 0.002465338,
+      "truth_request_s": 0.001760383,
+      "valid_timing": true,
+      "position_error_m": 0.20751131489806415,
+      "yaw_error_deg": 3.168859182551713
+    },
+    {
+      "stamp_ns": 1792991932373617187,
+      "estimate": [
+        6.076592309532061,
+        6.008497377239613,
+        0.2789646715241856
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 12.7
+      },
+      "age_s": 0.002821537,
+      "truth_request_s": 0.001267065,
+      "valid_timing": true,
+      "position_error_m": 0.2007323723490537,
+      "yaw_error_deg": 3.283498311589173
+    },
+    {
+      "stamp_ns": 1792991932673703601,
+      "estimate": [
+        6.074356606093052,
+        6.013213778184171,
+        0.23169035303929522
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 9.9
+      },
+      "age_s": 0.003562398,
+      "truth_request_s": 0.001202356,
+      "valid_timing": true,
+      "position_error_m": 0.19873228111780483,
+      "yaw_error_deg": 3.374879383047661
+    },
+    {
+      "stamp_ns": 1792991933173978001,
+      "estimate": [
+        6.075874341816353,
+        6.00709871310238,
+        0.17562524099524313
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 6.8
+      },
+      "age_s": 0.003299383,
+      "truth_request_s": 0.001251862,
+      "valid_timing": true,
+      "position_error_m": 0.19996736438235424,
+      "yaw_error_deg": 3.2625850849953966
+    },
+    {
+      "stamp_ns": 1792991933673895555,
+      "estimate": [
+        6.080366512406843,
+        6.005083518844129,
+        0.11649511407436176
+      ],
+      "truth": {
+        "x": 5.876,
+        "y": 6.001,
+        "theta_deg": 3.6
+      },
+      "age_s": 0.002447505,
+      "truth_request_s": 0.001201144,
+      "valid_timing": true,
+      "position_error_m": 0.20440730544549157,
+      "yaw_error_deg": 3.0746783703560046
+    },
+    {
+      "stamp_ns": 1792991935093325443,
+      "estimate": [
+        6.1359483540736095,
+        6.01048935184849,
+        0.0827800556282213
+      ],
+      "truth": {
+        "x": 5.934,
+        "y": 6.003,
+        "theta_deg": 1.7
+      },
+      "age_s": 0.015978734,
+      "truth_request_s": 0.005539943,
+      "valid_timing": true,
+      "position_error_m": 0.2020871794650773,
+      "yaw_error_deg": 3.042947815355257
+    },
+    {
+      "stamp_ns": 1792991935282154289,
+      "estimate": [
+        6.208110387250546,
+        6.014693017853927,
+        0.07565836324400975
+      ],
+      "truth": {
+        "x": 6.002,
+        "y": 6.005,
+        "theta_deg": 0.9
+      },
+      "age_s": 0.012429757,
+      "truth_request_s": 0.003327979,
+      "valid_timing": true,
+      "position_error_m": 0.2063381843665554,
+      "yaw_error_deg": 3.4349048987494744
+    },
+    {
+      "stamp_ns": 1792991935488521964,
+      "estimate": [
+        6.275126971713964,
+        6.015441523601341,
+        0.06087156110391429
+      ],
+      "truth": {
+        "x": 6.072,
+        "y": 6.005,
+        "theta_deg": 0.0
+      },
+      "age_s": 0.017612759,
+      "truth_request_s": 0.004787913,
+      "valid_timing": true,
+      "position_error_m": 0.2033951623141582,
+      "yaw_error_deg": 3.487683543626991
+    },
+    {
+      "stamp_ns": 1792991935692377533,
+      "estimate": [
+        6.345550285111711,
+        6.017980168018789,
+        0.054171082258694506
+      ],
+      "truth": {
+        "x": 6.142,
+        "y": 6.004,
+        "theta_deg": -0.8
+      },
+      "age_s": 0.024320956,
+      "truth_request_s": 0.008119489,
+      "valid_timing": true,
+      "position_error_m": 0.20402981073091359,
+      "yaw_error_deg": 3.903774385079206
+    },
+    {
+      "stamp_ns": 1792991935898334552,
+      "estimate": [
+        6.414242834503211,
+        6.015639017605778,
+        0.04582641506506614
+      ],
+      "truth": {
+        "x": 6.211,
+        "y": 6.003,
+        "theta_deg": -1.2
+      },
+      "age_s": 0.018189892,
+      "truth_request_s": 0.005404538,
+      "valid_timing": true,
+      "position_error_m": 0.20363544520279064,
+      "yaw_error_deg": 3.825660173443024
+    },
+    {
+      "stamp_ns": 1792991936080992765,
+      "estimate": [
+        6.4881589353316516,
+        6.0199401546855205,
+        0.04023007404192868
+      ],
+      "truth": {
+        "x": 6.281,
+        "y": 6.001,
+        "theta_deg": -1.5
+      },
+      "age_s": 0.007437151,
+      "truth_request_s": 0.003340632,
+      "valid_timing": true,
+      "position_error_m": 0.20802296495160083,
+      "yaw_error_deg": 3.8050134521013215
+    },
+    {
+      "stamp_ns": 1792991936292220933,
+      "estimate": [
+        6.558034315188816,
+        6.017371692894883,
+        0.032918785746803896
+      ],
+      "truth": {
+        "x": 6.349,
+        "y": 5.999,
+        "theta_deg": -1.7
+      },
+      "age_s": 0.014589187,
+      "truth_request_s": 0.005429657,
+      "valid_timing": true,
+      "position_error_m": 0.2098400915608858,
+      "yaw_error_deg": 3.5861074899872727
+    },
+    {
+      "stamp_ns": 1792991936496297852,
+      "estimate": [
+        6.622748718079592,
+        6.018648737692311,
+        0.030691791608576317
+      ],
+      "truth": {
+        "x": 6.417,
+        "y": 5.997,
+        "theta_deg": -1.9
+      },
+      "age_s": 0.016891638,
+      "truth_request_s": 0.006464103,
+      "valid_timing": true,
+      "position_error_m": 0.2068845156967189,
+      "yaw_error_deg": 3.6585101248664587
+    },
+    {
+      "stamp_ns": 1792991936690397470,
+      "estimate": [
+        6.692456713653998,
+        6.0200896679034885,
+        0.02814856821345154
+      ],
+      "truth": {
+        "x": 6.485,
+        "y": 5.995,
+        "theta_deg": -1.7
+      },
+      "age_s": 0.019865654,
+      "truth_request_s": 0.005607638,
+      "valid_timing": true,
+      "position_error_m": 0.20896836955774947,
+      "yaw_error_deg": 3.312794157966877
+    },
+    {
+      "stamp_ns": 1792991936880546921,
+      "estimate": [
+        6.753483764958287,
+        6.0172795059969255,
+        0.037505536646199086
+      ],
+      "truth": {
+        "x": 6.553,
+        "y": 5.993,
+        "theta_deg": -1.5
+      },
+      "age_s": 0.008942272,
+      "truth_request_s": 0.003332394,
+      "valid_timing": true,
+      "position_error_m": 0.20194859351652947,
+      "yaw_error_deg": 3.6489089582004515
+    },
+    {
+      "stamp_ns": 1792991937097079108,
+      "estimate": [
+        6.8169189842323314,
+        6.0203028294029535,
+        0.040603273772994
+      ],
+      "truth": {
+        "x": 6.623,
+        "y": 5.991,
+        "theta_deg": -1.0
+      },
+      "age_s": 0.016909945,
+      "truth_request_s": 0.005879967,
+      "valid_timing": true,
+      "position_error_m": 0.19612044324016234,
+      "yaw_error_deg": 3.3263962216067817
+    },
+    {
+      "stamp_ns": 1792991937291739927,
+      "estimate": [
+        6.887471873203587,
+        6.01946613654065,
+        0.06260462183372603
+      ],
+      "truth": {
+        "x": 6.691,
+        "y": 5.991,
+        "theta_deg": -0.2
+      },
+      "age_s": 0.016515185,
+      "truth_request_s": 0.005357382,
+      "valid_timing": true,
+      "position_error_m": 0.19852334343768627,
+      "yaw_error_deg": 3.7869806090850666
+    },
+    {
+      "stamp_ns": 1792991937491409537,
+      "estimate": [
+        6.966085014737363,
+        6.027419044211984,
+        0.07678413334495264
+      ],
+      "truth": {
+        "x": 6.761,
+        "y": 5.991,
+        "theta_deg": 0.2
+      },
+      "age_s": 0.019857746,
+      "truth_request_s": 0.007405285,
+      "valid_timing": true,
+      "position_error_m": 0.2082935669941317,
+      "yaw_error_deg": 4.199406774235518
+    },
+    {
+      "stamp_ns": 1792991937689966276,
+      "estimate": [
+        7.032435762557102,
+        6.03436845539165,
+        0.08005400669923766
+      ],
+      "truth": {
+        "x": 6.829,
+        "y": 5.992,
+        "theta_deg": 0.7
+      },
+      "age_s": 0.013427213,
+      "truth_request_s": 0.003588979,
+      "valid_timing": true,
+      "position_error_m": 0.20780085538674786,
+      "yaw_error_deg": 3.8867567169783364
+    },
+    {
+      "stamp_ns": 1792991937881775257,
+      "estimate": [
+        7.10519554663988,
+        6.037870614603031,
+        0.10760152499979708
+      ],
+      "truth": {
+        "x": 6.898,
+        "y": 5.993,
+        "theta_deg": 1.5
+      },
+      "age_s": 0.01214857,
+      "truth_request_s": 0.007279921,
+      "valid_timing": true,
+      "position_error_m": 0.211998506132125,
+      "yaw_error_deg": 4.665113251659789
+    },
+    {
+      "stamp_ns": 1792991938087928893,
+      "estimate": [
+        7.1835354846758,
+        6.046156532977277,
+        0.11778892146022839
+      ],
+      "truth": {
+        "x": 6.968,
+        "y": 5.996,
+        "theta_deg": 1.9
+      },
+      "age_s": 0.014154898,
+      "truth_request_s": 0.003794784,
+      "valid_timing": true,
+      "position_error_m": 0.22129442594591636,
+      "yaw_error_deg": 4.848808073069016
+    },
+    {
+      "stamp_ns": 1792991938282857348,
+      "estimate": [
+        7.256417348429109,
+        6.053127834620718,
+        0.12684609471098618
+      ],
+      "truth": {
+        "x": 7.036,
+        "y": 5.998,
+        "theta_deg": 2.3
+      },
+      "age_s": 0.013031337,
+      "truth_request_s": 0.002023254,
+      "valid_timing": true,
+      "position_error_m": 0.22720670245062857,
+      "yaw_error_deg": 4.967745874656222
+    },
+    {
+      "stamp_ns": 1792991938491433794,
+      "estimate": [
+        7.334374298999281,
+        6.062921071428387,
+        0.13284082521153717
+      ],
+      "truth": {
+        "x": 7.106,
+        "y": 6.002,
+        "theta_deg": 2.8
+      },
+      "age_s": 0.019272616,
+      "truth_request_s": 0.007900402,
+      "valid_timing": true,
+      "position_error_m": 0.23636031263178606,
+      "yaw_error_deg": 4.811218631656141
+    },
+    {
+      "stamp_ns": 1792991938690689171,
+      "estimate": [
+        7.404662535156512,
+        6.06791316319829,
+        0.14346093359112475
+      ],
+      "truth": {
+        "x": 7.174,
+        "y": 6.005,
+        "theta_deg": 3.2
+      },
+      "age_s": 0.010110139,
+      "truth_request_s": 0.006431884,
+      "valid_timing": true,
+      "position_error_m": 0.239088417177503,
+      "yaw_error_deg": 5.019706019778028
+    },
+    {
+      "stamp_ns": 1792991938889308856,
+      "estimate": [
+        7.478584889412416,
+        6.07756913866296,
+        0.1605973996693489
+      ],
+      "truth": {
+        "x": 7.243,
+        "y": 6.01,
+        "theta_deg": 4.5
+      },
+      "age_s": 0.016418948,
+      "truth_request_s": 0.00615272,
+      "valid_timing": true,
+      "position_error_m": 0.24508330954823213,
+      "yaw_error_deg": 4.701553201829375
+    },
+    {
+      "stamp_ns": 1792991939090111988,
+      "estimate": [
+        7.548704647139094,
+        6.089836655737006,
+        0.1908363636511671
+      ],
+      "truth": {
+        "x": 7.311,
+        "y": 6.017,
+        "theta_deg": 5.7
+      },
+      "age_s": 0.016334887,
+      "truth_request_s": 0.004871776,
+      "valid_timing": true,
+      "position_error_m": 0.2486135106756517,
+      "yaw_error_deg": 5.234118214835668
+    },
+    {
+      "stamp_ns": 1792991939293076055,
+      "estimate": [
+        7.604592323546642,
+        6.106636682569437,
+        0.21625021830959407
+      ],
+      "truth": {
+        "x": 7.372,
+        "y": 6.024,
+        "theta_deg": 7.0
+      },
+      "age_s": 0.014743524,
+      "truth_request_s": 0.005598568,
+      "valid_timing": true,
+      "position_error_m": 0.24683599874999568,
+      "yaw_error_deg": 5.390224827922419
+    },
+    {
+      "stamp_ns": 1792991939492316924,
+      "estimate": [
+        7.646845721627731,
+        6.121008183354123,
+        0.23505606543617374
+      ],
+      "truth": {
+        "x": 7.426,
+        "y": 6.031,
+        "theta_deg": 8.3
+      },
+      "age_s": 0.016106272,
+      "truth_request_s": 0.005262603,
+      "valid_timing": true,
+      "position_error_m": 0.23848334497818194,
+      "yaw_error_deg": 5.167720498443661
+    },
+    {
+      "stamp_ns": 1792991939697784450,
+      "estimate": [
+        7.700896211383921,
+        6.139254893325498,
+        0.2451685174609087
+      ],
+      "truth": {
+        "x": 7.477,
+        "y": 6.039,
+        "theta_deg": 8.7
+      },
+      "age_s": 0.031598604,
+      "truth_request_s": 0.013822623,
+      "valid_timing": true,
+      "position_error_m": 0.24531725807162547,
+      "yaw_error_deg": 5.347121319989499
+    },
+    {
+      "stamp_ns": 1792991940009367553,
+      "estimate": [
+        7.756416725597309,
+        6.1511813872029695,
+        0.23247189348783906
+      ],
+      "truth": {
+        "x": 7.543,
+        "y": 6.049,
+        "theta_deg": 8.0
+      },
+      "age_s": 0.046853487,
+      "truth_request_s": 0.021249103,
+      "valid_timing": true,
+      "position_error_m": 0.23661727463437696,
+      "yaw_error_deg": 5.319658352267985
+    },
+    {
+      "stamp_ns": 1792991940304292223,
+      "estimate": [
+        7.792733408060283,
+        6.1635772968126075,
+        0.2426012631613582
+      ],
+      "truth": {
+        "x": 7.596,
+        "y": 6.056,
+        "theta_deg": 8.7
+      },
+      "age_s": 0.015906839,
+      "truth_request_s": 0.007447709,
+      "valid_timing": true,
+      "position_error_m": 0.2242251293600284,
+      "yaw_error_deg": 5.20002848368844
+    },
+    {
+      "stamp_ns": 1792991940594651771,
+      "estimate": [
+        7.8375672532852745,
+        6.170888591944333,
+        0.22852138922426737
+      ],
+      "truth": {
+        "x": 7.641,
+        "y": 6.063,
+        "theta_deg": 8.0
+      },
+      "age_s": 0.021094147,
+      "truth_request_s": 0.007447909,
+      "valid_timing": true,
+      "position_error_m": 0.22422897523702898,
+      "yaw_error_deg": 5.09331113101689
+    },
+    {
+      "stamp_ns": 1792991940999022985,
+      "estimate": [
+        7.882238409654988,
+        6.186649716614997,
+        0.2573481255945391
+      ],
+      "truth": {
+        "x": 7.692,
+        "y": 6.071,
+        "theta_deg": 9.3
+      },
+      "age_s": 0.020282812,
+      "truth_request_s": 0.007570654,
+      "valid_timing": true,
+      "position_error_m": 0.22263312750169992,
+      "yaw_error_deg": 5.444961462169731
+    },
+    {
+      "stamp_ns": 1792991941497637046,
+      "estimate": [
+        7.930991479024905,
+        6.198413620666631,
+        0.21741615797770958
+      ],
+      "truth": {
+        "x": 7.742,
+        "y": 6.078,
+        "theta_deg": 7.4
+      },
+      "age_s": 0.01579667,
+      "truth_request_s": 0.007254068,
+      "valid_timing": true,
+      "position_error_m": 0.2240919882237389,
+      "yaw_error_deg": 5.057028250072322
+    },
+    {
+      "stamp_ns": 1792991941989468446,
+      "estimate": [
+        7.968679729599589,
+        6.202474269228091,
+        0.15559079315168167
+      ],
+      "truth": {
+        "x": 7.776,
+        "y": 6.082,
+        "theta_deg": 4.2
+      },
+      "age_s": 0.019333158,
+      "truth_request_s": 0.007833807,
+      "valid_timing": true,
+      "position_error_m": 0.22724332277233855,
+      "yaw_error_deg": 4.7146957786843515
+    },
+    {
+      "stamp_ns": 1792991942394772283,
+      "estimate": [
+        7.991619133582809,
+        6.205418936517921,
+        0.21322651715572766
+      ],
+      "truth": {
+        "x": 7.798,
+        "y": 6.084,
+        "theta_deg": 7.3
+      },
+      "age_s": 0.018982825,
+      "truth_request_s": 0.007150407,
+      "valid_timing": true,
+      "position_error_m": 0.22854086513028812,
+      "yaw_error_deg": 4.916979513297036
+    },
+    {
+      "stamp_ns": 1792991942702604073,
+      "estimate": [
+        8.006733428814023,
+        6.215027017030555,
+        0.2737384113163775
+      ],
+      "truth": {
+        "x": 7.815,
+        "y": 6.086,
+        "theta_deg": 10.1
+      },
+      "age_s": 0.018121028,
+      "truth_request_s": 0.008052539,
+      "valid_timing": true,
+      "position_error_m": 0.2311053414540324,
+      "yaw_error_deg": 5.584055659044604
+    },
+    {
+      "stamp_ns": 1792991943196310223,
+      "estimate": [
+        7.999097441874182,
+        6.211126693927501,
+        0.22115580588673986
+      ],
+      "truth": {
+        "x": 7.824,
+        "y": 6.088,
+        "theta_deg": 7.3
+      },
+      "age_s": 0.019945464,
+      "truth_request_s": 0.008422786,
+      "valid_timing": true,
+      "position_error_m": 0.21405442510819309,
+      "yaw_error_deg": 5.37129429212468
+    },
+    {
+      "stamp_ns": 1792991943695368899,
+      "estimate": [
+        7.996337181735768,
+        6.209541086558416,
+        0.1637637881413691
+      ],
+      "truth": {
+        "x": 7.824,
+        "y": 6.088,
+        "theta_deg": 4.2
+      },
+      "age_s": 0.016475007,
+      "truth_request_s": 0.007191468,
+      "valid_timing": true,
+      "position_error_m": 0.21088466025395888,
+      "yaw_error_deg": 5.182973897575009
+    }
+  ],
+  "events": [
+    {
+      "event": "explicit_initial_pose",
+      "wall_ns": 1792991888143389103,
+      "elapsed_s": 8.47588027400002,
+      "truth": {
+        "x": 8.08,
+        "y": 6.238,
+        "theta_deg": 88.1
+      },
+      "truth_tf_published": false
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792991898344420705,
+      "elapsed_s": 18.67691254700003,
+      "goal": {
+        "id": "door",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ]
+      },
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 199,
+        "uptime_s": 20.0,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      }
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792991917497801688,
+      "elapsed_s": 18.426984505000064,
+      "id": "door",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 199,
+        "uptime_s": 20.0,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 384,
+        "uptime_s": 38.4,
+        "robot_truth": {
+          "x": 6.867,
+          "y": 6.018,
+          "theta_deg": -14.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.005615117,
+      "truth_goal_error_m": 0.13421251804507653,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792991917497707156,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792991917534162127,
+      "elapsed_s": 37.86665426500008,
+      "goal": {
+        "id": "middle",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ]
+      },
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 391,
+        "uptime_s": 39.2,
+        "robot_truth": {
+          "x": 6.867,
+          "y": 6.018,
+          "theta_deg": -14.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      }
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792991934824570615,
+      "elapsed_s": 16.535125967999875,
+      "id": "middle",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 391,
+        "uptime_s": 39.2,
+        "robot_truth": {
+          "x": 6.867,
+          "y": 6.018,
+          "theta_deg": -14.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 557,
+        "uptime_s": 55.7,
+        "robot_truth": {
+          "x": 5.876,
+          "y": 6.001,
+          "theta_deg": 3.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.00130097,
+      "truth_goal_error_m": 0.12400403219250541,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792991934774118668,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792991934829506351,
+      "elapsed_s": 55.1619968120001,
+      "goal": {
+        "id": "return_home",
+        "pose": [
+          8.08,
+          6.238,
+          0.0
+        ]
+      },
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 564,
+        "uptime_s": 56.5,
+        "robot_truth": {
+          "x": 5.876,
+          "y": 6.001,
+          "theta_deg": 3.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      }
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792991944784928541,
+      "elapsed_s": 9.225362365000137,
+      "id": "return_home",
+      "pose": [
+        8.08,
+        6.238,
+        0.0
+      ],
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 564,
+        "uptime_s": 56.5,
+        "robot_truth": {
+          "x": 5.876,
+          "y": 6.001,
+          "theta_deg": 3.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "end_truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 656,
+        "uptime_s": 65.7,
+        "robot_truth": {
+          "x": 7.824,
+          "y": 6.088,
+          "theta_deg": 2.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "truth_endpoint_request_s": 0.007831237,
+      "truth_goal_error_m": 0.2967086112670143,
+      "passed": true,
+      "post_response_odom": {
+        "wall_ns": 1792991944784862885,
+        "linear": 0.0,
+        "angular": 0.0
+      },
+      "post_response_stationary": true
+    }
+  ],
+  "limitations": [
+    "Local route only, not whole-field localization or kidnapping recovery.",
+    "720 rays and AMCL60 beams are a new declared configuration, not an isolated causal comparison with previous24-ray trials.",
+    "Truth used for initialization and scoring only; no real vehicle or physical sensor claims."
+  ],
+  "result": "PASSED"
+}

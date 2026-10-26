@@ -1,0 +1,270 @@
+{
+  "source_kind": "frozen_real_model_plan_actual_AMCL_SLAM_sim_execution",
+  "instruction": "去门口，然后停下。请一次给出完整的有序工具调用。",
+  "events": [],
+  "truth_trace": [
+    {
+      "wall_ns": 1792986975200059702,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 969,
+      "uptime_s": 96.8,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986975398788322,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 971,
+      "uptime_s": 97.0,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986975599002955,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 973,
+      "uptime_s": 97.2,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986975799255325,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 975,
+      "uptime_s": 97.4,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986975999475855,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 977,
+      "uptime_s": 97.6,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986976198744633,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 979,
+      "uptime_s": 97.8,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986976399317717,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 981,
+      "uptime_s": 98.0,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986976599958884,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 983,
+      "uptime_s": 98.2,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986976799802857,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 985,
+      "uptime_s": 98.4,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986976999803675,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 987,
+      "uptime_s": 98.6,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    },
+    {
+      "wall_ns": 1792986977199792862,
+      "mode": "nav-static",
+      "seed": 42,
+      "slip": 0.05,
+      "tick_hz": 10.0,
+      "tick_n": 989,
+      "uptime_s": 98.8,
+      "robot_truth": {
+        "x": 5.966,
+        "y": 5.887,
+        "theta_deg": 9.7
+      },
+      "terminated_events": 0,
+      "clients": 1
+    }
+  ],
+  "final_truth": {
+    "x": 5.966,
+    "y": 5.887,
+    "theta_deg": 9.7
+  },
+  "truth_goal_error_m": 1.0401562382642329,
+  "checks": {
+    "final_completed": false,
+    "truth_error_le_30cm": false,
+    "stop_verified": false,
+    "task_contract_pass_before_exec": false,
+    "replans_le_two": true,
+    "ffmpeg_success": true
+  },
+  "all_checks_passed": false,
+  "frames": [
+    {
+      "frame": 0,
+      "wall_ns": 1792986975200059702,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 1,
+      "wall_ns": 1792986975398788322,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 2,
+      "wall_ns": 1792986975599002955,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 3,
+      "wall_ns": 1792986975799255325,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 4,
+      "wall_ns": 1792986975999475855,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 5,
+      "wall_ns": 1792986976198744633,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 6,
+      "wall_ns": 1792986976399317717,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 7,
+      "wall_ns": 1792986976599958884,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 8,
+      "wall_ns": 1792986976799802857,
+      "event_count": 0,
+      "amcl": null
+    },
+    {
+      "frame": 9,
+      "wall_ns": 1792986976999803675,
+      "event_count": 0,
+      "amcl": null
+    }
+  ],
+  "video_duration_s": 2.0,
+  "wall_duration_s": 2.1715359019999596,
+  "fps": 5,
+  "new_model_requests": 0,
+  "limitations": [
+    "One local task; no real camera, lidar, battery or vehicle.",
+    "Original received model reply reused; not a new online model sampling.",
+    "Known virtual waypoint TTL is a declared setting, not W6 field observation.",
+    "Video rendered during execution from live truth, AMCL and agent events; not a physical-camera video or an offline replay."
+  ]
+}

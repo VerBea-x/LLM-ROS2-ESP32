@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "source_kind": "localization_estimate_vs_independent_truth",
+  "fresh_sample_count": 10,
+  "stale_repeated_rows_excluded": [],
+  "group_summaries": [
+    {
+      "point_id": "P1",
+      "condition": "A",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.08451586352362056,
+      "max_position_error_m": 0.08451586352362056,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 0.6666892742497808,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P1",
+      "condition": "B",
+      "n_fresh": 1,
+      "mean_position_error_m": 1.1405893762556463,
+      "max_position_error_m": 1.1405893762556463,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 40.37450016080114,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P2",
+      "condition": "A",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.12341416625320999,
+      "max_position_error_m": 0.12341416625320999,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 0.43982100740563174,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P2",
+      "condition": "B",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.6029091238573395,
+      "max_position_error_m": 0.6029091238573395,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 7.383940105806221,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P3",
+      "condition": "A",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.01500227319541972,
+      "max_position_error_m": 0.01500227319541972,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 0.10885801697490702,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P3",
+      "condition": "B",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.7413541425244591,
+      "max_position_error_m": 0.7413541425244591,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 1.3526063226698848,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P4",
+      "condition": "A",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.054582857271411225,
+      "max_position_error_m": 0.054582857271411225,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 0.5622184577658949,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P4",
+      "condition": "B",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.7509233796977764,
+      "max_position_error_m": 0.7509233796977764,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 0.3074565274412657,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P5",
+      "condition": "A",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.12994446255920353,
+      "max_position_error_m": 0.12994446255920353,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 1.0107656155168996,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    },
+    {
+      "point_id": "P5",
+      "condition": "B",
+      "n_fresh": 1,
+      "mean_position_error_m": 0.4850046915658059,
+      "max_position_error_m": 0.4850046915658059,
+      "position_error_population_sd_m": null,
+      "mean_abs_yaw_error_deg": 6.852521890394149,
+      "truth_sources": [
+        "simulator /health robot_truth seed42"
+      ]
+    }
+  ],
+  "required_course_groups_present": true,
+  "missing_course_groups": [],
+  "note": "AMCL covariance is not used as true position error; stale repeated timestamps are excluded. Fresh timestamps do not prove statistical independence; a single sample has no dispersion estimate."
+}

@@ -1,0 +1,7447 @@
+{
+  "source_kind": "actual_simulation_service_execution",
+  "protocol": {
+    "protocol": "week3_4_preregister.json",
+    "same_order_each_round": true,
+    "starting_pose_note": "Second round starts from previous final position; route times not treated as matched baseline.",
+    "goals": [
+      {
+        "id": "route1_goal1",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      {
+        "id": "route1_goal2",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      {
+        "id": "route1_goal3",
+        "pose": [
+          8.0,
+          5.5,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      {
+        "id": "route2_goal1",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      {
+        "id": "route2_goal2",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      {
+        "id": "route2_goal3",
+        "pose": [
+          8.0,
+          5.5,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      }
+    ]
+  },
+  "trials": [
+    {
+      "id": "route1_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 0.3530201569997189,
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -20.0
+      },
+      "end_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      },
+      "truth_goal_error_m": 0.4373831272465822
+    },
+    {
+      "id": "route1_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 7.963276520000363,
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      },
+      "end_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 15.3
+      },
+      "truth_goal_error_m": 0.1888094277307146
+    },
+    {
+      "id": "route1_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=70，阈值<50）；未派发导航。",
+      "elapsed_s": 2.8883999675599625e-05,
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "end_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "truth_goal_error_m": 1.9033257734817761
+    },
+    {
+      "id": "route2_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 2.362542451000081,
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "end_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      },
+      "truth_goal_error_m": 0.23345235059857508
+    },
+    {
+      "id": "route2_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "elapsed_s": 10.962366010000096,
+      "start_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      },
+      "end_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -20.2
+      },
+      "truth_goal_error_m": 0.47801255213644767
+    },
+    {
+      "id": "route2_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=70，阈值<50）；未派发导航。",
+      "elapsed_s": 3.0949000120017445e-05,
+      "start_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      },
+      "end_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      },
+      "truth_goal_error_m": 1.858627450566681
+    }
+  ],
+  "events": [
+    {
+      "event": "truth",
+      "wall_ns": 1792937863209717140,
+      "elapsed_s": 1.03207329199995,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2756,
+        "uptime_s": 275.5,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937863206411779
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863210233502,
+      "elapsed_s": 1.0325893029998952,
+      "stamp_ns": 1792937863182104924,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937863210346741,
+      "elapsed_s": 1.0327024189996337,
+      "stamp_ns": 1792937817882053820,
+      "frame": "map",
+      "x": 7.026014054111477,
+      "y": 6.200327014293299,
+      "yaw": -0.4407717435110796
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863283929927,
+      "elapsed_s": 1.106286362999981,
+      "stamp_ns": 1792937863282547247,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863383221763,
+      "elapsed_s": 1.2055782719999115,
+      "stamp_ns": 1792937863382141625,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937863404184361,
+      "elapsed_s": 1.2265406819997224,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2758,
+        "uptime_s": 275.7,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937863402343261
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863483601367,
+      "elapsed_s": 1.3059578259999398,
+      "stamp_ns": 1792937863481946786,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863583233710,
+      "elapsed_s": 1.405589998999858,
+      "stamp_ns": 1792937863582104959,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937863604166056,
+      "elapsed_s": 1.4265224729997499,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2760,
+        "uptime_s": 275.9,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937863602309335
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863683544116,
+      "elapsed_s": 1.5059006389997194,
+      "stamp_ns": 1792937863682338781,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863782654697,
+      "elapsed_s": 1.6050109929997234,
+      "stamp_ns": 1792937863781650666,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937863803534561,
+      "elapsed_s": 1.6258907909996196,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2762,
+        "uptime_s": 276.1,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937863802260427
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863884028446,
+      "elapsed_s": 1.7063849769997432,
+      "stamp_ns": 1792937863882707690,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937863984118502,
+      "elapsed_s": 1.8064751739998428,
+      "stamp_ns": 1792937863982589995,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937864004152935,
+      "elapsed_s": 1.826509275999797,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2764,
+        "uptime_s": 276.3,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937864002316895
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864083144536,
+      "elapsed_s": 1.9055007389997627,
+      "stamp_ns": 1792937864082096123,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864183334097,
+      "elapsed_s": 2.0056905490000645,
+      "stamp_ns": 1792937864182321635,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937864203753537,
+      "elapsed_s": 2.026109593000001,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2766,
+        "uptime_s": 276.5,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937864202383615
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864284666539,
+      "elapsed_s": 2.1070229729998573,
+      "stamp_ns": 1792937864282646261,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864384700204,
+      "elapsed_s": 2.207056650999675,
+      "stamp_ns": 1792937864383338812,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937864404155465,
+      "elapsed_s": 2.2265117759998247,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2768,
+        "uptime_s": 276.7,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937864402456378
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864485826818,
+      "elapsed_s": 2.3081836289998137,
+      "stamp_ns": 1792937864484179636,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864583819674,
+      "elapsed_s": 2.406175969999822,
+      "stamp_ns": 1792937864582728684,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937864603577613,
+      "elapsed_s": 2.4259337549997326,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2770,
+        "uptime_s": 276.9,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937864602247220
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864683804491,
+      "elapsed_s": 2.506160897999962,
+      "stamp_ns": 1792937864682410580,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864783697327,
+      "elapsed_s": 2.6060539269997207,
+      "stamp_ns": 1792937864782423607,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937864804144568,
+      "elapsed_s": 2.6265008179998404,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2772,
+        "uptime_s": 277.1,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937864802291163
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864885586045,
+      "elapsed_s": 2.7079428439997173,
+      "stamp_ns": 1792937864883771640,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937864984411419,
+      "elapsed_s": 2.8067681559996345,
+      "stamp_ns": 1792937864982935210,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865004472757,
+      "elapsed_s": 2.8268290949999937,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2774,
+        "uptime_s": 277.3,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865002517342
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865085044992,
+      "elapsed_s": 2.9074016929998834,
+      "stamp_ns": 1792937865083412542,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865184053032,
+      "elapsed_s": 3.006409782999981,
+      "stamp_ns": 1792937865182410734,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865204047096,
+      "elapsed_s": 3.0264032759996553,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2776,
+        "uptime_s": 277.5,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865202327963
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865284507229,
+      "elapsed_s": 3.1068638189999547,
+      "stamp_ns": 1792937865282817433,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.13606103102102418
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865286858898,
+      "elapsed_s": 3.109215382000002,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2777,
+        "uptime_s": 277.6,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -20.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865284671414
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792937865286864600,
+      "elapsed_s": 3.109220278000066,
+      "goal": {
+        "id": "route1_goal1",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -20.0
+      }
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865383386027,
+      "elapsed_s": 3.2057424589997936,
+      "stamp_ns": 1792937865382199382,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.12799431250214388
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865403539051,
+      "elapsed_s": 3.225895213000058,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2778,
+        "uptime_s": 277.7,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -19.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865402220242
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865483588571,
+      "elapsed_s": 3.30594500899997,
+      "stamp_ns": 1792937865482449866,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.1197788121333958
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865582982444,
+      "elapsed_s": 3.405338579999807,
+      "stamp_ns": 1792937865581970410,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865603545431,
+      "elapsed_s": 3.4259015399998134,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2780,
+        "uptime_s": 277.9,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865602215969
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865642965365,
+      "elapsed_s": 3.465321615999983,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2780,
+        "uptime_s": 278.0,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865641284808
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792937865642986967,
+      "elapsed_s": 0.3530201569997189,
+      "id": "route1_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -20.0
+      },
+      "end_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      },
+      "truth_goal_error_m": 0.4373831272465822
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865681735348,
+      "elapsed_s": 3.5040915810000115,
+      "stamp_ns": 1792937865681008159,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865782675683,
+      "elapsed_s": 3.605031865000001,
+      "stamp_ns": 1792937865781710479,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937865806481188,
+      "elapsed_s": 3.628837550999833,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2782,
+        "uptime_s": 278.1,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937865802361417
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865883495661,
+      "elapsed_s": 3.7058521740000288,
+      "stamp_ns": 1792937865882277089,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937865983931364,
+      "elapsed_s": 3.806287923999662,
+      "stamp_ns": 1792937865982579285,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937866004886797,
+      "elapsed_s": 3.8272430449997046,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2784,
+        "uptime_s": 278.3,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937866002417863
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866084043725,
+      "elapsed_s": 3.9064002029999756,
+      "stamp_ns": 1792937866082598513,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866183210690,
+      "elapsed_s": 4.005567114999849,
+      "stamp_ns": 1792937866182231310,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937866204275275,
+      "elapsed_s": 4.026631713999905,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2786,
+        "uptime_s": 278.5,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937866202374618
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866283686026,
+      "elapsed_s": 4.1060424799998145,
+      "stamp_ns": 1792937866282241788,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866382979303,
+      "elapsed_s": 4.205335666999872,
+      "stamp_ns": 1792937866381690324,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937866403810750,
+      "elapsed_s": 4.226166907999868,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2788,
+        "uptime_s": 278.7,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937866402311405
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866485074796,
+      "elapsed_s": 4.307431690999692,
+      "stamp_ns": 1792937866483113829,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866583583758,
+      "elapsed_s": 4.405940226999974,
+      "stamp_ns": 1792937866582119621,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937866604432814,
+      "elapsed_s": 4.426789209999697,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2790,
+        "uptime_s": 278.9,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937866602369435
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866683917161,
+      "elapsed_s": 4.506273793999753,
+      "stamp_ns": 1792937866682621493,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.11146337588386679
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937866688289270,
+      "elapsed_s": 4.51064531899965,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2791,
+        "uptime_s": 279.0,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -18.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937866683957152
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792937866688293648,
+      "elapsed_s": 4.510649342999841,
+      "goal": {
+        "id": "route1_goal2",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      }
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866782277889,
+      "elapsed_s": 4.604634030999932,
+      "stamp_ns": 1792937866781430427,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.12764659100437867
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937866803622079,
+      "elapsed_s": 4.62597821899999,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2792,
+        "uptime_s": 279.1,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -19.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937866802240403
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866883112571,
+      "elapsed_s": 4.705469168000036,
+      "stamp_ns": 1792937866881949809,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.17830389667758517
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937866982833292,
+      "elapsed_s": 4.805189461999817,
+      "stamp_ns": 1792937866982012924,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.26217760456281436
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937867003702177,
+      "elapsed_s": 4.826058362999902,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2794,
+        "uptime_s": 279.3,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -26.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937867002247859
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867083223997,
+      "elapsed_s": 4.905580505999751,
+      "stamp_ns": 1792937867081928673,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.3655816456248955
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867182511495,
+      "elapsed_s": 5.00486772999966,
+      "stamp_ns": 1792937867181720574,
+      "frame": "odom",
+      "x": 7.166314758189583,
+      "y": 6.325439097440071,
+      "yaw": -0.5120109356688838
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937867184115280,
+      "elapsed_s": 5.006471434999639,
+      "stamp_ns": 1792937867181720574,
+      "frame": "map",
+      "x": 7.01951624603604,
+      "y": 6.203727099682386,
+      "yaw": -0.6392029457136365
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937867203658199,
+      "elapsed_s": 5.026014334999672,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2796,
+        "uptime_s": 279.5,
+        "robot_truth": {
+          "x": 7.198,
+          "y": 6.39,
+          "theta_deg": -41.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937867202226216
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867281855198,
+      "elapsed_s": 5.10421162800003,
+      "stamp_ns": 1792937867281120379,
+      "frame": "odom",
+      "x": 7.174262406423042,
+      "y": 6.319101719169776,
+      "yaw": -0.673147685614725
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867383462276,
+      "elapsed_s": 5.205818361999718,
+      "stamp_ns": 1792937867382395879,
+      "frame": "odom",
+      "x": 7.1900945296226855,
+      "y": 6.301872514080819,
+      "yaw": -0.8276303201795506
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937867386117804,
+      "elapsed_s": 5.208473785000024,
+      "stamp_ns": 1792937867382395879,
+      "frame": "map",
+      "x": 7.036911150881963,
+      "y": 6.184898756775544,
+      "yaw": -0.9653831160612182
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937867403536493,
+      "elapsed_s": 5.225892644999931,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2798,
+        "uptime_s": 279.7,
+        "robot_truth": {
+          "x": 7.216,
+          "y": 6.364,
+          "theta_deg": -58.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937867402231756
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867482756171,
+      "elapsed_s": 5.305112414999712,
+      "stamp_ns": 1792937867481781231,
+      "frame": "odom",
+      "x": 7.204702320107892,
+      "y": 6.280089369809443,
+      "yaw": -0.9800751461621791
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867582568008,
+      "elapsed_s": 5.404924105999726,
+      "stamp_ns": 1792937867581760498,
+      "frame": "odom",
+      "x": 7.219399990548926,
+      "y": 6.247022065476912,
+      "yaw": -1.1525444530580775
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937867583791273,
+      "elapsed_s": 5.4061473819997445,
+      "stamp_ns": 1792937867581760498,
+      "frame": "map",
+      "x": 7.048194050242218,
+      "y": 6.130224668747667,
+      "yaw": -1.2943026411635818
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937867603512364,
+      "elapsed_s": 5.425868444999651,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2800,
+        "uptime_s": 279.9,
+        "robot_truth": {
+          "x": 7.235,
+          "y": 6.304,
+          "theta_deg": -75.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937867602218043
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867682278176,
+      "elapsed_s": 5.504634504000023,
+      "stamp_ns": 1792937867681239325,
+      "frame": "odom",
+      "x": 7.231195716867178,
+      "y": 6.198812616403832,
+      "yaw": -1.330834120287772
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867783045348,
+      "elapsed_s": 5.6054016899997805,
+      "stamp_ns": 1792937867782081963,
+      "frame": "odom",
+      "x": 7.236600602003911,
+      "y": 6.133365750727205,
+      "yaw": -1.4883989849828638
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937867784620661,
+      "elapsed_s": 5.606976852999651,
+      "stamp_ns": 1792937867782081963,
+      "frame": "map",
+      "x": 7.064819331563297,
+      "y": 6.008976146414384,
+      "yaw": -1.6324330357787167
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937867803532644,
+      "elapsed_s": 5.625888713999757,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2802,
+        "uptime_s": 280.1,
+        "robot_truth": {
+          "x": 7.236,
+          "y": 6.201,
+          "theta_deg": -93.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937867802216599
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867883119591,
+      "elapsed_s": 5.705475914999624,
+      "stamp_ns": 1792937867882140848,
+      "frame": "odom",
+      "x": 7.232246181475102,
+      "y": 6.072786754193196,
+      "yaw": -1.6425529512785655
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937867982396371,
+      "elapsed_s": 5.8047527109997645,
+      "stamp_ns": 1792937867981484161,
+      "frame": "odom",
+      "x": 7.211298941542163,
+      "y": 5.981902820415378,
+      "yaw": -1.7973237987499038
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937867984112482,
+      "elapsed_s": 5.80646872699981,
+      "stamp_ns": 1792937867981484161,
+      "frame": "map",
+      "x": 7.020647633581128,
+      "y": 5.865463979498087,
+      "yaw": -1.9438815514417493
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937868003672682,
+      "elapsed_s": 5.8260288129999935,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2804,
+        "uptime_s": 280.3,
+        "robot_truth": {
+          "x": 7.194,
+          "y": 6.058,
+          "theta_deg": -110.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937868002295432
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868082881833,
+      "elapsed_s": 5.9052384819997314,
+      "stamp_ns": 1792937868081686869,
+      "frame": "odom",
+      "x": 7.179133129682636,
+      "y": 5.903004418833598,
+      "yaw": -1.957911369592447
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868182428712,
+      "elapsed_s": 6.004784805999861,
+      "stamp_ns": 1792937868181692152,
+      "frame": "odom",
+      "x": 7.140328817691365,
+      "y": 5.8381846918749885,
+      "yaw": -2.110222389424919
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937868183414244,
+      "elapsed_s": 6.005770163999841,
+      "stamp_ns": 1792937868181692152,
+      "frame": "map",
+      "x": 6.9529116889003655,
+      "y": 5.733209095340624,
+      "yaw": -2.233650740527564
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937868203485732,
+      "elapsed_s": 6.025841936999768,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2806,
+        "uptime_s": 280.5,
+        "robot_truth": {
+          "x": 7.108,
+          "y": 5.926,
+          "theta_deg": -127.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937868202219543
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868283423094,
+      "elapsed_s": 6.1057795449996775,
+      "stamp_ns": 1792937868282416920,
+      "frame": "odom",
+      "x": 7.091830040946733,
+      "y": 5.777315299859512,
+      "yaw": -2.2435633576708214
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868382128441,
+      "elapsed_s": 6.204484835999665,
+      "stamp_ns": 1792937868381179570,
+      "frame": "odom",
+      "x": 7.044104584368377,
+      "y": 5.733126220493786,
+      "yaw": -2.3946501464389627
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937868383820681,
+      "elapsed_s": 6.206176801999845,
+      "stamp_ns": 1792937868381179570,
+      "frame": "map",
+      "x": 6.868574810987927,
+      "y": 5.633024348256337,
+      "yaw": -2.486902904326881
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937868403647931,
+      "elapsed_s": 6.226004071999796,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2808,
+        "uptime_s": 280.7,
+        "robot_truth": {
+          "x": 7.005,
+          "y": 5.837,
+          "theta_deg": -142.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937868402252496
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868482342981,
+      "elapsed_s": 6.304699299999811,
+      "stamp_ns": 1792937868481108023,
+      "frame": "odom",
+      "x": 6.987716913011235,
+      "y": 5.693449298993875,
+      "yaw": -2.5284243479741018
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868582872884,
+      "elapsed_s": 6.405229143999804,
+      "stamp_ns": 1792937868582007445,
+      "frame": "odom",
+      "x": 6.929117370459808,
+      "y": 5.662105958029318,
+      "yaw": -2.6504370219122038
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937868584322035,
+      "elapsed_s": 6.406678258999818,
+      "stamp_ns": 1792937868582007445,
+      "frame": "map",
+      "x": 6.776598803965623,
+      "y": 5.565283559084669,
+      "yaw": -2.694921183937741
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937868603855059,
+      "elapsed_s": 6.4262112789997445,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2810,
+        "uptime_s": 280.9,
+        "robot_truth": {
+          "x": 6.888,
+          "y": 5.777,
+          "theta_deg": -156.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937868602250230
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868683357721,
+      "elapsed_s": 6.5057140869998875,
+      "stamp_ns": 1792937868682237426,
+      "frame": "odom",
+      "x": 6.871531966618661,
+      "y": 5.639676912103891,
+      "yaw": -2.770177712948754
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868782919606,
+      "elapsed_s": 6.60527620799985,
+      "stamp_ns": 1792937868781946097,
+      "frame": "odom",
+      "x": 6.8111175797930485,
+      "y": 5.623551106072915,
+      "yaw": -2.8807537946963
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937868784803785,
+      "elapsed_s": 6.607159850999778,
+      "stamp_ns": 1792937868781946097,
+      "frame": "map",
+      "x": 6.680136761083417,
+      "y": 5.519659021684685,
+      "yaw": -2.878495187453881
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937868803628619,
+      "elapsed_s": 6.625984735999737,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2812,
+        "uptime_s": 281.1,
+        "robot_truth": {
+          "x": 6.77,
+          "y": 5.748,
+          "theta_deg": -169.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937868802224785
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868883224684,
+      "elapsed_s": 6.705581137999616,
+      "stamp_ns": 1792937868882216373,
+      "frame": "odom",
+      "x": 6.7568684150548695,
+      "y": 5.615736276816257,
+      "yaw": -2.9985225134154376
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937868984344077,
+      "elapsed_s": 6.806700422999711,
+      "stamp_ns": 1792937868982348708,
+      "frame": "odom",
+      "x": 6.707984465390342,
+      "y": 5.613196037292659,
+      "yaw": -3.0896746571127967
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937868986468917,
+      "elapsed_s": 6.808825088000049,
+      "stamp_ns": 1792937868982348708,
+      "frame": "map",
+      "x": 6.596540214014282,
+      "y": 5.516469115582211,
+      "yaw": -3.0842667586005446
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937869003595388,
+      "elapsed_s": 6.825951563999752,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2814,
+        "uptime_s": 281.3,
+        "robot_truth": {
+          "x": 6.671,
+          "y": 5.743,
+          "theta_deg": -180.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937869002215450
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869083062444,
+      "elapsed_s": 6.905418826999721,
+      "stamp_ns": 1792937869081600060,
+      "frame": "odom",
+      "x": 6.6578834328453365,
+      "y": 5.615081782498526,
+      "yaw": 3.1039715634594227
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869183930340,
+      "elapsed_s": 7.006286722999903,
+      "stamp_ns": 1792937869182828137,
+      "frame": "odom",
+      "x": 6.613444789413443,
+      "y": 5.620132280539794,
+      "yaw": 3.0284271827838385
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937869203791103,
+      "elapsed_s": 7.026147377999678,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2816,
+        "uptime_s": 281.5,
+        "robot_truth": {
+          "x": 6.582,
+          "y": 5.754,
+          "theta_deg": 171.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937869202244471
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869282635859,
+      "elapsed_s": 7.104992296999626,
+      "stamp_ns": 1792937869281600506,
+      "frame": "odom",
+      "x": 6.569389934498165,
+      "y": 5.628340722548315,
+      "yaw": 2.9573817684816905
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937869285113349,
+      "elapsed_s": 7.10746958999971,
+      "stamp_ns": 1792937869281600506,
+      "frame": "map",
+      "x": 6.463775160136395,
+      "y": 5.5082613856219975,
+      "yaw": 2.992801475603934
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869382978267,
+      "elapsed_s": 7.2053347339997345,
+      "stamp_ns": 1792937869381957121,
+      "frame": "odom",
+      "x": 6.53215311637027,
+      "y": 5.6381543849311155,
+      "yaw": 2.8839048012591117
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937869403918584,
+      "elapsed_s": 7.226274804999775,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2818,
+        "uptime_s": 281.7,
+        "robot_truth": {
+          "x": 6.506,
+          "y": 5.774,
+          "theta_deg": 162.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937869402311299
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869482781893,
+      "elapsed_s": 7.305138392999652,
+      "stamp_ns": 1792937869481783984,
+      "frame": "odom",
+      "x": 6.4959380770462,
+      "y": 5.6507449925984945,
+      "yaw": 2.8070018401679873
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869584865855,
+      "elapsed_s": 7.407221778999883,
+      "stamp_ns": 1792937869584026546,
+      "frame": "odom",
+      "x": 6.459595105351799,
+      "y": 5.666591300719146,
+      "yaw": 2.7304240620123412
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937869589288084,
+      "elapsed_s": 7.41164457099967,
+      "stamp_ns": 1792937869584026546,
+      "frame": "map",
+      "x": 6.366537498748442,
+      "y": 5.531394132719231,
+      "yaw": 2.7798361407444783
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937869604071384,
+      "elapsed_s": 7.4264275890000135,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2820,
+        "uptime_s": 281.9,
+        "robot_truth": {
+          "x": 6.438,
+          "y": 5.803,
+          "theta_deg": 154.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937869602270904
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869681823740,
+      "elapsed_s": 7.504179954999927,
+      "stamp_ns": 1792937869681109223,
+      "frame": "odom",
+      "x": 6.424755241277914,
+      "y": 5.684981295615708,
+      "yaw": 2.6559191780525557
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869783030113,
+      "elapsed_s": 7.605386273000022,
+      "stamp_ns": 1792937869782296852,
+      "frame": "odom",
+      "x": 6.396804730544608,
+      "y": 5.70191116301843,
+      "yaw": 2.596986152558552
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937869803655722,
+      "elapsed_s": 7.626011844999994,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2822,
+        "uptime_s": 282.1,
+        "robot_truth": {
+          "x": 6.379,
+          "y": 5.838,
+          "theta_deg": 147.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937869802236152
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869883537414,
+      "elapsed_s": 7.705893616999674,
+      "stamp_ns": 1792937869882815413,
+      "frame": "odom",
+      "x": 6.370232372810487,
+      "y": 5.7203717824882725,
+      "yaw": 2.534412229066474
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937869982493224,
+      "elapsed_s": 7.8048495979996915,
+      "stamp_ns": 1792937869981794711,
+      "frame": "odom",
+      "x": 6.343655103056359,
+      "y": 5.741193711989552,
+      "yaw": 2.477025714448234
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937869984079230,
+      "elapsed_s": 7.806435202999637,
+      "stamp_ns": 1792937869981794711,
+      "frame": "map",
+      "x": 6.256118868586515,
+      "y": 5.590415726249401,
+      "yaw": 2.561043463834801
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937870003611409,
+      "elapsed_s": 7.825967483999648,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2824,
+        "uptime_s": 282.3,
+        "robot_truth": {
+          "x": 6.329,
+          "y": 5.876,
+          "theta_deg": 141.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937870002251742
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870082554829,
+      "elapsed_s": 7.904910992999703,
+      "stamp_ns": 1792937870081775383,
+      "frame": "odom",
+      "x": 6.321797586721293,
+      "y": 5.75986954104648,
+      "yaw": 2.4345294164107374
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870189261367,
+      "elapsed_s": 8.011617492999903,
+      "stamp_ns": 1792937870184220624,
+      "frame": "odom",
+      "x": 6.30415143907294,
+      "y": 5.776284258404262,
+      "yaw": 2.392332567636168
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937870203952509,
+      "elapsed_s": 8.026308658999824,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2826,
+        "uptime_s": 282.5,
+        "robot_truth": {
+          "x": 6.294,
+          "y": 5.908,
+          "theta_deg": 136.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937870202275288
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870282538717,
+      "elapsed_s": 8.104894814999625,
+      "stamp_ns": 1792937870281508800,
+      "frame": "odom",
+      "x": 6.289281324646312,
+      "y": 5.791372187003081,
+      "yaw": 2.348923977426171
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870382558319,
+      "elapsed_s": 8.20491461399979,
+      "stamp_ns": 1792937870381433127,
+      "frame": "odom",
+      "x": 6.275611126134424,
+      "y": 5.8063524203709065,
+      "yaw": 2.3105015311028536
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937870403596358,
+      "elapsed_s": 8.225952538000001,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2828,
+        "uptime_s": 282.7,
+        "robot_truth": {
+          "x": 6.265,
+          "y": 5.939,
+          "theta_deg": 132.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937870402252742
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870482557486,
+      "elapsed_s": 8.304913630999636,
+      "stamp_ns": 1792937870481768483,
+      "frame": "odom",
+      "x": 6.260450796094181,
+      "y": 5.824371739901634,
+      "yaw": 2.2702398424844663
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937870484135595,
+      "elapsed_s": 8.306491800999993,
+      "stamp_ns": 1792937870481768483,
+      "frame": "map",
+      "x": 6.1863919165075565,
+      "y": 5.684017799812935,
+      "yaw": 2.343471398116097
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870582557511,
+      "elapsed_s": 8.404913659999693,
+      "stamp_ns": 1792937870581832606,
+      "frame": "odom",
+      "x": 6.2471983142111664,
+      "y": 5.8408702996340764,
+      "yaw": 2.247516344589263
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937870603693610,
+      "elapsed_s": 8.42604987499999,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2830,
+        "uptime_s": 282.9,
+        "robot_truth": {
+          "x": 6.238,
+          "y": 5.971,
+          "theta_deg": 128.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937870602281469
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870682538372,
+      "elapsed_s": 8.504894630999843,
+      "stamp_ns": 1792937870681832074,
+      "frame": "odom",
+      "x": 6.234018057797912,
+      "y": 5.858153021758361,
+      "yaw": 2.222329341316284
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870782094056,
+      "elapsed_s": 8.604450328999974,
+      "stamp_ns": 1792937870781351616,
+      "frame": "odom",
+      "x": 6.220152345692812,
+      "y": 5.8772726417852565,
+      "yaw": 2.198241210070872
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937870803677486,
+      "elapsed_s": 8.626033609999922,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2832,
+        "uptime_s": 283.1,
+        "robot_truth": {
+          "x": 6.213,
+          "y": 6.005,
+          "theta_deg": 125.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937870802240725
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870881635783,
+      "elapsed_s": 8.703992040999765,
+      "stamp_ns": 1792937870880890351,
+      "frame": "odom",
+      "x": 6.2097666222982335,
+      "y": 5.892360278118262,
+      "yaw": 2.173667329513518
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937870982628077,
+      "elapsed_s": 8.804984221999803,
+      "stamp_ns": 1792937870981977056,
+      "frame": "odom",
+      "x": 6.200889804269636,
+      "y": 5.905989974959502,
+      "yaw": 2.148074403694814
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937871003904671,
+      "elapsed_s": 8.82626087799963,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2834,
+        "uptime_s": 283.3,
+        "robot_truth": {
+          "x": 6.196,
+          "y": 6.032,
+          "theta_deg": 123.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937871002311601
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871082485233,
+      "elapsed_s": 8.904841464999663,
+      "stamp_ns": 1792937871081707145,
+      "frame": "odom",
+      "x": 6.1954595483342025,
+      "y": 5.914482876310476,
+      "yaw": 2.1396749579324412
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871182256790,
+      "elapsed_s": 9.00461295299965,
+      "stamp_ns": 1792937871181586189,
+      "frame": "odom",
+      "x": 6.186400462149653,
+      "y": 5.929435244550534,
+      "yaw": 2.1155156835705897
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937871203658520,
+      "elapsed_s": 9.026014654999926,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2836,
+        "uptime_s": 283.5,
+        "robot_truth": {
+          "x": 6.182,
+          "y": 6.054,
+          "theta_deg": 121.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937871202252793
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871281836519,
+      "elapsed_s": 9.104192761999911,
+      "stamp_ns": 1792937871281180919,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 2.0718731012723435
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871382510968,
+      "elapsed_s": 9.204867015999753,
+      "stamp_ns": 1792937871381740837,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 2.0002348197757893
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937871384597290,
+      "elapsed_s": 9.206953132999843,
+      "stamp_ns": 1792937871381740837,
+      "frame": "map",
+      "x": 6.089486154976025,
+      "y": 5.782237012608439,
+      "yaw": 2.0894500846031425
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937871403561352,
+      "elapsed_s": 9.225917497999944,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2838,
+        "uptime_s": 283.7,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 114.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937871402243498
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871484197277,
+      "elapsed_s": 9.306553664999683,
+      "stamp_ns": 1792937871481810363,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.8922307855788567
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871582459269,
+      "elapsed_s": 9.404815490999681,
+      "stamp_ns": 1792937871581585992,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.7730233052150126
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937871583956385,
+      "elapsed_s": 9.40631219099987,
+      "stamp_ns": 1792937871581585992,
+      "frame": "map",
+      "x": 6.078301866347451,
+      "y": 5.774419670118027,
+      "yaw": 1.8567175038453354
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937871603694194,
+      "elapsed_s": 9.426050291999672,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2840,
+        "uptime_s": 283.9,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 102.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937871602232421
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871682433261,
+      "elapsed_s": 9.504789493999851,
+      "stamp_ns": 1792937871681736535,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.6672247483596447
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871781725655,
+      "elapsed_s": 9.60408190599992,
+      "stamp_ns": 1792937871781007755,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.5517212512273835
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937871783457134,
+      "elapsed_s": 9.605813030999798,
+      "stamp_ns": 1792937871781007755,
+      "frame": "map",
+      "x": 6.0732743991823925,
+      "y": 5.771071275588917,
+      "yaw": 1.6393315912861695
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937871803669294,
+      "elapsed_s": 9.62602545799973,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2842,
+        "uptime_s": 284.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 90.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937871802239083
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871882293057,
+      "elapsed_s": 9.704649250999864,
+      "stamp_ns": 1792937871881595229,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.4439174954851606
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937871982542556,
+      "elapsed_s": 9.80489895599976,
+      "stamp_ns": 1792937871981718691,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.3572333314817682
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937872003630921,
+      "elapsed_s": 9.82598710000002,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2844,
+        "uptime_s": 284.3,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 79.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937872002243221
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872082272956,
+      "elapsed_s": 9.904629229999955,
+      "stamp_ns": 1792937872081557012,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.2667104256951784
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937872084239484,
+      "elapsed_s": 9.906595677000041,
+      "stamp_ns": 1792937872081557012,
+      "frame": "map",
+      "x": 6.0740111566006085,
+      "y": 5.800253149519334,
+      "yaw": 1.3545504021746073
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872182657363,
+      "elapsed_s": 10.005013597000016,
+      "stamp_ns": 1792937872181968403,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.1755989490045815
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937872203943013,
+      "elapsed_s": 10.026299334999749,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2846,
+        "uptime_s": 284.5,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 69.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937872202255705
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872281723359,
+      "elapsed_s": 10.104079757999898,
+      "stamp_ns": 1792937872281014622,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.1015313640257167
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872382372507,
+      "elapsed_s": 10.204728534999958,
+      "stamp_ns": 1792937872381648879,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 1.0208494361899536
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937872383833037,
+      "elapsed_s": 10.206189057999836,
+      "stamp_ns": 1792937872381648879,
+      "frame": "map",
+      "x": 6.07738868139795,
+      "y": 5.790386992446542,
+      "yaw": 1.102066420849424
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937872403652763,
+      "elapsed_s": 10.226009020999754,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2848,
+        "uptime_s": 284.7,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 61.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937872402256063
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872481778107,
+      "elapsed_s": 10.30413414099985,
+      "stamp_ns": 1792937872481061488,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.950320381582566
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872582244419,
+      "elapsed_s": 10.404600572999698,
+      "stamp_ns": 1792937872581566798,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.8863323954708555
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937872603558777,
+      "elapsed_s": 10.425914953999836,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2850,
+        "uptime_s": 284.9,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 54.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937872602233004
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872682285837,
+      "elapsed_s": 10.504642159000014,
+      "stamp_ns": 1792937872681618362,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.8320936638816385
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872781831906,
+      "elapsed_s": 10.604188184999657,
+      "stamp_ns": 1792937872781080174,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.7731385834958018
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937872783329699,
+      "elapsed_s": 10.605685752999761,
+      "stamp_ns": 1792937872781080174,
+      "frame": "map",
+      "x": 6.076864432549632,
+      "y": 5.821884418067462,
+      "yaw": 0.8475255347727972
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937872803561356,
+      "elapsed_s": 10.625917490999655,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2852,
+        "uptime_s": 285.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 47.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937872802238683
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872882296449,
+      "elapsed_s": 10.704652645999886,
+      "stamp_ns": 1792937872881566972,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.7163619179810756
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937872982464535,
+      "elapsed_s": 10.804820978999942,
+      "stamp_ns": 1792937872981465858,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.6713979706511295
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937873004053299,
+      "elapsed_s": 10.826409689999764,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2854,
+        "uptime_s": 285.3,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 42.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937873002407129
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873082698906,
+      "elapsed_s": 10.90505532599991,
+      "stamp_ns": 1792937873081793741,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.6314618419713733
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873182342058,
+      "elapsed_s": 11.004698259999714,
+      "stamp_ns": 1792937873181565298,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.5911661663694323
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937873203511131,
+      "elapsed_s": 11.025867359999665,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2856,
+        "uptime_s": 285.5,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 37.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937873202232642
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873282833851,
+      "elapsed_s": 11.105190443999618,
+      "stamp_ns": 1792937873281805115,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.5507465351187197
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937873284890687,
+      "elapsed_s": 11.10724673300001,
+      "stamp_ns": 1792937873281805115,
+      "frame": "map",
+      "x": 6.078415626761974,
+      "y": 5.803049064133072,
+      "yaw": 0.6435267556155044
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873382740856,
+      "elapsed_s": 11.20509723799978,
+      "stamp_ns": 1792937873381768773,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.5057095115953256
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937873403506618,
+      "elapsed_s": 11.225862759999927,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2858,
+        "uptime_s": 285.7,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 33.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937873402249467
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873483131561,
+      "elapsed_s": 11.305487866000021,
+      "stamp_ns": 1792937873482156191,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.46280949446862163
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873583122374,
+      "elapsed_s": 11.40547883499994,
+      "stamp_ns": 1792937873582154280,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.42212818430974774
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937873603961835,
+      "elapsed_s": 11.42631806099962,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2860,
+        "uptime_s": 285.9,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 28.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937873602252396
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873682255074,
+      "elapsed_s": 11.504611293999915,
+      "stamp_ns": 1792937873681297995,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.39858265265366644
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873782618875,
+      "elapsed_s": 11.604975237999952,
+      "stamp_ns": 1792937873781660436,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.37268114500202554
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937873804440290,
+      "elapsed_s": 11.626796657999876,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2862,
+        "uptime_s": 286.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 26.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937873802249637
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873882465751,
+      "elapsed_s": 11.704822078999769,
+      "stamp_ns": 1792937873881685315,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.34680871393411744
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937873884175150,
+      "elapsed_s": 11.706531385999824,
+      "stamp_ns": 1792937873881685315,
+      "frame": "map",
+      "x": 6.087833097388885,
+      "y": 5.821755802234195,
+      "yaw": 0.4532539875646779
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937873983483330,
+      "elapsed_s": 11.80584007499965,
+      "stamp_ns": 1792937873982323103,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.32232136258103056
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937874003757727,
+      "elapsed_s": 11.826114202999634,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2864,
+        "uptime_s": 286.3,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 23.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937874002300125
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874083450116,
+      "elapsed_s": 11.905806536,
+      "stamp_ns": 1792937874082407741,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.30030836297637453
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874182951452,
+      "elapsed_s": 12.005308025999966,
+      "stamp_ns": 1792937874181754018,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.27473450485065154
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937874204288164,
+      "elapsed_s": 12.026644492999822,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2866,
+        "uptime_s": 286.5,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 20.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937874202348368
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874282927340,
+      "elapsed_s": 12.105283723999946,
+      "stamp_ns": 1792937874281778178,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.24945465315329107
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874383667874,
+      "elapsed_s": 12.206024281999817,
+      "stamp_ns": 1792937874382303551,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.22400938544155571
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937874403611556,
+      "elapsed_s": 12.225967742999728,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2868,
+        "uptime_s": 286.7,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 18.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937874402273865
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874482438172,
+      "elapsed_s": 12.304794356999992,
+      "stamp_ns": 1792937874481664696,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.199016641387737
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874582347179,
+      "elapsed_s": 12.404703617999985,
+      "stamp_ns": 1792937874581361918,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.17557375276364606
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937874603609490,
+      "elapsed_s": 12.425965748999715,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2870,
+        "uptime_s": 286.9,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 15.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937874602229385
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937874654391924,
+      "elapsed_s": 12.476748233999842,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2870,
+        "uptime_s": 287.0,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 15.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937874652718177
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792937874654407447,
+      "elapsed_s": 7.963276520000363,
+      "id": "route1_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "x": 7.198,
+        "y": 6.39,
+        "theta_deg": -18.6
+      },
+      "end_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 15.3
+      },
+      "truth_goal_error_m": 0.1888094277307146
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874682613124,
+      "elapsed_s": 12.50496930899999,
+      "stamp_ns": 1792937874681506029,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874783602636,
+      "elapsed_s": 12.605958875999931,
+      "stamp_ns": 1792937874782581067,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937874804282278,
+      "elapsed_s": 12.626638764999825,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2872,
+        "uptime_s": 287.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937874802318994
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874883997901,
+      "elapsed_s": 12.706354614999782,
+      "stamp_ns": 1792937874882490376,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937874984050969,
+      "elapsed_s": 12.806407520999983,
+      "stamp_ns": 1792937874982500252,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875004710516,
+      "elapsed_s": 12.8270668199998,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2874,
+        "uptime_s": 287.3,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875002475219
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875085072313,
+      "elapsed_s": 12.907428869999876,
+      "stamp_ns": 1792937875082918255,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875181648620,
+      "elapsed_s": 13.00400484299962,
+      "stamp_ns": 1792937875180901712,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875203600720,
+      "elapsed_s": 13.025956872999814,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2876,
+        "uptime_s": 287.5,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875202253782
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875282983091,
+      "elapsed_s": 13.105339416999868,
+      "stamp_ns": 1792937875282068785,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875382828538,
+      "elapsed_s": 13.205184861999896,
+      "stamp_ns": 1792937875381740758,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875403774947,
+      "elapsed_s": 13.226131157000054,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2878,
+        "uptime_s": 287.7,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875402405430
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875483479533,
+      "elapsed_s": 13.305836060999809,
+      "stamp_ns": 1792937875482438034,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875582569343,
+      "elapsed_s": 13.40492566299963,
+      "stamp_ns": 1792937875581510231,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875603639537,
+      "elapsed_s": 13.425995732000047,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2880,
+        "uptime_s": 287.9,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875602332526
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875681553456,
+      "elapsed_s": 13.503909655999905,
+      "stamp_ns": 1792937875680829543,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875682835073,
+      "elapsed_s": 13.505191233999994,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2881,
+        "uptime_s": 288.0,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875681599163
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792937875682839142,
+      "elapsed_s": 13.505194807999942,
+      "goal": {
+        "id": "route1_goal3",
+        "pose": [
+          8.0,
+          5.5,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      }
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875684819692,
+      "elapsed_s": 13.507175825999639,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2881,
+        "uptime_s": 288.0,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875683671964
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792937875684829981,
+      "elapsed_s": 2.8883999675599625e-05,
+      "id": "route1_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=70，阈值<50）；未派发导航。",
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "end_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "truth_goal_error_m": 1.9033257734817761
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875784080838,
+      "elapsed_s": 13.606436854999629,
+      "stamp_ns": 1792937875783116537,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937875803633576,
+      "elapsed_s": 13.625989641999695,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2882,
+        "uptime_s": 288.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937875802255307
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875884795495,
+      "elapsed_s": 13.707152016999771,
+      "stamp_ns": 1792937875882981287,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937875984686506,
+      "elapsed_s": 13.80704304899973,
+      "stamp_ns": 1792937875983306158,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937876004389378,
+      "elapsed_s": 13.826745726999889,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2884,
+        "uptime_s": 288.3,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937876002337340
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876085232018,
+      "elapsed_s": 13.907588971999758,
+      "stamp_ns": 1792937876083607931,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876183578910,
+      "elapsed_s": 14.005935313000009,
+      "stamp_ns": 1792937876182163593,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937876204017812,
+      "elapsed_s": 14.026374139999916,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2886,
+        "uptime_s": 288.5,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937876202462013
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876282321000,
+      "elapsed_s": 14.104677444999652,
+      "stamp_ns": 1792937876281360381,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876383140829,
+      "elapsed_s": 14.205497310999817,
+      "stamp_ns": 1792937876381963109,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937876404064471,
+      "elapsed_s": 14.226420760999645,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2888,
+        "uptime_s": 288.7,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937876402312744
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876485194361,
+      "elapsed_s": 14.307551048999812,
+      "stamp_ns": 1792937876483275568,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876582623268,
+      "elapsed_s": 14.404979585999627,
+      "stamp_ns": 1792937876581810859,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937876603577337,
+      "elapsed_s": 14.425933562999944,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2890,
+        "uptime_s": 288.9,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937876602287932
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876683566368,
+      "elapsed_s": 14.50592289799988,
+      "stamp_ns": 1792937876682213473,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876782620171,
+      "elapsed_s": 14.604976394999994,
+      "stamp_ns": 1792937876781872567,
+      "frame": "odom",
+      "x": 6.184739684136244,
+      "y": 5.9324675133562685,
+      "yaw": 0.16748445083439603
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937876783933532,
+      "elapsed_s": 14.606289721999929,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2892,
+        "uptime_s": 289.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937876782646315
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792937876783937729,
+      "elapsed_s": 14.60629339399975,
+      "goal": {
+        "id": "route2_goal1",
+        "pose": [
+          7.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      }
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937876803630882,
+      "elapsed_s": 14.625987234999684,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2892,
+        "uptime_s": 289.1,
+        "robot_truth": {
+          "x": 6.18,
+          "y": 6.057,
+          "theta_deg": 14.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937876802250643
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876881696308,
+      "elapsed_s": 14.704052454999783,
+      "stamp_ns": 1792937876880935040,
+      "frame": "odom",
+      "x": 6.21014746174794,
+      "y": 5.936549627045461,
+      "yaw": 0.15930256365092488
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937876983234699,
+      "elapsed_s": 14.805590723000023,
+      "stamp_ns": 1792937876982209728,
+      "frame": "odom",
+      "x": 6.261383696525254,
+      "y": 5.944355400708892,
+      "yaw": 0.151186167652865
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937877003535758,
+      "elapsed_s": 14.825891868999861,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2894,
+        "uptime_s": 289.3,
+        "robot_truth": {
+          "x": 6.253,
+          "y": 6.075,
+          "theta_deg": 13.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937877002229698
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877082346710,
+      "elapsed_s": 14.904702735999763,
+      "stamp_ns": 1792937877081482658,
+      "frame": "odom",
+      "x": 6.311415709693884,
+      "y": 5.951546159512236,
+      "yaw": 0.14274564380279475
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937877083729933,
+      "elapsed_s": 14.906085893999716,
+      "stamp_ns": 1792937877081482658,
+      "frame": "map",
+      "x": 6.2092105127800306,
+      "y": 5.86170837269419,
+      "yaw": 0.26496313690968604
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877184258010,
+      "elapsed_s": 15.006614406999688,
+      "stamp_ns": 1792937877182536212,
+      "frame": "odom",
+      "x": 6.357583363028136,
+      "y": 5.9577940791907364,
+      "yaw": 0.13451389521131807
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937877204045330,
+      "elapsed_s": 15.026401587999771,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2896,
+        "uptime_s": 289.5,
+        "robot_truth": {
+          "x": 6.345,
+          "y": 6.097,
+          "theta_deg": 13.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937877202426448
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877282368587,
+      "elapsed_s": 15.10472508599969,
+      "stamp_ns": 1792937877281371885,
+      "frame": "odom",
+      "x": 6.401111560289574,
+      "y": 5.962487368427089,
+      "yaw": 0.10740687652143067
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877381748314,
+      "elapsed_s": 15.204104577999715,
+      "stamp_ns": 1792937877381041571,
+      "frame": "odom",
+      "x": 6.446166902213903,
+      "y": 5.966985157938383,
+      "yaw": 0.09949845887523567
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937877403556176,
+      "elapsed_s": 15.225912469999912,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2898,
+        "uptime_s": 289.7,
+        "robot_truth": {
+          "x": 6.428,
+          "y": 6.113,
+          "theta_deg": 11.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937877402261876
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877483145131,
+      "elapsed_s": 15.305501485999685,
+      "stamp_ns": 1792937877481992573,
+      "frame": "odom",
+      "x": 6.489329063440203,
+      "y": 5.970926167330116,
+      "yaw": 0.09105456506101284
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877582343872,
+      "elapsed_s": 15.404700049999974,
+      "stamp_ns": 1792937877581550017,
+      "frame": "odom",
+      "x": 6.526893248421027,
+      "y": 5.974025725926795,
+      "yaw": 0.08232716195765734
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937877603719815,
+      "elapsed_s": 15.42607598199993,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2900,
+        "uptime_s": 289.9,
+        "robot_truth": {
+          "x": 6.5,
+          "y": 6.127,
+          "theta_deg": 10.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937877602280186
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877682648574,
+      "elapsed_s": 15.505004783999993,
+      "stamp_ns": 1792937877681837531,
+      "frame": "odom",
+      "x": 6.5602886386823505,
+      "y": 5.976505452839798,
+      "yaw": 0.07411755065197445
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877783190333,
+      "elapsed_s": 15.605546847999904,
+      "stamp_ns": 1792937877782162888,
+      "frame": "odom",
+      "x": 6.5920966409403015,
+      "y": 5.9786001362577,
+      "yaw": 0.06575902563627611
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937877785220365,
+      "elapsed_s": 15.607576596999934,
+      "stamp_ns": 1792937877782162888,
+      "frame": "map",
+      "x": 6.471967194221302,
+      "y": 5.939881366060149,
+      "yaw": 0.19987982684129257
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937877803756532,
+      "elapsed_s": 15.626112738999836,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2902,
+        "uptime_s": 290.1,
+        "robot_truth": {
+          "x": 6.563,
+          "y": 6.138,
+          "theta_deg": 9.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937877802247155
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877882781077,
+      "elapsed_s": 15.705137607999859,
+      "stamp_ns": 1792937877881720111,
+      "frame": "odom",
+      "x": 6.622080109497561,
+      "y": 5.980336173028411,
+      "yaw": 0.05783522692506793
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937877983608702,
+      "elapsed_s": 15.80596549999973,
+      "stamp_ns": 1792937877982532692,
+      "frame": "odom",
+      "x": 6.648664992343246,
+      "y": 5.981654055339304,
+      "yaw": 0.049532073040278395
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937878004728093,
+      "elapsed_s": 15.827084301000014,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2904,
+        "uptime_s": 290.3,
+        "robot_truth": {
+          "x": 6.62,
+          "y": 6.146,
+          "theta_deg": 8.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937878002341761
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878082594747,
+      "elapsed_s": 15.904951123000046,
+      "stamp_ns": 1792937878081397701,
+      "frame": "odom",
+      "x": 6.674397687092542,
+      "y": 5.982710015341065,
+      "yaw": 0.041012722871753844
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878183297396,
+      "elapsed_s": 16.005653791999976,
+      "stamp_ns": 1792937878182229561,
+      "frame": "odom",
+      "x": 6.70164679206232,
+      "y": 5.983601891424136,
+      "yaw": 0.03271879221247476
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937878203900260,
+      "elapsed_s": 16.026256475999617,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2906,
+        "uptime_s": 290.5,
+        "robot_truth": {
+          "x": 6.672,
+          "y": 6.154,
+          "theta_deg": 7.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937878202333315
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878283390517,
+      "elapsed_s": 16.10574689899977,
+      "stamp_ns": 1792937878282180402,
+      "frame": "odom",
+      "x": 6.72990076920224,
+      "y": 5.984308313816241,
+      "yaw": 0.024997374424742702
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878382620131,
+      "elapsed_s": 16.20497648899982,
+      "stamp_ns": 1792937878381677727,
+      "frame": "odom",
+      "x": 6.7527739674331295,
+      "y": 5.98469920226812,
+      "yaw": 0.01708770247494762
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937878403605454,
+      "elapsed_s": 16.22596157199996,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2908,
+        "uptime_s": 290.7,
+        "robot_truth": {
+          "x": 6.719,
+          "y": 6.159,
+          "theta_deg": 6.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937878402300758
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878483722808,
+      "elapsed_s": 16.306079383999986,
+      "stamp_ns": 1792937878482477308,
+      "frame": "odom",
+      "x": 6.776400483791976,
+      "y": 5.984912392790741,
+      "yaw": 0.009023113420726148
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878583077094,
+      "elapsed_s": 16.405433513999924,
+      "stamp_ns": 1792937878582165483,
+      "frame": "odom",
+      "x": 6.798467093823314,
+      "y": 5.984937371615337,
+      "yaw": 0.0011319733249282038
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937878603604278,
+      "elapsed_s": 16.425960430000032,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2910,
+        "uptime_s": 290.9,
+        "robot_truth": {
+          "x": 6.761,
+          "y": 6.164,
+          "theta_deg": 5.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937878602246090
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878683248790,
+      "elapsed_s": 16.505604992999906,
+      "stamp_ns": 1792937878682107151,
+      "frame": "odom",
+      "x": 6.815892738088886,
+      "y": 5.984817106838288,
+      "yaw": -0.0069014875883604
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878782649570,
+      "elapsed_s": 16.60500568999987,
+      "stamp_ns": 1792937878781801346,
+      "frame": "odom",
+      "x": 6.831321435544674,
+      "y": 5.98457758612858,
+      "yaw": -0.015523116660396852
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937878803495247,
+      "elapsed_s": 16.625851488999615,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2912,
+        "uptime_s": 291.1,
+        "robot_truth": {
+          "x": 6.792,
+          "y": 6.167,
+          "theta_deg": 4.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937878802238822
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878881540165,
+      "elapsed_s": 16.703896452999743,
+      "stamp_ns": 1792937878880779247,
+      "frame": "odom",
+      "x": 6.847678872580386,
+      "y": 5.984193036281115,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937878883099535,
+      "elapsed_s": 16.705455749000066,
+      "stamp_ns": 1792937878880779247,
+      "frame": "map",
+      "x": 6.700920695854191,
+      "y": 5.961313525649976,
+      "yaw": 0.09467241807960414
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937878982590762,
+      "elapsed_s": 16.804947051,
+      "stamp_ns": 1792937878981549754,
+      "frame": "odom",
+      "x": 6.864236391970915,
+      "y": 5.983803782662585,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937879004122058,
+      "elapsed_s": 16.826478368999688,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2914,
+        "uptime_s": 291.3,
+        "robot_truth": {
+          "x": 6.824,
+          "y": 6.169,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937879002279244
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879082473910,
+      "elapsed_s": 16.904830111999672,
+      "stamp_ns": 1792937879081757487,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937879149686506,
+      "elapsed_s": 16.972042960999715,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2915,
+        "uptime_s": 291.5,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937879147778316
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792937879149702913,
+      "elapsed_s": 2.362542451000081,
+      "id": "route2_goal1",
+      "pose": [
+        7.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "x": 6.18,
+        "y": 6.057,
+        "theta_deg": 14.8
+      },
+      "end_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      },
+      "truth_goal_error_m": 0.23345235059857508
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879182812777,
+      "elapsed_s": 17.005169031999685,
+      "stamp_ns": 1792937879181950239,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937879203741212,
+      "elapsed_s": 17.026097487999778,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2916,
+        "uptime_s": 291.5,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937879202269184
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879282505948,
+      "elapsed_s": 17.104862277999928,
+      "stamp_ns": 1792937879281638386,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879384482700,
+      "elapsed_s": 17.20683888099984,
+      "stamp_ns": 1792937879382643967,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937879404044628,
+      "elapsed_s": 17.226400834999822,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2918,
+        "uptime_s": 291.7,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937879402258800
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879482817160,
+      "elapsed_s": 17.30517332999989,
+      "stamp_ns": 1792937879482050863,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879582397265,
+      "elapsed_s": 17.404753504999917,
+      "stamp_ns": 1792937879581276673,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937879603628455,
+      "elapsed_s": 17.425984595000045,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2920,
+        "uptime_s": 291.9,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937879602280864
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879684148876,
+      "elapsed_s": 17.506505079999897,
+      "stamp_ns": 1792937879682443633,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879783696071,
+      "elapsed_s": 17.60605272099974,
+      "stamp_ns": 1792937879782468078,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937879806940167,
+      "elapsed_s": 17.62929670099993,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2922,
+        "uptime_s": 292.1,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937879802249723
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879883037042,
+      "elapsed_s": 17.70539337399987,
+      "stamp_ns": 1792937879882012509,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937879983126783,
+      "elapsed_s": 17.805482907999703,
+      "stamp_ns": 1792937879981799074,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937880003640349,
+      "elapsed_s": 17.82599662499979,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2924,
+        "uptime_s": 292.3,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937880002272447
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880083385730,
+      "elapsed_s": 17.905742047999865,
+      "stamp_ns": 1792937880081872650,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880183688075,
+      "elapsed_s": 18.006044428999758,
+      "stamp_ns": 1792937880182464995,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.023504845264311847
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937880185479363,
+      "elapsed_s": 18.007835587000045,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2926,
+        "uptime_s": 292.5,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937880183726863
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792937880185483618,
+      "elapsed_s": 18.007839347999834,
+      "goal": {
+        "id": "route2_goal2",
+        "pose": [
+          6.0,
+          6.0,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      "start_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      }
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937880203674365,
+      "elapsed_s": 18.0260304909998,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2926,
+        "uptime_s": 292.5,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 4.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937880202260524
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880282667800,
+      "elapsed_s": 18.10502420399962,
+      "stamp_ns": 1792937880281953828,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": -0.006078830297813642
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880383289266,
+      "elapsed_s": 18.205645733999972,
+      "stamp_ns": 1792937880382327077,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.04520472028838585
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937880403566836,
+      "elapsed_s": 18.225922997999987,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2928,
+        "uptime_s": 292.7,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 8.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937880402285229
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880481761947,
+      "elapsed_s": 18.304118046999974,
+      "stamp_ns": 1792937880481099840,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.13279350252862887
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880581996878,
+      "elapsed_s": 18.404353249999986,
+      "stamp_ns": 1792937880581177000,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.2550342869233884
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937880583564000,
+      "elapsed_s": 18.405919895999887,
+      "stamp_ns": 1792937880581177000,
+      "frame": "map",
+      "x": 6.715189928017998,
+      "y": 5.9574718385395045,
+      "yaw": 0.3737396020512871
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937880603622085,
+      "elapsed_s": 18.425978145000045,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2930,
+        "uptime_s": 292.9,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 19.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937880602292852
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880682333713,
+      "elapsed_s": 18.50469001900001,
+      "stamp_ns": 1792937880681684166,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.40936490765869576
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880782431405,
+      "elapsed_s": 18.60478775899992,
+      "stamp_ns": 1792937880781557881,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.5504582469137143
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937880784325750,
+      "elapsed_s": 18.606681897999806,
+      "stamp_ns": 1792937880781557881,
+      "frame": "map",
+      "x": 6.71061460058306,
+      "y": 5.960246095757478,
+      "yaw": 0.6460815798454804
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937880803997536,
+      "elapsed_s": 18.626353649000066,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2932,
+        "uptime_s": 293.1,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 34.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937880802270849
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880883648887,
+      "elapsed_s": 18.706005212000036,
+      "stamp_ns": 1792937880882779223,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.7122787681904245
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937880983422992,
+      "elapsed_s": 18.805779396999696,
+      "stamp_ns": 1792937880982355146,
+      "frame": "odom",
+      "x": 6.881848816989486,
+      "y": 5.983389729083189,
+      "yaw": 0.856110637410116
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937880986443233,
+      "elapsed_s": 18.808799709999676,
+      "stamp_ns": 1792937880982355146,
+      "frame": "map",
+      "x": 6.702159127818293,
+      "y": 5.971949595206898,
+      "yaw": 0.9495854392760683
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937881003713262,
+      "elapsed_s": 18.826069324999935,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2934,
+        "uptime_s": 293.3,
+        "robot_truth": {
+          "x": 6.84,
+          "y": 6.17,
+          "theta_deg": 50.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937881002230257
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881082959602,
+      "elapsed_s": 18.905316021999624,
+      "stamp_ns": 1792937881081923090,
+      "frame": "odom",
+      "x": 6.887816253259221,
+      "y": 5.992975957915786,
+      "yaw": 1.0139961213174944
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881183128218,
+      "elapsed_s": 19.00548457199966,
+      "stamp_ns": 1792937881181824447,
+      "frame": "odom",
+      "x": 6.892058319702545,
+      "y": 6.002994965934407,
+      "yaw": 1.1702801125176645
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937881185935883,
+      "elapsed_s": 19.00829230599993,
+      "stamp_ns": 1792937881181824447,
+      "frame": "map",
+      "x": 6.708872801463915,
+      "y": 5.995146418291619,
+      "yaw": 1.2657873106198587
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937881204222345,
+      "elapsed_s": 19.026578634999623,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2936,
+        "uptime_s": 293.5,
+        "robot_truth": {
+          "x": 6.849,
+          "y": 6.189,
+          "theta_deg": 68.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937881202378037
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881282754505,
+      "elapsed_s": 19.10511080699962,
+      "stamp_ns": 1792937881281794328,
+      "frame": "odom",
+      "x": 6.894595733847693,
+      "y": 6.01382561086844,
+      "yaw": 1.3406658624894634
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881382532136,
+      "elapsed_s": 19.20488855199983,
+      "stamp_ns": 1792937881381211954,
+      "frame": "odom",
+      "x": 6.89632078894417,
+      "y": 6.037664923732817,
+      "yaw": 1.4985604530587988
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937881383486243,
+      "elapsed_s": 19.205842351999763,
+      "stamp_ns": 1792937881381211954,
+      "frame": "map",
+      "x": 6.7142050410831695,
+      "y": 6.0231822444172805,
+      "yaw": 1.5989677501202009
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937881403765447,
+      "elapsed_s": 19.22612154699982,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2938,
+        "uptime_s": 293.7,
+        "robot_truth": {
+          "x": 6.853,
+          "y": 6.222,
+          "theta_deg": 85.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937881402431565
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881483651062,
+      "elapsed_s": 19.306007449999925,
+      "stamp_ns": 1792937881482488582,
+      "frame": "odom",
+      "x": 6.891944435702384,
+      "y": 6.085816039123661,
+      "yaw": 1.661435186057347
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881583354688,
+      "elapsed_s": 19.405710870999883,
+      "stamp_ns": 1792937881582386789,
+      "frame": "odom",
+      "x": 6.876794406853051,
+      "y": 6.142692563671156,
+      "yaw": 1.831118919902023
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937881585737216,
+      "elapsed_s": 19.40809344599984,
+      "stamp_ns": 1792937881582386789,
+      "frame": "map",
+      "x": 6.6729402633528325,
+      "y": 6.102800432429773,
+      "yaw": 1.9105559046361964
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937881603598107,
+      "elapsed_s": 19.42595440599962,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2940,
+        "uptime_s": 293.9,
+        "robot_truth": {
+          "x": 6.839,
+          "y": 6.322,
+          "theta_deg": 102.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937881602212071
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881683520303,
+      "elapsed_s": 19.505895678999877,
+      "stamp_ns": 1792937881682438214,
+      "frame": "odom",
+      "x": 6.853933572591234,
+      "y": 6.193592817632004,
+      "yaw": 1.9929265770266171
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881782434187,
+      "elapsed_s": 19.60479056799977,
+      "stamp_ns": 1792937881781541360,
+      "frame": "odom",
+      "x": 6.823704923404672,
+      "y": 6.23937215176375,
+      "yaw": 2.1543867171243267
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937881784711096,
+      "elapsed_s": 19.607067062999704,
+      "stamp_ns": 1792937881781541360,
+      "frame": "map",
+      "x": 6.606801993757789,
+      "y": 6.201697938001176,
+      "yaw": 2.2053424566416413
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937881803554663,
+      "elapsed_s": 19.625910761999876,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2942,
+        "uptime_s": 294.1,
+        "robot_truth": {
+          "x": 6.794,
+          "y": 6.416,
+          "theta_deg": 119.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937881802216087
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881883316504,
+      "elapsed_s": 19.705672906000018,
+      "stamp_ns": 1792937881882113574,
+      "frame": "odom",
+      "x": 6.789609671567719,
+      "y": 6.276598340458835,
+      "yaw": 2.3123237000287133
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937881983993572,
+      "elapsed_s": 19.806350007999754,
+      "stamp_ns": 1792937881982448142,
+      "frame": "odom",
+      "x": 6.755156487938997,
+      "y": 6.304763490938834,
+      "yaw": 2.4562773865120775
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937881985426545,
+      "elapsed_s": 19.80778287899966,
+      "stamp_ns": 1792937881982448142,
+      "frame": "map",
+      "x": 6.54136256179671,
+      "y": 6.261622205425979,
+      "yaw": 2.5024230306657076
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937882004082466,
+      "elapsed_s": 19.826438678999693,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2944,
+        "uptime_s": 294.3,
+        "robot_truth": {
+          "x": 6.735,
+          "y": 6.483,
+          "theta_deg": 135.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937882002268919
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882083722431,
+      "elapsed_s": 19.90607881699998,
+      "stamp_ns": 1792937882082752168,
+      "frame": "odom",
+      "x": 6.717903517041972,
+      "y": 6.3274000534973265,
+      "yaw": 2.5955711555969945
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882182598918,
+      "elapsed_s": 20.00495534999982,
+      "stamp_ns": 1792937882181559402,
+      "frame": "odom",
+      "x": 6.679468453301553,
+      "y": 6.343905823463173,
+      "yaw": 2.7359625559596354
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937882184577692,
+      "elapsed_s": 20.006933953000043,
+      "stamp_ns": 1792937882181559402,
+      "frame": "map",
+      "x": 6.468470030478708,
+      "y": 6.286316991800025,
+      "yaw": 2.776124140722132
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937882204014872,
+      "elapsed_s": 20.02637099200001,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2946,
+        "uptime_s": 294.5,
+        "robot_truth": {
+          "x": 6.669,
+          "y": 6.526,
+          "theta_deg": 150.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937882202352883
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882281876179,
+      "elapsed_s": 20.104232404999948,
+      "stamp_ns": 1792937882281187513,
+      "frame": "odom",
+      "x": 6.644678485520847,
+      "y": 6.354832899750124,
+      "yaw": 2.8372626397950116
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882382043989,
+      "elapsed_s": 20.204400233999877,
+      "stamp_ns": 1792937882381123509,
+      "frame": "odom",
+      "x": 6.608472272235278,
+      "y": 6.362062896697784,
+      "yaw": 2.944495767000273
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937882384494288,
+      "elapsed_s": 20.20685033699965,
+      "stamp_ns": 1792937882381123509,
+      "frame": "map",
+      "x": 6.396551196452501,
+      "y": 6.32042788361628,
+      "yaw": 2.95232818293547
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937882403588098,
+      "elapsed_s": 20.225944374999926,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2948,
+        "uptime_s": 294.7,
+        "robot_truth": {
+          "x": 6.6,
+          "y": 6.553,
+          "theta_deg": 162.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937882402265562
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882482479035,
+      "elapsed_s": 20.304836068999975,
+      "stamp_ns": 1792937882481623506,
+      "frame": "odom",
+      "x": 6.574028649537882,
+      "y": 6.365042771160969,
+      "yaw": 3.055292988077003
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882583015554,
+      "elapsed_s": 20.405371571999694,
+      "stamp_ns": 1792937882581483456,
+      "frame": "odom",
+      "x": 6.540608898398675,
+      "y": 6.364234598657923,
+      "yaw": -3.1174148846644183
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937882583951812,
+      "elapsed_s": 20.406308056999933,
+      "stamp_ns": 1792937882581483456,
+      "frame": "map",
+      "x": 6.333864721914739,
+      "y": 6.3476912882343335,
+      "yaw": 3.132881055468812
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937882603594142,
+      "elapsed_s": 20.42595045500002,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2950,
+        "uptime_s": 294.9,
+        "robot_truth": {
+          "x": 6.538,
+          "y": 6.563,
+          "theta_deg": 173.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937882602259950
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882681805281,
+      "elapsed_s": 20.504161655999724,
+      "stamp_ns": 1792937882681023086,
+      "frame": "odom",
+      "x": 6.514062321965367,
+      "y": 6.361186988761154,
+      "yaw": -3.0272906813985334
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882782581795,
+      "elapsed_s": 20.60493771399979,
+      "stamp_ns": 1792937882782019282,
+      "frame": "odom",
+      "x": 6.486999835655785,
+      "y": 6.355740377450067,
+      "yaw": -2.9429853054320314
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937882803566920,
+      "elapsed_s": 20.62592307099976,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2952,
+        "uptime_s": 295.1,
+        "robot_truth": {
+          "x": 6.485,
+          "y": 6.561,
+          "theta_deg": -176.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937882802243695
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882881608655,
+      "elapsed_s": 20.703964917999656,
+      "stamp_ns": 1792937882880942782,
+      "frame": "odom",
+      "x": 6.461948693872559,
+      "y": 6.348403136614105,
+      "yaw": -2.8566710532710715
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937882883009546,
+      "elapsed_s": 20.705365750000055,
+      "stamp_ns": 1792937882880942782,
+      "frame": "map",
+      "x": 6.268016617475699,
+      "y": 6.358337201625526,
+      "yaw": -2.9176897279603375
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937882982182461,
+      "elapsed_s": 20.80453895399978,
+      "stamp_ns": 1792937882981327742,
+      "frame": "odom",
+      "x": 6.440510901391598,
+      "y": 6.340324135095112,
+      "yaw": -2.781194132625304
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937883003626647,
+      "elapsed_s": 20.825982822999777,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2954,
+        "uptime_s": 295.3,
+        "robot_truth": {
+          "x": 6.439,
+          "y": 6.553,
+          "theta_deg": -167.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937883002256113
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883082351584,
+      "elapsed_s": 20.904708122999637,
+      "stamp_ns": 1792937883081296029,
+      "frame": "odom",
+      "x": 6.414645779826165,
+      "y": 6.328509767540135,
+      "yaw": -2.713124484300723
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883182764740,
+      "elapsed_s": 21.00512122600003,
+      "stamp_ns": 1792937883181964413,
+      "frame": "odom",
+      "x": 6.396670804557124,
+      "y": 6.318562891289245,
+      "yaw": -2.636163059242194
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937883184263963,
+      "elapsed_s": 21.006619811999826,
+      "stamp_ns": 1792937883181964413,
+      "frame": "map",
+      "x": 6.197424051268708,
+      "y": 6.327949250553037,
+      "yaw": -2.7106646121587143
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937883203703375,
+      "elapsed_s": 21.02605959399989,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2956,
+        "uptime_s": 295.5,
+        "robot_truth": {
+          "x": 6.394,
+          "y": 6.538,
+          "theta_deg": -159.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937883202219007
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883284652666,
+      "elapsed_s": 21.107008940000014,
+      "stamp_ns": 1792937883281155404,
+      "frame": "odom",
+      "x": 6.380490222062126,
+      "y": 6.30826364397465,
+      "yaw": -2.5747528999594986
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883382412826,
+      "elapsed_s": 21.2047692189999,
+      "stamp_ns": 1792937883381619898,
+      "frame": "odom",
+      "x": 6.364352828447529,
+      "y": 6.296136880150194,
+      "yaw": -2.49715154130784
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937883403726715,
+      "elapsed_s": 21.22608292399991,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2958,
+        "uptime_s": 295.7,
+        "robot_truth": {
+          "x": 6.356,
+          "y": 6.519,
+          "theta_deg": -151.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937883402334209
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883482010518,
+      "elapsed_s": 21.3043667689999,
+      "stamp_ns": 1792937883480965031,
+      "frame": "odom",
+      "x": 6.3482345978603485,
+      "y": 6.282412166024471,
+      "yaw": -2.436226939715126
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883582302637,
+      "elapsed_s": 21.404659020000054,
+      "stamp_ns": 1792937883581613556,
+      "frame": "odom",
+      "x": 6.3297134852590045,
+      "y": 6.26491031701272,
+      "yaw": -2.384481773301372
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937883583771943,
+      "elapsed_s": 21.406128151999837,
+      "stamp_ns": 1792937883581613556,
+      "frame": "map",
+      "x": 6.1232534402975025,
+      "y": 6.286714789408445,
+      "yaw": -2.4645138227695362
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937883603740015,
+      "elapsed_s": 21.426096444999985,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2960,
+        "uptime_s": 295.9,
+        "robot_truth": {
+          "x": 6.321,
+          "y": 6.496,
+          "theta_deg": -145.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937883602294007
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883682572498,
+      "elapsed_s": 21.50492866600007,
+      "stamp_ns": 1792937883681698149,
+      "frame": "odom",
+      "x": 6.317718929467203,
+      "y": 6.252683437971759,
+      "yaw": -2.3466031457235563
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883782410106,
+      "elapsed_s": 21.604766302999906,
+      "stamp_ns": 1792937883781664745,
+      "frame": "odom",
+      "x": 6.3101584973748395,
+      "y": 6.24431587178521,
+      "yaw": -2.305563878789204
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937883803697898,
+      "elapsed_s": 21.626054124999882,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2962,
+        "uptime_s": 296.1,
+        "robot_truth": {
+          "x": 6.3,
+          "y": 6.48,
+          "theta_deg": -141.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937883802267705
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883882647198,
+      "elapsed_s": 21.705003474000023,
+      "stamp_ns": 1792937883881828782,
+      "frame": "odom",
+      "x": 6.299678941991603,
+      "y": 6.231337110689481,
+      "yaw": -2.2500566968406512
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937883982164954,
+      "elapsed_s": 21.804521185999874,
+      "stamp_ns": 1792937883981252716,
+      "frame": "odom",
+      "x": 6.2894008083048965,
+      "y": 6.217551842807793,
+      "yaw": -2.211467928035551
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937884003625494,
+      "elapsed_s": 21.82598158999963,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2964,
+        "uptime_s": 296.3,
+        "robot_truth": {
+          "x": 6.277,
+          "y": 6.458,
+          "theta_deg": -135.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937884002257075
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884083229348,
+      "elapsed_s": 21.905585720999625,
+      "stamp_ns": 1792937884082290978,
+      "frame": "odom",
+      "x": 6.279485682545019,
+      "y": 6.203059937627698,
+      "yaw": -2.170828289029421
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937884085048460,
+      "elapsed_s": 21.90740485399965,
+      "stamp_ns": 1792937884082290978,
+      "frame": "map",
+      "x": 6.067950853338231,
+      "y": 6.237764572259932,
+      "yaw": -2.2715696259349074
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884182899568,
+      "elapsed_s": 22.005255961999865,
+      "stamp_ns": 1792937884181751831,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -2.108157070017313
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937884203768482,
+      "elapsed_s": 22.026124684000024,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2966,
+        "uptime_s": 296.5,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -130.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937884202250757
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884282545414,
+      "elapsed_s": 22.10490161100006,
+      "stamp_ns": 1792937884281744934,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -2.0079663038848445
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884382527606,
+      "elapsed_s": 22.204883856999913,
+      "stamp_ns": 1792937884381677742,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.8883500570695857
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937884383501928,
+      "elapsed_s": 22.205858087999786,
+      "stamp_ns": 1792937884381677742,
+      "frame": "map",
+      "x": 6.069110569650758,
+      "y": 6.2433748549221,
+      "yaw": -1.9936284269508537
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937884403672556,
+      "elapsed_s": 22.2260287109998,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2968,
+        "uptime_s": 296.7,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -118.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937884402291609
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884481751412,
+      "elapsed_s": 22.304107529999783,
+      "stamp_ns": 1792937884481072996,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.7632912753228116
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884582326825,
+      "elapsed_s": 22.404682976000004,
+      "stamp_ns": 1792937884581613581,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.653282958723519
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937884583651124,
+      "elapsed_s": 22.40600728399977,
+      "stamp_ns": 1792937884581613581,
+      "frame": "map",
+      "x": 6.056219382536152,
+      "y": 6.23967501295523,
+      "yaw": -1.7944687982267296
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937884603523718,
+      "elapsed_s": 22.425879864999843,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2970,
+        "uptime_s": 296.9,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -105.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937884602242271
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884682889621,
+      "elapsed_s": 22.50524603199983,
+      "stamp_ns": 1792937884681894242,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.546545496752391
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884781771375,
+      "elapsed_s": 22.604127632999734,
+      "stamp_ns": 1792937884781071390,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.4320877194767403
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937884782803647,
+      "elapsed_s": 22.605159576000005,
+      "stamp_ns": 1792937884781071390,
+      "frame": "map",
+      "x": 6.0589503490653875,
+      "y": 6.245877864167107,
+      "yaw": -1.5724036930212257
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937884803685909,
+      "elapsed_s": 22.62604215400006,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2972,
+        "uptime_s": 297.1,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -93.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937884802268603
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884883248775,
+      "elapsed_s": 22.705605122999714,
+      "stamp_ns": 1792937884882177104,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.342618629165859
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937884982831668,
+      "elapsed_s": 22.805187954999838,
+      "stamp_ns": 1792937884981674539,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.2538389257096307
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937885004051197,
+      "elapsed_s": 22.8264075269999,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2974,
+        "uptime_s": 297.3,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -83.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937885002276989
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885083232790,
+      "elapsed_s": 22.90558919299974,
+      "stamp_ns": 1792937885082343080,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.1659129242353792
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937885084792478,
+      "elapsed_s": 22.907148576000054,
+      "stamp_ns": 1792937885082343080,
+      "frame": "map",
+      "x": 6.062394489302982,
+      "y": 6.260835316185533,
+      "yaw": -1.3265433606204742
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885182644349,
+      "elapsed_s": 23.005000518999623,
+      "stamp_ns": 1792937885181832496,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.0920416304224578
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937885203586745,
+      "elapsed_s": 23.02594298599979,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2976,
+        "uptime_s": 297.5,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -74.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937885202253008
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885282420265,
+      "elapsed_s": 23.104776352000044,
+      "stamp_ns": 1792937885281616722,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -1.026242474421382
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885383161119,
+      "elapsed_s": 23.20551694100004,
+      "stamp_ns": 1792937885381988182,
+      "frame": "odom",
+      "x": 6.277835800195035,
+      "y": 6.200290971068733,
+      "yaw": -0.9522104362603455
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937885383913368,
+      "elapsed_s": 23.20626956199976,
+      "stamp_ns": 1792937885381988182,
+      "frame": "map",
+      "x": 6.071978057118234,
+      "y": 6.271528135130204,
+      "yaw": -1.1187534702805255
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937885403625979,
+      "elapsed_s": 23.225982080999984,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2978,
+        "uptime_s": 297.7,
+        "robot_truth": {
+          "x": 6.264,
+          "y": 6.444,
+          "theta_deg": -66.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937885402318923
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885482649515,
+      "elapsed_s": 23.3050057989999,
+      "stamp_ns": 1792937885481751354,
+      "frame": "odom",
+      "x": 6.291077247975665,
+      "y": 6.183227601331906,
+      "yaw": -0.9108518240514591
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885582265820,
+      "elapsed_s": 23.404622018999817,
+      "stamp_ns": 1792937885581551523,
+      "frame": "odom",
+      "x": 6.301086275023726,
+      "y": 6.170505387708376,
+      "yaw": -0.9041955061682665
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937885603562208,
+      "elapsed_s": 23.42591835999974,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2980,
+        "uptime_s": 297.9,
+        "robot_truth": {
+          "x": 6.28,
+          "y": 6.411,
+          "theta_deg": -64.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937885602259502
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885682528478,
+      "elapsed_s": 23.504884696999852,
+      "stamp_ns": 1792937885681734627,
+      "frame": "odom",
+      "x": 6.311431801378932,
+      "y": 6.1566308203381395,
+      "yaw": -0.9300871112818427
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885782452404,
+      "elapsed_s": 23.60480870099991,
+      "stamp_ns": 1792937885781564748,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.9574870379901803
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937885803541454,
+      "elapsed_s": 23.62589758499962,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2982,
+        "uptime_s": 298.1,
+        "robot_truth": {
+          "x": 6.288,
+          "y": 6.394,
+          "theta_deg": -66.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937885802238855
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885882423952,
+      "elapsed_s": 23.70478011499972,
+      "stamp_ns": 1792937885881740227,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.9500028230902764
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937885981696276,
+      "elapsed_s": 23.804052400999808,
+      "stamp_ns": 1792937885981048490,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.9086008497295389
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937886003637259,
+      "elapsed_s": 23.825993578999714,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2984,
+        "uptime_s": 298.3,
+        "robot_truth": {
+          "x": 6.288,
+          "y": 6.394,
+          "theta_deg": -64.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937886002253856
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886082745783,
+      "elapsed_s": 23.90510226499964,
+      "stamp_ns": 1792937886081621078,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.8331958280303615
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886183179351,
+      "elapsed_s": 24.005535767999845,
+      "stamp_ns": 1792937886182071176,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.7727820240457346
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937886203933546,
+      "elapsed_s": 24.026289777999864,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2986,
+        "uptime_s": 298.5,
+        "robot_truth": {
+          "x": 6.288,
+          "y": 6.394,
+          "theta_deg": -57.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937886202355718
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886282224024,
+      "elapsed_s": 24.104580341999736,
+      "stamp_ns": 1792937886281239279,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.7230060079994303
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937886283361835,
+      "elapsed_s": 24.10571788199968,
+      "stamp_ns": 1792937886281239279,
+      "frame": "map",
+      "x": 6.105491250672699,
+      "y": 6.230744912279876,
+      "yaw": -0.8805960994051834
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886382506121,
+      "elapsed_s": 24.204862434999995,
+      "stamp_ns": 1792937886381716118,
+      "frame": "odom",
+      "x": 6.313390093256929,
+      "y": 6.153848587179528,
+      "yaw": -0.6677524649682551
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937886403624353,
+      "elapsed_s": 24.225980628999878,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2988,
+        "uptime_s": 298.7,
+        "robot_truth": {
+          "x": 6.288,
+          "y": 6.394,
+          "theta_deg": -50.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937886402290788
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886482047429,
+      "elapsed_s": 24.304403714999808,
+      "stamp_ns": 1792937886481067835,
+      "frame": "odom",
+      "x": 6.321735096807742,
+      "y": 6.147803703878242,
+      "yaw": -0.6268961510540709
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886582473457,
+      "elapsed_s": 24.404829543999767,
+      "stamp_ns": 1792937886581645117,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.6198656811771022
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937886603609158,
+      "elapsed_s": 24.425965339999948,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2990,
+        "uptime_s": 298.9,
+        "robot_truth": {
+          "x": 6.302,
+          "y": 6.378,
+          "theta_deg": -48.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937886602266734
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886682437415,
+      "elapsed_s": 24.504793697999958,
+      "stamp_ns": 1792937886681677966,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.6119621530674486
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886782411838,
+      "elapsed_s": 24.604768169999716,
+      "stamp_ns": 1792937886781707099,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.5724391183078579
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937886803821451,
+      "elapsed_s": 24.626177642999664,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2992,
+        "uptime_s": 299.1,
+        "robot_truth": {
+          "x": 6.302,
+          "y": 6.378,
+          "theta_deg": -45.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937886802260926
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886882374931,
+      "elapsed_s": 24.704731158999948,
+      "stamp_ns": 1792937886881389122,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.5289668822829454
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937886982205033,
+      "elapsed_s": 24.804561285999625,
+      "stamp_ns": 1792937886981397612,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.4854185837633938
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937886984222057,
+      "elapsed_s": 24.806578232999982,
+      "stamp_ns": 1792937886981397612,
+      "frame": "map",
+      "x": 6.130499813294841,
+      "y": 6.218360674992664,
+      "yaw": -0.643020579310079
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937887003938159,
+      "elapsed_s": 24.826294375999623,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2994,
+        "uptime_s": 299.3,
+        "robot_truth": {
+          "x": 6.302,
+          "y": 6.378,
+          "theta_deg": -40.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937887002241050
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887083186942,
+      "elapsed_s": 24.90554323599963,
+      "stamp_ns": 1792937887082029532,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.4441603609056011
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887183012503,
+      "elapsed_s": 25.005368933999762,
+      "stamp_ns": 1792937887182179708,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.4030025633089372
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937887203564399,
+      "elapsed_s": 25.02592060400002,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2996,
+        "uptime_s": 299.5,
+        "robot_truth": {
+          "x": 6.302,
+          "y": 6.378,
+          "theta_deg": -36.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937887202221731
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887282360368,
+      "elapsed_s": 25.10471656599975,
+      "stamp_ns": 1792937887281607137,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.3641928449891223
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887382617326,
+      "elapsed_s": 25.204973462999988,
+      "stamp_ns": 1792937887381747648,
+      "frame": "odom",
+      "x": 6.330907517382192,
+      "y": 6.141257289990928,
+      "yaw": -0.3392190156810839
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937887403633198,
+      "elapsed_s": 25.225989377999667,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 2998,
+        "uptime_s": 299.7,
+        "robot_truth": {
+          "x": 6.302,
+          "y": 6.378,
+          "theta_deg": -32.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937887402248516
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887482489464,
+      "elapsed_s": 25.304845844999818,
+      "stamp_ns": 1792937887481477231,
+      "frame": "odom",
+      "x": 6.335973948741901,
+      "y": 6.139517255488429,
+      "yaw": -0.33082222046259663
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887582509467,
+      "elapsed_s": 25.404865671999687,
+      "stamp_ns": 1792937887581741671,
+      "frame": "odom",
+      "x": 6.3406106694752165,
+      "y": 6.1377934807059065,
+      "yaw": -0.35593230846885193
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937887603715283,
+      "elapsed_s": 25.426071499000045,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3000,
+        "uptime_s": 299.9,
+        "robot_truth": {
+          "x": 6.311,
+          "y": 6.372,
+          "theta_deg": -33.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937887602255722
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887682835633,
+      "elapsed_s": 25.5051919929997,
+      "stamp_ns": 1792937887681986524,
+      "frame": "odom",
+      "x": 6.3406106694752165,
+      "y": 6.1377934807059065,
+      "yaw": -0.411009311311393
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887782032604,
+      "elapsed_s": 25.60438874400006,
+      "stamp_ns": 1792937887781220027,
+      "frame": "odom",
+      "x": 6.352310079998673,
+      "y": 6.131324783766048,
+      "yaw": -0.505073050564663
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937887803610640,
+      "elapsed_s": 25.625966886999777,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3002,
+        "uptime_s": 300.1,
+        "robot_truth": {
+          "x": 6.32,
+          "y": 6.364,
+          "theta_deg": -42.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937887802268327
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887882559529,
+      "elapsed_s": 25.704915874999642,
+      "stamp_ns": 1792937887881757428,
+      "frame": "odom",
+      "x": 6.3652701037434065,
+      "y": 6.121811234055381,
+      "yaw": -0.6332269648884195
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937887982064458,
+      "elapsed_s": 25.80442068299999,
+      "stamp_ns": 1792937887981234336,
+      "frame": "odom",
+      "x": 6.377159088255473,
+      "y": 6.1096484533464315,
+      "yaw": -0.796781293429365
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937887983116355,
+      "elapsed_s": 25.80547250299969,
+      "stamp_ns": 1792937887981234336,
+      "frame": "map",
+      "x": 6.179208127397977,
+      "y": 6.1616484203978965,
+      "yaw": -0.9436234313492189
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937888003661075,
+      "elapsed_s": 25.82601724699998,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3004,
+        "uptime_s": 300.3,
+        "robot_truth": {
+          "x": 6.339,
+          "y": 6.339,
+          "theta_deg": -57.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937888002270774
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888082068110,
+      "elapsed_s": 25.904424356999698,
+      "stamp_ns": 1792937888080958717,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.9231891154847301
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888182404027,
+      "elapsed_s": 26.00476045100004,
+      "stamp_ns": 1792937888181597343,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -1.0371455301801218
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937888183293591,
+      "elapsed_s": 26.005649661999996,
+      "stamp_ns": 1792937888181597343,
+      "frame": "map",
+      "x": 6.188087170467105,
+      "y": 6.153693997074838,
+      "yaw": -1.1653843203125305
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937888203499937,
+      "elapsed_s": 26.025856201999886,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3006,
+        "uptime_s": 300.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -71.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937888202210202
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888282299839,
+      "elapsed_s": 26.104655960999935,
+      "stamp_ns": 1792937888281615467,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -1.1079275510504838
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888382120718,
+      "elapsed_s": 26.2044768679998,
+      "stamp_ns": 1792937888381078979,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -1.1461615718681886
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937888403788810,
+      "elapsed_s": 26.22614492599996,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3008,
+        "uptime_s": 300.7,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -77.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937888402329788
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888482173296,
+      "elapsed_s": 26.304529596000066,
+      "stamp_ns": 1792937888481174157,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -1.1522123846686805
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888582647909,
+      "elapsed_s": 26.405004083999756,
+      "stamp_ns": 1792937888581694550,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -1.1258646401520078
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937888603564566,
+      "elapsed_s": 26.42592066999987,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3010,
+        "uptime_s": 300.9,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -76.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937888602237992
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888682614765,
+      "elapsed_s": 26.50497125799984,
+      "stamp_ns": 1792937888681582555,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -1.068436099435222
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888782933712,
+      "elapsed_s": 26.605290130999947,
+      "stamp_ns": 1792937888782039860,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.9941732436304292
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937888803692913,
+      "elapsed_s": 26.626049174999935,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3012,
+        "uptime_s": 301.1,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -68.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937888802275469
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888881961448,
+      "elapsed_s": 26.704317661000005,
+      "stamp_ns": 1792937888881301983,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.9214752770226244
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937888982053809,
+      "elapsed_s": 26.804409909999777,
+      "stamp_ns": 1792937888981172200,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.8640952107462013
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937889003616366,
+      "elapsed_s": 26.825972507999722,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3014,
+        "uptime_s": 301.3,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -61.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937889002291469
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889082573204,
+      "elapsed_s": 26.90492943399977,
+      "stamp_ns": 1792937889081828258,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.807507759839929
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937889083679516,
+      "elapsed_s": 26.906035554000027,
+      "stamp_ns": 1792937889081828258,
+      "frame": "map",
+      "x": 6.185673609941577,
+      "y": 6.143576135977789,
+      "yaw": -0.9240444361745045
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889183156598,
+      "elapsed_s": 27.005512914000064,
+      "stamp_ns": 1792937889182121969,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.7490518725429007
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937889204094214,
+      "elapsed_s": 27.026450525999735,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3016,
+        "uptime_s": 301.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -55.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937889202454188
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889282639864,
+      "elapsed_s": 27.104996179999944,
+      "stamp_ns": 1792937889281839337,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.6864861086649228
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889382248561,
+      "elapsed_s": 27.2046047179997,
+      "stamp_ns": 1792937889381580991,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.6437677005348292
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937889403707571,
+      "elapsed_s": 27.226063800999782,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3018,
+        "uptime_s": 301.7,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -49.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937889402290507
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889482288426,
+      "elapsed_s": 27.304644662999635,
+      "stamp_ns": 1792937889481597051,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.6045960189667028
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937889483706574,
+      "elapsed_s": 27.306062668999857,
+      "stamp_ns": 1792937889481597051,
+      "frame": "map",
+      "x": 6.183057764463918,
+      "y": 6.156255982070508,
+      "yaw": -0.7392217015251725
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889582602523,
+      "elapsed_s": 27.40495870099994,
+      "stamp_ns": 1792937889581780781,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.5652879181325257
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937889603752324,
+      "elapsed_s": 27.426108560999637,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3020,
+        "uptime_s": 301.9,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -45.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937889602259385
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889683398517,
+      "elapsed_s": 27.50575476999984,
+      "stamp_ns": 1792937889682387309,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.5222705615779136
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889783314264,
+      "elapsed_s": 27.605670653999823,
+      "stamp_ns": 1792937889782072950,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.48066629154445367
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937889803952333,
+      "elapsed_s": 27.626308583999617,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3022,
+        "uptime_s": 302.1,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -40.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937889802243144
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889882275059,
+      "elapsed_s": 27.704631465999682,
+      "stamp_ns": 1792937889881454976,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.4351620592750854
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937889983676524,
+      "elapsed_s": 27.806032764000065,
+      "stamp_ns": 1792937889982682021,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.38966505878758007
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937889985632857,
+      "elapsed_s": 27.807988828999896,
+      "stamp_ns": 1792937889982682021,
+      "frame": "map",
+      "x": 6.184201716944529,
+      "y": 6.157615020488437,
+      "yaw": -0.5468104540348715
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937890003720061,
+      "elapsed_s": 27.826076218999788,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3024,
+        "uptime_s": 302.3,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -36.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937890002301558
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890082581489,
+      "elapsed_s": 27.90493809999998,
+      "stamp_ns": 1792937890081611038,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.34982111228085344
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890182726623,
+      "elapsed_s": 28.005082883999876,
+      "stamp_ns": 1792937890181890352,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.32452386002509126
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937890203644847,
+      "elapsed_s": 28.026000872999703,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3026,
+        "uptime_s": 302.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -32.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937890202329277
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890282285795,
+      "elapsed_s": 28.10464232100003,
+      "stamp_ns": 1792937890281368532,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.30092609798737247
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890383274508,
+      "elapsed_s": 28.20563057599975,
+      "stamp_ns": 1792937890382257485,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.2751371259115234
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937890403687474,
+      "elapsed_s": 28.226043642999684,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3028,
+        "uptime_s": 302.7,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -29.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937890402347398
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890482743272,
+      "elapsed_s": 28.30509954299987,
+      "stamp_ns": 1792937890481926977,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.24812287632448535
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890582369438,
+      "elapsed_s": 28.40472564699985,
+      "stamp_ns": 1792937890581590267,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.22299532806777744
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937890603568065,
+      "elapsed_s": 28.42592419199991,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3030,
+        "uptime_s": 302.9,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -27.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937890602238688
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890682833803,
+      "elapsed_s": 28.505190062999645,
+      "stamp_ns": 1792937890681940876,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.19852366472501218
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890782238428,
+      "elapsed_s": 28.604594604999875,
+      "stamp_ns": 1792937890781585192,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.17310523815380516
+    },
+    {
+      "event": "amcl",
+      "wall_ns": 1792937890783418680,
+      "elapsed_s": 28.605774815999666,
+      "stamp_ns": 1792937890781585192,
+      "frame": "map",
+      "x": 6.185444975973701,
+      "y": 6.160436547620479,
+      "yaw": -0.3477885050224779
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937890803520321,
+      "elapsed_s": 28.625876393999988,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3032,
+        "uptime_s": 303.1,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -24.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937890802213954
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890883393532,
+      "elapsed_s": 28.705750084999636,
+      "stamp_ns": 1792937890882183313,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.14706318652842798
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937890982610502,
+      "elapsed_s": 28.80496670599996,
+      "stamp_ns": 1792937890981663738,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.12101237030811962
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937891004000398,
+      "elapsed_s": 28.82635669499996,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3034,
+        "uptime_s": 303.3,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -21.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937891002297077
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891082569978,
+      "elapsed_s": 28.904926063999937,
+      "stamp_ns": 1792937891081801907,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.09652834128932676
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937891150361998,
+      "elapsed_s": 28.97271828399971,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3035,
+        "uptime_s": 303.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -20.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937891148781635
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792937891150376380,
+      "elapsed_s": 10.962366010000096,
+      "id": "route2_goal2",
+      "pose": [
+        6.0,
+        6.0,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "SUCCEEDED",
+      "reason": "Nav2 报告目标到达。",
+      "start_truth": {
+        "x": 6.84,
+        "y": 6.17,
+        "theta_deg": 4.4
+      },
+      "end_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -20.2
+      },
+      "truth_goal_error_m": 0.47801255213644767
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891182744957,
+      "elapsed_s": 29.00510117199974,
+      "stamp_ns": 1792937891181764213,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937891203796211,
+      "elapsed_s": 29.026152571999773,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3036,
+        "uptime_s": 303.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937891202283363
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891283600498,
+      "elapsed_s": 29.10595702799992,
+      "stamp_ns": 1792937891282452922,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891382838161,
+      "elapsed_s": 29.20519446499975,
+      "stamp_ns": 1792937891381887399,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937891403756471,
+      "elapsed_s": 29.226112739999735,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3038,
+        "uptime_s": 303.7,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937891402243055
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891483255359,
+      "elapsed_s": 29.30561175999992,
+      "stamp_ns": 1792937891481925297,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891583577974,
+      "elapsed_s": 29.405934499000068,
+      "stamp_ns": 1792937891582410481,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937891604012801,
+      "elapsed_s": 29.426369128999795,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3040,
+        "uptime_s": 303.9,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937891602301519
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891681984317,
+      "elapsed_s": 29.50434056899985,
+      "stamp_ns": 1792937891681142214,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891783499589,
+      "elapsed_s": 29.60585590599976,
+      "stamp_ns": 1792937891782385211,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937891803727157,
+      "elapsed_s": 29.62608329099976,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3042,
+        "uptime_s": 304.1,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937891802260107
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891883012516,
+      "elapsed_s": 29.705369056999643,
+      "stamp_ns": 1792937891881832629,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937891983209277,
+      "elapsed_s": 29.805565742,
+      "stamp_ns": 1792937891982042668,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892004121882,
+      "elapsed_s": 29.82647808999991,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3044,
+        "uptime_s": 304.3,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892002372920
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892082943686,
+      "elapsed_s": 29.905299870999897,
+      "stamp_ns": 1792937892081996652,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892182945859,
+      "elapsed_s": 30.0053022029997,
+      "stamp_ns": 1792937892181831938,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892184818997,
+      "elapsed_s": 30.007175192999966,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3046,
+        "uptime_s": 304.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892182982616
+    },
+    {
+      "event": "request",
+      "wall_ns": 1792937892184823809,
+      "elapsed_s": 30.007179525999618,
+      "goal": {
+        "id": "route2_goal3",
+        "pose": [
+          8.0,
+          5.5,
+          0.0
+        ],
+        "expected": "SUCCEEDED"
+      },
+      "start_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      }
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892187127882,
+      "elapsed_s": 30.009483936999914,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3046,
+        "uptime_s": 304.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892185909558
+    },
+    {
+      "event": "response",
+      "wall_ns": 1792937892187139163,
+      "elapsed_s": 3.0949000120017445e-05,
+      "id": "route2_goal3",
+      "pose": [
+        8.0,
+        5.5,
+        0.0
+      ],
+      "expected": "SUCCEEDED",
+      "result": "FAILED",
+      "reason": "目标不是已知空闲栅格（cost=70，阈值<50）；未派发导航。",
+      "start_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      },
+      "end_truth": {
+        "x": 6.34,
+        "y": 6.336,
+        "theta_deg": -19.8
+      },
+      "truth_goal_error_m": 1.858627450566681
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892203579922,
+      "elapsed_s": 30.025936040000033,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3046,
+        "uptime_s": 304.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892202292224
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892282981336,
+      "elapsed_s": 30.105337601999963,
+      "stamp_ns": 1792937892281476151,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892382171378,
+      "elapsed_s": 30.20452763100002,
+      "stamp_ns": 1792937892381362257,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892403781350,
+      "elapsed_s": 30.226137514999664,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3048,
+        "uptime_s": 304.7,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892402454139
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892482149056,
+      "elapsed_s": 30.30450534800002,
+      "stamp_ns": 1792937892481018124,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892584745868,
+      "elapsed_s": 30.407102231999943,
+      "stamp_ns": 1792937892583244552,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892603840145,
+      "elapsed_s": 30.426196425999933,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3050,
+        "uptime_s": 304.9,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892602295513
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892682038729,
+      "elapsed_s": 30.504394969999794,
+      "stamp_ns": 1792937892681055858,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892782463351,
+      "elapsed_s": 30.604819549999775,
+      "stamp_ns": 1792937892781620462,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937892803833194,
+      "elapsed_s": 30.62618954899972,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3052,
+        "uptime_s": 305.1,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937892802416183
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892882488386,
+      "elapsed_s": 30.704844462999972,
+      "stamp_ns": 1792937892881414474,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937892983916158,
+      "elapsed_s": 30.806272198999977,
+      "stamp_ns": 1792937892982059621,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937893004221706,
+      "elapsed_s": 30.82657798399987,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3054,
+        "uptime_s": 305.3,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937893002458430
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937893083308409,
+      "elapsed_s": 30.90566476799995,
+      "stamp_ns": 1792937893082211172,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "odom",
+      "wall_ns": 1792937893183780596,
+      "elapsed_s": 31.0061369619998,
+      "stamp_ns": 1792937893182363548,
+      "frame": "odom",
+      "x": 6.379317939419974,
+      "y": 6.106794474700795,
+      "yaw": -0.08867505367856099
+    },
+    {
+      "event": "truth",
+      "wall_ns": 1792937893206178423,
+      "elapsed_s": 31.02853487199991,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.05,
+        "tick_hz": 10.0,
+        "tick_n": 3056,
+        "uptime_s": 305.5,
+        "robot_truth": {
+          "x": 6.34,
+          "y": 6.336,
+          "theta_deg": -19.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "request_start_ns": 1792937893202337269
+    }
+  ],
+  "limitations": [
+    "AMCL on generated truth map; not SLAM-built map.",
+    "No real vehicle motion."
+  ]
+}

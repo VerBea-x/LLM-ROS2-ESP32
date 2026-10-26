@@ -1,0 +1,8 @@
+{"event": "accepted", "wall_ns": 1792986181090531579, "stamp_ns": 1792986181087666114, "ids": ["SYNTHETIC_front"], "item_count": 1}
+{"event": "accepted", "wall_ns": 1792986181717187409, "stamp_ns": 1792986181716101308, "ids": ["SYNTHETIC_left"], "item_count": 2}
+{"event": "accepted", "wall_ns": 1792986182319059863, "stamp_ns": 1792986182317633442, "ids": ["SYNTHETIC_right"], "item_count": 3}
+{"event": "accepted", "wall_ns": 1792986182969355843, "stamp_ns": 1792986182967780347, "ids": ["SYNTHETIC_merge"], "item_count": 3}
+{"event": "below_threshold", "wall_ns": 1792986183618492484, "id": "SYNTHETIC_low_confidence", "score": 0.4}
+{"event": "accepted", "wall_ns": 1792986183618594805, "stamp_ns": 1792986183617377937, "ids": ["SYNTHETIC_low_confidence"], "item_count": 3}
+{"event": "rejected", "wall_ns": 1792986184617644901, "reason": "camera_info分辨率与冻结原图640x480不一致", "ids": ["SYNTHETIC_wrong_resolution"]}
+{"event": "rejected", "wall_ns": 1792986185617652974, "reason": "检测时间戳过期或来自未来", "ids": ["SYNTHETIC_stale_stamp"]}

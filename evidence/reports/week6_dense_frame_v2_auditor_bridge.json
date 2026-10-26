@@ -1,0 +1,123 @@
+{
+  "source_kind": "recorded_synthetic_ROS_observation_to_auditor_replay",
+  "source_sha256": "9a61e1937f0d5fd54fe9cff149533069f48c03921002a233cdf0aa405ee50ab8",
+  "implementation_version": "strict_semantic_world_v2",
+  "checks": [
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.955322895632735,
+          "y": 3.295550386718885,
+          "label": "cup__001"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `cup__001` 在边界内且未落入已知占据区；age=1.2s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "cup__001",
+          "target_m": [
+            2.955322895632735,
+            3.295550386718885
+          ],
+          "age_s": 1.1965529918670654,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.955322895632735,
+          "y": 2.704449613281115,
+          "label": "cup__002"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `cup__002` 在边界内且未落入已知占据区；age=1.2s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "cup__002",
+          "target_m": [
+            2.955322895632735,
+            2.704449613281115
+          ],
+          "age_s": 1.1965529918670654,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.955322895632735,
+          "y": 3.295550386718885,
+          "label": "cup__001"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `cup__001` 已过期；age=6.2s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "cup__001",
+          "age_s": 6.1965858936309814,
+          "tau_s": 4.0,
+          "last_seen_s": 1792991813.914802,
+          "now_s": 1792991820.111388
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.955322895632735,
+          "y": 2.704449613281115,
+          "label": "cup__002"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `cup__002` 已过期；age=6.2s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "cup__002",
+          "age_s": 6.1965858936309814,
+          "tau_s": 4.0,
+          "last_seen_s": 1792991813.914802,
+          "now_s": 1792991820.111388
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true,
+  "limitations": [
+    "Offline bridge replay; not a continuously connected perception/navigation execution.",
+    "Map is the existing known-map simulation snapshot, not the improved SLAM map.",
+    "Synthetic movement-derived tau and declared simulated resources; no field measurements."
+  ]
+}

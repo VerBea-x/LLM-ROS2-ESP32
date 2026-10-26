@@ -1,0 +1,18 @@
+{
+  "ffprobe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1000,
+        "height": 650,
+        "pix_fmt": "yuv420p",
+        "duration": "19.600000",
+        "nb_frames": "98"
+      }
+    ]
+  },
+  "full_decode_exit_code": 0,
+  "decode_stderr": "",
+  "sha256": "b1d8e5e5198db5d10b55b06919ac0d0ba5bbfdc2b425c1ced86962d5b9b93164"
+}

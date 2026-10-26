@@ -1,0 +1,80 @@
+{
+  "cup": [
+    {
+      "threshold": 0.3,
+      "tp": 9,
+      "fp": 4,
+      "fn": 22,
+      "precision": 0.6923076923076923,
+      "recall": 0.2903225806451613
+    },
+    {
+      "threshold": 0.5,
+      "tp": 5,
+      "fp": 1,
+      "fn": 26,
+      "precision": 0.8333333333333334,
+      "recall": 0.16129032258064516
+    },
+    {
+      "threshold": 0.7,
+      "tp": 4,
+      "fp": 0,
+      "fn": 27,
+      "precision": 1.0,
+      "recall": 0.12903225806451613
+    }
+  ],
+  "bottle": [
+    {
+      "threshold": 0.3,
+      "tp": 6,
+      "fp": 3,
+      "fn": 9,
+      "precision": 0.6666666666666666,
+      "recall": 0.4
+    },
+    {
+      "threshold": 0.5,
+      "tp": 2,
+      "fp": 0,
+      "fn": 13,
+      "precision": 1.0,
+      "recall": 0.13333333333333333
+    },
+    {
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 15,
+      "precision": null,
+      "recall": 0.0
+    }
+  ],
+  "chair": [
+    {
+      "threshold": 0.3,
+      "tp": 14,
+      "fp": 4,
+      "fn": 12,
+      "precision": 0.7777777777777778,
+      "recall": 0.5384615384615384
+    },
+    {
+      "threshold": 0.5,
+      "tp": 9,
+      "fp": 0,
+      "fn": 17,
+      "precision": 1.0,
+      "recall": 0.34615384615384615
+    },
+    {
+      "threshold": 0.7,
+      "tp": 7,
+      "fp": 0,
+      "fn": 19,
+      "precision": 1.0,
+      "recall": 0.2692307692307692
+    }
+  ]
+}

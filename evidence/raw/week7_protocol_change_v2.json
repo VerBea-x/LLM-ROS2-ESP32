@@ -1,0 +1,11 @@
+{
+  "before_formal40_calls": true,
+  "baseline_log": "week7_six_instructions_20261026.jsonl",
+  "baseline_rows": 5,
+  "baseline_failure": "SSL UNEXPECTED_EOF on sixth request; no automatic retry; incomplete run retained",
+  "changes": [
+    "SYSTEM now requests whole ordered plan instead of only first tool call",
+    "W4_shelf coordinate6,6.6 and near relation registered to match the chosen relational instruction; previous frozen world retained"
+  ],
+  "disclaimer": "v2 is a separate protocol; never merge scores with baseline;40-call experiment has not begun"
+}

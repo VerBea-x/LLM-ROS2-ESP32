@@ -1,0 +1,5 @@
+{
+  "status": "aborted_before_detection_injection",
+  "reason": "Duplicate semantic mapper instances caused the injector single-subscription check to reject; empty map is not a completed experiment.",
+  "replacement": "evidence/raw/week6_ros_lab_v3/lab_result.json"
+}

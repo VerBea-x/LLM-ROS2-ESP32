@@ -1,0 +1,1 @@
+{"round": 1, "initial_gate": {"passed": true, "valid_sample_count": 9, "selected_stamps": [1792990603679538394, 1792990604664516587, 1792990605669261876], "errors_m": [0.0969125670916667, 0.09128442849109196, 0.09829429359461901], "limits": "Distinct stationary updates are correlated, not independent experimental replicates."}}

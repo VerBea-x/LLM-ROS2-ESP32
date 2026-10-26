@@ -1,0 +1,12 @@
+{
+  "version":1,
+  "timeout_s":60,
+  "world_seed":42,
+  "slip":0.05,
+  "scope":"First smoke run only; repeated course route follows after pipeline works. Invalid/outside goals never dispatched.",
+  "goals":[
+    {"id":"outside","pose":[-1,-1,0],"expected":"FAILED"},
+    {"id":"occupied","pose":[7.5,4.5,0],"expected":"FAILED"},
+    {"id":"reachable_P2","pose":[7,6,0],"expected":"SUCCEEDED"}
+  ]
+}

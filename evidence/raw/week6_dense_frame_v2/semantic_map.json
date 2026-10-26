@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "frame_id": "map",
+  "generated_at": "2026-10-26T05:17:00.511899+00:00",
+  "items": [
+    {
+      "label": "cup",
+      "target_name": "cup__001",
+      "x": 2.955322895632735,
+      "y": 3.295550386718885,
+      "conf": 0.8,
+      "n_obs": 2,
+      "last_seen": "2026-10-26T05:16:53.914802+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_two_objects_0",
+        "SYNTHETIC_repeat_with_jitter_0"
+      ],
+      "age_s": 6.597097,
+      "tau_s": 4.0,
+      "state": "stale",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    },
+    {
+      "label": "cup",
+      "target_name": "cup__002",
+      "x": 2.955322895632735,
+      "y": 2.704449613281115,
+      "conf": 0.8,
+      "n_obs": 2,
+      "last_seen": "2026-10-26T05:16:53.914802+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_two_objects_1",
+        "SYNTHETIC_repeat_with_jitter_1"
+      ],
+      "age_s": 6.597097,
+      "tau_s": 4.0,
+      "state": "stale",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    }
+  ],
+  "limitations": [
+    "range=1m is an explicit teaching approximation; not measured object depth."
+  ],
+  "source_kind": "controlled_synthetic_detection_ros_lab",
+  "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+  "registration_policy": "frame_one_to_one_v2"
+}

@@ -1,0 +1,8 @@
+{
+ "reference":"360-ray slip0.05 max_laser_range4.9 run20261026T023209Z",
+ "changes":{"use_scan_barycenter":false,"do_loop_closing":false},
+ "hypothesis":"Changing visible obstacle sets moves scan barycenters; similar circular objects and open walls can produce false associations/loop closures. Use sensor pose as reference and disable loop constraints for this short diagnostic route.",
+ "unchanged":"360-ray simulated scanner, slip0.05, range4.9, world seed42 and mapping route",
+ "note":"This is a two-setting engineering intervention, not a single-factor causal claim. No claim that disabling loop closure is generally preferable.",
+ "scoring":"Same fixed initial-frame metrics and final SLAM-vs-truth error; failed results retained."
+}

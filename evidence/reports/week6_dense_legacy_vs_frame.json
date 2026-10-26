@@ -1,0 +1,59 @@
+{
+  "source_kind": "legacy_offline_replay_compared_with_actual_synthetic_ROS_frame",
+  "source_sha256": "9a61e1937f0d5fd54fe9cff149533069f48c03921002a233cdf0aa405ee50ab8",
+  "legacy_entries": [
+    {
+      "label": "cup",
+      "x": 2.95447997803503,
+      "y": 3.0,
+      "conf": 0.8,
+      "last_seen": "2026-10-26T00:00:00Z",
+      "n_obs": 2,
+      "evidence_ids": [
+        "legacy_replay_0",
+        "legacy_replay_1"
+      ]
+    }
+  ],
+  "new_actual_entries": [
+    {
+      "label": "cup",
+      "target_name": "cup__001",
+      "x": 2.95447997803503,
+      "y": 3.298274993135947,
+      "conf": 0.8,
+      "n_obs": 1,
+      "last_seen": "2026-10-26T05:16:53.308931+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_two_objects_0"
+      ],
+      "age_s": 0.60226,
+      "tau_s": 4.0,
+      "state": "fresh",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    },
+    {
+      "label": "cup",
+      "target_name": "cup__002",
+      "x": 2.95447997803503,
+      "y": 2.701725006864053,
+      "conf": 0.8,
+      "n_obs": 1,
+      "last_seen": "2026-10-26T05:16:53.308931+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_two_objects_1"
+      ],
+      "age_s": 0.60226,
+      "tau_s": 4.0,
+      "state": "fresh",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    }
+  ],
+  "comparison": {
+    "legacy_count": 1,
+    "new_count": 2
+  },
+  "limits": [
+    "Legacy side recomputed offline, not a new ROS baseline run. Both sides use synthetic detections and virtual depth."
+  ]
+}

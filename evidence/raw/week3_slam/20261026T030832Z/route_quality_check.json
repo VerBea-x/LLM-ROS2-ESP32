@@ -1,0 +1,35 @@
+{
+  "route_version": "safe_route_v2",
+  "minimum_recorded_clearance_m": 0.2572092282800655,
+  "guard_minimum_m": 0.1,
+  "footprint_overlaps": 0,
+  "terminated_events": 0,
+  "final_slam_pose_xy": [
+    8.307982431129753,
+    6.552743944324648
+  ],
+  "final_independent_truth": {
+    "mode": "nav-static",
+    "seed": 42,
+    "slip": 0.05,
+    "tick_hz": 10.0,
+    "tick_n": 3233,
+    "uptime_s": 323.4,
+    "robot_truth": {
+      "x": 8.154,
+      "y": 6.219,
+      "theta_deg": 165.7
+    },
+    "terminated_events": 0,
+    "clients": 1
+  },
+  "final_slam_position_error_m": 0.3675535463983485,
+  "scan_contract": {
+    "ray_count": 720,
+    "angle_increment_rad": 0.008726646192371845,
+    "range_min_m": 0.0,
+    "range_max_m": 5.0,
+    "frame_id": "laser_frame"
+  },
+  "limits": "Truth only positions/scores experimental apparatus; final pose not AMCL and no frame fitting."
+}

@@ -1,0 +1,161 @@
+{
+  "suite": "week8_rule_positive_negative_8",
+  "fixture_only": true,
+  "passed": true,
+  "cases": [
+    {
+      "case_id": "R1_POSITIVE",
+      "expected_allowed": true,
+      "actual_allowed": true,
+      "expected_rule": "R1",
+      "actual_rule": "PASS",
+      "matched": true,
+      "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+      "evidence": {
+        "label": "W1_door",
+        "target_m": [
+          7,
+          6
+        ],
+        "age_s": 0.0,
+        "tau_s": 86400.0,
+        "battery_pct": 60.0,
+        "estimated_task_s": 30.0,
+        "remaining_budget_s": 60.0
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R1_NEGATIVE_OCCUPIED",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "expected_rule": "R1",
+      "actual_rule": "R1",
+      "matched": true,
+      "reason": "目标栅格不是已确认空闲区；目标 (7.500, 4.500) 的占据值为 100（放行阈值 < 50）；请改选已知空闲区。",
+      "evidence": {
+        "target_m": [
+          7.5,
+          4.5
+        ],
+        "occupancy_value": 100,
+        "occupied_threshold": 50,
+        "map_source": "/home/yahboom/下载/第1-8周对齐重做/evidence/raw/week8_integration/map_snapshot.json"
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R2_POSITIVE",
+      "expected_allowed": true,
+      "actual_allowed": true,
+      "expected_rule": "R2",
+      "actual_rule": "PASS",
+      "matched": true,
+      "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+      "evidence": {
+        "label": "W1_door",
+        "target_m": [
+          7,
+          6
+        ],
+        "age_s": 0.0,
+        "tau_s": 86400.0,
+        "battery_pct": 60.0,
+        "estimated_task_s": 30.0,
+        "remaining_budget_s": 60.0
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R2_NEGATIVE_STALE",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "expected_rule": "R2",
+      "actual_rule": "R2",
+      "matched": true,
+      "reason": "语义目标 `cup_old` 已过期；age=600.0s，τ=30.0s；当前可用目标为 ['W1_door', 'W2_charge', 'W3_podium', 'W4_shelf', 'W5_window', 'W6_bench', 'W7_trash', 'W8_home']；请改选新鲜目标或重新观测。",
+      "evidence": {
+        "label": "cup_old",
+        "age_s": 600.0,
+        "tau_s": 30.0,
+        "last_seen_s": 1792979417.0868452,
+        "now_s": 1792980017.0868452
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R3_POSITIVE",
+      "expected_allowed": true,
+      "actual_allowed": true,
+      "expected_rule": "R3",
+      "actual_rule": "PASS",
+      "matched": true,
+      "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+      "evidence": {
+        "label": "W1_door",
+        "target_m": [
+          7,
+          6
+        ],
+        "age_s": 0.0,
+        "tau_s": 86400.0,
+        "battery_pct": 60.0,
+        "estimated_task_s": 30.0,
+        "remaining_budget_s": 60.0
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R3_NEGATIVE_NONFINITE",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "expected_rule": "R3",
+      "actual_rule": "R3",
+      "matched": true,
+      "reason": "缺少有限坐标值；地图数值域要求 x、y 为有限数；请从语义地图选择有效坐标，不要使用 NaN/Infinity。",
+      "evidence": {
+        "x": "nan",
+        "y": "2.0"
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R4_POSITIVE",
+      "expected_allowed": true,
+      "actual_allowed": true,
+      "expected_rule": "R4",
+      "actual_rule": "PASS",
+      "matched": true,
+      "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+      "evidence": {
+        "label": "W1_door",
+        "target_m": [
+          7,
+          6
+        ],
+        "age_s": 0.0,
+        "tau_s": 86400.0,
+        "battery_pct": 60.0,
+        "estimated_task_s": 30.0,
+        "remaining_budget_s": 60.0
+      },
+      "fixture_only": true
+    },
+    {
+      "case_id": "R4_NEGATIVE_LOW_BATTERY",
+      "expected_allowed": false,
+      "actual_allowed": false,
+      "expected_rule": "R4",
+      "actual_rule": "R4",
+      "matched": true,
+      "reason": "电量 10.0% 低于放行阈值 15.0%；当前任务需要 30.0s，任务预算 60.0s；请先充电或改选无需移动的任务。",
+      "evidence": {
+        "battery_pct": 10.0,
+        "minimum_battery_pct": 15.0,
+        "estimated_task_s": 30.0,
+        "remaining_budget_s": 60.0
+      },
+      "fixture_only": true
+    }
+  ]
+}

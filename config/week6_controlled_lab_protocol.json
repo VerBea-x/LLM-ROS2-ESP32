@@ -1,0 +1,11 @@
+{
+ "source_kind":"controlled_synthetic_observations",
+ "synthetic_observations":true,
+ "camera":{"width":640,"height":480,"fx":320.0,"cx":320.0,"origin":"declared virtual intrinsics, not measured camera calibration"},
+ "station_pose":[2.0,3.0,0.0],
+ "confidence_threshold":0.5,
+ "threshold_source":"config/week5_working_threshold_v2.json",
+ "geometry_pass":{"front_position_error_max_m":0.05,"left_cross_product_positive":true,"right_cross_product_negative":true,"repeat_label_n_obs":2,"repeat_label_count":1},
+ "mobility":{"seed":601,"logical_duration_s":600,"training_end_s":300,"interval_ranges_s":{"person":[3,5],"handheld":[8,12],"furniture":[30,50]},"tau_policy":"half the minimum observed training relocation interval"},
+ "notes":["CourseC06 explicitly permits synthetic detection injection for the camera-free simulator.","Synthetic mobility is not a30-minute field survey.","COCO photos lack pose and intrinsics; never assign them these virtual map coordinates."]
+}

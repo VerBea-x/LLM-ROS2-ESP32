@@ -1,0 +1,7 @@
+{
+ "reference":"360rays slip0.05 range4.9 baseline matching run20261026T023209Z",
+ "source":"Installed Karto Mapper.h RangeThreshold recommendation:0.05m map cells permit5.7m threshold at0.5deg angular resolution, but2.8m at1deg.",
+ "hypothesis":"360 rays provide1deg spacing, insufficient solid coverage at4.9m for0.05m matching grid.720 rays supply0.5deg analytic samples without interpolating old rays.",
+ "changed_factor":"N_RAYS360 to720; keep slip0.05, matching range4.9, baseline scan matching/loop closing settings, same route and seed.",
+ "limits":"Explicitly enhanced simulated scanner, not measured hardware. Use fixed initial-frame scoring, retain previous failures."
+}

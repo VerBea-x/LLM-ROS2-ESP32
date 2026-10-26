@@ -1,0 +1,9 @@
+{
+ "source_kind":"explicit_simulation_ablation",
+ "reference":"360-ray slip0.05 run20261026T015523Z",
+ "changed_factor":"slip from0.05 to0; same360-ray simulated sensor and frozen route",
+ "purpose":"Separate drift-driven mapping error from scan sparsity and test the chain in an ideal odometry condition.",
+ "no_physical_claim":true,
+ "limits":"Ideal odometry is simulator truth by construction. Map must still be produced by slam_toolbox; this cannot demonstrate robustness to real wheel slip or validate previous noisy results.",
+ "outcomes_to_report":["map shape and known coverage","fixed initial-frame occupancy precision/recall","final SLAM pose vs independent simulator truth"]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "frame_id": "map",
+  "generated_at": "2026-10-26T05:18:11.219682+00:00",
+  "items": [
+    {
+      "label": "cup",
+      "target_name": "cup__001",
+      "x": 2.9997560380435395,
+      "y": 2.9843826238111397,
+      "conf": 0.8,
+      "n_obs": 2,
+      "last_seen": "2026-10-26T05:18:02.804287+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_front",
+        "SYNTHETIC_merge"
+      ],
+      "age_s": 8.415395,
+      "tau_s": 4.0,
+      "state": "stale",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    },
+    {
+      "label": "bottle",
+      "target_name": "bottle__001",
+      "x": 2.95447997803503,
+      "y": 3.298274993135947,
+      "conf": 0.8,
+      "n_obs": 1,
+      "last_seen": "2026-10-26T05:18:01.564572+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_left"
+      ],
+      "age_s": 9.65511,
+      "tau_s": 4.0,
+      "state": "stale",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    },
+    {
+      "label": "backpack",
+      "target_name": "backpack__001",
+      "x": 2.95447997803503,
+      "y": 2.701725006864053,
+      "conf": 0.8,
+      "n_obs": 1,
+      "last_seen": "2026-10-26T05:18:02.200719+00:00",
+      "evidence_ids": [
+        "SYNTHETIC_right"
+      ],
+      "age_s": 9.018963,
+      "tau_s": 4.0,
+      "state": "stale",
+      "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+    }
+  ],
+  "limitations": [
+    "range=1m is an explicit teaching approximation; not measured object depth."
+  ],
+  "source_kind": "controlled_synthetic_detection_ros_lab",
+  "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+  "registration_policy": "frame_one_to_one_v2"
+}

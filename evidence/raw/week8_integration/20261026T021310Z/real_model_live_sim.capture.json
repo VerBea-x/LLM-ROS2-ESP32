@@ -1,0 +1,2932 @@
+{
+  "source_kind": "live_simulator_visualization_capture",
+  "frames": [
+    {
+      "frame": 0,
+      "captured_utc": "2026-10-26T02:15:04.158253+00:00",
+      "elapsed_s": 0.012798556999996435,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1127,
+        "uptime_s": 112.6,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 1,
+      "captured_utc": "2026-10-26T02:15:04.394358+00:00",
+      "elapsed_s": 0.2488941670001168,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1129,
+        "uptime_s": 112.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 2,
+      "captured_utc": "2026-10-26T02:15:04.595553+00:00",
+      "elapsed_s": 0.4500928950001253,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1131,
+        "uptime_s": 113.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 3,
+      "captured_utc": "2026-10-26T02:15:04.795457+00:00",
+      "elapsed_s": 0.6499963189999107,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1133,
+        "uptime_s": 113.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 4,
+      "captured_utc": "2026-10-26T02:15:04.995318+00:00",
+      "elapsed_s": 0.8498553449999235,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1135,
+        "uptime_s": 113.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 5,
+      "captured_utc": "2026-10-26T02:15:05.195020+00:00",
+      "elapsed_s": 1.0495565609999176,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1137,
+        "uptime_s": 113.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 6,
+      "captured_utc": "2026-10-26T02:15:05.396909+00:00",
+      "elapsed_s": 1.2514466729999185,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1139,
+        "uptime_s": 113.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 7,
+      "captured_utc": "2026-10-26T02:15:05.596958+00:00",
+      "elapsed_s": 1.4514940389999538,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1141,
+        "uptime_s": 114.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 8,
+      "captured_utc": "2026-10-26T02:15:05.796130+00:00",
+      "elapsed_s": 1.6506689210000332,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1143,
+        "uptime_s": 114.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 9,
+      "captured_utc": "2026-10-26T02:15:05.998599+00:00",
+      "elapsed_s": 1.8531413999999131,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1145,
+        "uptime_s": 114.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 10,
+      "captured_utc": "2026-10-26T02:15:06.197007+00:00",
+      "elapsed_s": 2.051545856000075,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1147,
+        "uptime_s": 114.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 11,
+      "captured_utc": "2026-10-26T02:15:06.397364+00:00",
+      "elapsed_s": 2.251903329000015,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1149,
+        "uptime_s": 114.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 12,
+      "captured_utc": "2026-10-26T02:15:06.597032+00:00",
+      "elapsed_s": 2.451570790000005,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1151,
+        "uptime_s": 115.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 13,
+      "captured_utc": "2026-10-26T02:15:06.797065+00:00",
+      "elapsed_s": 2.6516021780000756,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1153,
+        "uptime_s": 115.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 14,
+      "captured_utc": "2026-10-26T02:15:06.997544+00:00",
+      "elapsed_s": 2.852085221999914,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1155,
+        "uptime_s": 115.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 15,
+      "captured_utc": "2026-10-26T02:15:07.197930+00:00",
+      "elapsed_s": 3.0524743280000166,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1157,
+        "uptime_s": 115.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 16,
+      "captured_utc": "2026-10-26T02:15:07.398328+00:00",
+      "elapsed_s": 3.2528678830001354,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1159,
+        "uptime_s": 115.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 17,
+      "captured_utc": "2026-10-26T02:15:07.598388+00:00",
+      "elapsed_s": 3.4529255669999657,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1161,
+        "uptime_s": 116.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 18,
+      "captured_utc": "2026-10-26T02:15:07.798417+00:00",
+      "elapsed_s": 3.6529535120000673,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1163,
+        "uptime_s": 116.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 19,
+      "captured_utc": "2026-10-26T02:15:07.998283+00:00",
+      "elapsed_s": 3.8528208039999754,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1165,
+        "uptime_s": 116.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 20,
+      "captured_utc": "2026-10-26T02:15:08.199444+00:00",
+      "elapsed_s": 4.053981977999911,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1167,
+        "uptime_s": 116.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 21,
+      "captured_utc": "2026-10-26T02:15:08.399960+00:00",
+      "elapsed_s": 4.254497881000134,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1169,
+        "uptime_s": 116.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 22,
+      "captured_utc": "2026-10-26T02:15:08.599391+00:00",
+      "elapsed_s": 4.453929048999953,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1171,
+        "uptime_s": 117.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 23,
+      "captured_utc": "2026-10-26T02:15:08.800147+00:00",
+      "elapsed_s": 4.654684154000051,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1173,
+        "uptime_s": 117.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 24,
+      "captured_utc": "2026-10-26T02:15:09.000563+00:00",
+      "elapsed_s": 4.855101603000094,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1175,
+        "uptime_s": 117.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 25,
+      "captured_utc": "2026-10-26T02:15:09.201131+00:00",
+      "elapsed_s": 5.055672411999922,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1177,
+        "uptime_s": 117.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 26,
+      "captured_utc": "2026-10-26T02:15:09.401944+00:00",
+      "elapsed_s": 5.256481370000074,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1179,
+        "uptime_s": 117.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 27,
+      "captured_utc": "2026-10-26T02:15:09.601186+00:00",
+      "elapsed_s": 5.455723410000019,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1181,
+        "uptime_s": 118.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 28,
+      "captured_utc": "2026-10-26T02:15:09.800950+00:00",
+      "elapsed_s": 5.6554864610000095,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1183,
+        "uptime_s": 118.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 29,
+      "captured_utc": "2026-10-26T02:15:10.001673+00:00",
+      "elapsed_s": 5.856211456999972,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1185,
+        "uptime_s": 118.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 30,
+      "captured_utc": "2026-10-26T02:15:10.202255+00:00",
+      "elapsed_s": 6.056792034999944,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1187,
+        "uptime_s": 118.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 31,
+      "captured_utc": "2026-10-26T02:15:10.404148+00:00",
+      "elapsed_s": 6.258690251999951,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1189,
+        "uptime_s": 118.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 32,
+      "captured_utc": "2026-10-26T02:15:10.602553+00:00",
+      "elapsed_s": 6.457093520999933,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1191,
+        "uptime_s": 119.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 33,
+      "captured_utc": "2026-10-26T02:15:10.803005+00:00",
+      "elapsed_s": 6.657541567999942,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1193,
+        "uptime_s": 119.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 34,
+      "captured_utc": "2026-10-26T02:15:11.003111+00:00",
+      "elapsed_s": 6.857650523000075,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1195,
+        "uptime_s": 119.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 35,
+      "captured_utc": "2026-10-26T02:15:11.203042+00:00",
+      "elapsed_s": 7.057578504000048,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1197,
+        "uptime_s": 119.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 36,
+      "captured_utc": "2026-10-26T02:15:11.403929+00:00",
+      "elapsed_s": 7.25846604000003,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1199,
+        "uptime_s": 119.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 37,
+      "captured_utc": "2026-10-26T02:15:11.603954+00:00",
+      "elapsed_s": 7.458490528000084,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1201,
+        "uptime_s": 120.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 38,
+      "captured_utc": "2026-10-26T02:15:11.804060+00:00",
+      "elapsed_s": 7.6586020360000475,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1203,
+        "uptime_s": 120.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 39,
+      "captured_utc": "2026-10-26T02:15:12.004024+00:00",
+      "elapsed_s": 7.8585608860000775,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1205,
+        "uptime_s": 120.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 40,
+      "captured_utc": "2026-10-26T02:15:12.204832+00:00",
+      "elapsed_s": 8.059375805999935,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1207,
+        "uptime_s": 120.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 41,
+      "captured_utc": "2026-10-26T02:15:12.405088+00:00",
+      "elapsed_s": 8.259627892000026,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1209,
+        "uptime_s": 120.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 42,
+      "captured_utc": "2026-10-26T02:15:12.605112+00:00",
+      "elapsed_s": 8.45965384300007,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1211,
+        "uptime_s": 121.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 43,
+      "captured_utc": "2026-10-26T02:15:12.805625+00:00",
+      "elapsed_s": 8.660162937999985,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1213,
+        "uptime_s": 121.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 44,
+      "captured_utc": "2026-10-26T02:15:13.007286+00:00",
+      "elapsed_s": 8.861827100000028,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1215,
+        "uptime_s": 121.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 45,
+      "captured_utc": "2026-10-26T02:15:13.206132+00:00",
+      "elapsed_s": 9.060671577999983,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1217,
+        "uptime_s": 121.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 46,
+      "captured_utc": "2026-10-26T02:15:13.406171+00:00",
+      "elapsed_s": 9.260707764000017,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1219,
+        "uptime_s": 121.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 47,
+      "captured_utc": "2026-10-26T02:15:13.606321+00:00",
+      "elapsed_s": 9.460858013999996,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1221,
+        "uptime_s": 122.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 48,
+      "captured_utc": "2026-10-26T02:15:13.806548+00:00",
+      "elapsed_s": 9.661084424000137,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1223,
+        "uptime_s": 122.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 49,
+      "captured_utc": "2026-10-26T02:15:14.007890+00:00",
+      "elapsed_s": 9.862427415999946,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1225,
+        "uptime_s": 122.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 50,
+      "captured_utc": "2026-10-26T02:15:14.207743+00:00",
+      "elapsed_s": 10.062283967999974,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1227,
+        "uptime_s": 122.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 51,
+      "captured_utc": "2026-10-26T02:15:14.408063+00:00",
+      "elapsed_s": 10.262606256000026,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1229,
+        "uptime_s": 122.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 52,
+      "captured_utc": "2026-10-26T02:15:14.609459+00:00",
+      "elapsed_s": 10.463996408999947,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1231,
+        "uptime_s": 123.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 53,
+      "captured_utc": "2026-10-26T02:15:14.808250+00:00",
+      "elapsed_s": 10.662787438000123,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1233,
+        "uptime_s": 123.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 54,
+      "captured_utc": "2026-10-26T02:15:15.010105+00:00",
+      "elapsed_s": 10.86464382500003,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1235,
+        "uptime_s": 123.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 55,
+      "captured_utc": "2026-10-26T02:15:15.209057+00:00",
+      "elapsed_s": 11.06361770600006,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1237,
+        "uptime_s": 123.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 56,
+      "captured_utc": "2026-10-26T02:15:15.408770+00:00",
+      "elapsed_s": 11.263307618999988,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1239,
+        "uptime_s": 123.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 57,
+      "captured_utc": "2026-10-26T02:15:15.609597+00:00",
+      "elapsed_s": 11.464133931000106,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1241,
+        "uptime_s": 124.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 58,
+      "captured_utc": "2026-10-26T02:15:15.809232+00:00",
+      "elapsed_s": 11.663770053000007,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1243,
+        "uptime_s": 124.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 59,
+      "captured_utc": "2026-10-26T02:15:16.009465+00:00",
+      "elapsed_s": 11.86400169600006,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1245,
+        "uptime_s": 124.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 60,
+      "captured_utc": "2026-10-26T02:15:16.209847+00:00",
+      "elapsed_s": 12.064390742000114,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1247,
+        "uptime_s": 124.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 61,
+      "captured_utc": "2026-10-26T02:15:16.410298+00:00",
+      "elapsed_s": 12.264849864000098,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1249,
+        "uptime_s": 124.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 62,
+      "captured_utc": "2026-10-26T02:15:16.610882+00:00",
+      "elapsed_s": 12.465419242000053,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1251,
+        "uptime_s": 125.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 63,
+      "captured_utc": "2026-10-26T02:15:16.810679+00:00",
+      "elapsed_s": 12.665215847000127,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1253,
+        "uptime_s": 125.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 64,
+      "captured_utc": "2026-10-26T02:15:17.011818+00:00",
+      "elapsed_s": 12.866355065000107,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1255,
+        "uptime_s": 125.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 65,
+      "captured_utc": "2026-10-26T02:15:17.211769+00:00",
+      "elapsed_s": 13.066312485000026,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1257,
+        "uptime_s": 125.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 66,
+      "captured_utc": "2026-10-26T02:15:17.411652+00:00",
+      "elapsed_s": 13.266189564000115,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1259,
+        "uptime_s": 125.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 67,
+      "captured_utc": "2026-10-26T02:15:17.612601+00:00",
+      "elapsed_s": 13.467138810000051,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1261,
+        "uptime_s": 126.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 68,
+      "captured_utc": "2026-10-26T02:15:17.811841+00:00",
+      "elapsed_s": 13.666380096000012,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1263,
+        "uptime_s": 126.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 69,
+      "captured_utc": "2026-10-26T02:15:18.013015+00:00",
+      "elapsed_s": 13.867552872000033,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1265,
+        "uptime_s": 126.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 70,
+      "captured_utc": "2026-10-26T02:15:18.213855+00:00",
+      "elapsed_s": 14.068392785000015,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1267,
+        "uptime_s": 126.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 71,
+      "captured_utc": "2026-10-26T02:15:18.413699+00:00",
+      "elapsed_s": 14.268237331000137,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1269,
+        "uptime_s": 126.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 72,
+      "captured_utc": "2026-10-26T02:15:18.613822+00:00",
+      "elapsed_s": 14.468360532000133,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1271,
+        "uptime_s": 127.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 73,
+      "captured_utc": "2026-10-26T02:15:18.812949+00:00",
+      "elapsed_s": 14.667484732000048,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1273,
+        "uptime_s": 127.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 74,
+      "captured_utc": "2026-10-26T02:15:19.013562+00:00",
+      "elapsed_s": 14.868099568999924,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1275,
+        "uptime_s": 127.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 75,
+      "captured_utc": "2026-10-26T02:15:19.213779+00:00",
+      "elapsed_s": 15.06832488100008,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1277,
+        "uptime_s": 127.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 76,
+      "captured_utc": "2026-10-26T02:15:19.413946+00:00",
+      "elapsed_s": 15.268482721000055,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1279,
+        "uptime_s": 127.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 77,
+      "captured_utc": "2026-10-26T02:15:19.614442+00:00",
+      "elapsed_s": 15.468978692000064,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1281,
+        "uptime_s": 128.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 78,
+      "captured_utc": "2026-10-26T02:15:19.815388+00:00",
+      "elapsed_s": 15.669926453000016,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1283,
+        "uptime_s": 128.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 79,
+      "captured_utc": "2026-10-26T02:15:20.014854+00:00",
+      "elapsed_s": 15.869391889000099,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1285,
+        "uptime_s": 128.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 80,
+      "captured_utc": "2026-10-26T02:15:20.215128+00:00",
+      "elapsed_s": 16.069665462000103,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1287,
+        "uptime_s": 128.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 81,
+      "captured_utc": "2026-10-26T02:15:20.415764+00:00",
+      "elapsed_s": 16.270301192000034,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1289,
+        "uptime_s": 128.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 82,
+      "captured_utc": "2026-10-26T02:15:20.616776+00:00",
+      "elapsed_s": 16.471314771999914,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1291,
+        "uptime_s": 129.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 83,
+      "captured_utc": "2026-10-26T02:15:20.815998+00:00",
+      "elapsed_s": 16.670536157000015,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1293,
+        "uptime_s": 129.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 84,
+      "captured_utc": "2026-10-26T02:15:21.016122+00:00",
+      "elapsed_s": 16.870658080000112,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1295,
+        "uptime_s": 129.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 85,
+      "captured_utc": "2026-10-26T02:15:21.216429+00:00",
+      "elapsed_s": 17.07096547900005,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1297,
+        "uptime_s": 129.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 86,
+      "captured_utc": "2026-10-26T02:15:21.418675+00:00",
+      "elapsed_s": 17.273213383999973,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1299,
+        "uptime_s": 129.9,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 87,
+      "captured_utc": "2026-10-26T02:15:21.617120+00:00",
+      "elapsed_s": 17.471657269999923,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1301,
+        "uptime_s": 130.1,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 88,
+      "captured_utc": "2026-10-26T02:15:21.821598+00:00",
+      "elapsed_s": 17.67613912999991,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1304,
+        "uptime_s": 130.3,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 89,
+      "captured_utc": "2026-10-26T02:15:22.017671+00:00",
+      "elapsed_s": 17.872207204999995,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1305,
+        "uptime_s": 130.5,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 0
+    },
+    {
+      "frame": 90,
+      "captured_utc": "2026-10-26T02:15:22.218556+00:00",
+      "elapsed_s": 18.073093657000072,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1307,
+        "uptime_s": 130.7,
+        "robot_truth": {
+          "x": 8.08,
+          "y": 6.238,
+          "theta_deg": 88.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 91,
+      "captured_utc": "2026-10-26T02:15:22.419964+00:00",
+      "elapsed_s": 18.27450167300003,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1310,
+        "uptime_s": 130.9,
+        "robot_truth": {
+          "x": 8.076,
+          "y": 6.262,
+          "theta_deg": 99.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 92,
+      "captured_utc": "2026-10-26T02:15:22.620557+00:00",
+      "elapsed_s": 18.475093860000015,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1312,
+        "uptime_s": 131.1,
+        "robot_truth": {
+          "x": 8.03,
+          "y": 6.378,
+          "theta_deg": 115.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 93,
+      "captured_utc": "2026-10-26T02:15:22.820176+00:00",
+      "elapsed_s": 18.67471300400007,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1314,
+        "uptime_s": 131.3,
+        "robot_truth": {
+          "x": 7.927,
+          "y": 6.511,
+          "theta_deg": 132.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 94,
+      "captured_utc": "2026-10-26T02:15:23.020461+00:00",
+      "elapsed_s": 18.87499854900011,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1316,
+        "uptime_s": 131.5,
+        "robot_truth": {
+          "x": 7.793,
+          "y": 6.603,
+          "theta_deg": 149.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 95,
+      "captured_utc": "2026-10-26T02:15:23.220480+00:00",
+      "elapsed_s": 19.075016153999968,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1318,
+        "uptime_s": 131.7,
+        "robot_truth": {
+          "x": 7.664,
+          "y": 6.65,
+          "theta_deg": 163.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 96,
+      "captured_utc": "2026-10-26T02:15:23.420280+00:00",
+      "elapsed_s": 19.27481778099991,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1320,
+        "uptime_s": 131.9,
+        "robot_truth": {
+          "x": 7.544,
+          "y": 6.662,
+          "theta_deg": 177.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 97,
+      "captured_utc": "2026-10-26T02:15:23.621077+00:00",
+      "elapsed_s": 19.475615997999967,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1322,
+        "uptime_s": 132.1,
+        "robot_truth": {
+          "x": 7.434,
+          "y": 6.651,
+          "theta_deg": -170.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 98,
+      "captured_utc": "2026-10-26T02:15:23.822161+00:00",
+      "elapsed_s": 19.676698764000093,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1324,
+        "uptime_s": 132.3,
+        "robot_truth": {
+          "x": 7.344,
+          "y": 6.623,
+          "theta_deg": -160.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 99,
+      "captured_utc": "2026-10-26T02:15:24.021902+00:00",
+      "elapsed_s": 19.87644097800012,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1326,
+        "uptime_s": 132.5,
+        "robot_truth": {
+          "x": 7.268,
+          "y": 6.586,
+          "theta_deg": -151.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 100,
+      "captured_utc": "2026-10-26T02:15:24.222558+00:00",
+      "elapsed_s": 20.07709544399995,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1328,
+        "uptime_s": 132.7,
+        "robot_truth": {
+          "x": 7.207,
+          "y": 6.545,
+          "theta_deg": -143.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 101,
+      "captured_utc": "2026-10-26T02:15:24.422983+00:00",
+      "elapsed_s": 20.27752174000011,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1330,
+        "uptime_s": 132.9,
+        "robot_truth": {
+          "x": 7.16,
+          "y": 6.503,
+          "theta_deg": -137.3
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 102,
+      "captured_utc": "2026-10-26T02:15:24.622827+00:00",
+      "elapsed_s": 20.477366272999916,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1332,
+        "uptime_s": 133.1,
+        "robot_truth": {
+          "x": 7.121,
+          "y": 6.461,
+          "theta_deg": -131.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 103,
+      "captured_utc": "2026-10-26T02:15:24.822780+00:00",
+      "elapsed_s": 20.677318714999956,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1334,
+        "uptime_s": 133.3,
+        "robot_truth": {
+          "x": 7.089,
+          "y": 6.418,
+          "theta_deg": -125.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 104,
+      "captured_utc": "2026-10-26T02:15:25.023448+00:00",
+      "elapsed_s": 20.87798494499998,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1336,
+        "uptime_s": 133.5,
+        "robot_truth": {
+          "x": 7.067,
+          "y": 6.383,
+          "theta_deg": -121.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 105,
+      "captured_utc": "2026-10-26T02:15:25.223292+00:00",
+      "elapsed_s": 21.077833733000034,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1338,
+        "uptime_s": 133.7,
+        "robot_truth": {
+          "x": 7.045,
+          "y": 6.341,
+          "theta_deg": -116.5
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 106,
+      "captured_utc": "2026-10-26T02:15:25.423661+00:00",
+      "elapsed_s": 21.278198732999954,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1340,
+        "uptime_s": 133.9,
+        "robot_truth": {
+          "x": 7.032,
+          "y": 6.312,
+          "theta_deg": -113.8
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 107,
+      "captured_utc": "2026-10-26T02:15:25.624402+00:00",
+      "elapsed_s": 21.47894518599992,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1342,
+        "uptime_s": 134.1,
+        "robot_truth": {
+          "x": 7.018,
+          "y": 6.278,
+          "theta_deg": -111.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 108,
+      "captured_utc": "2026-10-26T02:15:25.824392+00:00",
+      "elapsed_s": 21.67893158300012,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1344,
+        "uptime_s": 134.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -108.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 109,
+      "captured_utc": "2026-10-26T02:15:26.024531+00:00",
+      "elapsed_s": 21.879070086999945,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1346,
+        "uptime_s": 134.5,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -100.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 110,
+      "captured_utc": "2026-10-26T02:15:26.225111+00:00",
+      "elapsed_s": 22.07964908200006,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1348,
+        "uptime_s": 134.7,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -88.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 111,
+      "captured_utc": "2026-10-26T02:15:26.424928+00:00",
+      "elapsed_s": 22.279464942999994,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1350,
+        "uptime_s": 134.9,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -78.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 112,
+      "captured_utc": "2026-10-26T02:15:26.625180+00:00",
+      "elapsed_s": 22.47972147900009,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1352,
+        "uptime_s": 135.1,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -69.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 113,
+      "captured_utc": "2026-10-26T02:15:26.825487+00:00",
+      "elapsed_s": 22.68002328700004,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1354,
+        "uptime_s": 135.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -61.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 114,
+      "captured_utc": "2026-10-26T02:15:27.025804+00:00",
+      "elapsed_s": 22.880340786000033,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1356,
+        "uptime_s": 135.5,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -54.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 115,
+      "captured_utc": "2026-10-26T02:15:27.226278+00:00",
+      "elapsed_s": 23.08081547300003,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1358,
+        "uptime_s": 135.7,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -48.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 116,
+      "captured_utc": "2026-10-26T02:15:27.426106+00:00",
+      "elapsed_s": 23.28064512800006,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1360,
+        "uptime_s": 135.9,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -43.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 117,
+      "captured_utc": "2026-10-26T02:15:27.626296+00:00",
+      "elapsed_s": 23.480831640000133,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1362,
+        "uptime_s": 136.1,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -38.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 118,
+      "captured_utc": "2026-10-26T02:15:27.826467+00:00",
+      "elapsed_s": 23.681004792000067,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1364,
+        "uptime_s": 136.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -34.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 119,
+      "captured_utc": "2026-10-26T02:15:28.026555+00:00",
+      "elapsed_s": 23.881090464999943,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1366,
+        "uptime_s": 136.5,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -29.6
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 120,
+      "captured_utc": "2026-10-26T02:15:28.226838+00:00",
+      "elapsed_s": 24.081373542999927,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1368,
+        "uptime_s": 136.7,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -26.9
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 121,
+      "captured_utc": "2026-10-26T02:15:28.427176+00:00",
+      "elapsed_s": 24.28171255699999,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1370,
+        "uptime_s": 136.9,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -24.1
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 122,
+      "captured_utc": "2026-10-26T02:15:28.627347+00:00",
+      "elapsed_s": 24.48188363500003,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1372,
+        "uptime_s": 137.1,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -21.4
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 123,
+      "captured_utc": "2026-10-26T02:15:28.828455+00:00",
+      "elapsed_s": 24.682992710999997,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1374,
+        "uptime_s": 137.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -18.7
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 124,
+      "captured_utc": "2026-10-26T02:15:29.027864+00:00",
+      "elapsed_s": 24.882399865000025,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1376,
+        "uptime_s": 137.5,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -16.0
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 125,
+      "captured_utc": "2026-10-26T02:15:29.228181+00:00",
+      "elapsed_s": 25.082717854000066,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1378,
+        "uptime_s": 137.7,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 3
+    },
+    {
+      "frame": 126,
+      "captured_utc": "2026-10-26T02:15:29.429168+00:00",
+      "elapsed_s": 25.283703489000118,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1380,
+        "uptime_s": 137.9,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 4
+    },
+    {
+      "frame": 127,
+      "captured_utc": "2026-10-26T02:15:29.629657+00:00",
+      "elapsed_s": 25.484194278000132,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1382,
+        "uptime_s": 138.1,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 4
+    },
+    {
+      "frame": 128,
+      "captured_utc": "2026-10-26T02:15:29.830535+00:00",
+      "elapsed_s": 25.685074977000113,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1384,
+        "uptime_s": 138.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 129,
+      "captured_utc": "2026-10-26T02:15:30.030210+00:00",
+      "elapsed_s": 25.88474734700003,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1386,
+        "uptime_s": 138.5,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 130,
+      "captured_utc": "2026-10-26T02:15:30.231020+00:00",
+      "elapsed_s": 26.085556034000092,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1388,
+        "uptime_s": 138.7,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 131,
+      "captured_utc": "2026-10-26T02:15:30.431827+00:00",
+      "elapsed_s": 26.286363455000128,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1390,
+        "uptime_s": 138.9,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 132,
+      "captured_utc": "2026-10-26T02:15:30.633381+00:00",
+      "elapsed_s": 26.487922133999973,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1392,
+        "uptime_s": 139.1,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 133,
+      "captured_utc": "2026-10-26T02:15:30.831652+00:00",
+      "elapsed_s": 26.68618947799996,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1394,
+        "uptime_s": 139.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 134,
+      "captured_utc": "2026-10-26T02:15:31.031012+00:00",
+      "elapsed_s": 26.885550450999972,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1396,
+        "uptime_s": 139.5,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 135,
+      "captured_utc": "2026-10-26T02:15:31.232787+00:00",
+      "elapsed_s": 27.087323925999954,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1398,
+        "uptime_s": 139.7,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 136,
+      "captured_utc": "2026-10-26T02:15:31.431328+00:00",
+      "elapsed_s": 27.285864790000005,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1400,
+        "uptime_s": 139.9,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 137,
+      "captured_utc": "2026-10-26T02:15:31.631791+00:00",
+      "elapsed_s": 27.486326995000127,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1402,
+        "uptime_s": 140.1,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    },
+    {
+      "frame": 138,
+      "captured_utc": "2026-10-26T02:15:31.834652+00:00",
+      "elapsed_s": 27.689192031999937,
+      "truth": {
+        "mode": "nav-static",
+        "seed": 42,
+        "slip": 0.0,
+        "tick_hz": 10.0,
+        "tick_n": 1404,
+        "uptime_s": 140.3,
+        "robot_truth": {
+          "x": 7.008,
+          "y": 6.248,
+          "theta_deg": -14.2
+        },
+        "terminated_events": 0,
+        "clients": 1
+      },
+      "event_count": 7
+    }
+  ],
+  "fps": 5,
+  "video_duration_s": 27.8,
+  "wall_duration_s": 27.75580438499992,
+  "ffmpeg_exit_code": 0,
+  "limitations": [
+    "Not a physical camera video or desktop screen capture.",
+    "Rendered live from simulator truth and actual agent log; not an offline replay."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "ray_count_verified_from_recorded_message": 720,
+  "range_max": 5.0,
+  "topic_message_counts": {
+    "/map": 65,
+    "/odom": 3257,
+    "/scan": 3257,
+    "/tf": 19532
+  },
+  "sqlite_integrity": "ok"
+}

@@ -1,0 +1,421 @@
+{
+  "scope": "Current document/evidence consistency; not course acceptance certification.",
+  "references": [
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week1_environment.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week1_live_sim_v3.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week2_sim_summary.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week2_sim_trajectory.csv",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/SLAM质量改进记录.md",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "outputs/slam_improvement/",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week3_slam/20261026T030832Z/",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week3_localization_selected.csv",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week3_localization_matrix.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week4_repeated_route.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week4_timeout/20261026T015322Z/trials.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "data/coco_indoor20_v2/dataset.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week5_indoor20_v2_metrics.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "outputs/week5_indoor20_v2/",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week6_ros_lab_v3/lab_result.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week6_controlled_mobility.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week6_controlled_error_components.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week6_to_week8_auditor_bridge.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week7_six_instructions_v2_20261026.jsonl",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week7_six_instructions_v2_review.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week7_randomness_v2_20261026.jsonl",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week7_randomness_summary_20261026.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week8_actual_map_eight_cases.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week8_six_instruction_dry_regression.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week8_trap_paired_12cells_20261026.csv",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week8_trap_pair_summary.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week8_integration/20261026T021310Z/",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "docs/ESP32实车验证.md",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week8_task_contract_replay_v3.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "config/task_contracts_v3.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week34_slam_map/20261026_slam_amcl_v1/",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week34_slam_map_validation_v1.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/agent/execution_trace.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/agent/media_validation.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "outputs/week8/v3_slam_live_sim.mp4",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week3_evidence_linked_points.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/第3周_定位不可信点与统计.md",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week6_stress_v1.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week6_ros_after_clock_guard_v1/lab_result.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week6_to_week8_strict_bridge_v2.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week34_slam_map/20261026_safe_return_precise_v4/",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/failed_items_remediation_20261026.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "config/week34_safe_return_precise_v4.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week6_dense_frame_v2/lab_result.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/raw/week6_frame_v2_regression/lab_result.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week6_dense_frame_v2_auditor_bridge.json",
+      "exists": true
+    },
+    {
+      "table": "evidence/progress.csv",
+      "path": "evidence/reports/week6_frame_v2_regression_bridge.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/reports/week8_actual_map_eight_cases.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/reports/week34_costmap_boundary_check.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/initialization/costmap_snapshot.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/raw/week6_ros_lab_v3/lab_result.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/raw/week6_controlled_mobility.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "config/week6_controlled_tau_rules.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/reports/week6_to_week8_auditor_bridge.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "ros2_ws/src/nav_g03/config/nav2_params.yaml",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "tests/test_protocol_recovery.py",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "evidence/raw/week4_timeout/20261026T015322Z/trials.json",
+      "exists": true
+    },
+    {
+      "table": "docs/rules_traceability.csv",
+      "path": "config/week8_auditor_world_bound_v2.json",
+      "exists": true
+    }
+  ],
+  "checks": {
+    "week6_ros_10_checks": true,
+    "week6_auditor_6_checks": true,
+    "original40_replayed": true,
+    "rejected_plans_never_executed": true,
+    "api_key_file_private": true,
+    "v3_live_sim_checks": true,
+    "v3_video_verified": true,
+    "two_rounds_six_trials_preserved": true,
+    "map_costmap_boundary_checked": true,
+    "semantic_stress_expected_checks": true,
+    "historical_dense_failure_preserved": true,
+    "modified_mapper_ROS_regression": true,
+    "strict_semantic_bridge": true,
+    "original_localization_points_traced": true,
+    "new_safe_route_six_truth_passes": true,
+    "all_four_navigation_versions_preserved": true,
+    "simultaneous_dense_pair_nine_checks": true,
+    "frame_registration_legacy_ROS_regression": true,
+    "frame_registration_auditor_bridges": true
+  },
+  "problems": [],
+  "all_checks_passed": true,
+  "sha256": {
+    "README.md": "a74293c8e91e251a082918db5ff6fcb050f6f9dbab4e339c22fbe1b95869c642",
+    "config/task_contracts_v3.json": "4d65acaee51448a6d3a05119557a1b076bdfa3f6a196b4191ea1fd55a00f2d36",
+    "config/week34_precise_protocol_clarification.json": "7c72c8e6c7388895646970e2f33a0e37bb7f140a0f7b430df1792e1865282877",
+    "config/week34_safe_return_precise_v3.json": "cc0e422f83a46d0d93dd34612882157c7843d41d94f5bfee3b57ff0f8782f3c3",
+    "config/week34_safe_return_precise_v4.json": "ff03cbfb98426f5b917981cf89910f4ff32ec19d93e84ff2e726380b3026b2cd",
+    "config/week34_safe_return_v2.json": "20958ead697a8f48309a72d50350a5b867a76ed7d5ddd0f7da9f18ec6c30f116",
+    "config/week34_slam_map_validation_v1.json": "f1913d68c8939652b854651b3f2aab32e49dd7057689787c99e3eb513f1f4cc2",
+    "config/week6_controlled_lab_protocol.json": "7005fb4f8ead24c65f426df53fb133710958e0721f6bcf74120669b28ad660c4",
+    "config/week6_controlled_tau_rules.json": "7e332f1c3440a67f5698720714180cfecd1dcd9e08beded494a41e215cc4be3e",
+    "config/week6_dense_frame_protocol_v2.json": "fe586fd2fef75e5f490189f1da325f35c303e187158420de7495b3463c5a3ab2",
+    "config/week6_stress_protocol_v1.json": "3f448a633da8222a71fd9875a9a7e8c986533f586efb0f0874bcd816fe45e581",
+    "config/week8_auditor_world_bound_v2.json": "772cacad2bab511113f655c5e7b3fb1188665aaae09e06bf111105ce598bc673",
+    "data/coco_indoor20_v2/dataset.json": "07402e515c8d3af560a0cc84b42896529ff4a87ae529916c76e22451741f85e3",
+    "docs/ESP32实车验证.md": "16569bc8237c1cabe948697df2b6b224021646b7893f6c20f9d508502bcf3eb7",
+    "docs/course_map.md": "e8099f198bb43506a9e860ca8975fefdaace62cb6808190fedcc78207786e292",
+    "docs/old_results_audit.md": "da7a87662a8aeba23514ed0ec95619df59972ef16924fd2d1971fc1332ef5df1",
+    "docs/rebuild_procedure.md": "c192bd4f1208716062a7246872417a2544d18f9859a310c8b8cc637513522758",
+    "docs/week5_data_format.md": "b5445f860878c490cb46e014a8763897b7ee702ed08f362745b05407cf46e2da",
+    "docs/weeks/week01.md": "1134a13c1cffc190d386cc6516fd80b98b2769e28cc6bae19992442a18548467",
+    "docs/weeks/week02.md": "8138cf869e04704afc6554bf3f2c3cc68b4932063243813aebef64b8c6771a12",
+    "docs/weeks/week03.md": "40b235bccb23b700ebd765c58ad92bde38a1cabc98c0c85789393c771afdfb6a",
+    "docs/weeks/week04.md": "329dac5aace98960eb0682f9788b0b48e1217da498f13bb64c12304706d910b6",
+    "docs/weeks/week05.md": "b0db7db93c3026833fae392992021608d26608dfb02508523128a4fc9040d64a",
+    "docs/weeks/week06.md": "9a90a1d2b369b686bb8354e51024976b27a70d1890d955c718e7cd79e265ae5c",
+    "docs/weeks/week07.md": "fbc65281951b0f5ab35e3aab6edc376f310d22580623f48fe6f857ecee9272a9",
+    "docs/weeks/week08.md": "c2ecd74922c4e4a3013e1a4b604a50ee024f597f8aa25efd94a902d981458bf1",
+    "docs/前八周交付清单.md": "e22e512f0a35faca3b1a61e79be3ed59e043e44c8d2b72ee47c19fe26e423e33",
+    "evidence/raw/alignment_tests_20261026.log": "00427a2a1fb9dfd963e81d7f23d3a8d74d1e90dda060c8e43d085d802e3ff22a",
+    "evidence/raw/continuation_tests_20261026.log": "e145999459b98796fb958095afe338391c1a0081952088ee617c77a18994d2f7",
+    "evidence/raw/failed_items_fix_tests_20261026.log": "afa989e6c3083d1b808da7b95a44573853a83c5a2ba7c97d9dd6887ea9fd86df",
+    "evidence/raw/week1_environment.json": "6f9130dffa9cf6b7b1bbc5d9ae99fa992a009f3a369d0792d4ad80c550576fb3",
+    "evidence/raw/week1_live_sim_v3.json": "d90947eb7bc4ddd730daeadabaf24386a70820b006c73bba62c2a13ba7bf5791",
+    "evidence/raw/week2_sim_summary.json": "3e963535118e698dc1de1a13a2bcc35f25211f6c785a12d534edf5d23d2b4c24",
+    "evidence/raw/week2_sim_trajectory.csv": "8515dfd621e57ae656c79532364883d4f8f42bd6529e5b1cca53d430f03ac8e4",
+    "evidence/raw/week3_localization_matrix.json": "0f3afbdcc1a10ced78684ffacdaa81a2e67ef49b8bd889edd91c99e54e9ca9f2",
+    "evidence/raw/week3_localization_selected.csv": "5c04088c4f6b9ca7e9bef69bbf1cecfda6d6f747c9991238421d33d804d582c5",
+    "evidence/raw/week4_repeated_route.json": "2bc967c994ce3c2a923ecda53735667873f5e23698b10796d21ae07e683b3672",
+    "evidence/raw/week4_timeout/20261026T015322Z/trials.json": "6df466c8d2b4ab7f2326a961ffffc2470d8661afcf5b2c545d99e07d2cf97d5c",
+    "evidence/raw/week6_controlled_mobility.json": "78948a07c94e19c7221eca86af076e43b777f025dc42a3322e6251956271934b",
+    "evidence/raw/week6_dense_frame_v2/lab_result.json": "9a61e1937f0d5fd54fe9cff149533069f48c03921002a233cdf0aa405ee50ab8",
+    "evidence/raw/week6_frame_v2_regression/lab_result.json": "c88e3fbf3e3646deec4beb6aa3c0e5a2375dc79f982f5e6cbc6d3fa9cd7d1b73",
+    "evidence/raw/week6_ros_after_clock_guard_v1/lab_result.json": "fdf0f6773aa5d964a1d68adbff29305e64ddbc14ca9f38ddb766a4da96637421",
+    "evidence/raw/week6_ros_lab_v3/lab_result.json": "c789766b98a500323f3dd6257f3bbf3ba7908ed96199a6fb6886885e846c69d7",
+    "evidence/raw/week6_stress_v1.json": "3c773c41388d1cca571624cbfb02bfbf246894402573db7d8d7c54c80140c72b",
+    "evidence/raw/week7_randomness_v2_20261026.jsonl": "53005ad433645b7604ee488082a0d901c50ad799f388105d1475275104e018ed",
+    "evidence/raw/week7_six_instructions_v2_20261026.jsonl": "d4947ede404f7541bc21605ba7de5299fc3fc0b1f88da37fe06cc6cb7a4fcb4f",
+    "evidence/raw/week8_trap_paired_12cells_20261026.csv": "12e2389f72984dc9ad89813fe4ea3ab7d8c8d1358433aec89eb6ff2739ea4ef0",
+    "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/agent/execution_trace.json": "98017b30acc5442c90334991bec87a4996442fc5cf11e5f7117339120ff3049c",
+    "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/agent/media_validation.json": "4e776be8658a3a9695a486426c95a836d906d40e35c976b6a55c3e3a47978651",
+    "evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/initialization/costmap_snapshot.json": "40c3d12a9079e2f59e65547c000bb24cd715df793ecc5ed99f2d486cbb9d0e23",
+    "evidence/reports/SLAM地图定位导航复核.md": "a40175c923ace0d83166e60baf7039bb5ff9d3d8a1cfb3d11f5ecb36e132cad4",
+    "evidence/reports/SLAM质量改进记录.md": "7c6b9fa020a1a73f1e54c82a1eb5cf41ddea642f629ed82f6e44492c1ef24789",
+    "evidence/reports/failed_items_remediation_20261026.json": "b330ac587aa65e604d10597cca049f0aa6befe579d2d0627aa6819e99feeb0ea",
+    "evidence/reports/week34_costmap_boundary_check.json": "f16aefc6fc07aedbe95b3d767ce0c28cc6a4e8b86029de03f87502b8941a8821",
+    "evidence/reports/week34_slam_map_validation_v1.json": "8080249f2992cf154906aecb530464c5e2e971174c953e6cebc7ad3455cd406e",
+    "evidence/reports/week3_evidence_linked_points.json": "ae76c15f2e4b9ecafa7d0cc67790fbc8d7a873b0341673fe09c53794f0ebd965",
+    "evidence/reports/week5_indoor20_v2_metrics.json": "09b64c06db26980ce02a688571b8c312db3981b06f8861b8eae26be44df11a12",
+    "evidence/reports/week6_controlled_error_components.json": "14eb0418b9eb87c9b8183cec2aa03d78b63151f0c8bc38fae7a8f4f3184e6870",
+    "evidence/reports/week6_dense_frame_v2_auditor_bridge.json": "11e25b0c65579ef44f49211de811fe81291ffe785b72895f35e660cfab8ebb2d",
+    "evidence/reports/week6_frame_v2_regression_bridge.json": "1a33f8977b1cbb0f1ca0c4f68b0e50fbd1572a262c6e1efd97c9089afde498dd",
+    "evidence/reports/week6_to_week8_auditor_bridge.json": "d2dd7daa284efdc7a4565ea1533ea1cb03dadf74c89b7585fc38877fb4da4ebc",
+    "evidence/reports/week6_to_week8_strict_bridge_v2.json": "12a4a093ee41452aa77298fc3fa8f74eeb7d01447d461d44cd00fd4c3395e02f",
+    "evidence/reports/week7_randomness_summary_20261026.json": "74671da6f8c942f1afee27446d2a2b0232c314509ff9e8ae9c41a0ea8f9a5c2b",
+    "evidence/reports/week7_six_instructions_v2_review.json": "d0cdab599b263e1ff28693b6570bc479963ae16e12c6c492c9ad4242769b00a8",
+    "evidence/reports/week7_to_slam_waypoint_migration.json": "33a45363025bba90f412a3f0dfa18ebd7e2835eba4e26d1094c70430a5bd7511",
+    "evidence/reports/week8_actual_map_eight_cases.json": "137ede5f4ae2872cc1b8bbe1c8b9ebf485b37b6b89fd3345969662c156698125",
+    "evidence/reports/week8_six_instruction_dry_regression.json": "302e2e0cff92c9eff86904fbfbda5590549d9fa431f58f1c3eb6ad7a9a637233",
+    "evidence/reports/week8_task_contract_replay_v3.json": "69be36e22764476c3f2c71f062c6d47781036d149b61b305dec2ba18c8ece5f6",
+    "evidence/reports/week8_trap_pair_summary.json": "30631f25dac692fe30ff515e1123125b083e2ec5eee660b97d0cae2396a446ee",
+    "evidence/reports/命名点地图迁移核对.md": "2d767d51585a054cb867c970ad4212699284c8d2c9742ccde4b41cf7dbe786c6",
+    "evidence/reports/未通过项修复与重测.md": "42270890cd5d8ab6726654ece3c1313929d2efe54d87ec77a3ec6c206044a7b8",
+    "evidence/reports/第3周_定位不可信点与统计.md": "8a3fb61085d27abcada13e876dccfd0550abeedec82bd3ab2a1ecd959d487e46",
+    "evidence/reports/第6周_受控语义地图验证.md": "c6bdf6d84f2aadd8ac545023afa0a1b83257bf7d5a3e29f172916a9d5d4f7e68",
+    "evidence/reports/第6周_多站位与登记边界.md": "7a14ba65de604ef3bc782ccb09d1d7495f112736b4400782c1fcfcb77bb8f45c",
+    "evidence/reports/第8周_V3地图仿真执行.md": "9ba57df6412e4b49c5b3ed26f3faaea1afecf68ca2abda6b4ba1ea41c747c042",
+    "evidence/reports/第8周_计划完整性修订.md": "77f6616bf6a4fff76e2fa0798543e52c56f771fd889d69219ebf10b0fe58d8b5",
+    "outputs/week8/v3_slam_live_sim.mp4": "b1d8e5e5198db5d10b55b06919ac0d0ba5bbfdc2b425c1ced86962d5b9b93164",
+    "ros2_ws/src/nav_g03/config/nav2_params.yaml": "546184a46fb8fc4df67950c145ff5eac371a9736481eccf78fb3c31820c39a26",
+    "scripts/check_week6_auditor_bridge.py": "f30ba3df3306b506501fc7355a51c81ab96e08489ab6fcf3c52add1218bf639a",
+    "scripts/export_localization_evidence.py": "d4b278955a33ea26a57b73c8ae149ba5e9e86753ecdd3e70a5a4e1dab81b691f",
+    "scripts/finalize_v3_slam_evidence.py": "30eb94e0f7d1232ae7b2c684a0d952c9f17f7705b54ef6d94608bba116121d59",
+    "scripts/prepare_v3_slam_integration.py": "8acf2e2d20b2b1dc436a88bb792594a829482dc8713315bfbf1001036ab72f13",
+    "scripts/record_v3_slam_integration.py": "e93da8feafab095dc2c078ab84af9357e421981b7d2be3a566b4a1069518b64f",
+    "scripts/render_dense_registration_fix.py": "5aebd8ce74df29d4933d3d648b9b1f2a17e69aa82a4bac10457c8acc091ab207",
+    "scripts/run_dense_semantic_ros_lab.py": "4a827fc3a93df2c5ab8cfd6e0e312691f9a576610fa6682f746862cc3c9aafbe",
+    "scripts/run_semantic_stress.py": "9ba8174100eff3026600b1c775aa96b7f3eab00223ef432fe7536b59fa83fa9b",
+    "scripts/run_slam_map_benchmark.py": "50e5e239a8abcb044a34a3ae386468eb8f5bfe011f6cb20a8c3d4a1ddc0beed7",
+    "scripts/run_slam_map_validation.sh": "b236c5e13c032220f5c229b2ca6a8ae23fa929a83650bc4943ac3df7c9206f48",
+    "scripts/run_v3_slam_validation.sh": "aa83177670b21c0f44be30f77973a55f0ecda9bd3f0455dc31b8c0f884b2161a",
+    "scripts/run_week6_lab.sh": "cca9aa5fc2a15af2ae94136a7600e1ecb74b299630c5594ed79ff7c00aca3b33",
+    "scripts/run_week6_ros_lab.py": "6e6539a15e0688e5edeb1fdb67fd880a3d9fc33e4aba7be2fce5a3ef575d7361",
+    "scripts/semantic_mapper_node.py": "bc7216d81c86b222c46116ba73ec75089665251f8b4cf4482f1108c36eaf9fb0",
+    "scripts/summarize_failed_item_fixes.py": "b9bb425a2bbc0ed352a641a0766647e29f1cfe34ab4d7febd163c5fdff5c1709",
+    "src/course_audit/agent_ros_node.py": "366a3636a9268ef83fee5eb8fd802d60a46af737b0835f4422b28b8c477e5e63",
+    "src/course_audit/semantic_registration.py": "1defeaafd16bed9f725a23a48a3686e16bf356fd23ab6ec6117c90d3a7855185",
+    "src/course_audit/semantic_world.py": "2eaf1a9c1257145d2e4680815206606f76fca0f63ec873878e440d14020aea69",
+    "src/course_audit/state_machine.py": "64bafbfc8b6a00a65aa5231b383ce25a5084716c96d9fc51005d5b4673e17212",
+    "src/course_audit/task_contract.py": "3dbe56ae492188d8b48ab756e911cc3fd8c2c2edce0b21585723251702aa8d60",
+    "tests/test_frame_registration.py": "a11512c945c4e0a16123196e85329f83a9f743cf2ba666968375e497144a2c94",
+    "tests/test_protocol_recovery.py": "1b2daf99d29973eeece26c4638fe69cf9497147e33cae1491ad07d2527771e1b",
+    "验收进度与结果.md": "d99aa698e143787600b04b6a805e5cd8df4925380923092091d0df6f795a7d82"
+  }
+}

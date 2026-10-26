@@ -1,0 +1,10 @@
+{
+  "dataset_version": "indoor20_v2",
+  "chosen_confidence": 0.5,
+  "nms_iou": 0.45,
+  "evaluation_iou": 0.5,
+  "purpose": "candidate semantic registration, emphasizing fewer false registrations",
+  "reason": "Compared with0.3,0.5 reduces FP11 to1; precision94.1%, recall22.2%.0.7 has lower recall15.3%. Detection completeness is insufficient for autonomous semantic coverage.",
+  "selection_stage": "engineering choice after reviewing this frozen20-scene evaluation, requires later independent verification",
+  "no_physical_camera_claim": true
+}

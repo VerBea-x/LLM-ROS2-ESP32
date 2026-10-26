@@ -1,0 +1,14 @@
+{
+  "scope": "Clarification only; frozen protocols and raw runs unchanged.",
+  "affected_versions": [
+    "week34_safe_return_precise_v3",
+    "week34_safe_return_precise_v4"
+  ],
+  "precedence": "parameter_overrides takes precedence over inherited descriptive top-level fields. Actual params_snapshot.yaml is authoritative.",
+  "legacy_inherited_fields": {
+    "amcl_max_beams": 60,
+    "limits": "Inherited text mentions60beams"
+  },
+  "effective_amcl_max_beams": 90,
+  "reason": "The extension protocol kept inherited baseline descriptions; overrides were declared before experiments and applied at startup."
+}

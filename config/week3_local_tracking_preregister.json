@@ -1,0 +1,8 @@
+{
+ "reference":"720rays slip0.05 range4.9 baseline matching run20261026T024909Z",
+ "hypothesis":"Default wide matching searches can lock onto repeated circular/wall features. At10Hz and0.3m/s,5% odom error per accepted scan is small; constrain local correction around the predicted pose.",
+ "intervention":"Local translation search dimension0.2m; coarse angle offset0.1rad with0.5deg steps; tighter odom variance priors; sensor-pose reference; disable loop closures for diagnostic route.",
+ "preserved":"seed42,720 analytic rays, slip0.05, threshold4.9,0.05m grid, identical route",
+ "evidence":"Record raw ROS bag in addition to snapshots, route, map pair and fixed-frame error metrics.",
+ "limits":"Multi-setting engineering change; no causal attribution to one parameter and no kidnapping recovery claim. Actual scans/odom only; no truth pose injected into SLAM."
+}

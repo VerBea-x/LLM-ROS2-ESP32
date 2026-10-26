@@ -1,0 +1,32 @@
+{
+  "cup": {
+    "tau_s": 4.0,
+    "observed_training_min_interval_s": 8,
+    "observation_evidence_id": "SIM_MOBILITY_TRAIN_handheld",
+    "training_event_count": 29
+  },
+  "bottle": {
+    "tau_s": 4.0,
+    "observed_training_min_interval_s": 8,
+    "observation_evidence_id": "SIM_MOBILITY_TRAIN_handheld",
+    "training_event_count": 29
+  },
+  "backpack": {
+    "tau_s": 4.0,
+    "observed_training_min_interval_s": 8,
+    "observation_evidence_id": "SIM_MOBILITY_TRAIN_handheld",
+    "training_event_count": 29
+  },
+  "person": {
+    "tau_s": 1.5,
+    "observed_training_min_interval_s": 3,
+    "observation_evidence_id": "SIM_MOBILITY_TRAIN_person",
+    "training_event_count": 73
+  },
+  "chair": {
+    "tau_s": 15.0,
+    "observed_training_min_interval_s": 30,
+    "observation_evidence_id": "SIM_MOBILITY_TRAIN_furniture",
+    "training_event_count": 7
+  }
+}

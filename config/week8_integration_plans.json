@@ -1,0 +1,19 @@
+{
+  "去P2实验点然后停下": {
+    "tool_calls": [
+      {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 7,
+          "y": 6,
+          "label": "P2_demo"
+        }
+      },
+      {
+        "name": "stop",
+        "arguments": {}
+      }
+    ],
+    "source_kind": "frozen_handwritten_integration_proposal_not_llm"
+  }
+}

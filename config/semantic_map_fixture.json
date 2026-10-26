@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "fixture_only": true,
+  "frame_id": "map",
+  "items": [
+    {"label": "W1_door", "class": "door", "x_m": 2.0, "y_m": 2.0,
+     "last_seen_s": 95.0, "tau_s": 120.0, "evidence_id": "SYNTHETIC_FIXTURE"},
+    {"label": "W3_podium", "class": "table", "x_m": 7.0, "y_m": 7.0,
+     "last_seen_s": 0.0, "tau_s": 30.0, "evidence_id": "SYNTHETIC_FIXTURE"}
+  ]
+}

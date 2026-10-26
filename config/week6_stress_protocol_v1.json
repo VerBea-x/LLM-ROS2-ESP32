@@ -1,0 +1,14 @@
+{
+ "version":"week6_stress_v1",
+ "source_kind":"offline_controlled_synthetic_geometry_and_registration",
+ "camera":{"width":640,"fx":320,"cx":320},
+ "stations":[[2,2,0],[6,2,90],[6,6,180],[2,6,270]],
+ "pixel_columns":[220,320,420],
+ "exact_geometry_error_max_m":0.000001,
+ "orientation_bias_degrees":[5,20],
+ "same_class_distances_m":[0.6,1.2],
+ "merge_radius_m":1.0,
+ "clock_test":"later observation then earlier observation must reject without mutation",
+ "ambiguity_test":"map with two same-label items must reject before conversion; no dictionary overwrite",
+ "limits":["Synthetic offline experiment, not new camera or ROS data.","Dense same-class objects within merge radius remain unresolved without identity tracking.","Geometry success under known virtual poses does not prove real calibration or whole-map localization."]
+}

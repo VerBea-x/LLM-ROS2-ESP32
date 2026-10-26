@@ -1,0 +1,178 @@
+{
+  "source_kind": "recorded_synthetic_ROS_observation_to_auditor_replay",
+  "source_sha256": "c88e3fbf3e3646deec4beb6aa3c0e5a2375dc79f982f5e6cbc6d3fa9cd7d1b73",
+  "implementation_version": "strict_semantic_world_v2",
+  "checks": [
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.9997560380435395,
+          "y": 2.9843826238111397,
+          "label": "cup__001"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `cup__001` 在边界内且未落入已知占据区；age=0.6s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "cup__001",
+          "target_m": [
+            2.9997560380435395,
+            2.9843826238111397
+          ],
+          "age_s": 0.6127879619598389,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 3.298274993135947,
+          "label": "bottle__001"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `bottle__001` 在边界内且未落入已知占据区；age=1.9s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "bottle__001",
+          "target_m": [
+            2.95447997803503,
+            3.298274993135947
+          ],
+          "age_s": 1.8525028228759766,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 2.701725006864053,
+          "label": "backpack__001"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `backpack__001` 在边界内且未落入已知占据区；age=1.2s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "backpack__001",
+          "target_m": [
+            2.95447997803503,
+            2.701725006864053
+          ],
+          "age_s": 1.216355800628662,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.9997560380435395,
+          "y": 2.9843826238111397,
+          "label": "cup__001"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `cup__001` 已过期；age=8.0s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "cup__001",
+          "age_s": 8.013760089874268,
+          "tau_s": 4.0,
+          "last_seen_s": 1792991882.804287,
+          "now_s": 1792991890.818047
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 3.298274993135947,
+          "label": "bottle__001"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `bottle__001` 已过期；age=9.3s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "bottle__001",
+          "age_s": 9.253474950790405,
+          "tau_s": 4.0,
+          "last_seen_s": 1792991881.564572,
+          "now_s": 1792991890.818047
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 2.701725006864053,
+          "label": "backpack__001"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `backpack__001` 已过期；age=8.6s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "backpack__001",
+          "age_s": 8.61732792854309,
+          "tau_s": 4.0,
+          "last_seen_s": 1792991882.200719,
+          "now_s": 1792991890.818047
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true,
+  "limitations": [
+    "Offline bridge replay; not a continuously connected perception/navigation execution.",
+    "Map is the existing known-map simulation snapshot, not the improved SLAM map.",
+    "Synthetic movement-derived tau and declared simulated resources; no field measurements."
+  ]
+}

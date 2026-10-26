@@ -1,0 +1,2 @@
+EXPLICIT SIMULATED SENSOR VARIANT: rays=360; not physical lidar
+>>> 静态世界网关: seed=42 slip=0.05 tick=10Hz 起点真值=(8.08,6.24,88°) 永不reset

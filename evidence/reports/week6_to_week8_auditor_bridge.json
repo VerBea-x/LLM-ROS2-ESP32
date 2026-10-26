@@ -1,0 +1,177 @@
+{
+  "source_kind": "recorded_synthetic_ROS_observation_to_auditor_replay",
+  "source_sha256": "c789766b98a500323f3dd6257f3bbf3ba7908ed96199a6fb6886885e846c69d7",
+  "checks": [
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.9997560380435395,
+          "y": 2.9843826238111397,
+          "label": "cup"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `cup` 在边界内且未落入已知占据区；age=0.5s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "cup",
+          "target_m": [
+            2.9997560380435395,
+            2.9843826238111397
+          ],
+          "age_s": 0.5464208126068115,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 3.298274993135947,
+          "label": "bottle"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `bottle` 在边界内且未落入已知占据区；age=1.8s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "bottle",
+          "target_m": [
+            2.95447997803503,
+            3.298274993135947
+          ],
+          "age_s": 1.7980999946594238,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "fresh_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 2.701725006864053,
+          "label": "backpack"
+        }
+      },
+      "decision": {
+        "allowed": true,
+        "rule_id": "PASS",
+        "reason": "目标 `backpack` 在边界内且未落入已知占据区；age=1.2s≤τ=4.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+        "evidence": {
+          "label": "backpack",
+          "target_m": [
+            2.95447997803503,
+            2.701725006864053
+          ],
+          "age_s": 1.1965668201446533,
+          "tau_s": 4.0,
+          "battery_pct": 60.0,
+          "estimated_task_s": 30.0,
+          "remaining_budget_s": 60.0
+        },
+        "correction": ""
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.9997560380435395,
+          "y": 2.9843826238111397,
+          "label": "cup"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `cup` 已过期；age=8.1s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "cup",
+          "age_s": 8.146569967269897,
+          "tau_s": 4.0,
+          "last_seen_s": 1792986182.96778,
+          "now_s": 1792986191.11435
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 3.298274993135947,
+          "label": "bottle"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `bottle` 已过期；age=9.4s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "bottle",
+          "age_s": 9.39824914932251,
+          "tau_s": 4.0,
+          "last_seen_s": 1792986181.716101,
+          "now_s": 1792986191.11435
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    },
+    {
+      "snapshot": "stale_snapshot",
+      "call": {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 2.95447997803503,
+          "y": 2.701725006864053,
+          "label": "backpack"
+        }
+      },
+      "decision": {
+        "allowed": false,
+        "rule_id": "R2",
+        "reason": "语义目标 `backpack` 已过期；age=8.8s，τ=4.0s；当前可用目标为 []；请改选新鲜目标或重新观测。",
+        "evidence": {
+          "label": "backpack",
+          "age_s": 8.79671597480774,
+          "tau_s": 4.0,
+          "last_seen_s": 1792986182.317634,
+          "now_s": 1792986191.11435
+        },
+        "correction": "重新观测目标或改选仍在有效期内的目标。"
+      },
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true,
+  "limitations": [
+    "Offline bridge replay; not a continuously connected perception/navigation execution.",
+    "Map is the existing known-map simulation snapshot, not the improved SLAM map.",
+    "Synthetic movement-derived tau and declared simulated resources; no field measurements."
+  ]
+}

@@ -1,0 +1,5 @@
+rule_id,rule,evidence_basis,evidence_path,status
+R1,地图边界与占据检查,旧正反例保留；新增实际SLAM地图与Nav2膨胀costmap同点对照,evidence/reports/week8_actual_map_eight_cases.json;evidence/reports/week34_costmap_boundary_check.json;evidence/raw/week8_v3_slam/20261026_frozen_plan_v2/initialization/costmap_snapshot.json,同点原图0/costmap99；V3使用实际costmap快照，服务再实时复核；SLAM全场质量仍未通过
+R2,语义目标存在与age/tau,旧冻结世界保留；新增实际ROS合成检测登记+合成移动τ+新鲜/过期桥接,evidence/raw/week6_ros_lab_v3/lab_result.json;evidence/raw/week6_controlled_mobility.json;config/week6_controlled_tau_rules.json;evidence/reports/week6_to_week8_auditor_bridge.json,替代观测桥接6/6；真实场地τ与持续视觉导航闭环待补
+R3,Schema数值域和label坐标绑定,W4仿真限速footprint参数；W7Schema；坐标绑定回归测试,ros2_ws/src/nav_g03/config/nav2_params.yaml;tests/test_protocol_recovery.py,代码与虚拟点验证通过；非实车物理标定
+R4,电量和时间预算,课程15%阈值；仿真占位电量60%；导航时间和60秒服务预算,evidence/raw/week4_timeout/20261026T015322Z/trials.json;config/week8_auditor_world_bound_v2.json,仿真阈值与时间已验证；缺实车电量遥测

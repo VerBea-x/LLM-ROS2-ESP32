@@ -1,0 +1,9 @@
+{
+ "reference":"360rays slip0.05 run20261026T015523Z",
+ "hypothesis":"Karto scan matching includes ranges equal to its inclusive threshold. Simulator max-range returns5.0 mean no hit, so treating them as finite scan points introduces phantom moving5m circles.",
+ "local_source":"/opt/ros/humble/include/karto_sdk/Karto.h LocalizedRangeScan::Update uses math::InRange; OccupancyGrid::AddScan skips range>=maxRange",
+ "intervention":"Set max_laser_range4.9m, strictly below scanner range_max5.0m; leave sensor360, slip0.05 and route unchanged.",
+ "outcomes":["fixed-initial-frame occupancy metrics","mean and95th boundary distance","final SLAM pose vs independent simulator truth"],
+ "no_truth_into_slam":true,
+ "threshold_note":"No post-result coordinate fitting or new pass threshold; report paired changes and sensor limitations."
+}

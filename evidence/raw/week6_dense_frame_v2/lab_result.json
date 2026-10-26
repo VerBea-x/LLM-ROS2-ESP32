@@ -1,0 +1,279 @@
+{
+  "source_kind": "actual_ROS_controlled_synthetic_dense_frame",
+  "checks": {
+    "two_close_cups_separate": true,
+    "unique_target_names": true,
+    "repeat_keeps_names": true,
+    "repeat_increments_each_once": true,
+    "ambiguous_frame_rejected": true,
+    "ambiguous_frame_does_not_mutate_targets": true,
+    "auditor_conversion_retains_both": true,
+    "two_markers": true,
+    "both_expire": true
+  },
+  "all_checks_passed": true,
+  "injections": [
+    {
+      "case": "two_objects",
+      "stamp_ns": 1792991813308931168,
+      "pixels": [
+        220,
+        420
+      ]
+    },
+    {
+      "case": "repeat_with_jitter",
+      "stamp_ns": 1792991813914802479,
+      "pixels": [
+        222,
+        418
+      ]
+    },
+    {
+      "case": "ambiguous_single",
+      "stamp_ns": 1792991814565454423,
+      "pixels": [
+        320
+      ]
+    }
+  ],
+  "snapshots": [
+    {
+      "schema_version": 1,
+      "frame_id": "map",
+      "generated_at": "2026-10-26T05:16:53.911191+00:00",
+      "items": [
+        {
+          "label": "cup",
+          "target_name": "cup__001",
+          "x": 2.95447997803503,
+          "y": 3.298274993135947,
+          "conf": 0.8,
+          "n_obs": 1,
+          "last_seen": "2026-10-26T05:16:53.308931+00:00",
+          "evidence_ids": [
+            "SYNTHETIC_two_objects_0"
+          ],
+          "age_s": 0.60226,
+          "tau_s": 4.0,
+          "state": "fresh",
+          "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+        },
+        {
+          "label": "cup",
+          "target_name": "cup__002",
+          "x": 2.95447997803503,
+          "y": 2.701725006864053,
+          "conf": 0.8,
+          "n_obs": 1,
+          "last_seen": "2026-10-26T05:16:53.308931+00:00",
+          "evidence_ids": [
+            "SYNTHETIC_two_objects_1"
+          ],
+          "age_s": 0.60226,
+          "tau_s": 4.0,
+          "state": "fresh",
+          "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+        }
+      ],
+      "limitations": [
+        "range=1m is an explicit teaching approximation; not measured object depth."
+      ],
+      "source_kind": "controlled_synthetic_detection_ros_lab",
+      "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+      "registration_policy": "frame_one_to_one_v2"
+    },
+    {
+      "schema_version": 1,
+      "frame_id": "map",
+      "generated_at": "2026-10-26T05:16:54.511321+00:00",
+      "items": [
+        {
+          "label": "cup",
+          "target_name": "cup__001",
+          "x": 2.955322895632735,
+          "y": 3.295550386718885,
+          "conf": 0.8,
+          "n_obs": 2,
+          "last_seen": "2026-10-26T05:16:53.914802+00:00",
+          "evidence_ids": [
+            "SYNTHETIC_two_objects_0",
+            "SYNTHETIC_repeat_with_jitter_0"
+          ],
+          "age_s": 0.596519,
+          "tau_s": 4.0,
+          "state": "fresh",
+          "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+        },
+        {
+          "label": "cup",
+          "target_name": "cup__002",
+          "x": 2.955322895632735,
+          "y": 2.704449613281115,
+          "conf": 0.8,
+          "n_obs": 2,
+          "last_seen": "2026-10-26T05:16:53.914802+00:00",
+          "evidence_ids": [
+            "SYNTHETIC_two_objects_1",
+            "SYNTHETIC_repeat_with_jitter_1"
+          ],
+          "age_s": 0.596519,
+          "tau_s": 4.0,
+          "state": "fresh",
+          "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+        }
+      ],
+      "limitations": [
+        "range=1m is an explicit teaching approximation; not measured object depth."
+      ],
+      "source_kind": "controlled_synthetic_detection_ros_lab",
+      "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+      "registration_policy": "frame_one_to_one_v2"
+    },
+    {
+      "schema_version": 1,
+      "frame_id": "map",
+      "generated_at": "2026-10-26T05:16:55.111355+00:00",
+      "items": [
+        {
+          "label": "cup",
+          "target_name": "cup__001",
+          "x": 2.955322895632735,
+          "y": 3.295550386718885,
+          "conf": 0.8,
+          "n_obs": 2,
+          "last_seen": "2026-10-26T05:16:53.914802+00:00",
+          "evidence_ids": [
+            "SYNTHETIC_two_objects_0",
+            "SYNTHETIC_repeat_with_jitter_0"
+          ],
+          "age_s": 1.196553,
+          "tau_s": 4.0,
+          "state": "fresh",
+          "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+        },
+        {
+          "label": "cup",
+          "target_name": "cup__002",
+          "x": 2.955322895632735,
+          "y": 2.704449613281115,
+          "conf": 0.8,
+          "n_obs": 2,
+          "last_seen": "2026-10-26T05:16:53.914802+00:00",
+          "evidence_ids": [
+            "SYNTHETIC_two_objects_1",
+            "SYNTHETIC_repeat_with_jitter_1"
+          ],
+          "age_s": 1.196553,
+          "tau_s": 4.0,
+          "state": "fresh",
+          "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+        }
+      ],
+      "limitations": [
+        "range=1m is an explicit teaching approximation; not measured object depth."
+      ],
+      "source_kind": "controlled_synthetic_detection_ros_lab",
+      "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+      "registration_policy": "frame_one_to_one_v2"
+    }
+  ],
+  "fresh_snapshot": {
+    "schema_version": 1,
+    "frame_id": "map",
+    "generated_at": "2026-10-26T05:16:55.111355+00:00",
+    "items": [
+      {
+        "label": "cup",
+        "target_name": "cup__001",
+        "x": 2.955322895632735,
+        "y": 3.295550386718885,
+        "conf": 0.8,
+        "n_obs": 2,
+        "last_seen": "2026-10-26T05:16:53.914802+00:00",
+        "evidence_ids": [
+          "SYNTHETIC_two_objects_0",
+          "SYNTHETIC_repeat_with_jitter_0"
+        ],
+        "age_s": 1.196553,
+        "tau_s": 4.0,
+        "state": "fresh",
+        "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+      },
+      {
+        "label": "cup",
+        "target_name": "cup__002",
+        "x": 2.955322895632735,
+        "y": 2.704449613281115,
+        "conf": 0.8,
+        "n_obs": 2,
+        "last_seen": "2026-10-26T05:16:53.914802+00:00",
+        "evidence_ids": [
+          "SYNTHETIC_two_objects_1",
+          "SYNTHETIC_repeat_with_jitter_1"
+        ],
+        "age_s": 1.196553,
+        "tau_s": 4.0,
+        "state": "fresh",
+        "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+      }
+    ],
+    "limitations": [
+      "range=1m is an explicit teaching approximation; not measured object depth."
+    ],
+    "source_kind": "controlled_synthetic_detection_ros_lab",
+    "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+    "registration_policy": "frame_one_to_one_v2"
+  },
+  "stale_snapshot": {
+    "schema_version": 1,
+    "frame_id": "map",
+    "generated_at": "2026-10-26T05:17:00.111388+00:00",
+    "items": [
+      {
+        "label": "cup",
+        "target_name": "cup__001",
+        "x": 2.955322895632735,
+        "y": 3.295550386718885,
+        "conf": 0.8,
+        "n_obs": 2,
+        "last_seen": "2026-10-26T05:16:53.914802+00:00",
+        "evidence_ids": [
+          "SYNTHETIC_two_objects_0",
+          "SYNTHETIC_repeat_with_jitter_0"
+        ],
+        "age_s": 6.196586,
+        "tau_s": 4.0,
+        "state": "stale",
+        "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+      },
+      {
+        "label": "cup",
+        "target_name": "cup__002",
+        "x": 2.955322895632735,
+        "y": 2.704449613281115,
+        "conf": 0.8,
+        "n_obs": 2,
+        "last_seen": "2026-10-26T05:16:53.914802+00:00",
+        "evidence_ids": [
+          "SYNTHETIC_two_objects_1",
+          "SYNTHETIC_repeat_with_jitter_1"
+        ],
+        "age_s": 6.196586,
+        "tau_s": 4.0,
+        "state": "stale",
+        "tau_evidence_id": "SIM_MOBILITY_TRAIN_handheld"
+      }
+    ],
+    "limitations": [
+      "range=1m is an explicit teaching approximation; not measured object depth."
+    ],
+    "source_kind": "controlled_synthetic_detection_ros_lab",
+    "camera_calibration": "declared virtual intrinsics, not hardware calibration",
+    "registration_policy": "frame_one_to_one_v2"
+  },
+  "limitations": [
+    "Synthetic simultaneous same-class detections with virtual1m range.",
+    "Not a general identity tracker; staggered appearance, occlusion and crossings unverified."
+  ]
+}

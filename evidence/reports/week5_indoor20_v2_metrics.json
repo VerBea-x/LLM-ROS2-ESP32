@@ -1,0 +1,873 @@
+{
+  "source_kind": "labeled_object_detection",
+  "matching": "same class, IoU>=0.5, one-to-one, confidence descending",
+  "dataset_protocol": "public_substitution_v1",
+  "substitution_note": "User authorized public-only data and required relevant indoor scenes; all20 public, none claimed self-captured.",
+  "thresholds": [
+    0.3,
+    0.5,
+    0.7
+  ],
+  "records": [
+    {
+      "sample_id": "coco_val2017_000000003934",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000003934",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000003934",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000009400",
+      "threshold": 0.3,
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "matches": [
+        {
+          "truth_index": 2,
+          "iou": 0.9384766586966264,
+          "score": 0.7007536292076111
+        },
+        {
+          "truth_index": 3,
+          "iou": 0.7673121934555382,
+          "score": 0.5583769679069519
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000009400",
+      "threshold": 0.5,
+      "tp": 2,
+      "fp": 0,
+      "fn": 2,
+      "matches": [
+        {
+          "truth_index": 2,
+          "iou": 0.9384766586966264,
+          "score": 0.7007536292076111
+        },
+        {
+          "truth_index": 3,
+          "iou": 0.7673121934555382,
+          "score": 0.5583769679069519
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000009400",
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "matches": [
+        {
+          "truth_index": 2,
+          "iou": 0.9384766586966264,
+          "score": 0.7007536292076111
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000009590",
+      "threshold": 0.3,
+      "tp": 2,
+      "fp": 0,
+      "fn": 10,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.8685458649510233,
+          "score": 0.4639488458633423
+        },
+        {
+          "truth_index": 1,
+          "iou": 0.8640907933931818,
+          "score": 0.40234166383743286
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000009590",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000009590",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000010707",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 3,
+      "fn": 4,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000010707",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000010707",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000013659",
+      "threshold": 0.3,
+      "tp": 6,
+      "fp": 5,
+      "fn": 2,
+      "matches": [
+        {
+          "truth_index": 2,
+          "iou": 0.8258425478927205,
+          "score": 0.8307582139968872
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.8906734889833369,
+          "score": 0.725407600402832
+        },
+        {
+          "truth_index": 3,
+          "iou": 0.6532997441481811,
+          "score": 0.48563894629478455
+        },
+        {
+          "truth_index": 6,
+          "iou": 0.7560174023107036,
+          "score": 0.46316102147102356
+        },
+        {
+          "truth_index": 5,
+          "iou": 0.624037049431617,
+          "score": 0.39036044478416443
+        },
+        {
+          "truth_index": 1,
+          "iou": 0.8470688591540089,
+          "score": 0.38956329226493835
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000013659",
+      "threshold": 0.5,
+      "tp": 2,
+      "fp": 1,
+      "fn": 6,
+      "matches": [
+        {
+          "truth_index": 2,
+          "iou": 0.8258425478927205,
+          "score": 0.8307582139968872
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.8906734889833369,
+          "score": 0.725407600402832
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000013659",
+      "threshold": 0.7,
+      "tp": 2,
+      "fp": 0,
+      "fn": 6,
+      "matches": [
+        {
+          "truth_index": 2,
+          "iou": 0.8258425478927205,
+          "score": 0.8307582139968872
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.8906734889833369,
+          "score": 0.725407600402832
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000007574",
+      "threshold": 0.3,
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9116017340091989,
+          "score": 0.44424968957901
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000007574",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000007574",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000013729",
+      "threshold": 0.3,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.6817774305237717,
+          "score": 0.6713801622390747
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.7872123285472786,
+          "score": 0.4661925733089447
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000013729",
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 2,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.6817774305237717,
+          "score": 0.6713801622390747
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000013729",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000013923",
+      "threshold": 0.3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 4,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.7988231624315866,
+          "score": 0.7315325140953064
+        },
+        {
+          "truth_index": 2,
+          "iou": 0.6101422885009322,
+          "score": 0.5211141109466553
+        },
+        {
+          "truth_index": 3,
+          "iou": 0.5296746416150985,
+          "score": 0.3178611397743225
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000013923",
+      "threshold": 0.5,
+      "tp": 2,
+      "fp": 0,
+      "fn": 5,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.7988231624315866,
+          "score": 0.7315325140953064
+        },
+        {
+          "truth_index": 2,
+          "iou": 0.6101422885009322,
+          "score": 0.5211141109466553
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000013923",
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 6,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.7988231624315866,
+          "score": 0.7315325140953064
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000014038",
+      "threshold": 0.3,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.6886540399137671,
+          "score": 0.30050310492515564
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000014038",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000014038",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000022705",
+      "threshold": 0.3,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.7664030064936412,
+          "score": 0.6349496841430664
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000022705",
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.7664030064936412,
+          "score": 0.6349496841430664
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000022705",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000024610",
+      "threshold": 0.3,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9485261233493113,
+          "score": 0.8720344305038452
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000024610",
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9485261233493113,
+          "score": 0.8720344305038452
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000024610",
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 3,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9485261233493113,
+          "score": 0.8720344305038452
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000026564",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000026564",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000026564",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000000139",
+      "threshold": 0.3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 2,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.9667031517772856,
+          "score": 0.8457841277122498
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.6882692266402896,
+          "score": 0.6126465797424316
+        },
+        {
+          "truth_index": 2,
+          "iou": 0.702293610434488,
+          "score": 0.33327117562294006
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000000139",
+      "threshold": 0.5,
+      "tp": 2,
+      "fp": 0,
+      "fn": 3,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.9667031517772856,
+          "score": 0.8457841277122498
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.6882692266402896,
+          "score": 0.6126465797424316
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000000139",
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 4,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.9667031517772856,
+          "score": 0.8457841277122498
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000001993",
+      "threshold": 0.3,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9346450080505224,
+          "score": 0.8573555946350098
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000001993",
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9346450080505224,
+          "score": 0.8573555946350098
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000001993",
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9346450080505224,
+          "score": 0.8573555946350098
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000004495",
+      "threshold": 0.3,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9763475665330601,
+          "score": 0.7385061979293823
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000004495",
+      "threshold": 0.5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9763475665330601,
+          "score": 0.7385061979293823
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000004495",
+      "threshold": 0.7,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "matches": [
+        {
+          "truth_index": 0,
+          "iou": 0.9763475665330601,
+          "score": 0.7385061979293823
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000018380",
+      "threshold": 0.3,
+      "tp": 5,
+      "fp": 1,
+      "fn": 8,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.9219936043740072,
+          "score": 0.7559069395065308
+        },
+        {
+          "truth_index": 12,
+          "iou": 0.9402346629548362,
+          "score": 0.7481390833854675
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.8047263730459163,
+          "score": 0.709046483039856
+        },
+        {
+          "truth_index": 5,
+          "iou": 0.6739617478802963,
+          "score": 0.49539974331855774
+        },
+        {
+          "truth_index": 8,
+          "iou": 0.6325762341108293,
+          "score": 0.43277424573898315
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000018380",
+      "threshold": 0.5,
+      "tp": 3,
+      "fp": 0,
+      "fn": 10,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.9219936043740072,
+          "score": 0.7559069395065308
+        },
+        {
+          "truth_index": 12,
+          "iou": 0.9402346629548362,
+          "score": 0.7481390833854675
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.8047263730459163,
+          "score": 0.709046483039856
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000018380",
+      "threshold": 0.7,
+      "tp": 3,
+      "fp": 0,
+      "fn": 10,
+      "matches": [
+        {
+          "truth_index": 1,
+          "iou": 0.9219936043740072,
+          "score": 0.7559069395065308
+        },
+        {
+          "truth_index": 12,
+          "iou": 0.9402346629548362,
+          "score": 0.7481390833854675
+        },
+        {
+          "truth_index": 0,
+          "iou": 0.8047263730459163,
+          "score": 0.709046483039856
+        }
+      ]
+    },
+    {
+      "sample_id": "coco_val2017_000000001503",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000001503",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000001503",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000009772",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000009772",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000009772",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000017379",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000017379",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000017379",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000039477",
+      "threshold": 0.3,
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000039477",
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    },
+    {
+      "sample_id": "coco_val2017_000000039477",
+      "threshold": 0.7,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "matches": []
+    }
+  ],
+  "totals": [
+    {
+      "threshold": 0.3,
+      "tp": 29,
+      "fp": 11,
+      "fn": 43,
+      "precision": 0.725,
+      "recall": 0.4027777777777778
+    },
+    {
+      "threshold": 0.5,
+      "tp": 16,
+      "fp": 1,
+      "fn": 56,
+      "precision": 0.9411764705882353,
+      "recall": 0.2222222222222222
+    },
+    {
+      "threshold": 0.7,
+      "tp": 11,
+      "fp": 0,
+      "fn": 61,
+      "precision": 1.0,
+      "recall": 0.1527777777777778
+    }
+  ],
+  "limitations": [
+    "No true-negative count for object detection; class errors count as FP and FN.",
+    "Independent review of annotations and detector output is still required."
+  ],
+  "model_metadata": {
+    "source_kind": "actual_onnx_cpu_inference",
+    "model_source": "https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5n.onnx",
+    "model_sha256": "04f0e55c26f58d17145b36045780fe1250d5bd2187543e11568e5141d05b3262",
+    "opencv_version": "4.9.0",
+    "input_resolution": [
+      640,
+      640
+    ],
+    "nms_iou": 0.45,
+    "minimum_confidence": 0.3,
+    "inference_seconds": [
+      0.13091359300005934,
+      0.08907401399983428,
+      0.08737814699998125,
+      0.0883087259999229,
+      0.0936580149996189,
+      0.09194369800025015,
+      0.08867544199983968,
+      0.08834998599968458,
+      0.09075872799985518,
+      0.0901045810001051,
+      0.09143829300001016,
+      0.09025060499971005,
+      0.08793393500036473,
+      0.08787416099994516,
+      0.08768082400001731,
+      0.0889654719999271,
+      0.08818192599983377,
+      0.09266873499973372,
+      0.08928628000012395,
+      0.09153816999969422
+    ],
+    "limitations": [
+      "Official model has640 static input; not course320 hardware deployment.",
+      "CPU timings on VM are not vehicle camera FPS.",
+      "Only cup,bottle,chair evaluated."
+    ]
+  }
+}

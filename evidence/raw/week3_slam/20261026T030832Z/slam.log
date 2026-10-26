@@ -1,0 +1,10 @@
+[INFO] [launch]: All log files can be found below /tmp/course_rebuild_slam_logs/2026-10-26-11-08-36-797214-yahboom-VM-15944
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [async_slam_toolbox_node-1]: process started with pid [15966]
+[async_slam_toolbox_node-1] [INFO] [1792984117.230922100] [slam_toolbox]: Node using stack size 40000000
+[async_slam_toolbox_node-1] [INFO] [1792984117.357333547] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-1] [INFO] [1792984117.358161855] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[async_slam_toolbox_node-1] Info: clipped range threshold to be within minimum and maximum range!
+[async_slam_toolbox_node-1] Registering sensor: [Custom Described Lidar]
+[async_slam_toolbox_node-1] [INFO] [1792984442.980791598] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [async_slam_toolbox_node-1]: process has finished cleanly [pid 15966]

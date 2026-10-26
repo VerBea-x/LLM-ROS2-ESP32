@@ -1,0 +1,1534 @@
+{
+  "dataset_protocol": "public_substitution_v1",
+  "version": "indoor20_v2",
+  "substitution_note": "User authorized public-only data and required relevant indoor scenes; all20 public, none claimed self-captured.",
+  "selection_rule": "Annotation-based candidate filter followed by visual scene-context review; no v2 detector output used.",
+  "reviewed_rejections": [
+    "bear and outdoor negative images",
+    "isolated mug/food closeups",
+    "cat/portrait closeups dominating scene"
+  ],
+  "frozen_at": "2026-10-26T02:52:18.329223+00:00",
+  "categories": [
+    {
+      "supercategory": "person",
+      "id": 1,
+      "name": "person"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 2,
+      "name": "bicycle"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 3,
+      "name": "car"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 4,
+      "name": "motorcycle"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 5,
+      "name": "airplane"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 6,
+      "name": "bus"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 7,
+      "name": "train"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 8,
+      "name": "truck"
+    },
+    {
+      "supercategory": "vehicle",
+      "id": 9,
+      "name": "boat"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 10,
+      "name": "traffic light"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 11,
+      "name": "fire hydrant"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 13,
+      "name": "stop sign"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 14,
+      "name": "parking meter"
+    },
+    {
+      "supercategory": "outdoor",
+      "id": 15,
+      "name": "bench"
+    },
+    {
+      "supercategory": "animal",
+      "id": 16,
+      "name": "bird"
+    },
+    {
+      "supercategory": "animal",
+      "id": 17,
+      "name": "cat"
+    },
+    {
+      "supercategory": "animal",
+      "id": 18,
+      "name": "dog"
+    },
+    {
+      "supercategory": "animal",
+      "id": 19,
+      "name": "horse"
+    },
+    {
+      "supercategory": "animal",
+      "id": 20,
+      "name": "sheep"
+    },
+    {
+      "supercategory": "animal",
+      "id": 21,
+      "name": "cow"
+    },
+    {
+      "supercategory": "animal",
+      "id": 22,
+      "name": "elephant"
+    },
+    {
+      "supercategory": "animal",
+      "id": 23,
+      "name": "bear"
+    },
+    {
+      "supercategory": "animal",
+      "id": 24,
+      "name": "zebra"
+    },
+    {
+      "supercategory": "animal",
+      "id": 25,
+      "name": "giraffe"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 27,
+      "name": "backpack"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 28,
+      "name": "umbrella"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 31,
+      "name": "handbag"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 32,
+      "name": "tie"
+    },
+    {
+      "supercategory": "accessory",
+      "id": 33,
+      "name": "suitcase"
+    },
+    {
+      "supercategory": "sports",
+      "id": 34,
+      "name": "frisbee"
+    },
+    {
+      "supercategory": "sports",
+      "id": 35,
+      "name": "skis"
+    },
+    {
+      "supercategory": "sports",
+      "id": 36,
+      "name": "snowboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 37,
+      "name": "sports ball"
+    },
+    {
+      "supercategory": "sports",
+      "id": 38,
+      "name": "kite"
+    },
+    {
+      "supercategory": "sports",
+      "id": 39,
+      "name": "baseball bat"
+    },
+    {
+      "supercategory": "sports",
+      "id": 40,
+      "name": "baseball glove"
+    },
+    {
+      "supercategory": "sports",
+      "id": 41,
+      "name": "skateboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 42,
+      "name": "surfboard"
+    },
+    {
+      "supercategory": "sports",
+      "id": 43,
+      "name": "tennis racket"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 44,
+      "name": "bottle"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 46,
+      "name": "wine glass"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 47,
+      "name": "cup"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 48,
+      "name": "fork"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 49,
+      "name": "knife"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 50,
+      "name": "spoon"
+    },
+    {
+      "supercategory": "kitchen",
+      "id": 51,
+      "name": "bowl"
+    },
+    {
+      "supercategory": "food",
+      "id": 52,
+      "name": "banana"
+    },
+    {
+      "supercategory": "food",
+      "id": 53,
+      "name": "apple"
+    },
+    {
+      "supercategory": "food",
+      "id": 54,
+      "name": "sandwich"
+    },
+    {
+      "supercategory": "food",
+      "id": 55,
+      "name": "orange"
+    },
+    {
+      "supercategory": "food",
+      "id": 56,
+      "name": "broccoli"
+    },
+    {
+      "supercategory": "food",
+      "id": 57,
+      "name": "carrot"
+    },
+    {
+      "supercategory": "food",
+      "id": 58,
+      "name": "hot dog"
+    },
+    {
+      "supercategory": "food",
+      "id": 59,
+      "name": "pizza"
+    },
+    {
+      "supercategory": "food",
+      "id": 60,
+      "name": "donut"
+    },
+    {
+      "supercategory": "food",
+      "id": 61,
+      "name": "cake"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 62,
+      "name": "chair"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 63,
+      "name": "couch"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 64,
+      "name": "potted plant"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 65,
+      "name": "bed"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 67,
+      "name": "dining table"
+    },
+    {
+      "supercategory": "furniture",
+      "id": 70,
+      "name": "toilet"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 72,
+      "name": "tv"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 73,
+      "name": "laptop"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 74,
+      "name": "mouse"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 75,
+      "name": "remote"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 76,
+      "name": "keyboard"
+    },
+    {
+      "supercategory": "electronic",
+      "id": 77,
+      "name": "cell phone"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 78,
+      "name": "microwave"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 79,
+      "name": "oven"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 80,
+      "name": "toaster"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 81,
+      "name": "sink"
+    },
+    {
+      "supercategory": "appliance",
+      "id": 82,
+      "name": "refrigerator"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 84,
+      "name": "book"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 85,
+      "name": "clock"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 86,
+      "name": "vase"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 87,
+      "name": "scissors"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 88,
+      "name": "teddy bear"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 89,
+      "name": "hair drier"
+    },
+    {
+      "supercategory": "indoor",
+      "id": 90,
+      "name": "toothbrush"
+    }
+  ],
+  "licenses": [
+    {
+      "url": "http://creativecommons.org/licenses/by-nc-sa/2.0/",
+      "id": 1,
+      "name": "Attribution-NonCommercial-ShareAlike License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-nc/2.0/",
+      "id": 2,
+      "name": "Attribution-NonCommercial License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+      "id": 3,
+      "name": "Attribution-NonCommercial-NoDerivs License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by/2.0/",
+      "id": 4,
+      "name": "Attribution License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-sa/2.0/",
+      "id": 5,
+      "name": "Attribution-ShareAlike License"
+    },
+    {
+      "url": "http://creativecommons.org/licenses/by-nd/2.0/",
+      "id": 6,
+      "name": "Attribution-NoDerivs License"
+    },
+    {
+      "url": "http://flickr.com/commons/usage/",
+      "id": 7,
+      "name": "No known copyright restrictions"
+    },
+    {
+      "url": "http://www.usa.gov/copyright.shtml",
+      "id": 8,
+      "name": "United States Government Work"
+    }
+  ],
+  "scenes": [
+    {
+      "sample_id": "coco_val2017_000000003934",
+      "image": "images/000000003934.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "scene_review": "living room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "c7b1180c75a332e8768a4ca76b1fe8b3e3e073e2b925d94f43fa5439535d5dcf",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            153.95,
+            127.18,
+            164.06,
+            139.54000000000002
+          ],
+          "annotation_id": 672629
+        }
+      ],
+      "width": 375,
+      "height": 500,
+      "license_id": 1,
+      "flickr_url": "http://farm4.staticflickr.com/3429/3315867532_e9422607e8_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000003934.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000009400",
+      "image": "images/000000009400.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "scene_review": "indoor work/dining table",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "1a613f9b09db3b7bedb626af3e3951ac1709f6036d4e1405f6e8463816108222",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            32.75,
+            256.44,
+            76.78,
+            319.51
+          ],
+          "annotation_id": 1510651
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            250.65,
+            417.12,
+            314.52,
+            480.0
+          ],
+          "annotation_id": 1877700
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            251.59,
+            380.35,
+            328.25,
+            476.48
+          ],
+          "annotation_id": 1881766
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            356.25,
+            281.88,
+            405.0,
+            363.13
+          ],
+          "annotation_id": 1884673
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "license_id": 1,
+      "flickr_url": "http://farm1.staticflickr.com/110/286317893_b6bce1c310_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000009400.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000009590",
+      "image": "images/000000009590.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "scene_review": "dining room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "93cdd55e59cf7d32c481ca5b00b1b9c64f8b8f44020f64a97752a767fd7571ee",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            427.09,
+            227.73,
+            450.59,
+            276.53
+          ],
+          "annotation_id": 84206
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            347.22,
+            270.92,
+            385.8,
+            310.33000000000004
+          ],
+          "annotation_id": 673539
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            522.83,
+            237.5,
+            582.25,
+            291.96
+          ],
+          "annotation_id": 680609
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            541.22,
+            214.58,
+            567.71,
+            236.54000000000002
+          ],
+          "annotation_id": 1502083
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            466.61,
+            262.74,
+            491.82,
+            300.08000000000004
+          ],
+          "annotation_id": 1508776
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            184.6,
+            280.03,
+            207.75,
+            306.47999999999996
+          ],
+          "annotation_id": 1510171
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            130.64,
+            235.68,
+            143.66,
+            268.55
+          ],
+          "annotation_id": 1585678
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            423.4,
+            275.03,
+            471.65999999999997,
+            305.88
+          ],
+          "annotation_id": 1885626
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            325.2,
+            251.15,
+            346.2,
+            265.96
+          ],
+          "annotation_id": 1886849
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            478.52,
+            258.83,
+            522.6,
+            278.81
+          ],
+          "annotation_id": 1887624
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            251.46,
+            250.11,
+            276.05,
+            270.15000000000003
+          ],
+          "annotation_id": 2099459
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            301.72,
+            234.31,
+            327.83000000000004,
+            264.01
+          ],
+          "annotation_id": 2215973
+        }
+      ],
+      "width": 640,
+      "height": 427,
+      "license_id": 3,
+      "flickr_url": "http://farm4.staticflickr.com/3812/9124483633_8ed59dfc3a_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000009590.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000010707",
+      "image": "images/000000010707.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "scene_review": "living room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "a361abb7579193709ef3debbec6298bf0c540bece429c4aadb19be82e04ab6a0",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            212.13,
+            330.28,
+            229.10999999999999,
+            391.30999999999995
+          ],
+          "annotation_id": 84825
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            121.92,
+            357.43,
+            148.76,
+            415.67
+          ],
+          "annotation_id": 682380
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            162.55,
+            348.69,
+            181.72000000000003,
+            408.65999999999997
+          ],
+          "annotation_id": 1484033
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            126.09,
+            343.26,
+            151.5,
+            371.88
+          ],
+          "annotation_id": 1506809
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "license_id": 5,
+      "flickr_url": "http://farm1.staticflickr.com/147/434840964_a9c5bc3b58_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000010707.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000013659",
+      "image": "images/000000013659.jpg",
+      "source_group": "public",
+      "selection_group": "cup",
+      "scene_review": "office",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "b357d19dee467587a8788ac4e5b45677f4fde1b62726c690795e188ae75d822b",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            364.64,
+            290.06,
+            488.24,
+            456.93
+          ],
+          "annotation_id": 103597
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            305.75,
+            145.44,
+            398.75,
+            269.01
+          ],
+          "annotation_id": 105100
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            482.27,
+            173.3,
+            569.66,
+            322.43
+          ],
+          "annotation_id": 105395
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            188.62,
+            124.46,
+            277.81,
+            194.67
+          ],
+          "annotation_id": 107179
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            377.81,
+            416.0,
+            422.19,
+            473.81
+          ],
+          "annotation_id": 110683
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            89.45,
+            321.06,
+            118.77000000000001,
+            372.36
+          ],
+          "annotation_id": 1507735
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            282.12,
+            217.81,
+            331.79,
+            310.64
+          ],
+          "annotation_id": 1934026
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            567.44,
+            160.52,
+            610.7600000000001,
+            284.75
+          ],
+          "annotation_id": 1941594
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "license_id": 4,
+      "flickr_url": "http://farm7.staticflickr.com/6144/5987177856_785814a990_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000013659.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000007574",
+      "image": "images/000000007574.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "kitchen",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "4f26c847c2f49574978e96733efaec720dd1d1ba95a8220d0de012b7317eed47",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            501.24,
+            306.49,
+            533.2,
+            389.13
+          ],
+          "annotation_id": 88785
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            483.34,
+            299.06,
+            510.64,
+            381.47
+          ],
+          "annotation_id": 90913
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "license_id": 4,
+      "flickr_url": "http://farm8.staticflickr.com/7054/6924897347_7266fd119c_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000007574.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000013729",
+      "image": "images/000000013729.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "living room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "a3b3689660e2db3d49e131e9856d3d06bb376400e8fa2afc1ce64c5c4765a4ef",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            518.11,
+            241.91,
+            530.17,
+            283.3
+          ],
+          "annotation_id": 91322
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            540.4,
+            244.64,
+            551.54,
+            290.65
+          ],
+          "annotation_id": 288369
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            615.41,
+            270.92,
+            625.5699999999999,
+            283.27000000000004
+          ],
+          "annotation_id": 2214578
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "license_id": 2,
+      "flickr_url": "http://farm2.staticflickr.com/1009/559099100_98414a0e66_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000013729.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000013923",
+      "image": "images/000000013923.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "living room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "91494500cd053f1c4e547edc53f62edce2b088588bf9b4dbc8ceaea86ad4d49e",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            213.5,
+            232.37,
+            335.89,
+            370.4
+          ],
+          "annotation_id": 108331
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            244.23,
+            286.67,
+            337.65,
+            410.43
+          ],
+          "annotation_id": 108430
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            444.65,
+            313.01,
+            570.81,
+            422.40999999999997
+          ],
+          "annotation_id": 108630
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            406.71,
+            244.16,
+            492.47999999999996,
+            338.23
+          ],
+          "annotation_id": 109275
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            418.58,
+            76.16,
+            431.99,
+            108.43
+          ],
+          "annotation_id": 1488664
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            413.31,
+            78.64,
+            421.97,
+            109.76
+          ],
+          "annotation_id": 1490683
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            240.48,
+            369.41,
+            339.29999999999995,
+            427.0
+          ],
+          "annotation_id": 2123120
+        }
+      ],
+      "width": 640,
+      "height": 427,
+      "license_id": 3,
+      "flickr_url": "http://farm9.staticflickr.com/8550/8973469217_ddac383dc5_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000013923.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000014038",
+      "image": "images/000000014038.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "studio apartment",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "7dc972133bcc2e8e49ca1c2b7c20678eecb0c853e78f085f7270f295e1349350",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            76.03,
+            103.28,
+            91.85,
+            128.56
+          ],
+          "annotation_id": 82834
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            46.39,
+            106.22,
+            56.83,
+            124.49
+          ],
+          "annotation_id": 90888
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            236.68,
+            292.17,
+            258.71000000000004,
+            312.61
+          ],
+          "annotation_id": 1491536
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            562.7,
+            286.83,
+            639.95,
+            315.45
+          ],
+          "annotation_id": 1941759
+        }
+      ],
+      "width": 640,
+      "height": 427,
+      "license_id": 3,
+      "flickr_url": "http://farm9.staticflickr.com/8507/8561635383_4bc0c679dd_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000014038.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000022705",
+      "image": "images/000000022705.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "kitchen refrigerator area",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "01627a2e4b79593b0debcffcdcf9b6c795d0d9e71aa2a3e9e22a9db05a70bc85",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            81.67,
+            212.76,
+            105.77000000000001,
+            278.36
+          ],
+          "annotation_id": 81398
+        }
+      ],
+      "width": 482,
+      "height": 640,
+      "license_id": 4,
+      "flickr_url": "http://farm3.staticflickr.com/2338/1940631815_acd4f4458e_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000022705.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000024610",
+      "image": "images/000000024610.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "study/dining room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "aa7b8f989b3584fa3b41c743f5d1b3c45f9f6ead8c31d7a64f9b253b5c2868cb",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            67.1,
+            283.87,
+            220.9,
+            480.0
+          ],
+          "annotation_id": 102587
+        },
+        {
+          "label": "bottle",
+          "bbox": [
+            11.64,
+            261.4,
+            34.91,
+            326.91999999999996
+          ],
+          "annotation_id": 2095939
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            3.68,
+            386.99,
+            14.61,
+            421.35
+          ],
+          "annotation_id": 2120618
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            0.48,
+            386.06,
+            3.44,
+            424.94
+          ],
+          "annotation_id": 2124251
+        }
+      ],
+      "width": 640,
+      "height": 480,
+      "license_id": 1,
+      "flickr_url": "http://farm3.staticflickr.com/2422/3614012314_dc85d00fdd_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000024610.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000026564",
+      "image": "images/000000026564.jpg",
+      "source_group": "public",
+      "selection_group": "bottle",
+      "scene_review": "office desk",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "ecefff4893149e6ac22348a59c8e4d3c1b3a751266a15bd38e3e6d041bf39c52",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "bottle",
+          "bbox": [
+            554.26,
+            240.03,
+            610.14,
+            353.63
+          ],
+          "annotation_id": 91799
+        }
+      ],
+      "width": 640,
+      "height": 426,
+      "license_id": 3,
+      "flickr_url": "http://farm1.staticflickr.com/51/149499288_0eb1172e1d_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000026564.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000000139",
+      "image": "images/000000000139.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "scene_review": "living/dining room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "ffe0f0cec3b2e27aab1967229cdf0a0d7751dcdd5800322f0b8ac0dffb3b8a8d",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            358.98,
+            218.05,
+            414.98,
+            320.88
+          ],
+          "annotation_id": 103487
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            290.69,
+            218.0,
+            352.52,
+            316.48
+          ],
+          "annotation_id": 104368
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            413.2,
+            223.01,
+            443.37,
+            304.37
+          ],
+          "annotation_id": 105328
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            317.4,
+            219.24,
+            338.97999999999996,
+            230.83
+          ],
+          "annotation_id": 110334
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            412.25,
+            219.02,
+            421.88,
+            231.54000000000002
+          ],
+          "annotation_id": 1941808
+        }
+      ],
+      "width": 640,
+      "height": 426,
+      "license_id": 2,
+      "flickr_url": "http://farm9.staticflickr.com/8035/8024364858_9c41dc1666_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000000139.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000001993",
+      "image": "images/000000001993.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "scene_review": "bedroom",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "039f3bfb862023bde7f835a36c32d8f59a3e66488863c2a47b7b746e78c44186",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            109.22,
+            250.46,
+            227.86,
+            408.64
+          ],
+          "annotation_id": 376624
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            0.0,
+            298.68,
+            35.15,
+            408.0
+          ],
+          "annotation_id": 1579220
+        }
+      ],
+      "width": 640,
+      "height": 419,
+      "license_id": 4,
+      "flickr_url": "http://farm4.staticflickr.com/3413/3223600591_25cb6f12c6_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000001993.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000004495",
+      "image": "images/000000004495.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "scene_review": "living room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "cf670ca35fb16e59ecce82eecf9bf1f60d2ee333be81b61c4ea390be2c7e7b2b",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "chair",
+          "bbox": [
+            4.19,
+            148.57,
+            154.35999999999999,
+            327.26
+          ],
+          "annotation_id": 379310
+        }
+      ],
+      "width": 500,
+      "height": 375,
+      "license_id": 3,
+      "flickr_url": "http://farm3.staticflickr.com/2678/4420039562_721e7e2780_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000004495.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000018380",
+      "image": "images/000000018380.jpg",
+      "source_group": "public",
+      "selection_group": "chair",
+      "scene_review": "family dining room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "5f019938d891305fab6ae0d0e9edc79e0d74407cdbd0ecce324aada0ab93a86e",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [
+        {
+          "label": "cup",
+          "bbox": [
+            236.54,
+            317.11,
+            274.9,
+            372.32
+          ],
+          "annotation_id": 1511357
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            405.92,
+            304.44,
+            442.09000000000003,
+            358.49
+          ],
+          "annotation_id": 1512624
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            235.12,
+            295.1,
+            269.54,
+            321.37
+          ],
+          "annotation_id": 1514444
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            364.53,
+            229.64,
+            387.34,
+            249.45
+          ],
+          "annotation_id": 1515310
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            292.15,
+            183.77,
+            309.46999999999997,
+            207.14000000000001
+          ],
+          "annotation_id": 1515344
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            281.14,
+            215.1,
+            304.5,
+            242.32
+          ],
+          "annotation_id": 1515900
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            350.02,
+            173.56,
+            364.74,
+            196.98000000000002
+          ],
+          "annotation_id": 1515940
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            344.09,
+            163.21,
+            357.9,
+            184.61
+          ],
+          "annotation_id": 1516054
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            357.59,
+            243.53,
+            382.94,
+            282.66
+          ],
+          "annotation_id": 1516080
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            290.27,
+            166.5,
+            305.4,
+            185.22
+          ],
+          "annotation_id": 1516094
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            305.53,
+            145.17,
+            318.27,
+            156.10999999999999
+          ],
+          "annotation_id": 1880331
+        },
+        {
+          "label": "chair",
+          "bbox": [
+            454.76,
+            128.47,
+            472.58,
+            186.75
+          ],
+          "annotation_id": 1937487
+        },
+        {
+          "label": "cup",
+          "bbox": [
+            242.4,
+            374.04,
+            287.8,
+            426.0
+          ],
+          "annotation_id": 2214844
+        }
+      ],
+      "width": 640,
+      "height": 426,
+      "license_id": 1,
+      "flickr_url": "http://farm6.staticflickr.com/5474/9701242334_0797348359_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000018380.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000001503",
+      "image": "images/000000001503.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "scene_review": "office workstation",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "06c721f0a62bcb9fcb2d2d0cc0b9edd63092084a8773a18c4b5a7bd6fb4f095d",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [],
+      "width": 320,
+      "height": 240,
+      "license_id": 2,
+      "flickr_url": "http://farm1.staticflickr.com/4/4589204_0d42f46fe6_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000001503.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000009772",
+      "image": "images/000000009772.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "scene_review": "bathroom vanity",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "ab798f0ee5d1bed52376a5ee8bfbd973cb4c4fface481a9bc7a3ff5d9c57b4c7",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [],
+      "width": 550,
+      "height": 640,
+      "license_id": 3,
+      "flickr_url": "http://farm6.staticflickr.com/5093/5512279742_5c56ff5041_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000009772.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000017379",
+      "image": "images/000000017379.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "scene_review": "bathroom",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "52b592adcb73170d7d07994a8781e92feddf3c7f1c45173a050c7ecfe12e7743",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [],
+      "width": 478,
+      "height": 640,
+      "license_id": 1,
+      "flickr_url": "http://farm6.staticflickr.com/5123/5316824279_9f0a0584c7_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000017379.jpg"
+    },
+    {
+      "sample_id": "coco_val2017_000000039477",
+      "image": "images/000000039477.jpg",
+      "source_group": "public",
+      "selection_group": "negative",
+      "scene_review": "living room",
+      "scene_review_before_v2_inference": true,
+      "image_sha256": "66afd33bb79d40a43a8486acafb399b524a6c49b17f694aa1daa8f697aec70a1",
+      "truth_source": "official COCO instances_val2017.json",
+      "truth_frozen_at": "2026-10-26T02:52:18.329223+00:00",
+      "objects": [],
+      "width": 640,
+      "height": 421,
+      "license_id": 3,
+      "flickr_url": "http://farm5.staticflickr.com/4027/4534221786_2da1b4f3b5_z.jpg",
+      "download_url": "https://s3.amazonaws.com/images.cocodataset.org/val2017/000000039477.jpg"
+    }
+  ]
+}

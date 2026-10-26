@@ -1,0 +1,26 @@
+{
+  "source_kind": "read_only_ros_graph_snapshot",
+  "no_actuation": true,
+  "topics": [
+    {
+      "name": "/parameter_events",
+      "types": [
+        "rcl_interfaces/msg/ParameterEvent"
+      ],
+      "publishers": 1
+    },
+    {
+      "name": "/rosout",
+      "types": [
+        "rcl_interfaces/msg/Log"
+      ],
+      "publishers": 1
+    }
+  ],
+  "nodes": [
+    "course_esp32_readonly_probe"
+  ],
+  "limitations": [
+    "Topic presence alone does not verify hardware, firmware, freshness, or physical movement."
+  ]
+}

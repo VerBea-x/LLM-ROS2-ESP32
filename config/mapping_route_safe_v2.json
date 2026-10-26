@@ -1,0 +1,10 @@
+{
+ "version":"safe_route_v2",
+ "reason":"Old route from[4,1] to[8.7,1] overlaps robot footprint with circle obstacle; preserve old runs as exploratory failures.",
+ "route":[[8.5,8.8],[6,9.2],[5.8,6],[2,6],[1,3],[4,3],[4,0.6],[8.7,0.6],[9,3.3],[9,6],[8.08,6.238]],
+ "minimum_clearance_m":0.1,
+ "robot_radius_m":0.2,
+ "sensor_and_slam":"720 simulated rays, range threshold4.9m, slip0.05, local_tracking profile,0.05m grid",
+ "guard":"truth-assisted experiment placement aborts and sends zero if body-to-obstacle or body-to-wall clearance<0.1m",
+ "limits":"Route changed; do not attribute any additional map-score difference solely to matcher tuning. Truth geometry positions/guards apparatus only, never published as SLAM TF."
+}

@@ -1,0 +1,48 @@
+{
+  "source_kind": "actual_model_responses_in_declared_virtual_world",
+  "n": 6,
+  "all_six_passed": true,
+  "checks": [
+    {
+      "id": "001",
+      "expected": "navigate",
+      "passed": true,
+      "manual_review_note": "exact expected target order and valid schema"
+    },
+    {
+      "id": "025",
+      "expected": "navigate",
+      "passed": true,
+      "manual_review_note": "exact expected target order and valid schema"
+    },
+    {
+      "id": "049",
+      "expected": "navigate",
+      "passed": true,
+      "manual_review_note": "exact expected target order and valid schema"
+    },
+    {
+      "id": "073",
+      "expected": "navigate_sequence",
+      "passed": true,
+      "manual_review_note": "exact expected target order and valid schema"
+    },
+    {
+      "id": "S5-097",
+      "expected": "clarify",
+      "passed": true,
+      "manual_review_note": "Assistant asks user to identify ambiguous destination; no action."
+    },
+    {
+      "id": "CUSTOM-01",
+      "expected": "reject",
+      "passed": true,
+      "manual_review_note": "Assistant explicitly states no manipulation hardware and stale cup; only non-motion say tool."
+    }
+  ],
+  "manual_text_review_by": "Codex inspection of the saved assistant responses",
+  "world": "config/week7_world_frozen_v2.json",
+  "limitations": [
+    "Virtual landmarks manually designated; does not establish W5 perception or measured W6 semantics."
+  ]
+}

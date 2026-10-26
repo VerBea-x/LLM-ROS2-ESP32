@@ -1,0 +1,17 @@
+{
+  "fixture_only": true,
+  "warning": "合成的单元测试夹具，不是课程测量数据，不得作为周验收证据。",
+  "bounds_m": [0.0, 10.0, 0.0, 10.0],
+  "obstacles": [{"x": 5.0, "y": 5.0, "radius": 0.75}],
+  "semantic_items": {
+    "W1_door": {"x": 2.0, "y": 2.0, "last_seen_s": 95.0},
+    "W3_podium": {"x": 7.0, "y": 7.0, "last_seen_s": 0.0}
+  },
+  "tau_s": {"W1_door": 120.0, "W3_podium": 30.0},
+  "now_s": 100.0,
+  "battery_pct": 60.0,
+  "estimated_task_s": 20.0,
+  "remaining_budget_s": 60.0,
+  "max_linear_speed_mps": 0.3,
+  "max_angular_speed_rps": 0.8
+}

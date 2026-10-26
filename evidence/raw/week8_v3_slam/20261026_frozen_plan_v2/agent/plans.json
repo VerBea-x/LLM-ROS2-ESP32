@@ -1,0 +1,68 @@
+{
+  "去门口，然后停下。请一次给出完整的有序工具调用。": {
+    "tool_calls": [
+      {
+        "name": "navigate_to",
+        "arguments": {
+          "x": 7.0,
+          "y": 6.0,
+          "label": "W1_door"
+        }
+      },
+      {
+        "name": "stop",
+        "arguments": {}
+      }
+    ],
+    "refusal": null,
+    "content": "",
+    "raw_response": {
+      "id": "893c071f-3ce3-4358-9690-c6c8d4d5cf6d",
+      "object": "chat.completion",
+      "created": 1792980921,
+      "model": "deepseek-flash",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "index": 0,
+                "id": "call_00_sHlQRioh0cJ3Q8fcV8Ck6568",
+                "type": "function",
+                "function": {
+                  "name": "navigate_to",
+                  "arguments": "{\"x\": 7.0, \"y\": 6.0, \"label\": \"W1_door\"}"
+                }
+              },
+              {
+                "index": 1,
+                "id": "call_01_WHW63j5fClOQNnxgo5MC9722",
+                "type": "function",
+                "function": {
+                  "name": "stop",
+                  "arguments": "{}"
+                }
+              }
+            ]
+          },
+          "logprobs": null,
+          "finish_reason": "tool_calls"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1832,
+        "completion_tokens": 88,
+        "total_tokens": 1920,
+        "prompt_tokens_details": {
+          "cached_tokens": 1664
+        },
+        "prompt_cache_hit_tokens": 1664,
+        "prompt_cache_miss_tokens": 168
+      },
+      "system_fingerprint": "e72d3c7f663d3e1383b00b3884cb4501"
+    }
+  }
+}

@@ -1,0 +1,3098 @@
+{
+  "source_sha256": "53005ad433645b7604ee488082a0d901c50ad799f388105d1475275104e018ed",
+  "source_kind": "frozen_real_model_output_replay",
+  "implementation_version": "task_contract_v3",
+  "counts": {
+    "REJECTED": 25,
+    "COMPLETED": 15
+  },
+  "rows": [
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 1,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 2,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 3,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 4,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 5,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 6,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 7,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 8,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 9,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.2,
+      "repetition": 10,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 1,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 2,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "WHITELIST",
+          "reason": "工具 `capture_and_describe` 在白名单且参数符合 Schema。",
+          "evidence": {
+            "tool_name": "capture_and_describe"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 3,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 4,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "WHITELIST",
+          "reason": "工具 `capture_and_describe` 在白名单且参数符合 Schema。",
+          "evidence": {
+            "tool_name": "capture_and_describe"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 5,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 6,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 7,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 8,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 9,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "WHITELIST",
+          "reason": "工具 `capture_and_describe` 在白名单且参数符合 Schema。",
+          "evidence": {
+            "tool_name": "capture_and_describe"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "common",
+      "temperature": 0.8,
+      "repetition": 10,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W3_podium` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W3_podium",
+            "target_m": [
+              6.0,
+              5.5
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_CAPABILITY",
+          "reason": "任务需要当前不可用能力：capture_and_describe",
+          "evidence": "week7_common_instruction_and_no_camera_boundary",
+          "missing_capabilities": [
+            "capture_and_describe"
+          ]
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_CAPABILITY",
+            "reason": "任务需要当前不可用能力：capture_and_describe",
+            "evidence": "week7_common_instruction_and_no_camera_boundary",
+            "missing_capabilities": [
+              "capture_and_describe"
+            ]
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 1,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 2,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 3,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7.0,
+                "y": 6.0,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6.0,
+                "y": 6.0,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 4,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 5,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 6,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 7,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 8,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 9,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.2,
+      "repetition": 10,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 1,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 2,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7.0,
+                "y": 6.0,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6.0,
+                "y": 6.0,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 3,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_SEQUENCE",
+          "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+          "expected": [
+            "navigate_to",
+            "navigate_to",
+            "stop"
+          ],
+          "actual": [
+            "navigate_to"
+          ],
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_SEQUENCE",
+            "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+            "expected": [
+              "navigate_to",
+              "navigate_to",
+              "stop"
+            ],
+            "actual": [
+              "navigate_to"
+            ],
+            "evidence": "week7_frozen_custom_instruction"
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 4,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_SEQUENCE",
+          "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+          "expected": [
+            "navigate_to",
+            "navigate_to",
+            "stop"
+          ],
+          "actual": [
+            "navigate_to"
+          ],
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_SEQUENCE",
+            "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+            "expected": [
+              "navigate_to",
+              "navigate_to",
+              "stop"
+            ],
+            "actual": [
+              "navigate_to"
+            ],
+            "evidence": "week7_frozen_custom_instruction"
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 5,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_SEQUENCE",
+          "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+          "expected": [
+            "navigate_to",
+            "navigate_to",
+            "stop"
+          ],
+          "actual": [
+            "navigate_to"
+          ],
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_SEQUENCE",
+            "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+            "expected": [
+              "navigate_to",
+              "navigate_to",
+              "stop"
+            ],
+            "actual": [
+              "navigate_to"
+            ],
+            "evidence": "week7_frozen_custom_instruction"
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 6,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 7,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6.0,
+              6.0
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7.0,
+                "y": 6.0,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6.0,
+                "y": 6.0,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 8,
+      "result": "COMPLETED",
+      "executed_dry_run_calls": 3,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W2_charge` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W2_charge",
+            "target_m": [
+              6,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "SAFE_STOP",
+          "reason": "stop 属于无条件安全工具，允许调用。",
+          "evidence": {
+            "tool_name": "stop"
+          },
+          "correction": ""
+        },
+        {
+          "allowed": true,
+          "rule_id": "TASK_PASS",
+          "reason": "完整步骤和目标顺序符合显式契约。",
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "COMPLETED",
+        "evidence": [
+          {
+            "index": 0,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 7,
+                "y": 6,
+                "label": "W1_door"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 1,
+            "call": {
+              "name": "navigate_to",
+              "arguments": {
+                "x": 6,
+                "y": 6,
+                "label": "W2_charge"
+              }
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          },
+          {
+            "index": 2,
+            "call": {
+              "name": "stop",
+              "arguments": {}
+            },
+            "ok": true,
+            "reason": "offline replay only",
+            "evidence": {
+              "dry_run": true
+            }
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 9,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_SEQUENCE",
+          "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+          "expected": [
+            "navigate_to",
+            "navigate_to",
+            "stop"
+          ],
+          "actual": [
+            "navigate_to"
+          ],
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_SEQUENCE",
+            "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+            "expected": [
+              "navigate_to",
+              "navigate_to",
+              "stop"
+            ],
+            "actual": [
+              "navigate_to"
+            ],
+            "evidence": "week7_frozen_custom_instruction"
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    },
+    {
+      "instruction_id": "custom",
+      "temperature": 0.8,
+      "repetition": 10,
+      "result": "REJECTED",
+      "executed_dry_run_calls": 0,
+      "decisions": [
+        {
+          "allowed": true,
+          "rule_id": "PASS",
+          "reason": "目标 `W1_door` 在边界内且未落入已知占据区；age=0.0s≤τ=86400.0s；电量 60.0%，预估耗时 30.0s/预算 60.0s。",
+          "evidence": {
+            "label": "W1_door",
+            "target_m": [
+              7,
+              6
+            ],
+            "age_s": 0.0,
+            "tau_s": 86400.0,
+            "battery_pct": 60.0,
+            "estimated_task_s": 30.0,
+            "remaining_budget_s": 60.0
+          },
+          "correction": ""
+        },
+        {
+          "allowed": false,
+          "rule_id": "TASK_SEQUENCE",
+          "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+          "expected": [
+            "navigate_to",
+            "navigate_to",
+            "stop"
+          ],
+          "actual": [
+            "navigate_to"
+          ],
+          "evidence": "week7_frozen_custom_instruction"
+        }
+      ],
+      "report": {
+        "result": "REJECTED",
+        "evidence": [
+          {
+            "allowed": false,
+            "rule_id": "TASK_SEQUENCE",
+            "reason": "实际工具顺序与显式任务契约不一致；不自动补步骤。",
+            "expected": [
+              "navigate_to",
+              "navigate_to",
+              "stop"
+            ],
+            "actual": [
+              "navigate_to"
+            ],
+            "evidence": "week7_frozen_custom_instruction"
+          }
+        ],
+        "limitations": [
+          "Replay of stored real-model output, no new model call or motor execution."
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Original40-response statistics unchanged.",
+    "Capability rejection addresses unavailable camera, not model accuracy.",
+    "Exact supported task contracts; arbitrary language/semantic equivalence is not inferred."
+  ]
+}
