@@ -1,4 +1,6 @@
-# 第1–8周课程重做项目
+# LLM-ROS2-ESP32
+
+第1–8周课程重做项目
 
 主要环境：Ubuntu虚拟机、ROS2 Humble、Embodied-SimLite、无摄像头的ESP32小车。当前使用20张公开室内场景进行离线视觉评测。
 

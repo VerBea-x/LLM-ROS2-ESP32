@@ -316,7 +316,7 @@
   "problems": [],
   "all_checks_passed": true,
   "sha256": {
-    "README.md": "a74293c8e91e251a082918db5ff6fcb050f6f9dbab4e339c22fbe1b95869c642",
+    "README.md": "9e89f7adc63355d4b44732e5035a64a436bf9fdb800a2c472d823e532c32ac5c",
     "config/task_contracts_v3.json": "4d65acaee51448a6d3a05119557a1b076bdfa3f6a196b4191ea1fd55a00f2d36",
     "config/week34_precise_protocol_clarification.json": "7c72c8e6c7388895646970e2f33a0e37bb7f140a0f7b430df1792e1865282877",
     "config/week34_safe_return_precise_v3.json": "cc0e422f83a46d0d93dd34612882157c7843d41d94f5bfee3b57ff0f8782f3c3",
